@@ -1,5 +1,6 @@
 import React from 'react'
 import { scrollToRef } from "../../utils/refScroller";
+import "./Slide.css"
 
 function Slide({ImageWallpaper, Ref, LinearGradient, Title, Content}) {
 
@@ -13,9 +14,15 @@ function Slide({ImageWallpaper, Ref, LinearGradient, Title, Content}) {
         <div className="Wallpaper" style={backgroundImageSetup}>
             <div className="Content">
                     <h1>{Title}</h1>
-                    <p>
-                       {Content}
-                    </p>
+                    <br/>
+                    {
+                    Content.split('\n').map(function(item, key) {
+                        return (
+                            <span key={key}>
+                                <p><b>{ item }</b></p>
+                        </span>
+                        )
+                    })}
                     <div>&nbsp;</div>
                     <button className="ButtonLink" onClick={executeScroll}>Next Chapter</button>
             </div> 

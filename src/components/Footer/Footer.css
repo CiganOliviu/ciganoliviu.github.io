@@ -1,0 +1,27 @@
+footer .SocialMediaIcons {
+    font-size: 50px;
+    text-align: center;
+}
+
+footer .SocialMediaIcons * {
+    margin: 2%;
+    padding: 4%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 250ms ease;
+}
+
+footer .SocialMediaIcons #Linkedin:hover {
+    background: #fff;
+    color: #0072b1;
+}
+
+footer .SocialMediaIcons #Gmail:hover {
+    background: #fff;
+    color: #bb001b;
+}
+
+footer .SocialMediaIcons #Facebook:hover {
+    background: #fff;
+    color: #00b2ff;
+}

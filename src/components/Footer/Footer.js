@@ -1,7 +1,8 @@
+import React from 'react'
 import { faFacebookMessenger, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCopyright, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react'
+import './Footer.css'
 
 function Footer({ImageWallpaper}) {
 
@@ -10,7 +11,7 @@ function Footer({ImageWallpaper}) {
     }
 
     return (
-        <footer class="Wallpaper" style={backgroundImageSetup}>
+        <footer className="Wallpaper" style={backgroundImageSetup}>
             <div className="Content">
                 <div className="Copyright">
                     <div className="SocialMediaIcons">
