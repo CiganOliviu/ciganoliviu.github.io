@@ -2,6 +2,7 @@ import React from 'react'
 import { faFacebookMessenger, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCopyright, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ExternalLink } from "react-external-link";
 import './Footer.css'
 
 function Footer({ImageWallpaper}) {
@@ -15,9 +16,9 @@ function Footer({ImageWallpaper}) {
             <div className="Content">
                 <div className="Copyright">
                     <div className="SocialMediaIcons">
-                        <FontAwesomeIcon id="Linkedin" icon={faLinkedin} /> 
-                        <FontAwesomeIcon id="Gmail" icon={faEnvelope} /> 
-                        <FontAwesomeIcon id="Facebook" icon={faFacebookMessenger} />
+                        <ExternalLink href="https://www.facebook.com/cigan.oliviu.31/"><FontAwesomeIcon className="Icon" id="Linkedin" icon={faLinkedin} /></ExternalLink>
+                        <ExternalLink href="mailto:ciganoliviudavid@gmail.com"><FontAwesomeIcon className="Icon" id="Gmail" icon={faEnvelope} /></ExternalLink>
+                        <ExternalLink href="https://www.facebook.com/cigan.oliviu.31/"><FontAwesomeIcon className="Icon" id="Facebook" icon={faFacebookMessenger} /></ExternalLink>
                     </div> 
                     <p><FontAwesomeIcon icon={faCopyright} /> Copyright Cigan Oliviu-David, all rights reserved {(new Date().getFullYear())}</p>
                 </div> 

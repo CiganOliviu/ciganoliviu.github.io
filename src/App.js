@@ -13,6 +13,7 @@ import {
     gradientWallpaperOpen, peerToPeerContent, peerToPeerTitle, threeSSContent, threeSSTitle, universityContent,
     universityTitle
 } from "./utils/environmentVariables";
+import ScrollToTop from "./components/ScrollTopButton/ScrollTopButton";
 import './App.css';
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
             <div ref={footerRef}>
               <Footer ImageWallpaper={FooterWallpaper} />
             </div>
+            <ScrollToTop />
         </div>
     );
 }

@@ -3,10 +3,11 @@ footer .SocialMediaIcons {
     text-align: center;
 }
 
-footer .SocialMediaIcons * {
+footer .SocialMediaIcons .Icon {
     margin: 2%;
     padding: 4%;
     border: 2px solid #fff;
+    color: #fff;
     border-radius: 50%;
     transition: all 250ms ease;
 }
@@ -18,7 +19,7 @@ footer .SocialMediaIcons #Linkedin:hover {
 
 footer .SocialMediaIcons #Gmail:hover {
     background: #fff;
-    color: #bb001b;
+    color: #720e9e;
 }
 
 footer .SocialMediaIcons #Facebook:hover {
