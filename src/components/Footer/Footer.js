@@ -16,7 +16,7 @@ function Footer({ImageWallpaper}) {
             <div className="Content">
                 <div className="Copyright">
                     <div className="SocialMediaIcons">
-                        <ExternalLink href="https://www.facebook.com/cigan.oliviu.31/"><FontAwesomeIcon className="Icon" id="Linkedin" icon={faLinkedin} /></ExternalLink>
+                        <ExternalLink href="https://www.linkedin.com/in/oliviu-david-c-72489015b/"><FontAwesomeIcon className="Icon" id="Linkedin" icon={faLinkedin} /></ExternalLink>
                         <ExternalLink href="mailto:ciganoliviudavid@gmail.com"><FontAwesomeIcon className="Icon" id="Gmail" icon={faEnvelope} /></ExternalLink>
                         <ExternalLink href="https://www.facebook.com/cigan.oliviu.31/"><FontAwesomeIcon className="Icon" id="Facebook" icon={faFacebookMessenger} /></ExternalLink>
                     </div> 
