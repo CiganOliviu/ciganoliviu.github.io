@@ -18,6 +18,6 @@ export const threeSSContent = "At the beginning of 2021, I decided to jump into 
     "With each day, I am gathering more experience and knowledge, leading me closer to becoming a leading developer myself."
 
 export const peerToPeerTitle = "Founder of PeerToPeer Learning concept!";
-export const peerToPeerContent = "I'm one of the two founders of PeerToPeer learning, an educational platform that helps " +
+export const peerToPeerContent = "Since 2021, I'm one of the two founders of PeerToPeer learning, an educational platform that helps " +
     "students ace their final test. \n Even though at first I was committed to the startup, in a short period of time, I " +
     "realized it's not for me. \n Currently,  I'm only responsible for the software field development and maintenance.";
