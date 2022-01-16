@@ -8,10 +8,7 @@ import CompanyWallpaper from './Images/3ss.png';
 import PeerToPeerLearning from './Images/peertopeerlearning.jpeg';
 import FooterWallpaper from './Images/footer-wallpaper.jpeg';
 import {
-    gradientWallpaperClose,
-    gradientWallpaperDark,
-    gradientWallpaperOpen, peerToPeerContent, peerToPeerTitle, threeSSContent, threeSSTitle, universityContent,
-    universityTitle
+    gradientWallpapers, universityContainer, threeSSContainer, peerToPeerContainer
 } from "./utils/environmentVariables";
 import ScrollToTop from "./components/ScrollTopButton/ScrollTopButton";
 import './App.css';
@@ -29,23 +26,23 @@ function App() {
             <div ref={facultyRef}>
                 <Slide ImageWallpaper={UniversityWallpaper}
                      Ref={companyRef}
-                     LinearGradient={gradientWallpaperDark}
-                     Title={universityTitle}
-                     Content={universityContent} />
+                     LinearGradient={gradientWallpapers.gradientWallpaperDark}
+                     Title={universityContainer.universityTitle}
+                     Content={universityContainer.universityContent} />
             </div>
             <div ref={companyRef}>
                 <Slide ImageWallpaper={CompanyWallpaper}
                      Ref={peerToPeerRef}
-                     LinearGradient={gradientWallpaperOpen}
-                     Title={threeSSTitle}
-                     Content={threeSSContent} />
+                     LinearGradient={gradientWallpapers.gradientWallpaperOpen}
+                     Title={threeSSContainer.threeSSTitle}
+                     Content={threeSSContainer.threeSSContent} />
             </div>
             <div ref={peerToPeerRef}>
                 <Slide ImageWallpaper={PeerToPeerLearning}
                      Ref={footerRef}
-                     LinearGradient={gradientWallpaperClose}
-                     Title={peerToPeerTitle}
-                     Content={peerToPeerContent} />
+                     LinearGradient={gradientWallpapers.gradientWallpaperClose}
+                     Title={peerToPeerContainer.peerToPeerTitle}
+                     Content={peerToPeerContainer.peerToPeerContent} />
             </div>
             <div ref={footerRef}>
               <Footer ImageWallpaper={FooterWallpaper} />
