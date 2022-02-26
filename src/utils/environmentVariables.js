@@ -21,10 +21,3 @@ export const threeSSContainer = {
         "Currently, I am learning and working with leading developers in the software industry.\n" +
         "With each day, I am gathering more experience and knowledge, leading me closer to becoming a leading developer myself."
 }
-
-export const peerToPeerContainer = {
-    peerToPeerTitle: "Founder of PeerToPeer Learning concept!",
-    peerToPeerContent: "Since 2021, I'm one of the two founders of PeerToPeer learning, an educational platform that helps " +
-        "students ace their final test. \n Even though at first I was committed to the startup, in a short period of time, I " +
-        "realized it's not for me. \n Currently,  I'm only responsible for the software field development and maintenance."
-}
