@@ -1,7 +1,6 @@
 import React from 'react'
 import { scrollToRef } from "../../utils/refScroller";
 import "./Slide.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Slide({ImageWallpaper, Ref, LinearGradient, Title, Content}) {
 
@@ -21,7 +20,6 @@ function Slide({ImageWallpaper, Ref, LinearGradient, Title, Content}) {
                         return (
                             <span key={key}>
                                 <p data-aos={"fade-up"}><b>{ item }</b></p>
-                                <FontAwesomeIcon icon="fa-brands fa-react" />
                             </span>
                         )
                     })}
