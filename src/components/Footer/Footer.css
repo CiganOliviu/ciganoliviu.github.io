@@ -1,5 +1,17 @@
+footer .Technologies {
+    font-size: 60px;
+}
+
+footer .Technologies .Icon {
+    margin: 2%;
+}
+
+footer .BreathingSpace {
+    padding: 20%;
+}
+
 footer .SocialMediaIcons {
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
 }
 

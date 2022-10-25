@@ -1,5 +1,13 @@
 import React from 'react'
-import { faFacebookMessenger, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {
+    faCss3,
+    faFacebookMessenger,
+    faHtml5,
+    faLinkedin,
+    faNode,
+    faPython,
+    faReact
+} from '@fortawesome/free-brands-svg-icons';
 import { faCopyright, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ExternalLink } from "react-external-link";
@@ -14,6 +22,15 @@ function Footer({ImageWallpaper}) {
     return (
         <footer className="Wallpaper" style={backgroundImageSetup}>
             <div className="Content">
+                <div className="Technologies">
+                    <p><b>Most used technologies over time</b></p>
+                    <FontAwesomeIcon className="Icon" id="React" icon={faHtml5} />
+                    <FontAwesomeIcon className="Icon" id="React" icon={faCss3} />
+                    <FontAwesomeIcon className="Icon" id="React" icon={faReact} />
+                    <FontAwesomeIcon className="Icon" id="React" icon={faNode} />
+                    <FontAwesomeIcon className="Icon" id="Python" icon={faPython} />
+                </div>
+                <div className="BreathingSpace"></div>
                 <div className="Copyright">
                     <div className="SocialMediaIcons">
                         <ExternalLink href="https://www.linkedin.com/in/oliviu-david-c-72489015b/"><FontAwesomeIcon className="Icon" id="Linkedin" icon={faLinkedin} /></ExternalLink>
