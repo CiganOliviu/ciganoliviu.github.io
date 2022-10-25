@@ -17,10 +17,10 @@ footer .SocialMediaIcons {
 
 footer .SocialMediaIcons .Icon {
     margin: 2%;
-    padding: 4%;
+    padding: 2.5%;
     border: 2px solid #fff;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 25%;
     transition: all 250ms ease;
 }
 
@@ -37,4 +37,10 @@ footer .SocialMediaIcons #Gmail:hover {
 footer .SocialMediaIcons #Facebook:hover {
     background: #fff;
     color: #00b2ff;
+}
+
+@media only screen and (max-width: 600px) {
+    footer .Technologies {
+        font-size: 40px;
+    }
 }

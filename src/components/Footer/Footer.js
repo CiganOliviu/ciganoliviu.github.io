@@ -2,6 +2,7 @@ import React from 'react'
 import {
     faCss3,
     faFacebookMessenger,
+    faGit,
     faHtml5,
     faLinkedin,
     faNode,
@@ -25,10 +26,11 @@ function Footer({ImageWallpaper}) {
                 <div className="Technologies">
                     <p><b>Most used technologies over time</b></p>
                     <FontAwesomeIcon className="Icon" id="React" icon={faHtml5} />
-                    <FontAwesomeIcon className="Icon" id="React" icon={faCss3} />
+                    <FontAwesomeIcon className="Icon" id="Css3" icon={faCss3} />
                     <FontAwesomeIcon className="Icon" id="React" icon={faReact} />
-                    <FontAwesomeIcon className="Icon" id="React" icon={faNode} />
+                    <FontAwesomeIcon className="Icon" id="Node" icon={faNode} />
                     <FontAwesomeIcon className="Icon" id="Python" icon={faPython} />
+                    <FontAwesomeIcon className="Icon" id="Git" icon={faGit} />
                 </div>
                 <div className="BreathingSpace"></div>
                 <div className="Copyright">
