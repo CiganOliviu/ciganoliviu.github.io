@@ -1,6 +1,7 @@
 import React from 'react'
 import { scrollToRef } from "../../utils/refScroller";
 import "./Slide.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Slide({ImageWallpaper, Ref, LinearGradient, Title, Content}) {
 
@@ -13,14 +14,15 @@ function Slide({ImageWallpaper, Ref, LinearGradient, Title, Content}) {
     return (
         <div className="Wallpaper" style={backgroundImageSetup}>
             <div className="Content">
-                    <h1>{Title}</h1>
+                    <h1 data-aos={"fade-down"}>{Title}</h1>
                     <br/>
                     {
-                    Content.split('\n').map(function(item, key) {
+                    Content.split('\n').map((item, key) => {
                         return (
                             <span key={key}>
-                                <p><b>{ item }</b></p>
-                        </span>
+                                <p data-aos={"fade-up"}><b>{ item }</b></p>
+                                <FontAwesomeIcon icon="fa-brands fa-react" />
+                            </span>
                         )
                     })}
                     <div>&nbsp;</div>

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import HeroCard from './components/HeroCard/HeroCard';
 import Slide from './components/Slide/Slide';
 import Footer from './components/Footer/Footer';
@@ -6,17 +6,22 @@ import HeroCardWallpaper from './images/herocard-wallpaper.jpg';
 import UniversityWallpaper from './images/ac.jpg';
 import CompanyWallpaper from './images/3ss.png';
 import FooterWallpaper from './images/footer-wallpaper.jpeg';
-import {
-    gradientWallpapers, universityContainer, threeSSContainer
-} from "./utils/environmentVariables";
+import {gradientWallpapers, threeSSContainer, universityContainer} from "./utils/environmentVariables";
 import ScrollToTop from "./components/ScrollTopButton/ScrollTopButton";
 import './App.css';
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 function App() {
 
     const facultyRef = useRef(null);
     const companyRef = useRef(null);
     const footerRef = useRef(null);
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     return (
         <div className="App">
