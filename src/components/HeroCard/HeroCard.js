@@ -14,7 +14,7 @@ function HeroCard({ImageWallpaper, Ref}) {
         <div className="HeroCard" style={backgroundImageSetup} >
             <div className="Content">
                 <h1>Cigan Oliviu</h1>
-                <h3>Scroll down and check me out!</h3>
+                <h3>Do you want to know more? Check the next chapter!</h3>
                 <div>&nbsp;</div>
                 <button className="ButtonLink" onClick={executeScroll}>Next Chapter</button>
             </div>
