@@ -2,10 +2,10 @@ import React, { useRef } from 'react';
 import HeroCard from './components/HeroCard/HeroCard';
 import Slide from './components/Slide/Slide';
 import Footer from './components/Footer/Footer';
-import HeroCardWallpaper from './Images/herocard-wallpaper.jpg';
-import UniversityWallpaper from './Images/ac.jpg';
-import CompanyWallpaper from './Images/3ss.png';
-import FooterWallpaper from './Images/footer-wallpaper.jpeg';
+import HeroCardWallpaper from './images/herocard-wallpaper.jpg';
+import UniversityWallpaper from './images/ac.jpg';
+import CompanyWallpaper from './images/3ss.png';
+import FooterWallpaper from './images/footer-wallpaper.jpeg';
 import {
     gradientWallpapers, universityContainer, threeSSContainer
 } from "./utils/environmentVariables";
