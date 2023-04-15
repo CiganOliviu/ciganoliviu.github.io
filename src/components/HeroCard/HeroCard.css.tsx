@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
+import HeroCardWallpaper from '../../assets/HeroCard.jpg';
 
 export const HeroCardBox = styled.div`
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/practicaldev/image/fetch/s--ivd9kMB---/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://images.unsplash.com/photo-1569012871812-f38ee64cd54c%3Fixid%3DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%253D%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1650%26q%3D80') no-repeat center center fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${HeroCardWallpaper.src}) 
+    no-repeat center center fixed;
     background-size: cover;
     position: relative;
     height: 100vh;
