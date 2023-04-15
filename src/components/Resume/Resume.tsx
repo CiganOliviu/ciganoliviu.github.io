@@ -1,7 +1,7 @@
 import {
     ResumeBackText,
     ResumeBox, ResumeContent, ResumeContentColumn,
-    ResumeOverText, ResumeOverTextBorder, ResumeSimpleText,
+    ResumeOverText, ResumeOverTextBorder, ResumeSimpleText, ResumeSkillBar, ResumeSkillProgress, ResumeSkills,
     ResumeTextContainer, Separator
 } from "@components/components/Resume/Resume.css";
 import { ContentCard } from "@components/components/ContentCard/ContentCard";
@@ -48,6 +48,27 @@ export const Resume = () => {
                     })}
                 </ResumeContentColumn>
             </ResumeContent>
+            <ResumeTextContainer>
+                <ResumeSimpleText>
+                    My Skills
+                </ResumeSimpleText>
+            </ResumeTextContainer>
+            <ResumeSkills>
+                <ResumeContentColumn>
+                    <p>Typescript</p>
+                    <Separator paddingValue={0.5} />
+                    <ResumeSkillBar>
+                        <ResumeSkillProgress progressPercentage={50} />
+                    </ResumeSkillBar>
+                </ResumeContentColumn>
+                <ResumeContentColumn>
+                    <p>Typescript</p>
+                    <Separator paddingValue={0.5} />
+                    <ResumeSkillBar>
+                        <ResumeSkillProgress progressPercentage={50} />
+                    </ResumeSkillBar>
+                </ResumeContentColumn>
+            </ResumeSkills>
         </ResumeBox>
     )
 };
