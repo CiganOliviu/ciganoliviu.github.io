@@ -17,17 +17,20 @@ export const HeroCardContainer = styled.div`
 `;
 
 export const HeroCardWelcomeText = styled.div`
-    font-size: 2rem;  
+    font-size: 1.8rem;
+    font-weight: bold;
 `;
 
 export const HeroCardTypeAnimationText = styled.div`
     margin-top: 2rem;
     font-size: 4rem;
+    font-weight: bold;
 `
 
 export const HeroCardContinuityText = styled.div`
     margin-top: 2rem;  
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: bold;
 `;
 
 export const HeroCardContactButton = styled.div`
@@ -39,7 +42,7 @@ export const HeroCardContactButton = styled.div`
     text-align: center; 
     text-decoration: none;
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 4rem;
     cursor: pointer;
     transition: 0.5s ease;
@@ -47,6 +50,5 @@ export const HeroCardContactButton = styled.div`
     :hover {
         background: #20c997;
         color: white;
-      
     }
 `

@@ -16,10 +16,10 @@ export const HeroCard = () => {
                     <TypeWriter
                         options={{
                             strings: [
-                                'I am Cigan Oliviu-David',
+                                'I am Cigan Oliviu-David.',
                                 'I am a Student.',
-                                'I am a Software Engineer',
-                                'I am a Researcher'
+                                'I am a Software Engineer.',
+                                'I am a Researcher.'
                             ],
                             autoStart: true,
                             loop: true,
