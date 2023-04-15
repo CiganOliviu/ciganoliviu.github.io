@@ -1,0 +1,39 @@
+import styled from "styled-components";
+import { AppTheme } from "@components/utils/cssMedia";
+
+export const TextContainerBox = styled.div`
+    text-align: center;
+    position: relative;
+`
+
+export const BackTextBox = styled.h1`
+    color: ${AppTheme.openGray};
+    text-align: center;
+    font-size: 10rem;
+    opacity: 0.2;
+    z-index: 1;
+    line-height: 20rem;
+`;
+
+export const OverTextBox = styled.p`
+    color: ${AppTheme.white};
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 57%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+`;
+
+export const Separator = styled.div<{ paddingValue?: number }>`
+    padding: ${(props) => props.paddingValue || 0.3}rem;
+`;
+
+export const OverTextBorder = styled.div`
+    background: ${AppTheme.lightGreen};
+    width: 6%;
+    height: 0.3rem;
+    margin: 0 auto;
+`;
