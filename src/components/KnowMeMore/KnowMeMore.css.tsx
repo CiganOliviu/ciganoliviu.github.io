@@ -19,7 +19,6 @@ export const HighLightWhite = styled.span`
 `
 
 export const KnowMeMoreTable = styled.div`
-    margin-top: 1.5rem;
     display: flex;  
     justify-content: center;
     align-content: center;

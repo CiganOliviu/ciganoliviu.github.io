@@ -9,6 +9,7 @@ import { ContentColumn, SimpleText } from "@components/components/Resume/Resume.
 import { ContentCardText } from "@components/components/ContentCard/ContentCard.css";
 import { Separator } from "@components/components/TextContainer/TextContainer.css";
 import { HeroCardContactButton } from "@components/components/HeroCard/HeroCard.css";
+import { KnowMeMoreConfig } from "@components/utils/config";
 
 export const KnowMeMore = () => {
     return (
@@ -20,7 +21,7 @@ export const KnowMeMore = () => {
                         Hi, My name is <HighLight>Cigan Oliviu David</HighLight>, a Software Engineer
                     </SimpleText>
                     <ContentCardText>
-                        During my internship, I learned how an Agile team works. Besides this, I participated in building a basic VOD web application. My responsibilities included building new functionalities with ReactJS, HTML5/CSS3, and fixing bugs. I was also using Git and Gitlab with this project. Besides my coding responsibilities, I was also assigned to research and work in the DevOps sector of the project. I also learned what teamwork and leadership truly mean by offering my support and asking for help when needed.
+                        {KnowMeMoreConfig.content}
                     </ContentCardText>
                 </ContentColumn>
                 <ContentColumn>
