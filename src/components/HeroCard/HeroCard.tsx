@@ -4,23 +4,19 @@ import {
     HeroCardContainer, HeroCardTypeAnimationText, HeroCardWelcomeText,
 } from "@components/components/HeroCard/HeroCard.css";
 import TypeWriter from 'typewriter-effect';
+import { HeroCardConfig } from "@components/utils/config";
 
 export const HeroCard = () => {
     return (
         <HeroCardBox>
             <HeroCardContainer>
                 <HeroCardWelcomeText>
-                    Welcome
+                    {HeroCardConfig.WelcomeText}
                 </HeroCardWelcomeText>
                 <HeroCardTypeAnimationText>
                     <TypeWriter
                         options={{
-                            strings: [
-                                'I am Cigan Oliviu-David.',
-                                'I am a Student.',
-                                'I am a Software Engineer.',
-                                'I am a Researcher.'
-                            ],
+                            strings: HeroCardConfig.TypeWriterContext,
                             autoStart: true,
                             loop: true,
                             delay: 90
@@ -28,10 +24,10 @@ export const HeroCard = () => {
                     />
                 </HeroCardTypeAnimationText>
                 <HeroCardContinuityText>
-                    based in Cluj-Napoca, Romania.
+                    {HeroCardConfig.ContinuityText}
                 </HeroCardContinuityText>
                 <HeroCardContactButton>
-                    Let's discuss
+                    {HeroCardConfig.ButtonText}
                 </HeroCardContactButton>
             </HeroCardContainer>
         </HeroCardBox>
