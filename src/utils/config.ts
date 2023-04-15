@@ -64,5 +64,35 @@ export const ResumeConfig = {
                 'responsibilities, I was also assigned to research and work in the DevOps sector of the project.\n' +
                 'I also learned what teamwork and leadership truly mean by offering my support and asking for help when needed.'
         }
-    ]
-}
+    ],
+    my_skills: {
+        column_one: [
+            {
+                title: 'Typescript',
+                percentage: 86
+            },
+            {
+                title: 'Backend',
+                percentage: 80
+            },
+            {
+                title: 'Frontend',
+                percentage: 90
+            },
+        ],
+        column_two: [
+            {
+                title: 'Python/Django',
+                percentage: 86
+            },
+            {
+                title: 'Databases',
+                percentage: 90
+            },
+            {
+                title: 'Design',
+                percentage: 78
+            },
+        ]
+    }
+};

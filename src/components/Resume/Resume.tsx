@@ -1,8 +1,17 @@
 import {
     ResumeBackText,
-    ResumeBox, ResumeContent, ResumeContentColumn,
-    ResumeOverText, ResumeOverTextBorder, ResumeSimpleText, ResumeSkillBar, ResumeSkillProgress, ResumeSkills,
-    ResumeTextContainer, Separator
+    ResumeBox,
+    ResumeContent,
+    ResumeContentColumn,
+    ResumeOverText,
+    ResumeOverTextBorder,
+    ResumeSimpleText,
+    ResumeSkillBar,
+    ResumeSkillProgress,
+    ResumeSkills,
+    ResumeSkillsInfo,
+    ResumeTextContainer,
+    Separator
 } from "@components/components/Resume/Resume.css";
 import { ContentCard } from "@components/components/ContentCard/ContentCard";
 import { ResumeConfig } from "@components/utils/config";
@@ -55,18 +64,38 @@ export const Resume = () => {
             </ResumeTextContainer>
             <ResumeSkills>
                 <ResumeContentColumn>
-                    <p>Typescript</p>
-                    <Separator paddingValue={0.5} />
-                    <ResumeSkillBar>
-                        <ResumeSkillProgress progressPercentage={50} />
-                    </ResumeSkillBar>
+                    {ResumeConfig.my_skills.column_one.map((skill) => {
+                        return (
+                           <div key={skill.title}>
+                               <ResumeSkillsInfo>
+                                   <p>{skill.title}</p>
+                                   <p>{skill.percentage}%</p>
+                               </ResumeSkillsInfo>
+                               <Separator paddingValue={0.7} />
+                               <ResumeSkillBar>
+                                   <ResumeSkillProgress progressPercentage={skill.percentage} />
+                               </ResumeSkillBar>
+                               <Separator paddingValue={0.7} />
+                           </div>
+                        )
+                    })}
                 </ResumeContentColumn>
                 <ResumeContentColumn>
-                    <p>Typescript</p>
-                    <Separator paddingValue={0.5} />
-                    <ResumeSkillBar>
-                        <ResumeSkillProgress progressPercentage={50} />
-                    </ResumeSkillBar>
+                    {ResumeConfig.my_skills.column_two.map((skill) => {
+                        return (
+                            <div key={skill.title}>
+                                <ResumeSkillsInfo>
+                                    <p>{skill.title}</p>
+                                    <p>{skill.percentage}%</p>
+                                </ResumeSkillsInfo>
+                                <Separator paddingValue={0.7} />
+                                <ResumeSkillBar>
+                                    <ResumeSkillProgress progressPercentage={skill.percentage} />
+                                </ResumeSkillBar>
+                                <Separator paddingValue={0.7} />
+                            </div>
+                        )
+                    })}
                 </ResumeContentColumn>
             </ResumeSkills>
         </ResumeBox>

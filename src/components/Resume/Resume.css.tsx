@@ -65,7 +65,7 @@ export const ResumeSkills = styled.div`
 
 export const ResumeSkillBar = styled.div`
     width: 100%;
-    background: ${AppTheme.cardContentGray};
+    background: ${AppTheme.darkCardBackground};
     border-radius: 10rem;
     height: 0.7rem;
 `;
@@ -76,3 +76,9 @@ export const ResumeSkillProgress = styled.div<{ progressPercentage: number }>`
     border-radius: 10rem;
     height: 0.7rem;
 `
+
+export const ResumeSkillsInfo = styled.div`
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+`;
