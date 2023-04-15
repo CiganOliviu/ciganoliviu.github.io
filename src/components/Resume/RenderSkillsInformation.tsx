@@ -4,14 +4,8 @@ import {
     ResumeSkillsInfo,
     Separator
 } from "@components/components/Resume/Resume.css";
-import { FC } from "react";
 
-type RenderSkillsInformationType = {
-    title: string,
-    percentage: number,
-}
-
-export const RenderSkillsInformation: FC<RenderSkillsInformationType> = ({ title, percentage }) => {
+export const RenderSkillsInformation = (title: string, percentage: number) => {
     return (
         <>
             <ResumeSkillsInfo>

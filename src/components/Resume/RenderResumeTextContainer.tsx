@@ -18,12 +18,6 @@ export const RenderResumeTextContainer = () => {
                     <ResumeOverTextBorder />
                 </ResumeOverText>
             </ResumeTextContainer>
-
-            <ResumeTextContainer>
-                <ResumeSimpleText>
-                    My Skills
-                </ResumeSimpleText>
-            </ResumeTextContainer>
         </>
     )
 }

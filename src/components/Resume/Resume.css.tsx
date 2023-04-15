@@ -24,7 +24,7 @@ export const ResumeOverText = styled.p`
     font-size: 2rem;
     font-weight: bold;
     position: absolute;
-    top: 55%;
+    top: 57%;
     left: 0;
     width: 100%;
     transform: translateY(-50%);
