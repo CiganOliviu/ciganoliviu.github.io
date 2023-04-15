@@ -5,6 +5,7 @@ import {
     ResumeTextContainer, Separator
 } from "@components/components/Resume/Resume.css";
 import { ContentCard } from "@components/components/ContentCard/ContentCard";
+import { ResumeConfig } from "@components/utils/config";
 
 export const Resume = () => {
     return (
@@ -24,21 +25,27 @@ export const Resume = () => {
                     <ResumeSimpleText>
                         My Education
                     </ResumeSimpleText>
-                    <ContentCard />
-                    <Separator paddingValue={1} />
-                    <ContentCard />
-                    <Separator paddingValue={1} />
-                    <ContentCard />
+                    {ResumeConfig.education.map((item) => {
+                        return (
+                            <>
+                                <ContentCard context={item} />
+                                <Separator paddingValue={1} />
+                            </>
+                        )
+                    })}
                 </ResumeContentColumn>
                 <ResumeContentColumn>
                     <ResumeSimpleText>
                         My Experience
                     </ResumeSimpleText>
-                    <ContentCard />
-                    <Separator paddingValue={1} />
-                    <ContentCard />
-                    <Separator paddingValue={1} />
-                    <ContentCard />
+                    {ResumeConfig.experience.map((item) => {
+                        return (
+                            <>
+                                <ContentCard context={item} />
+                                <Separator paddingValue={1} />
+                            </>
+                        )
+                    })}
                 </ResumeContentColumn>
             </ResumeContent>
         </ResumeBox>
