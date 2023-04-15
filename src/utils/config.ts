@@ -35,6 +35,16 @@ export const ResumeConfig = {
     ],
     experience: [
         {
+            date: '2022 - Present',
+            title: 'Deep Learning Research Student',
+            subtitle: 'Advanced Process Control Methods Research Group',
+            content: 'During my internship, I learned how an Agile team works. Besides this, I participated in building a\n' +
+                'basic VOD web application. My responsibilities included building new functionalities with ReactJS,\n' +
+                'HTML5/CSS3, and fixing bugs. I was also using Git and Gitlab with this project. Besides my coding\n' +
+                'responsibilities, I was also assigned to research and work in the DevOps sector of the project.\n' +
+                'I also learned what teamwork and leadership truly mean by offering my support and asking for help when needed.'
+        },
+        {
             date: '2021 - Present',
             title: 'Software Engineer',
             subtitle: '3Screen Solutions',

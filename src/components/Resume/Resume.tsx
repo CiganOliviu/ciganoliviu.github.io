@@ -27,10 +27,10 @@ export const Resume = () => {
                     </ResumeSimpleText>
                     {ResumeConfig.education.map((item) => {
                         return (
-                            <>
+                            <div key={item.title}>
                                 <ContentCard context={item} />
                                 <Separator paddingValue={1} />
-                            </>
+                            </div>
                         )
                     })}
                 </ResumeContentColumn>
@@ -40,10 +40,10 @@ export const Resume = () => {
                     </ResumeSimpleText>
                     {ResumeConfig.experience.map((item) => {
                         return (
-                            <>
+                            <div key={item.title}>
                                 <ContentCard context={item} />
                                 <Separator paddingValue={1} />
-                            </>
+                            </div>
                         )
                     })}
                 </ResumeContentColumn>
