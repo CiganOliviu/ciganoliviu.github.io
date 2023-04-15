@@ -22,7 +22,7 @@ export const HeroCardWelcomeText = styled.div`
 
 export const HeroCardTypeAnimationText = styled.div`
     margin-top: 2rem;
-    font-size: 5rem;
+    font-size: 4rem;
 `
 
 export const HeroCardContinuityText = styled.div`
@@ -35,11 +35,11 @@ export const HeroCardContactButton = styled.div`
     background: transparent;
     border: solid #20c997;
     border-radius: 2rem;
-    padding: 1rem 2rem 1rem 2rem; 
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem; 
     text-align: center; 
     text-decoration: none;
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 4rem;
     cursor: pointer;
     transition: 0.5s ease;
