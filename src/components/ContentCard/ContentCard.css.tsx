@@ -24,5 +24,6 @@ export const ContentCardSubTitle = styled.h4`
 export const ContentCardText = styled.p`
     color: ${AppTheme.cardContentGray};
     text-indent: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: bold;
 `

@@ -1,7 +1,7 @@
 import {
     ResumeContent,
-    ResumeContentColumn,
-    ResumeSimpleText,
+    ContentColumn,
+    SimpleText,
     Separator
 } from "@components/components/Resume/Resume.css";
 import { ResumeConfig } from "@components/utils/config";
@@ -10,10 +10,10 @@ import { ContentCard } from "@components/components/ContentCard/ContentCard";
 export const RenderResumeContent = () => {
     return (
         <ResumeContent>
-            <ResumeContentColumn>
-                <ResumeSimpleText>
+            <ContentColumn>
+                <SimpleText>
                     My Education
-                </ResumeSimpleText>
+                </SimpleText>
                 {ResumeConfig.education.map((item) => {
                     return (
                         <div key={item.title}>
@@ -22,11 +22,11 @@ export const RenderResumeContent = () => {
                         </div>
                     )
                 })}
-            </ResumeContentColumn>
-            <ResumeContentColumn>
-                <ResumeSimpleText>
+            </ContentColumn>
+            <ContentColumn>
+                <SimpleText>
                     My Experience
-                </ResumeSimpleText>
+                </SimpleText>
                 {ResumeConfig.experience.map((item) => {
                     return (
                         <div key={item.title}>
@@ -35,7 +35,7 @@ export const RenderResumeContent = () => {
                         </div>
                     )
                 })}
-            </ResumeContentColumn>
+            </ContentColumn>
         </ResumeContent>
     )
 }

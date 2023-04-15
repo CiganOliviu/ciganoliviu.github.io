@@ -36,8 +36,8 @@ export const HeroCardContinuityText = styled.div`
     font-weight: bold;
 `;
 
-export const HeroCardContactButton = styled.div`
-    color: ${AppTheme.lightGreen};
+export const HeroCardContactButton = styled.div<{ whiteText?: boolean }>`
+    color: ${(props) => props.whiteText ? AppTheme.white : AppTheme.lightGreen};
     background: transparent;
     border: solid ${AppTheme.lightGreen};
     border-radius: 2rem;
@@ -49,6 +49,7 @@ export const HeroCardContactButton = styled.div`
     margin-top: 4rem;
     cursor: pointer;
     transition: 0.5s ease;
+    font-weight: bold;
     
     :hover {
         background: ${AppTheme.lightGreen};

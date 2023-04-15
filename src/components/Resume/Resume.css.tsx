@@ -15,12 +15,12 @@ export const ResumeContent = styled.div`
     align-content: center;
 `
 
-export const ResumeContentColumn = styled.div`
+export const ContentColumn = styled.div`
     padding: 2rem;
     width: 45%;
 `
 
-export const ResumeSimpleText = styled.h2`
+export const SimpleText = styled.h2`
     padding: 1rem 0 2rem 2rem;
 `;
 

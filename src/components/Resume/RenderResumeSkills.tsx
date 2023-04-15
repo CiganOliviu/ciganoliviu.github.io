@@ -1,11 +1,11 @@
-import { ResumeContentColumn, ResumeSkills } from "@components/components/Resume/Resume.css";
+import { ContentColumn, ResumeSkills } from "@components/components/Resume/Resume.css";
 import { ResumeConfig } from "@components/utils/config";
 import { RenderSkillsInformation } from "@components/components/Resume/RenderSkillsInformation";
 
 export const renderResumeSkills = () => {
     return (
         <ResumeSkills>
-            <ResumeContentColumn>
+            <ContentColumn>
                 {ResumeConfig.my_skills.column_one.map((skill) => {
                     return (
                         <div key={skill.title}>
@@ -13,8 +13,8 @@ export const renderResumeSkills = () => {
                         </div>
                     )
                 })}
-            </ResumeContentColumn>
-            <ResumeContentColumn>
+            </ContentColumn>
+            <ContentColumn>
                 {ResumeConfig.my_skills.column_two.map((skill) => {
                     return (
                         <div key={skill.title}>
@@ -22,7 +22,7 @@ export const renderResumeSkills = () => {
                         </div>
                     )
                 })}
-            </ResumeContentColumn>
+            </ContentColumn>
         </ResumeSkills>
     )
 }
