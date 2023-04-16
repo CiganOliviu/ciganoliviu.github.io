@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AppTheme } from "@components/utils/cssMedia";
+import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const TextContainerBox = styled.div`
     text-align: center;
@@ -9,10 +9,15 @@ export const TextContainerBox = styled.div`
 export const BackTextBox = styled.h1`
     color: ${AppTheme.openGray};
     text-align: center;
-    font-size: 10rem;
+    font-size: 6rem;
     opacity: 0.2;
     z-index: 1;
     line-height: 20rem;
+
+    
+    ${minWidthQuery(Breakpoints.medium)} {
+        font-size: 10rem;
+    }
 `;
 
 export const OverTextBox = styled.p`

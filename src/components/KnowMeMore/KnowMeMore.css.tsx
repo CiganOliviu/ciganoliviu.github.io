@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AppTheme } from "@components/utils/cssMedia";
+import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const KnowMeMoreBox = styled.div`
     background: ${AppTheme.darkerClose};
@@ -8,6 +8,11 @@ export const KnowMeMoreBox = styled.div`
 export const KnowMeMoreInfoContainer = styled.div`
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    
+    ${minWidthQuery(Breakpoints.medium)} {
+        flex-direction: row;
+    }
 `;
 
 export const HighLight = styled.span`
