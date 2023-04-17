@@ -49,6 +49,10 @@ export const Contact = () => {
         }
     };
 
+    const areAnyErrors = (errors: ContactInfoType) => {
+        return errors.name !== '' || errors.email !== '' || errors.message !== '';
+    };
+
     const handleSubmit = (event: React.FormEvent<HTMLDivElement>) => {
         event.preventDefault();
         const errors = initialState;
@@ -57,7 +61,7 @@ export const Contact = () => {
         emailValidation(errors);
         messageValidation(errors);
 
-        if (Object.keys(errors).length > 0) {
+        if (areAnyErrors(errors)) {
             setFormErrors(errors);
             return;
         }
