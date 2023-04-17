@@ -1,3 +1,8 @@
+import PenRulerSolid from "@components/assets/icons/pen-ruler-solid.svg";
+import DisplaySolid from "@components/assets/icons/display-solid.svg";
+import PaletteSolid from "@components/assets/icons/palette-solid.svg";
+import MobileScreenSolid from "@components/assets/icons/mobile-screen-button-solid.svg";
+
 export const HeroCardConfig = {
     WelcomeText: 'Welcome',
     TypeWriterContext: [
@@ -104,3 +109,30 @@ export const KnowMeMoreConfig = {
           'responsibilities, I was also assigned to research and work in the DevOps sector of the project. I also ' +
           'learned what teamwork and leadership truly mean by offering my support and asking for help when needed.'
 };
+
+export const WhatIDoConfig = {
+    column_one: [
+        {
+            icon: PenRulerSolid.src,
+            title: 'Graphic Design',
+            content: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.',
+        },
+        {
+            icon: DisplaySolid.src,
+            title: 'Web Applications',
+            content: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.',
+        }
+    ],
+    column_two: [
+        {
+            icon: PaletteSolid.src,
+            title: 'UI/UX Design',
+            content: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.',
+        },
+        {
+            icon: MobileScreenSolid.src,
+            title: 'Mobile Applications',
+            content: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.',
+        }
+    ]
+}
