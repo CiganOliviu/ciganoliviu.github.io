@@ -135,4 +135,6 @@ export const WhatIDoConfig = {
             content: 'Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.',
         }
     ]
-}
+};
+
+export const getFormEndpoint = 'https://getform.io/f/ba6e5e42-6797-47b3-956f-2059fcca4494';

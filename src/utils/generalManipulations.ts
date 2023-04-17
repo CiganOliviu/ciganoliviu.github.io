@@ -18,4 +18,9 @@ export const triggerDownloadCV = () => {
         .catch((error) => {
             console.error(error);
         });
-}
+};
+
+export const isValidEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+};
