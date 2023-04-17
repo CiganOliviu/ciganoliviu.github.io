@@ -87,7 +87,7 @@ export const ResumeConfig = {
         ],
         column_two: [
             {
-                title: 'Python/Django',
+                title: 'Django',
                 percentage: 86
             },
             {

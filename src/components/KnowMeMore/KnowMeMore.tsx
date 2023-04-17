@@ -14,7 +14,7 @@ import { KnowMeMoreConfig } from "@components/utils/config";
 export const KnowMeMore = () => {
     return (
         <KnowMeMoreBox>
-            {TextContainer('About me', 'Know Me More')}
+            {TextContainer('AboutMe', 'Know Me More')}
             <KnowMeMoreInfoContainer>
                 <ContentColumn>
                     <SimpleText>

@@ -9,7 +9,7 @@ export const TextContainerBox = styled.div`
 export const BackTextBox = styled.h1`
     color: ${AppTheme.openGray};
     text-align: center;
-    font-size: 6rem;
+    font-size: 5rem;
     opacity: 0.2;
     z-index: 1;
     line-height: 20rem;
@@ -25,11 +25,15 @@ export const OverTextBox = styled.p`
     font-size: 2rem;
     font-weight: bold;
     position: absolute;
-    top: 57%;
+    top: 55%;
     left: 0;
     width: 100%;
     transform: translateY(-50%);
     text-align: center;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+      top: 57%;
+    }
 `;
 
 export const Separator = styled.div<{ paddingValue?: number }>`
