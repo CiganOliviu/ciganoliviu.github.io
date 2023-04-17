@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AppTheme } from "@components/utils/cssMedia";
+import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const ContentCardBox = styled.div`
     background: ${AppTheme.darkCardBackground};
@@ -11,8 +11,12 @@ export const ContentCardDate = styled.div`
     background: ${AppTheme.lightGreen};
     padding: 0.2rem;
     font-weight: bold;
-    width: 25%;
+    width: 40%;
     text-align: center;
+  
+    ${minWidthQuery(Breakpoints.large)} {
+        width: 25%;
+    }
 `
 
 export const ContentCardTitle = styled.h3``;
@@ -24,5 +28,6 @@ export const ContentCardSubTitle = styled.h4`
 export const ContentCardText = styled.p`
     color: ${AppTheme.cardContentGray};
     text-indent: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: bold;
 `
