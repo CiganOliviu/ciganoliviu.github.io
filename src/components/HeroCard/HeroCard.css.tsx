@@ -4,7 +4,7 @@ import HeroCardWallpaper from '../../assets/HeroCard.jpg';
 
 export const HeroCardBox = styled.div`
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${HeroCardWallpaper.src}) 
-    no-repeat center center fixed;
+    no-repeat center fixed;
     background-size: cover;
     position: relative;
     height: 100vh;
