@@ -1,5 +1,5 @@
 import {
-    HeroCardContactButton,
+    GeneralButton,
     HeroCardBox, HeroCardContinuityText,
     HeroCardContainer, HeroCardTypeAnimationText, HeroCardWelcomeText,
 } from "@components/components/HeroCard/HeroCard.css";
@@ -26,9 +26,9 @@ export const HeroCard = () => {
                 <HeroCardContinuityText>
                     {HeroCardConfig.ContinuityText}
                 </HeroCardContinuityText>
-                <HeroCardContactButton>
+                <GeneralButton>
                     {HeroCardConfig.ButtonText}
-                </HeroCardContactButton>
+                </GeneralButton>
             </HeroCardContainer>
         </HeroCardBox>
     )

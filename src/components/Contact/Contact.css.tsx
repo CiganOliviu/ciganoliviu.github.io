@@ -28,6 +28,8 @@ export const ContactContainerForm = styled.div`
     padding: 0 1rem 1rem 1rem;
 `;
 
+export const ContactForm = styled.form``;
+
 export const ContactEssentialFlex = styled.div`
     display: flex;
     justify-content: center;
@@ -65,6 +67,7 @@ export const ContactFormInput = styled.input<{ isTextArea?: boolean }>`
     background: ${AppTheme.darkerClose};
     color: ${AppTheme.white};
     font-weight: bold;
+    font-size: 1rem;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
   
@@ -80,6 +83,7 @@ export const ContactFormInput = styled.input<{ isTextArea?: boolean }>`
 
 export const ContactFormTextArea = styled.textarea`
     padding: 1rem;
+    font-size: 1rem;
     border: none;
     border-radius: 0.5rem;
     margin: 0.5rem 0 0.5rem 0;

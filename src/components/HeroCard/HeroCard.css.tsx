@@ -36,7 +36,7 @@ export const HeroCardContinuityText = styled.div`
     font-weight: bold;
 `;
 
-export const HeroCardContactButton = styled.div<{ whiteText?: boolean }>`
+export const GeneralButton = styled.button<{ whiteText?: boolean }>`
     color: ${(props) => props.whiteText ? AppTheme.white : AppTheme.lightGreen};
     background: transparent;
     border: solid ${AppTheme.lightGreen};
@@ -50,7 +50,8 @@ export const HeroCardContactButton = styled.div<{ whiteText?: boolean }>`
     cursor: pointer;
     transition: 0.5s ease;
     font-weight: bold;
-    
+    font-family: 'Ubuntu', sans-serif;
+
     :hover {
         background: ${AppTheme.lightGreen};
         color: ${AppTheme.white};

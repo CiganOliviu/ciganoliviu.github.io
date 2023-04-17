@@ -58,3 +58,8 @@ export const ResumeSkillsInfo = styled.div`
     font-weight: bold;
     justify-content: space-between;
 `;
+
+export const ResumeButtonContainer = styled.div`
+    display: flex;
+    justify-content: center;
+`;

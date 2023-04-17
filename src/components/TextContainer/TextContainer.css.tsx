@@ -13,7 +13,6 @@ export const BackTextBox = styled.h1`
     opacity: 0.2;
     z-index: 1;
     line-height: 20rem;
-
     
     ${minWidthQuery(Breakpoints.medium)} {
         font-size: 10rem;
@@ -34,10 +33,6 @@ export const OverTextBox = styled.p`
     ${minWidthQuery(Breakpoints.medium)} {
       top: 57%;
     }
-`;
-
-export const Separator = styled.div<{ paddingValue?: number }>`
-    padding: ${(props) => props.paddingValue || 0.3}rem;
 `;
 
 export const OverTextBorder = styled.div`

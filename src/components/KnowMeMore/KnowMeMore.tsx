@@ -5,11 +5,11 @@ import {
     KnowMeMoreInfoContainer,
     KnowMeMoreTable, KnowMeMoreTableHeader, KnowMeMoreTableHeaderBorder
 } from "@components/components/KnowMeMore/KnowMeMore.css";
-import { ContentColumn, SimpleText } from "@components/components/Resume/Resume.css";
+import { ContentColumn, Separator, SimpleText } from "@components/components/Resume/Resume.css";
 import { ContentCardText } from "@components/components/ContentCard/ContentCard.css";
-import { Separator } from "@components/components/TextContainer/TextContainer.css";
-import { HeroCardContactButton } from "@components/components/HeroCard/HeroCard.css";
+import { GeneralButton } from "@components/components/HeroCard/HeroCard.css";
 import { KnowMeMoreConfig } from "@components/utils/config";
+import { triggerDownloadCV } from "@components/utils/generalManipulations";
 
 export const KnowMeMore = () => {
     return (
@@ -46,9 +46,9 @@ export const KnowMeMore = () => {
                         <Separator />
                         <KnowMeMoreTableHeaderBorder />
 
-                        <HeroCardContactButton whiteText={true}>
+                        <GeneralButton whiteText={true} onClick={triggerDownloadCV}>
                             Download CV
-                        </HeroCardContactButton>
+                        </GeneralButton>
                     </KnowMeMoreTable>
                 </ContentColumn>
             </KnowMeMoreInfoContainer>

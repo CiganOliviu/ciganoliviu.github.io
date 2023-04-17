@@ -1,4 +1,3 @@
-import PenRulerSolid from '../../../src/assets/icons/pen-ruler-solid.svg';
 import {
     DoCardFlex,
     DoCardImageContainer, DoCardText,
