@@ -8,7 +8,7 @@ import {
 } from "@components/components/Contact/Contact.css";
 import { Separator, SimpleText } from "@components/components/Resume/Resume.css";
 import { GeneralButton } from "@components/components/HeroCard/HeroCard.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import { isValidEmail } from "@components/utils/generalManipulations";
 import { getFormEndpoint } from "@components/utils/config";
 
@@ -63,7 +63,7 @@ export const Contact = () => {
         }
     };
 
-    const handleInputChange = (event) => {
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
         const { name, value } = event.target;
 
         setFormValues({
