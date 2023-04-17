@@ -6,7 +6,19 @@ export const ContactContainerBox = styled.div`
     background: ${AppTheme.darkerOpen};
     
     ${SimpleText} {
-        padding: 0 0 0 5rem;
+        padding: 0 0 0 3.5rem;
+    }
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        ${SimpleText} {
+            padding: 0 0 0 7rem;
+        }
+    }
+
+    ${minWidthQuery(Breakpoints.large)} {
+        ${SimpleText} {
+          padding: 0 0 0 24rem;
+        }
     }
 `;
 
@@ -25,7 +37,6 @@ export const ContactEssentialFlex = styled.div`
     ${minWidthQuery(Breakpoints.medium)} {
         flex-direction: row;
     }
-  
 `;
 
 export const ContactFormText = styled.div`
