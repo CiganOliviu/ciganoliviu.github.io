@@ -19,7 +19,7 @@ export const Contact = () => {
                     <ContactFormInput type={'text'} placeholder={'email'} />
                 </ContactEssentialFlex>
                 <ContactFormText>
-                    <ContactFormTextArea type={'text'} placeholder={'message'} rows={6} />
+                    <ContactFormTextArea placeholder={'message'} rows={6} />
                     <Separator />
                     <HeroCardContactButton whiteText={true}>
                         Send message
