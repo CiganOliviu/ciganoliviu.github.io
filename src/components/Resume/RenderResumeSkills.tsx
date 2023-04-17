@@ -1,12 +1,13 @@
 import { ContentColumn, ResumeSkills } from "@components/components/Resume/Resume.css";
-import { ResumeConfig } from "@components/utils/config";
 import { RenderSkillsInformation } from "@components/components/Resume/RenderSkillsInformation";
+import { resumeConfigItemType } from "@components/utils/types";
 
-export const renderResumeSkills = () => {
+export const renderResumeSkills = (resumeConfigColumnOne: resumeConfigItemType[],
+                                   resumeConfigColumnTwo: resumeConfigItemType[]) => {
     return (
         <ResumeSkills>
             <ContentColumn>
-                {ResumeConfig.my_skills.column_one.map((skill) => {
+                {resumeConfigColumnOne.map((skill) => {
                     return (
                         <div key={skill.title}>
                             {RenderSkillsInformation(skill.title, skill.percentage)}
@@ -15,7 +16,7 @@ export const renderResumeSkills = () => {
                 })}
             </ContentColumn>
             <ContentColumn>
-                {ResumeConfig.my_skills.column_two.map((skill) => {
+                {resumeConfigColumnTwo.map((skill) => {
                     return (
                         <div key={skill.title}>
                             {RenderSkillsInformation(skill.title, skill.percentage)}

@@ -71,31 +71,51 @@ export const ResumeConfig = {
         }
     ],
     my_skills: {
-        column_one: [
-            {
-                title: 'Typescript',
-                percentage: 86
-            },
+        column_one_domain: [
             {
                 title: 'Backend',
-                percentage: 80
+                percentage: 84
             },
             {
                 title: 'Frontend',
                 percentage: 90
             },
-        ],
-        column_two: [
             {
-                title: 'Django',
-                percentage: 86
+                title: 'Architecture',
+                percentage: 80
             },
+        ],
+        column_two_domain: [
             {
                 title: 'Databases',
                 percentage: 90
             },
             {
                 title: 'Design',
+                percentage: 78
+            },
+            {
+                title: 'UI/UX',
+                percentage: 74
+            },
+        ],
+        column_one_specific: [
+            {
+                title: 'Typescript',
+                percentage: 92
+            },
+            {
+                title: 'React',
+                percentage: 86
+            },
+        ],
+        column_two_specific: [
+            {
+                title: 'Django',
+                percentage: 85
+            },
+            {
+                title: '.NET Core',
                 percentage: 78
             },
         ]
