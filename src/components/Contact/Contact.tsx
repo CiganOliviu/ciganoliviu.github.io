@@ -49,7 +49,7 @@ export const Contact = () => {
         }
     };
 
-    const handleSubmit = (event) => {
+    const handleSubmit = (event: React.FormEvent<HTMLDivElement>) => {
         event.preventDefault();
         const errors = initialState;
 
