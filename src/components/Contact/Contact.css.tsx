@@ -1,14 +1,19 @@
 import styled from "styled-components";
 import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
+import { SimpleText } from "@components/components/Resume/Resume.css";
 
 export const ContactContainerBox = styled.div`
     background: ${AppTheme.darkerOpen};
+    
+    ${SimpleText} {
+        padding: 0 0 0 5rem;
+    }
 `;
 
 export const ContactContainerForm = styled.div`
     flex: 0.8;  
     text-align: center;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
 `;
 
 export const ContactEssentialFlex = styled.div`

@@ -42,7 +42,11 @@ export const Separator = styled.div<{ paddingValue?: number }>`
 
 export const OverTextBorder = styled.div`
     background: ${AppTheme.lightGreen};
-    width: 6%;
+    width: 12%;
     height: 0.3rem;
     margin: 0 auto;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        width: 6%;
+    }
 `;
