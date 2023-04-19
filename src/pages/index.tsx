@@ -4,12 +4,15 @@ import { KnowMeMore } from "@components/components/KnowMeMore/KnowMeMore";
 import { WhatIDo } from "@components/components/WhatIDo/WhatIDo";
 import { Contact } from "@components/components/Contact/Contact";
 import { Footer } from "@components/components/Footer/Footer";
+import { useRef } from "react";
 
 export default function Home() {
+    const resultRef = useRef<HTMLDivElement>();
+
     return (
        <>
-            <HeroCard/>
-            <KnowMeMore />
+            <HeroCard nextSectionReference={resultRef} />
+            <KnowMeMore ref={resultRef}/>
             <WhatIDo />
             <Resume />
             <Contact />
