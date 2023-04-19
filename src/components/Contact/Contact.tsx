@@ -26,19 +26,19 @@ export const Contact = () => {
         return !(email.trim() === '' || !isValidEmail(email.trim()));
     };
 
-    const isMessageFieldValid = () => {
+    const isMessageFieldValid = (): boolean => {
         return !(message.trim() === '');
     };
 
-    const handleInputNameChange = (event) => {
+    const handleInputNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setName(event.target.value);
     };
 
-    const handleInputEmailChange = (event) => {
+    const handleInputEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(event.target.value);
     };
 
-    const handleInputMessageChange = (event) => {
+    const handleInputMessageChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
         setMessage(event.target.value);
     };
 
