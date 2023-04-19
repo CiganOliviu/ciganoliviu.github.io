@@ -11,7 +11,7 @@ export const ContentCardDate = styled.div`
     background: ${AppTheme.lightGreen};
     padding: 0.2rem;
     font-weight: bold;
-    width: 40%;
+    width: 50%;
     text-align: center;
   
     ${minWidthQuery(Breakpoints.large)} {
