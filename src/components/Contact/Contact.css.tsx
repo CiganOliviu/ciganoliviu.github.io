@@ -102,8 +102,3 @@ export const ContactFormTextArea = styled.textarea`
         width: 52%;
     }
 `;
-
-export const ContactFormErrorMessage = styled.div`
-    color: red;
-    font-weight: bold;
-`
