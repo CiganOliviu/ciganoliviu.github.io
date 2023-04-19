@@ -15,6 +15,7 @@ export const Resume = () => {
                 Domain Specific
             </SimpleText>
             {renderResumeSkills(ResumeConfig.my_skills.column_one_domain, ResumeConfig.my_skills.column_two_domain)}
+            <Separator paddingValue={2} />
             <SimpleText>
                 Technologies Specific
             </SimpleText>
