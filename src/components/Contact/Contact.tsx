@@ -83,8 +83,7 @@ export const Contact = () => {
 
     return (
         <ContactContainerBox onSubmit={handleSubmit}>
-            {TextContainer('Contact', 'Get in Touch')}
-            <SimpleText>Send me a note</SimpleText>
+            {TextContainer('Contact', 'Get in Touch')}g
             <ContactContainerForm>
                 <ContactForm action={getFormEndpoint} method={'POST'}>
                     <ContactEssentialFlex>
