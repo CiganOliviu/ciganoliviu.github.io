@@ -3,7 +3,6 @@ import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia
 
 export const ResumeBox = styled.div`
     background: ${AppTheme.darkerClose};
-    text-align: center;
 `;
 
 export const Separator = styled.div<{ paddingValue?: number }>`
@@ -15,7 +14,7 @@ export const ResumeContent = styled.div`
     justify-content: center;
     align-content: center;
     flex-direction: column;
-
+  
     ${minWidthQuery(Breakpoints.medium)} {
         flex-direction: row;
     }
@@ -32,6 +31,7 @@ export const ContentColumn = styled.div`
 
 export const SimpleText = styled.h2`
     padding: 1rem 0 2rem 2rem;
+    text-align: center;
 `;
 
 export const ResumeSkills = styled.div`
