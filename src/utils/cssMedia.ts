@@ -5,7 +5,8 @@ export const AppTheme = {
     darkerOpen: '#343a40',
     openGray: '#6c757d',
     darkCardBackground: '#111418',
-    cardContentGray: '#FFFFFF80'
+    cardContentGray: '#ffffff80',
+    scrollToTopColor: '#333',
 };
 
 export const Breakpoints = {

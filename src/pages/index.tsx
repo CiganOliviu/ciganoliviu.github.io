@@ -4,10 +4,12 @@ import { KnowMeMore } from "@components/components/KnowMeMore/KnowMeMore";
 import { WhatIDo } from "@components/components/WhatIDo/WhatIDo";
 import { Contact } from "@components/components/Contact/Contact";
 import { Footer } from "@components/components/Footer/Footer";
+import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 
 export default function Home() {
     return (
        <>
+            <ScrollTopButton />
             <HeroCard/>
             <KnowMeMore />
             <WhatIDo />
