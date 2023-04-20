@@ -44,6 +44,7 @@ export const Contact = () => {
 
     useEffect(() => {
         setCanSubmitForm(isNameFieldValid() && isEmailFieldValid() && isMessageFieldValid())
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [name, email, message]);
 
     return (
