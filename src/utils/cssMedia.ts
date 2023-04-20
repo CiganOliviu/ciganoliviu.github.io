@@ -18,10 +18,10 @@ export const Breakpoints = {
     fourK: '3840px'
 };
 
-export enum SCREEN_SIZES {
-    desktop = 1200,
-    tablet = 768,
-    mobile = 400
-}
+export const SCREEN_SIZES = {
+    desktop: 1200,
+    tablet: 768,
+    mobile: 400
+} as const;
 
 export const minWidthQuery = (breakpoint: string) => `@media screen and (min-width: ${breakpoint})`;
