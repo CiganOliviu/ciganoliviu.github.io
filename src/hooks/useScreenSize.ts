@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { SCREEN_SIZES } from '../Utils/cssMedia';
+import { SCREEN_SIZES } from "@components/utils/cssMedia";
 
 type resolutions = keyof typeof SCREEN_SIZES;
 
