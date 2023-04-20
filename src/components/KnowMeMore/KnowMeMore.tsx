@@ -12,6 +12,7 @@ import { KnowMeMoreConfig } from "@components/utils/config";
 import { triggerDownloadCV } from "@components/utils/generalManipulations";
 import { ForwardedRef, forwardRef } from "react";
 
+// eslint-disable-next-line react/display-name
 export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
     return (
         <KnowMeMoreBox ref={ref}>
