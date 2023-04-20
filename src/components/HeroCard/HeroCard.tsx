@@ -5,8 +5,13 @@ import {
 } from "@components/components/HeroCard/HeroCard.css";
 import TypeWriter from 'typewriter-effect';
 import { HeroCardConfig } from "@components/utils/config";
+import { FC } from "react";
 
-export const HeroCard = ({ nextSectionReference }) => {
+type HeroCardType = {
+    nextSectionReference: any
+};
+
+export const HeroCard: FC<HeroCardType> = ({ nextSectionReference }) => {
     const scrollToRef = () => {
         nextSectionReference?.current?.scrollIntoView({ behavior: "smooth" });
     }
