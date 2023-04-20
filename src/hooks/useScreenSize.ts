@@ -10,8 +10,12 @@ export const useGetScreenSize = () => {
         Object.entries(SCREEN_SIZES).some(([key, value]) => {
             if (value <= window.innerWidth) {
                 setResolution(key as resolutions);
+                return true;
             }
+            return false;
         });
+
+        return false;
     };
 
     useEffect(() => {

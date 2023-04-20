@@ -11,8 +11,6 @@ export default function Home() {
 
     const { isMobile } = useGetScreenSize();
 
-    console.log(isMobile());
-
     return (
        <>
            {!isMobile() && <ScrollTopButton/>}
