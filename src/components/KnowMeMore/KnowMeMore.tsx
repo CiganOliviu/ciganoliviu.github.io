@@ -10,10 +10,11 @@ import { ContentCardText } from "@components/components/ContentCard/ContentCard.
 import { GeneralButton } from "@components/components/HeroCard/HeroCard.css";
 import { KnowMeMoreConfig } from "@components/utils/config";
 import { triggerDownloadCV } from "@components/utils/generalManipulations";
+import { ForwardedRef, forwardRef } from "react";
 
-export const KnowMeMore = () => {
+export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
     return (
-        <KnowMeMoreBox>
+        <KnowMeMoreBox ref={ref}>
             {TextContainer('AboutMe', 'Know Me More')}
             <KnowMeMoreInfoContainer>
                 <ContentColumn>
@@ -54,4 +55,4 @@ export const KnowMeMore = () => {
             </KnowMeMoreInfoContainer>
         </KnowMeMoreBox>
     )
-}
+});
