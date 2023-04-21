@@ -34,7 +34,7 @@ export const SimpleText = styled.h2`
     padding-bottom: 2rem;
   
     ${minWidthQuery(Breakpoints.large)} {
-        padding: 1rem 0 2rem 2rem;
+        padding: 0 0 2rem 2rem;
     }
 `;
 

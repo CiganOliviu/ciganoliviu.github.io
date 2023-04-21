@@ -19,8 +19,7 @@ export const DoCardImageContainer = styled.div`
     }
   
     ${minWidthQuery(Breakpoints.large)} {
-        height: 30%;
-        width: 15%;
+        width: 25%;
     }
 `;
 
@@ -41,4 +40,6 @@ export const DoCardTextContent = styled.div`
 
 export const DoCardTextTitle = styled.h3``;
 
-export const DoCardText = styled.p``;
+export const DoCardText = styled.p`
+    line-height: 1.5rem;
+`;
