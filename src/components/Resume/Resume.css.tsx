@@ -30,8 +30,12 @@ export const ContentColumn = styled.div`
 `
 
 export const SimpleText = styled.h2`
-    padding: 1rem 0 2rem 2rem;
     text-align: center;
+    padding-bottom: 2rem;
+  
+    ${minWidthQuery(Breakpoints.large)} {
+        padding: 1rem 0 2rem 2rem;
+    }
 `;
 
 export const ResumeSkills = styled.div`

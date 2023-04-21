@@ -9,9 +9,14 @@ export const KnowMeMoreInfoContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     
     ${minWidthQuery(Breakpoints.medium)} {
         flex-direction: row;
+    }
+  
+    ${minWidthQuery(Breakpoints.large)} {
+        text-align: left;
     }
 `;
 
