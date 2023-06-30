@@ -5,29 +5,26 @@ import { ContentColumn, Separator } from "@components/components/Resume/Resume.c
 import { WhatIDoConfig } from "@components/utils/config";
 
 export const WhatIDo = () => {
+    const renderConfigByColumn = (array: {icon: any, title: string, content: string}[]) => {
+        return array.map((item) => {
+            return (
+                <div key={item.title}>
+                    {DoCard(item.icon, item.title, item.content)}
+                    <Separator />
+                </div>
+            )
+        })
+    }
+
     return (
         <WhatIDoBox>
             {TextContainer('Services', 'What I Do')}
             <WhatIDoCardFlexContainer>
                 <ContentColumn>
-                    {WhatIDoConfig.column_one.map((item) => {
-                        return (
-                            <>
-                                {DoCard(item.icon, item.title, item.content)}
-                                <Separator />
-                            </>
-                        )
-                    })}
+                    {renderConfigByColumn(WhatIDoConfig.column_one)}
                 </ContentColumn>
                 <ContentColumn>
-                    {WhatIDoConfig.column_two.map((item) => {
-                        return (
-                            <>
-                                {DoCard(item.icon, item.title, item.content)}
-                                <Separator />
-                            </>
-                        )
-                    })}
+                    {renderConfigByColumn(WhatIDoConfig.column_two)}
                 </ContentColumn>
             </WhatIDoCardFlexContainer>
         </WhatIDoBox>

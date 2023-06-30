@@ -14,12 +14,16 @@ export const DoCardImageContainer = styled.div`
     padding: 1rem;
 
     ${minWidthQuery(Breakpoints.medium)} {
-        height: 35%;
-        width: 35%;
+        height: 100%;
+        width: 100%;
     }
   
     ${minWidthQuery(Breakpoints.large)} {
         width: 25%;
+    }
+
+    ${minWidthQuery(Breakpoints.xxLarge)} {
+        width: 15%;
     }
 `;
 
