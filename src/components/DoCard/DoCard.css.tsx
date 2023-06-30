@@ -7,19 +7,24 @@ export const DoCardFlex = styled.div`
 
 export const DoCardImageContainer = styled.div`
     background: ${AppTheme.darkerClose};
-    height: 35%;
-    width: 25%;
+    height: 80%;
+    width: 80%;
     text-align: center;
     border-radius: 1rem;
     padding: 1rem;
-
+    
+    ${minWidthQuery(Breakpoints.small)} {
+      height: 35%;
+      width: 25%;
+    }
+  
     ${minWidthQuery(Breakpoints.medium)} {
         height: 100%;
         width: 100%;
     }
   
     ${minWidthQuery(Breakpoints.large)} {
-        width: 25%;
+        width: 45%;
     }
 
     ${minWidthQuery(Breakpoints.xxLarge)} {
