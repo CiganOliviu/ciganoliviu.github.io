@@ -14,8 +14,16 @@ export const ContentCardDate = styled.div`
     width: 50%;
     text-align: center;
   
+    ${minWidthQuery(Breakpoints.medium)} {
+        width: 70%;
+    }
+
     ${minWidthQuery(Breakpoints.large)} {
-        width: 25%;
+        width: 30%;
+    }
+
+    ${minWidthQuery(Breakpoints.xxLarge)} {
+        width: 20%;
     }
 `
 
