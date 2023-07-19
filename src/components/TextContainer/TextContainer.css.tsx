@@ -29,9 +29,24 @@ export const OverTextBox = styled.p`
     width: 100%;
     transform: translateY(-50%);
     text-align: center;
-
+    border-bottom: 0.3rem solid transparent;
+    
+    :after {
+        content: "";
+        display: block;
+        height: 1rem;
+        border-bottom: 0.3rem solid ${AppTheme.lightGreen};
+        width: 20%;
+        margin-left: 40%;
+      
+        ${minWidthQuery(Breakpoints.nano)} {
+            width: 10%;
+            margin-left: 45%;
+        }
+    }
+  
     ${minWidthQuery(Breakpoints.medium)} {
-      top: 57%;
+        top: 57%;
     }
 `;
 

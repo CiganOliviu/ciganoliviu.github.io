@@ -3,22 +3,24 @@ import { WhatIDoBox, WhatIDoCardFlexContainer } from "@components/components/Wha
 import { DoCard } from "@components/components/DoCard/DoCard";
 import { ContentColumn, Separator } from "@components/components/Resume/Resume.css";
 import { WhatIDoConfig } from "@components/utils/config";
+import { DoCardType } from "@components/utils/types";
+import { FC } from "react";
 
-export const WhatIDo = () => {
-    const renderConfigByColumn = (array: {icon: any, title: string, content: string}[]) => {
+export const WhatIDo: FC = () => {
+    const renderConfigByColumn = (array: DoCardType[]) => {
         return array.map((item) => {
             return (
                 <div key={item.title}>
-                    {DoCard(item.icon, item.title, item.content)}
+                    {DoCard({ context: item })}
                     <Separator />
                 </div>
             )
         })
-    }
+    };
 
     return (
         <WhatIDoBox>
-            {TextContainer('Services', 'What I Do')}
+            {TextContainer({backText: 'Services', overText: 'What I Do'})}
             <WhatIDoCardFlexContainer>
                 <ContentColumn>
                     {renderConfigByColumn(WhatIDoConfig.column_one)}

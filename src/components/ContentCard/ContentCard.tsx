@@ -1,22 +1,13 @@
 import {
     ContentCardBox,
     ContentCardDate,
-    ContentCardSubTitle, ContentCardText,
+    ContentCardSubTitle,
+    ContentCardText,
     ContentCardTitle
 } from "@components/components/ContentCard/ContentCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { FC } from "react";
-
-type ContentCardType = {
-    date: string,
-    title: string,
-    subtitle: string,
-    content: string,
-};
-
-type ContentCardContext = {
-    context: ContentCardType
-};
+import { ContentCardContext } from "@components/utils/types";
 
 export const ContentCard: FC<ContentCardContext> = ({context}) => {
     return (

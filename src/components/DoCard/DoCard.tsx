@@ -5,17 +5,19 @@ import {
     ImageContainer
 } from "@components/components/DoCard/DoCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
+import { DoCardContext } from "@components/utils/types";
+import { FC } from "react";
 
-export const DoCard = (icon: string, title: string, content: string) => {
+export const DoCard: FC<DoCardContext> = ({ context }) => {
     return (
         <DoCardFlex>
             <DoCardImageContainer>
-                <ImageContainer src={icon} alt={title} />
+                <ImageContainer src={context.icon} alt={context.title} />
             </DoCardImageContainer>
             <DoCardTextContent>
-                <DoCardTextTitle>{title}</DoCardTextTitle>
+                <DoCardTextTitle>{context.title}</DoCardTextTitle>
                 <Separator />
-                <DoCardText>{content}</DoCardText>
+                <DoCardText>{context.content}</DoCardText>
             </DoCardTextContent>
         </DoCardFlex>
     )

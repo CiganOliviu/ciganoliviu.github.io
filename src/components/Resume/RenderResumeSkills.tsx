@@ -1,16 +1,17 @@
 import { ContentColumn, ResumeSkills } from "@components/components/Resume/Resume.css";
 import { RenderSkillsInformation } from "@components/components/Resume/RenderSkillsInformation";
-import { resumeConfigItemType } from "@components/utils/types";
+import { RenderResumeSkillsType } from "@components/utils/types";
+import { FC } from "react";
 
-export const renderResumeSkills = (resumeConfigColumnOne: resumeConfigItemType[],
-                                   resumeConfigColumnTwo: resumeConfigItemType[]) => {
+export const renderResumeSkills: FC<RenderResumeSkillsType> = ({ resumeConfigColumnOne,
+                                                               resumeConfigColumnTwo }) => {
     return (
         <ResumeSkills>
             <ContentColumn>
                 {resumeConfigColumnOne.map((skill) => {
                     return (
                         <div key={skill.title}>
-                            {RenderSkillsInformation(skill.title, skill.percentage)}
+                            {RenderSkillsInformation({title: skill.title, percentage: skill.percentage})}
                         </div>
                     )
                 })}
@@ -19,7 +20,7 @@ export const renderResumeSkills = (resumeConfigColumnOne: resumeConfigItemType[]
                 {resumeConfigColumnTwo.map((skill) => {
                     return (
                         <div key={skill.title}>
-                            {RenderSkillsInformation(skill.title, skill.percentage)}
+                            {RenderSkillsInformation({title: skill.title, percentage: skill.percentage})}
                         </div>
                     )
                 })}
