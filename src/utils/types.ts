@@ -28,7 +28,12 @@ export type HeroCardType = {
     nextSectionReference: any
 };
 
-export type RenderResumeSkills = {
+export type RenderResumeSkillsType = {
     resumeConfigColumnOne: resumeConfigItemType[],
     resumeConfigColumnTwo: resumeConfigItemType[]
+};
+
+export type RenderSkillsInformationType = {
+    title: string,
+    percentage: number
 };
