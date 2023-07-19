@@ -14,8 +14,6 @@ export const TextContainer = (backText: string, overText: string) => {
                 </BackTextBox>
                 <OverTextBox>
                     {overText}
-                    <Separator />
-                    <OverTextBorder />
                 </OverTextBox>
             </TextContainerBox>
         </>
