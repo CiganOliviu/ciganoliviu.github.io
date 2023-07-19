@@ -4,8 +4,9 @@ import { DoCard } from "@components/components/DoCard/DoCard";
 import { ContentColumn, Separator } from "@components/components/Resume/Resume.css";
 import { WhatIDoConfig } from "@components/utils/config";
 import { DoCardType } from "@components/utils/types";
+import { FC } from "react";
 
-export const WhatIDo = () => {
+export const WhatIDo: FC = () => {
     const renderConfigByColumn = (array: DoCardType[]) => {
         return array.map((item) => {
             return (

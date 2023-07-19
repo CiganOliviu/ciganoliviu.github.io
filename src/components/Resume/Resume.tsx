@@ -14,12 +14,14 @@ export const Resume = () => {
             <SimpleText>
                 Domain Specific
             </SimpleText>
-            {renderResumeSkills(ResumeConfig.my_skills.column_one_domain, ResumeConfig.my_skills.column_two_domain)}
+            {renderResumeSkills({resumeConfigColumnOne: ResumeConfig.my_skills.column_one_domain,
+                resumeConfigColumnTwo: ResumeConfig.my_skills.column_two_domain})}
             <Separator paddingValue={2} />
             <SimpleText>
                 Technologies Specific
             </SimpleText>
-            {renderResumeSkills(ResumeConfig.my_skills.column_one_specific, ResumeConfig.my_skills.column_two_specific)}
+            {renderResumeSkills({resumeConfigColumnOne: ResumeConfig.my_skills.column_one_specific,
+                resumeConfigColumnTwo: ResumeConfig.my_skills.column_two_specific})}
             <ResumeButtonContainer>
                 <GeneralButton onClick={triggerDownloadCV}>
                     Download CV

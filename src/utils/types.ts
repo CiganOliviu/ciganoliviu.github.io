@@ -23,3 +23,12 @@ export type DoCardType = {
 export type DoCardContext = {
     context: DoCardType
 };
+
+export type HeroCardType = {
+    nextSectionReference: any
+};
+
+export type RenderResumeSkills = {
+    resumeConfigColumnOne: resumeConfigItemType[],
+    resumeConfigColumnTwo: resumeConfigItemType[]
+};
