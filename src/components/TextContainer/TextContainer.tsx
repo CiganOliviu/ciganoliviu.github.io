@@ -1,11 +1,8 @@
-import {
-    BackTextBox,
-    OverTextBorder, OverTextBox,
-    TextContainerBox
-} from "@components/components/TextContainer/TextContainer.css";
-import { Separator } from "@components/components/Resume/Resume.css";
+import { BackTextBox, OverTextBox, TextContainerBox } from "@components/components/TextContainer/TextContainer.css";
+import { FC } from "react";
+import { TextContainerType } from "@components/utils/types";
 
-export const TextContainer = (backText: string, overText: string) => {
+export const TextContainer: FC<TextContainerType> = ({backText, overText }) => {
     return (
         <>
             <TextContainerBox>

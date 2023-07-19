@@ -1,15 +1,15 @@
 import {
     GeneralButton,
-    HeroCardBox, HeroCardContinuityText,
-    HeroCardContainer, HeroCardTypeAnimationText, HeroCardWelcomeText,
+    HeroCardBox,
+    HeroCardContainer,
+    HeroCardContinuityText,
+    HeroCardTypeAnimationText,
+    HeroCardWelcomeText,
 } from "@components/components/HeroCard/HeroCard.css";
 import TypeWriter from 'typewriter-effect';
 import { HeroCardConfig } from "@components/utils/config";
 import { FC } from "react";
-
-type HeroCardType = {
-    nextSectionReference: any
-};
+import { HeroCardType } from "@components/utils/types";
 
 export const HeroCard: FC<HeroCardType> = ({ nextSectionReference }) => {
     const scrollToRef = () => {
