@@ -9,7 +9,7 @@ import { ResumeConfig } from "@components/utils/config";
 export const Resume = () => {
     return (
         <ResumeBox>
-            {TextContainer('Summary', 'Resume')}
+            {TextContainer({backText: 'Summary', overText: 'Resume'})}
             {RenderResumeContent()}
             <SimpleText>
                 Domain Specific

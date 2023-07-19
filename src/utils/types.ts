@@ -37,3 +37,8 @@ export type RenderSkillsInformationType = {
     title: string,
     percentage: number
 };
+
+export type TextContainerType = {
+    backText: string,
+    overText: string
+};

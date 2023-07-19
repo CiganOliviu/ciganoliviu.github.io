@@ -20,7 +20,7 @@ export const WhatIDo: FC = () => {
 
     return (
         <WhatIDoBox>
-            {TextContainer('Services', 'What I Do')}
+            {TextContainer({backText: 'Services', overText: 'What I Do'})}
             <WhatIDoCardFlexContainer>
                 <ContentColumn>
                     {renderConfigByColumn(WhatIDoConfig.column_one)}

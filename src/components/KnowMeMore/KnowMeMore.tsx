@@ -16,7 +16,7 @@ import { ForwardedRef, forwardRef } from "react";
 export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
     return (
         <KnowMeMoreBox ref={ref}>
-            {TextContainer('AboutMe', 'Know Me More')}
+            {TextContainer({backText: 'AboutMe', overText: 'Know Me More'})}
             <KnowMeMoreInfoContainer>
                 <ContentColumn>
                     <SimpleText>
