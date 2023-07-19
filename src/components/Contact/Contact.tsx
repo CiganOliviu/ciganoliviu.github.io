@@ -2,13 +2,15 @@ import { TextContainer } from "@components/components/TextContainer/TextContaine
 import {
     ContactContainerBox,
     ContactContainerForm,
-    ContactEssentialFlex, ContactForm,
+    ContactEssentialFlex,
+    ContactForm,
     ContactFormInput,
-    ContactFormText, ContactFormTextArea
+    ContactFormText,
+    ContactFormTextArea
 } from "@components/components/Contact/Contact.css";
-import { Separator, SimpleText } from "@components/components/Resume/Resume.css";
+import { Separator } from "@components/components/Resume/Resume.css";
 import { GeneralButton } from "@components/components/HeroCard/HeroCard.css";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { isValidEmail } from "@components/utils/generalManipulations";
 import { getFormEndpoint } from "@components/utils/config";
 
