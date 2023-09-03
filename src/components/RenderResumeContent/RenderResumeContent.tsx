@@ -1,9 +1,4 @@
-import {
-    ResumeContent,
-    ContentColumn,
-    SimpleText,
-    Separator
-} from "@components/components/Resume/Resume.css";
+import { ContentColumn, ResumeContent, Separator, SimpleText } from "@components/components/Resume/Resume.css";
 import { ResumeConfig } from "@components/utils/config";
 import { ContentCard } from "@components/components/ContentCard/ContentCard";
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AppTheme } from "@components/utils/cssMedia";
+import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 import HeroCardWallpaper from '../../assets/HeroCard.jpg';
 
 export const HeroCardBox = styled.div`
@@ -26,8 +26,12 @@ export const HeroCardWelcomeText = styled.div`
 
 export const HeroCardTypeAnimationText = styled.div`
     margin-top: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        font-size: 4rem;
+    }
 `
 
 export const HeroCardContinuityText = styled.div`

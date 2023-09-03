@@ -10,7 +10,7 @@ export const DoCardImageContainer = styled.div`
     height: 80%;
     width: 80%;
     text-align: center;
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     padding: 1rem;
     
     ${minWidthQuery(Breakpoints.small)} {
@@ -31,18 +31,22 @@ export const DoCardImageContainer = styled.div`
 `;
 
 export const ImageContainer = styled.img`
-    width: 100%;
-    height: 100%;
+    width: 3rem;
+    height: 3rem;
     filter: invert(71%) sepia(16%) saturate(2855%) hue-rotate(109deg) brightness(94%) contrast(75%);
 
     ${minWidthQuery(Breakpoints.medium)} {
-      width: 70%;
-      height: 70%;
+        width: 3rem;
+        height: 3rem;
     }
 `;
 
 export const DoCardTextContent = styled.div`
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 1rem 2rem 1.5rem;
+    
+    ${minWidthQuery(Breakpoints.medium)} {
+        padding: 0 2rem 2rem 2rem;
+    }
 `;
 
 export const DoCardTextTitle = styled.h3``;
