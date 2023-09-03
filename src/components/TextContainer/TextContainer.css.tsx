@@ -12,10 +12,11 @@ export const BackTextBox = styled.h1`
     font-size: 5rem;
     opacity: 0.2;
     z-index: 1;
-    line-height: 20rem;
+    line-height: 15rem;
     
     ${minWidthQuery(Breakpoints.medium)} {
         font-size: 10rem;
+        line-height: 20rem;
     }
 `;
 
@@ -47,16 +48,5 @@ export const OverTextBox = styled.p`
   
     ${minWidthQuery(Breakpoints.medium)} {
         top: 57%;
-    }
-`;
-
-export const OverTextBorder = styled.div`
-    background: ${AppTheme.lightGreen};
-    width: 12%;
-    height: 0.3rem;
-    margin: 0 auto;
-
-    ${minWidthQuery(Breakpoints.medium)} {
-        width: 6%;
     }
 `;

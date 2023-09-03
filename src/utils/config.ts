@@ -149,7 +149,7 @@ export const ResumeConfig = {
 };
 
 export const KnowMeMoreConfig = {
-      content: 'I am a dedicated student at one of the top four faculties in my country, pursuing a degree in ' +
+      content: 'I am a dedicated student at one of the top four faculties in Romania, pursuing a degree in ' +
           'Software Engineering. In my first year of studies, I was fortunate to secure an internship in the field, ' +
           'where I gained valuable hands-on experience and made important professional connections. Following the ' +
           'successful completion of my internship, I was offered a position and have been working in the field ever ' +
