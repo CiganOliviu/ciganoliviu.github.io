@@ -1,4 +1,4 @@
-import PenRulerSolid from "@components/assets/icons/pen-ruler-solid.svg";
+import BezierCurveSolid from "@components/assets/icons/bezier-curve-solid.svg";
 import DisplaySolid from "@components/assets/icons/display-solid.svg";
 import PaletteSolid from "@components/assets/icons/palette-solid.svg";
 import MobileScreenSolid from "@components/assets/icons/mobile-screen-button-solid.svg";
@@ -161,10 +161,11 @@ export const KnowMeMoreConfig = {
 export const WhatIDoConfig = {
     column_one: [
         {
-            icon: PenRulerSolid.src,
-            title: 'Graphic Design',
-            content: 'I possess extensive knowledge and experience in Graphic Design, which enables me to create ' +
-                'visually compelling designs that convey information and engage users.',
+            icon: BezierCurveSolid.src,
+            title: 'Backend Services',
+            content: 'I specialize in backend systems, where I excel at designing, developing, and optimizing the ' +
+                'technology that powers applications. With a focus on scalability and security, ' +
+                'I ensure that these systems are reliable and efficient.',
         },
         {
             icon: DisplaySolid.src,
