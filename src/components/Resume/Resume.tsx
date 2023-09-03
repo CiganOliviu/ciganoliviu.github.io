@@ -1,5 +1,5 @@
 import { ResumeBox, ResumeButtonContainer, Separator, SimpleText } from "@components/components/Resume/Resume.css";
-import { renderResumeSkills } from "@components/components/RenderResumeSkills/RenderResumeSkills.tsx/RenderResumeSkills";
+import { renderResumeSkills } from "@components/components/RenderResumeSkills/RenderResumeSkills";
 import { TextContainer } from "@components/components/TextContainer/TextContainer";
 import { GeneralButton } from "@components/components/HeroCard/HeroCard.css";
 import { triggerDownloadCV } from "@components/utils/generalManipulations";

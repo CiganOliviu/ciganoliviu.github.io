@@ -1,5 +1,5 @@
 import { ContentColumn, ResumeSkills } from "@components/components/Resume/Resume.css";
-import { RenderSkillsInformation } from "@components/components/RenderSkillsInformation/RenderSkillsInformation.tsx/RenderSkillsInformation";
+import { RenderSkillsInformation } from "@components/components/RenderSkillsInformation/RenderSkillsInformation";
 import { RenderResumeSkillsType } from "@components/utils/types";
 import { FC } from "react";
 

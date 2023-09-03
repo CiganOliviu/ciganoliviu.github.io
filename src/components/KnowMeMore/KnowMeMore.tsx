@@ -10,7 +10,8 @@ import { ContentCardText } from "@components/components/ContentCard/ContentCard.
 import { GeneralButton } from "@components/components/HeroCard/HeroCard.css";
 import { KnowMeMoreConfig } from "@components/utils/config";
 import { triggerDownloadCV } from "@components/utils/generalManipulations";
-import { ForwardedRef, forwardRef } from "react";
+import React, { ForwardedRef, forwardRef } from "react";
+import { SocialLinks } from "@components/components/SocialLinks/SocialLinks";
 
 // eslint-disable-next-line react/display-name
 export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
@@ -47,6 +48,9 @@ export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
                         </KnowMeMoreTableHeader>
                         <Separator />
                         <KnowMeMoreTableHeaderBorder />
+
+                        <Separator paddingValue={1} />
+                        <SocialLinks />
 
                         <GeneralButton whiteText={true} onClick={triggerDownloadCV}>
                             Download CV
