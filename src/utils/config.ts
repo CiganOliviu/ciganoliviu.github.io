@@ -190,4 +190,14 @@ export const WhatIDoConfig = {
     ]
 };
 
+export const ExternalSocialLinksConfig = {
+    links: {
+        linkedin: 'https://www.linkedin.com/in/oliviu-david-c-72489015b/',
+        github: 'https://github.com/CiganOliviu',
+        whatsapp: 'https://www.whatsapp.com',
+    },
+    target: '_blank',
+    rel: 'noopener noreferrer'
+};
+
 export const getFormEndpoint = 'https://getform.io/f/ba6e5e42-6797-47b3-956f-2059fcca4494';
