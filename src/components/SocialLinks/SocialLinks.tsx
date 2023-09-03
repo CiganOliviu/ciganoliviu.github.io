@@ -6,7 +6,7 @@ export const SocialLinks: FC = () => {
     return (
         <SocialLinksContainer>
             {
-                ExternalSocialLinksConfig.links.map((item, index) => {
+                ExternalSocialLinksConfig.links.map((item) => {
                     return (
                         <SocialLink href={item.url}
                                     target={ExternalSocialLinksConfig.target}
