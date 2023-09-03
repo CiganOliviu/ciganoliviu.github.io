@@ -2,6 +2,9 @@ import BezierCurveSolid from "@components/assets/icons/bezier-curve-solid.svg";
 import DisplaySolid from "@components/assets/icons/display-solid.svg";
 import PaletteSolid from "@components/assets/icons/palette-solid.svg";
 import MobileScreenSolid from "@components/assets/icons/mobile-screen-button-solid.svg";
+import Linkedin from "@components/assets/icons/linkedin.svg";
+import Github from "@components/assets/icons/github.svg";
+import Whatsapp from "@components/assets/icons/whatsapp.svg";
 
 export const HeroCardConfig = {
     WelcomeText: 'Welcome',
@@ -191,11 +194,20 @@ export const WhatIDoConfig = {
 };
 
 export const ExternalSocialLinksConfig = {
-    links: {
-        linkedin: 'https://www.linkedin.com/in/oliviu-david-c-72489015b/',
-        github: 'https://github.com/CiganOliviu',
-        whatsapp: 'https://www.whatsapp.com',
-    },
+    links: [
+        {
+            url: 'https://www.linkedin.com/in/oliviu-david-c-72489015b/',
+            iconSource: Linkedin.src as string
+        },
+        {
+            url: 'https://github.com/CiganOliviu',
+            iconSource: Github.src as string
+        },
+        {
+            url: 'https://www.whatsapp.com',
+            iconSource: Whatsapp.src as string
+        }
+    ],
     target: '_blank',
     rel: 'noopener noreferrer'
 };
