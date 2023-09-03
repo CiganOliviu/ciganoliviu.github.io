@@ -14,9 +14,9 @@ export default function Home() {
 
     return (
        <>
-           {!isMobile() && <ScrollTopButton/>}
+           {!isMobile() && <ScrollTopButton />}
             <HeroCard nextSectionReference={resultRef} />
-            <KnowMeMore ref={resultRef}/>
+            <KnowMeMore ref={resultRef} />
             <WhatIDo />
             <Resume />
             <Contact />
