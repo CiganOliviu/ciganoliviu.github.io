@@ -3,15 +3,9 @@ import Linkedin from "@components/assets/icons/linkedin.svg";
 import Github from "@components/assets/icons/github.svg";
 import Whatsapp from "@components/assets/icons/whatsapp.svg";
 import { SocialLink, SocialLinkImage, SocialLinksContainer } from "@components/components/SocialLinks/SocialLinks.css";
-import Link from "next/link";
 import { ExternalSocialLinksConfig } from "@components/utils/config";
 
 export const SocialLinks: FC = () => {
-
-    const redirectToExternalLink = (redirectUrl: string) => {
-        window.open(redirectUrl, '_blank');
-    }
-
     return (
         <SocialLinksContainer>
             <SocialLink href={ExternalSocialLinksConfig.links.linkedin}
