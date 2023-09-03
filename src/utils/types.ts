@@ -7,7 +7,7 @@ type ContentCardType = {
     date: string,
     title: string,
     subtitle: string,
-    content: string,
+    htmlField: { __html: string | TrustedHTML },
 };
 
 export type ContentCardContext = {
