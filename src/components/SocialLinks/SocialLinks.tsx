@@ -11,6 +11,7 @@ export const SocialLinks: FC = () => {
                         <SocialLink href={item.url}
                                     target={ExternalSocialLinksConfig.target}
                                     rel={ExternalSocialLinksConfig.rel}
+                                    key={item.url}
                         >
                             <SocialLinkImage src={item.iconSource} />
                         </SocialLink>
