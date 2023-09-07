@@ -22,7 +22,7 @@ export const ContentCard: FC<ContentCardContext> = ({context}) => {
             <Separator paddingValue={0.6} />
             <ContentCardSubTitle>{context.subtitle}</ContentCardSubTitle>
             <Separator paddingValue={0.8} />
-            <ContentCardText isMobile={isMobileResolution}>{context.content}</ContentCardText>
+            <ContentCardText isMobile={isMobileResolution} dangerouslySetInnerHTML={context.htmlField} />
         </ContentCardBox>
     )
 }

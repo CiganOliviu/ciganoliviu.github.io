@@ -13,6 +13,7 @@ export const ContentCardDate = styled.div`
     font-weight: bold;
     width: 50%;
     text-align: center;
+    border-radius: 1rem;
   
     ${minWidthQuery(Breakpoints.medium)} {
         width: 70%;
@@ -33,7 +34,7 @@ export const ContentCardSubTitle = styled.h4`
     color: ${AppTheme.lightGreen};
 `;
 
-export const ContentCardText = styled.p<{ isMobile?: boolean }>`
+export const ContentCardText = styled.div<{ isMobile?: boolean }>`
     color: ${AppTheme.cardContentGray};
     text-indent: 1rem;
     line-height: 1.8rem;
