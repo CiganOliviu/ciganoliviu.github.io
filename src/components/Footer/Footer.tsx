@@ -10,7 +10,7 @@ export const Footer: FC = () => {
         <FooterContainerBox>
             <SocialLinks />
             <Separator paddingValue={1} />
-            <p>Copyright © 2023 <HighLight>Cigan Oliviu</HighLight>. All Rights Reserved.</p>
+            <p>Copyright © {new Date().getFullYear()} <HighLight>Cigan Oliviu</HighLight>. All Rights Reserved.</p>
         </FooterContainerBox>
     )
 }
