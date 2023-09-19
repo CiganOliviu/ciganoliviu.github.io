@@ -10,6 +10,7 @@ import TypeWriter from 'typewriter-effect';
 import { HeroCardConfig } from "@components/utils/config";
 import { FC } from "react";
 import { HeroCardType } from "@components/utils/types";
+import { Logo } from "@components/components/Logo/Logo";
 
 export const HeroCard: FC<HeroCardType> = ({ nextSectionReference }) => {
     const scrollToRef = () => {
@@ -18,6 +19,7 @@ export const HeroCard: FC<HeroCardType> = ({ nextSectionReference }) => {
 
     return (
         <HeroCardBox>
+            <Logo />
             <HeroCardContainer>
                 <HeroCardWelcomeText>
                     {HeroCardConfig.WelcomeText}

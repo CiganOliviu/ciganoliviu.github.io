@@ -7,6 +7,7 @@ import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { useRef } from "react";
+import { Logo } from "@components/components/Logo/Logo";
 
 export default function Home() {
     const { isMobile } = useGetScreenSize();
