@@ -3,6 +3,7 @@ import { HighLight } from "@components/components/KnowMeMore/KnowMeMore.css";
 import { FC } from "react";
 import { SocialLinks } from "@components/components/SocialLinks/SocialLinks";
 import { Separator } from "@components/components/Resume/Resume.css";
+import { Logo } from "@components/components/Logo/Logo";
 
 
 export const Footer: FC = () => {

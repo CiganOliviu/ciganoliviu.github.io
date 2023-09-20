@@ -5,7 +5,7 @@ import { ImageWrapper } from "@components/components/Logo/Logo.css";
 export const Logo = () => {
     return (
         <ImageWrapper>
-            <Image src={RavenCodLogoWithMetadata} alt="Raven COD Logo" width={150} />
+            <Image src={RavenCodLogoWithMetadata} alt="Raven COD Logo" width={135} />
         </ImageWrapper>
     )
 }
