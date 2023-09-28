@@ -217,6 +217,36 @@ export const WhatIDoConfig = {
     ]
 };
 
+export const ProjectsConfig = [
+    {
+        thumbnail: '',
+        title: 'StreamSnap',
+        content: 'This amazing bus simulator will allow you to transport passengers across three different ' +
+            'cities (Rio de Janeiro, Munich and Los Angeles) using various bus models with realistic physics' +
+            ' and graphics. Play this bus simulator in single-player with career and freeride modes or immerse' +
+            ' yourself with friends in the online multiplayer mode. Bus Driving  Sim 22 is the defining bus simulator' +
+            ' for PC.'
+    },
+    {
+        thumbnail: '',
+        title: 'Systems Identification',
+        content: 'This amazing bus simulator will allow you to transport passengers across three different ' +
+            'cities (Rio de Janeiro, Munich and Los Angeles) using various bus models with realistic physics' +
+            ' and graphics. Play this bus simulator in single-player with career and freeride modes or immerse' +
+            ' yourself with friends in the online multiplayer mode. Bus Driving  Sim 22 is the defining bus simulator' +
+            ' for PC.'
+    },
+    {
+        thumbnail: '',
+        title: 'Brain Tumor Detection System',
+        content: 'This amazing bus simulator will allow you to transport passengers across three different ' +
+            'cities (Rio de Janeiro, Munich and Los Angeles) using various bus models with realistic physics' +
+            ' and graphics. Play this bus simulator in single-player with career and freeride modes or immerse' +
+            ' yourself with friends in the online multiplayer mode. Bus Driving  Sim 22 is the defining bus simulator' +
+            ' for PC.'
+    },
+];
+
 export const ExternalSocialLinksConfig = {
     links: [
         {
