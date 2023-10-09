@@ -9,14 +9,15 @@ import { Separator } from "@components/components/Resume/Resume.css";
 import { GeneralButton } from "@components/components/HeroCard/HeroCard.css";
 
 type ProjectCardType = {
+    thumbnail: string;
     title: string;
     content: string;
 };
 
-export const ProjectCard: FC<ProjectCardType> = ({ title, content }) => {
+export const ProjectCard: FC<ProjectCardType> = ({ title, content, thumbnail  }) => {
     return (
         <ProjectCardWrapper>
-            <ProjectCardThumbnail src={'https://imagizer.imageshack.com/img922/4489/wlMMgs.jpg'} />
+            <ProjectCardThumbnail src={thumbnail} />
             <ProjectCardMetadataWrapper>
                 <Separator paddingValue={1} />
                 <ProjectCardTitle>{title}</ProjectCardTitle>

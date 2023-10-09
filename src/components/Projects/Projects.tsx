@@ -11,8 +11,11 @@ export const Projects: FC = () => {
             <ProjectsFlexWrapper>
                 {ProjectsConfig.map((project) => {
                     return (
-                        <ProjectColumn>
-                            <ProjectCard title={project.title} content={project.content} />
+                        <ProjectColumn key={project.title}>
+                            <ProjectCard title={project.title}
+                                         content={project.content}
+                                         thumbnail={project.thumbnail}
+                            />
                         </ProjectColumn>
                     )
                 })}

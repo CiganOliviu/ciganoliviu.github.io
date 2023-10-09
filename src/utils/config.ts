@@ -5,6 +5,9 @@ import MobileScreenSolid from "@components/assets/icons/mobile-screen-button-sol
 import Linkedin from "@components/assets/icons/linkedin.svg";
 import Github from "@components/assets/icons/github.svg";
 import Whatsapp from "@components/assets/icons/whatsapp.svg";
+import BrainTumorDetection from '../assets/BrainTumorDetection.jpg';
+import VodBackground from '../assets/VodBackground.png';
+import SignalProcessing from '../assets/SignalProcessing.jpg';
 
 export const HeroCardConfig = {
     WelcomeText: 'Welcome',
@@ -219,7 +222,7 @@ export const WhatIDoConfig = {
 
 export const ProjectsConfig = [
     {
-        thumbnail: '',
+        thumbnail: VodBackground.src,
         title: 'StreamSnap',
         content: 'This amazing bus simulator will allow you to transport passengers across three different ' +
             'cities (Rio de Janeiro, Munich and Los Angeles) using various bus models with realistic physics' +
@@ -228,7 +231,7 @@ export const ProjectsConfig = [
             ' for PC.'
     },
     {
-        thumbnail: '',
+        thumbnail: SignalProcessing.src,
         title: 'Systems Identification',
         content: 'This amazing bus simulator will allow you to transport passengers across three different ' +
             'cities (Rio de Janeiro, Munich and Los Angeles) using various bus models with realistic physics' +
@@ -237,7 +240,7 @@ export const ProjectsConfig = [
             ' for PC.'
     },
     {
-        thumbnail: '',
+        thumbnail: BrainTumorDetection.src,
         title: 'Brain Tumor Detection System',
         content: 'This amazing bus simulator will allow you to transport passengers across three different ' +
             'cities (Rio de Janeiro, Munich and Los Angeles) using various bus models with realistic physics' +
