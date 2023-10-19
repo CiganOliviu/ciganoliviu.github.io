@@ -1,8 +1,8 @@
 import { saveAs } from 'file-saver';
 
 export const triggerDownloadCV = () => {
-    const fileUrl = 'CiganOliviuDavidCV.pdf';
-    const fileName = 'CiganOliviuDavidCV.pdf';
+    const fileUrl = 'CiganOliviuDavid-CV.pdf';
+    const fileName = 'CiganOliviuDavid-CV.pdf';
 
     fetch(fileUrl)
         .then((response) => {
