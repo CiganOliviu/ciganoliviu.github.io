@@ -40,7 +40,7 @@ export const HeroCardContinuityText = styled.div`
     font-weight: bold;
 `;
 
-export const GeneralButton = styled.button<{ whiteText?: boolean }>`
+export const GeneralButton = styled.a<{ whiteText?: boolean }>`
     color: ${(props) => props.whiteText ? AppTheme.white : AppTheme.lightGreen};
     background: transparent;
     border: solid ${AppTheme.lightGreen};

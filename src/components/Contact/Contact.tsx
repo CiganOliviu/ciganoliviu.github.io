@@ -102,6 +102,7 @@ export const Contact = () => {
                         </GeneralButton>
                     </ContactFormText>
                 </ContactForm>
+                <Separator paddingValue={1.5} />
             </ContactContainerForm>
         </ContactContainerBox>
     )

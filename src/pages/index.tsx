@@ -7,6 +7,7 @@ import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { useRef } from "react";
+import { Projects } from "@components/components/Projects/Projects";
 
 export default function Home() {
     const { isMobile } = useGetScreenSize();
@@ -19,6 +20,7 @@ export default function Home() {
             <KnowMeMore ref={resultRef} />
             <WhatIDo />
             <Resume />
+            <Projects />
             <Contact />
             <Footer />
        </>
