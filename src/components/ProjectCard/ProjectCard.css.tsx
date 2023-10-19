@@ -26,5 +26,6 @@ export const ProjectCardContent = styled.p`
     color: ${AppTheme.cardContentGray};
     text-indent: 1rem;
     line-height: 2rem;
+    padding: .6rem;
     font-weight: bold;
 `;

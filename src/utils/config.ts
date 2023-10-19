@@ -223,30 +223,44 @@ export const WhatIDoConfig = {
 export const ProjectsConfig = [
     {
         thumbnail: VodBackground.src,
-        title: 'StreamSnap',
-        content: 'This amazing bus simulator will allow you to transport passengers across three different ' +
-            'cities (Rio de Janeiro, Munich and Los Angeles) using various bus models with realistic physics' +
-            ' and graphics. Play this bus simulator in single-player with career and freeride modes or immerse' +
-            ' yourself with friends in the online multiplayer mode. Bus Driving  Sim 22 is the defining bus simulator' +
-            ' for PC.'
+        title: 'StreamSnap VOD Mobile App',
+        content: 'StreamSnap is a proof of concept (PoC) mobile streaming application that I\'ve developed to showcase the potential of a streaming platform. This project aims to provide a glimpse into the possibilities of creating an innovative, user-centric mobile app for accessing movies and TV shows on the go.\n' +
+            '\n' +
+            'Key Elements of the PoC:\n' +
+            '\n' +
+            'Basic functionality for browsing and viewing content,\n' +
+            'A simplified user interface for easy navigation,\n' +
+            'Basic recommendations engine for user personalization,\n' +
+            'While this PoC doesn\'t encompass the full range of features found in established streaming services,' +
+            ' it serves as a starting point for a potential streaming app\'s development. ' +
+            'It highlights my ability to create a functional and user-friendly interface, as well as my ' +
+            'understanding of core features like content recommendations and offline access.',
+        open_link: '',
     },
     {
         thumbnail: SignalProcessing.src,
-        title: 'Systems Identification',
-        content: 'This amazing bus simulator will allow you to transport passengers across three different ' +
-            'cities (Rio de Janeiro, Munich and Los Angeles) using various bus models with realistic physics' +
-            ' and graphics. Play this bus simulator in single-player with career and freeride modes or immerse' +
-            ' yourself with friends in the online multiplayer mode. Bus Driving  Sim 22 is the defining bus simulator' +
-            ' for PC.'
+        title: 'Brushless DC electric motor',
+        content: 'This project is dedicated to achieving a comprehensive understanding of BLDC electric motors, ' +
+            'with the overarching goal of optimizing their efficiency and effectiveness across a broad range of ' +
+            'industries. Through meticulous data collection that captures the motor\'s responses to diverse ' +
+            'operating conditions and varying loads, I am developing precise mathematical models. These models ' +
+            'serve as a reliable reflection of the motor\'s intricate behavior. By pinpointing the essential ' +
+            'parameters and crafting advanced control algorithms, the objective is to elevate the motor\'s performance ' +
+            'significantly. This, in turn, positions BLDC motors as indispensable assets in cutting-edge fields such ' +
+            'as robotics and electric vehicles, powering the future of these technologies.',
+        open_link: 'https://github.com/CiganOliviu/brushless-DC-electric-motor-identification',
     },
     {
         thumbnail: BrainTumorDetection.src,
         title: 'Brain Tumor Detection System',
-        content: 'This amazing bus simulator will allow you to transport passengers across three different ' +
-            'cities (Rio de Janeiro, Munich and Los Angeles) using various bus models with realistic physics' +
-            ' and graphics. Play this bus simulator in single-player with career and freeride modes or immerse' +
-            ' yourself with friends in the online multiplayer mode. Bus Driving  Sim 22 is the defining bus simulator' +
-            ' for PC.'
+        content: 'Brain-Tumor-Detection-System** is an innovative Proof of Concept (POC) project in the ' +
+            'medical field, designed to improve the early detection of brain tumors. It analyzes brain X-ray ' +
+            'images using advanced technology, providing high precision and real-time results, facilitating ' +
+            'rapid and accurate diagnosis. This system supports medical professionals by offering additional ' +
+            'insights and preliminary assessments, enhancing the diagnostic process without replacing doctors ' +
+            'or radiology analysts. Early detection of brain tumors can be life-saving, making this project a ' +
+            'critical tool for improving patient outcomes.',
+        open_link: 'https://github.com/CiganOliviu/brain-tumor-detection',
     },
 ];
 
