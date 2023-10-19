@@ -40,7 +40,29 @@ export const HeroCardContinuityText = styled.div`
     font-weight: bold;
 `;
 
-export const GeneralButton = styled.a<{ whiteText?: boolean }>`
+export const GeneralButton = styled.button<{ whiteText?: boolean }>`
+    color: ${(props) => props.whiteText ? AppTheme.white : AppTheme.lightGreen};
+    background: transparent;
+    border: solid ${AppTheme.lightGreen};
+    border-radius: 2rem;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-top: 4rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+
+    :hover {
+        background: ${AppTheme.lightGreen};
+        color: ${AppTheme.white};
+    }
+`
+
+export const GeneralLink = styled.a<{ whiteText?: boolean }>`
     color: ${(props) => props.whiteText ? AppTheme.white : AppTheme.lightGreen};
     background: transparent;
     border: solid ${AppTheme.lightGreen};
