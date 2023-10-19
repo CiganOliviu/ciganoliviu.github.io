@@ -6,7 +6,7 @@ import {
     ProjectCardWrapper
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
-import { GeneralButton } from "@components/components/HeroCard/HeroCard.css";
+import { GeneralLink } from "@components/components/HeroCard/HeroCard.css";
 import { ExternalSocialLinksConfig } from "@components/utils/config";
 
 type ProjectCardType = {
@@ -28,13 +28,13 @@ export const ProjectCard: FC<ProjectCardType> = ({ title, content, thumbnail, op
                     {content}
                 </ProjectCardContent>
                 {openLink &&
-                    <GeneralButton
+                    <GeneralLink
                         href={openLink}
                         target={ExternalSocialLinksConfig.target}
                         rel={ExternalSocialLinksConfig.rel}
                     >
                         Read more
-                    </GeneralButton>
+                    </GeneralLink>
                 }
                 <Separator paddingValue={1} />
             </ProjectCardMetadataWrapper>
