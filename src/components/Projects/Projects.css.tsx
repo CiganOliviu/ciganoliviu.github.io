@@ -14,7 +14,7 @@ export const ProjectsFlexWrapper = styled.div<{ isMobile: boolean }>`
 `;
 
 export const ProjectColumn = styled.div`
-    flex-basis: calc(28% - 20px); 
+    flex-basis: calc(32% - 20px); 
     margin: 1.7rem .1rem;
     padding: .2rem;
     border: .3rem solid ${AppTheme.openGray};
