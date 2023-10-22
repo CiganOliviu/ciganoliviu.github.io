@@ -6,8 +6,9 @@ import { Contact } from "@components/components/Contact/Contact";
 import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { Projects } from "@components/components/Projects/Projects";
+import Head from "next/head";
 
 export default function Home() {
     const { isMobile } = useGetScreenSize();
@@ -15,6 +16,9 @@ export default function Home() {
 
     return (
        <>
+           <Head>
+               <title>Cigan Oliviu-David</title>
+           </Head>
            {!isMobile() && <ScrollTopButton />}
             <HeroCard nextSectionReference={resultRef} />
             <KnowMeMore ref={resultRef} />
