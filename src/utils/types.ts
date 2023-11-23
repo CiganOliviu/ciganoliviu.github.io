@@ -1,11 +1,12 @@
 export type resumeConfigItemType = {
     title: string,
-    percentage: number;
+    percentage: number,
 };
 
 type ContentCardType = {
     date: string,
     title: string,
+    logo: string,
     subtitle: string,
     htmlField: { __html: string | TrustedHTML },
 };

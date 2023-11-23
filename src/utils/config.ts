@@ -8,6 +8,10 @@ import Whatsapp from "@components/assets/icons/whatsapp.svg";
 import BrainTumorDetection from '../assets/BrainTumorDetection.jpg';
 import VodBackground from '../assets/VodBackground.png';
 import SignalProcessing from '../assets/SignalProcessing.jpg';
+import LogoUTCN from '../assets/UTCN.png';
+import Logo3SS from '../assets/3SS.png';
+import LogoAdapted from '../assets/ADAPTED.png';
+import LogoLTC from '../assets/LTC.png';
 
 export const HeroCardConfig = {
     WelcomeText: 'Welcome',
@@ -25,9 +29,9 @@ export const ResumeConfig = {
     education: [
         {
             date: '2020 - 2024',
-            title: 'Faculty of Automation and Applied Informatics',
+            title: 'Automation & Informatics',
             subtitle: 'Technical University of Cluj-Napoca',
-            content: '',
+            logo: LogoUTCN.src,
             htmlField: {__html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
                     'courses across various disciplines. <div>&nbsp;</div> In the field of Mathematics, I took courses such as Linear ' +
                     'Algebra and Analytical Geometry, Mathematical Analysis (Differential Calculus), Mathematical ' +
@@ -66,6 +70,7 @@ export const ResumeConfig = {
             date: '2016 - 2020',
             title: 'Mathematics and Informatics',
             subtitle: 'Theoretical High-School Carei',
+            logo: LogoLTC.src,
             htmlField: {__html: 'During high school, I began exploring coding and algorithms, applying them ' +
                     'across programming languages like C, C++, Java, Python, and C#. I also ventured into web ' +
                     'development contests, working with technologies such as PHP, Laravel, Python Django, JavaScript, ' +
@@ -79,6 +84,7 @@ export const ResumeConfig = {
             date: '2021 - Present',
             title: 'Software Engineer',
             subtitle: '3Screen Solutions',
+            logo: Logo3SS.src,
             htmlField: {__html: 'In my current role, I am one of the key individuals responsible for implementing new ' +
                     'features with a strong emphasis on maintaining code quality in ReactJS and TypeScript. This role ' +
                     'includes conducting Code Reviews and collaborating closely with the development team to optimize ' +
@@ -100,7 +106,8 @@ export const ResumeConfig = {
         {
             date: '2022 - Present',
             title: 'Deep Learning Research Student',
-            subtitle: 'Advanced Process Control Methods Research Group',
+            subtitle: 'ADAPTED Research Group',
+            logo: LogoAdapted.src,
             htmlField: {__html: 'Together with a startup company from Canada, I am currently working to gain a deeper ' +
                     'understanding of Neural Networks, Recurrent Neural ' +
                     'Networks, Deep Learning, and Machine Learning.\n' +
@@ -113,8 +120,9 @@ export const ResumeConfig = {
         },
         {
             date: '2021 - 2021',
-            title: 'Web Application Development Internship',
+            title: 'Software Engineer Internship',
             subtitle: '3Screen Solutions',
+            logo: Logo3SS.src,
             htmlField: {__html: 'During my internship, I collaborated with a team of five to build a basic VOD web ' +
                     'app using ReactJS. My responsibilities included implementing features like the Authentication ' +
                     'System, Custom Fetching mechanisms, error boundaries, various design elements, and addressing ' +

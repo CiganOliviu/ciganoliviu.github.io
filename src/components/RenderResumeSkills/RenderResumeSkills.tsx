@@ -3,7 +3,7 @@ import { RenderSkillsInformation } from "@components/components/RenderSkillsInfo
 import { RenderResumeSkillsType } from "@components/utils/types";
 import { FC } from "react";
 
-export const renderResumeSkills: FC<RenderResumeSkillsType> = ({ resumeConfigColumnOne,
+export const RenderResumeSkills: FC<RenderResumeSkillsType> = ({ resumeConfigColumnOne,
                                                                resumeConfigColumnTwo }) => {
     return (
         <ResumeSkills>

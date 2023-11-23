@@ -7,25 +7,25 @@ export const ContentCardBox = styled.div<{ isMobile?: boolean }>`
     padding: ${(props) => props.isMobile ? '1.5rem' : '2rem'};
 `;
 
+export const ContentCardFlexBox = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+`;
+
+export const ContentCardLogo = styled.img`
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+`;
+
 export const ContentCardDate = styled.div`
     background: ${AppTheme.lightGreen};
     padding: 0.2rem;
     font-weight: bold;
-    width: 50%;
+    width: 80%;
     text-align: center;
     border-radius: 1rem;
-  
-    ${minWidthQuery(Breakpoints.medium)} {
-        width: 70%;
-    }
-
-    ${minWidthQuery(Breakpoints.large)} {
-        width: 30%;
-    }
-
-    ${minWidthQuery(Breakpoints.xxLarge)} {
-        width: 20%;
-    }
 `
 
 export const ContentCardTitle = styled.h3``;
