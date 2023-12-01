@@ -3,6 +3,7 @@ import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia
 
 export const ProjectsWrapper = styled.div`
     background: ${AppTheme.darkerOpen};
+    color: ${AppTheme.white};
 `;
 
 export const ProjectsFlexWrapper = styled.div<{ isMobile: boolean }>`

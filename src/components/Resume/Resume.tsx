@@ -23,7 +23,7 @@ export const Resume = () => {
             {RenderResumeSkills({resumeConfigColumnOne: ResumeConfig.my_skills.column_one_specific,
                 resumeConfigColumnTwo: ResumeConfig.my_skills.column_two_specific})}
             <ResumeButtonContainer>
-                <GeneralLink onClick={triggerDownloadCV}>
+                <GeneralLink onClick={triggerDownloadCV} rel="nofollow">
                     Download CV
                 </GeneralLink>
             </ResumeButtonContainer>

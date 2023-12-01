@@ -3,6 +3,7 @@ import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia
 
 export const KnowMeMoreBox = styled.div`
     background: ${AppTheme.darkerClose};
+    color: ${AppTheme.white};
 `;
 
 export const KnowMeMoreInfoContainer = styled.div`

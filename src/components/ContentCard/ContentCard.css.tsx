@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
+import { AppTheme } from "@components/utils/cssMedia";
 
 export const ContentCardBox = styled.div<{ isMobile?: boolean }>`
     background: ${AppTheme.darkCardBackground};

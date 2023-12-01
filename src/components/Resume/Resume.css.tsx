@@ -3,6 +3,7 @@ import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia
 
 export const ResumeBox = styled.div`
     background: ${AppTheme.darkerClose};
+    color: ${AppTheme.white};
 `;
 
 export const Separator = styled.div<{ paddingValue?: number }>`

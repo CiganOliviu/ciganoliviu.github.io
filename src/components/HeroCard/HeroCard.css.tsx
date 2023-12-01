@@ -8,6 +8,7 @@ export const HeroCardBox = styled.div`
     background-size: cover;
     position: relative;
     height: 100vh;
+    color: ${AppTheme.white};
 `;
 
 export const HeroCardContainer = styled.div`

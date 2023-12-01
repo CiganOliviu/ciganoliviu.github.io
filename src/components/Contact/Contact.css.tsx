@@ -4,6 +4,7 @@ import { SimpleText } from "@components/components/Resume/Resume.css";
 
 export const ContactContainerBox = styled.div`
     background: ${AppTheme.darkerClose};
+    color: ${AppTheme.white};
     
     ${SimpleText} {
         padding: 0 0 0 3.5rem;
