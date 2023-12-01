@@ -19,7 +19,7 @@ type ProjectCardType = {
 export const ProjectCard: FC<ProjectCardType> = ({ title, content, thumbnail, openLink  }) => {
     return (
         <ProjectCardWrapper>
-            <ProjectCardThumbnail src={thumbnail} />
+            <ProjectCardThumbnail src={thumbnail} alt={title} />
             <ProjectCardMetadataWrapper>
                 <Separator paddingValue={1} />
                 <ProjectCardTitle>{title}</ProjectCardTitle>

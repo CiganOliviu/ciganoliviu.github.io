@@ -37,7 +37,7 @@ export const HeroCard: FC<HeroCardType> = ({ nextSectionReference }) => {
                 <HeroCardContinuityText>
                     {HeroCardConfig.ContinuityText}
                 </HeroCardContinuityText>
-                <GeneralLink onClick={scrollToRef}>
+                <GeneralLink onClick={scrollToRef} rel="nofollow">
                     {HeroCardConfig.ButtonText}
                 </GeneralLink>
             </HeroCardContainer>

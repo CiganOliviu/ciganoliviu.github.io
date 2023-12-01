@@ -52,7 +52,7 @@ export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
                         <Separator paddingValue={1} />
                         <SocialLinks />
 
-                        <GeneralLink whiteText={true} onClick={triggerDownloadCV}>
+                        <GeneralLink whiteText={true} onClick={triggerDownloadCV} rel="nofollow">
                             Download CV
                         </GeneralLink>
                     </KnowMeMoreTable>
