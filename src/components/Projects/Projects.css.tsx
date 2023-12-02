@@ -16,7 +16,6 @@ export const ProjectsFlexWrapper = styled.div<{ isMobile: boolean }>`
 
 export const ProjectColumn = styled.div`
     margin: 1.7rem .1rem;
-    padding: .2rem;
     border: .3rem solid ${AppTheme.openGray};
     box-sizing: border-box;
     border-radius: 1rem;
