@@ -73,7 +73,7 @@ export const GeneralLink = styled.a<{ whiteText?: boolean }>`
     text-decoration: none;
     display: inline-block;
     font-size: 1.1rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     cursor: pointer;
     transition: 0.5s ease;
     font-weight: bold;

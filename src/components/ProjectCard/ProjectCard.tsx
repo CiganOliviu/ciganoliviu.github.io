@@ -3,7 +3,7 @@ import {
     ProjectCardContent,
     ProjectCardMetadataWrapper,
     ProjectCardThumbnail, ProjectCardTitle,
-    ProjectCardWrapper
+    ProjectCardWrapper, ProjectMarker
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { GeneralLink } from "@components/components/HeroCard/HeroCard.css";
@@ -14,11 +14,19 @@ type ProjectCardType = {
     title: string;
     content: string;
     openLink: string;
+    is_in_progress: boolean,
 };
 
-export const ProjectCard: FC<ProjectCardType> = ({ title, content, thumbnail, openLink  }) => {
+export const ProjectCard: FC<ProjectCardType> = ({
+    title,
+    content,
+    thumbnail,
+    openLink,
+    is_in_progress,
+}) => {
     return (
         <ProjectCardWrapper>
+            { is_in_progress && <ProjectMarker>In progress</ProjectMarker>}
             <ProjectCardThumbnail src={thumbnail} alt={title} />
             <ProjectCardMetadataWrapper>
                 <Separator paddingValue={1} />

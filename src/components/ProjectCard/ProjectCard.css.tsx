@@ -7,6 +7,15 @@ export const ProjectCardWrapper = styled.div`
     height: 100%;
 `;
 
+export const ProjectMarker = styled.div`
+    background: ${AppTheme.lightGreen};
+    color: ${AppTheme.white};
+    position: absolute;
+    padding: 0.3rem;
+    font-weight: bold;
+    border-radius: 0.6rem;
+`;
+
 export const ProjectCardThumbnail = styled.img`
     width: 100%;
     border-radius: 0.6rem;

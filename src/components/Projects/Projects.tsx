@@ -19,6 +19,7 @@ export const Projects: FC = () => {
                                          content={project.content}
                                          thumbnail={project.thumbnail}
                                          openLink={project.open_link}
+                                         is_in_progress={project.is_in_progress}
                             />
                         </ProjectColumn>
                     )
