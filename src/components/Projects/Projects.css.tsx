@@ -21,7 +21,10 @@ export const ProjectColumn = styled.div`
     border-radius: 1rem;
 
     ${minWidthQuery(Breakpoints.medium)} {
-        flex-basis: calc(33% - 20px);
+        flex-basis: calc(33% - 2rem);
     }
-  
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        flex-basis: calc(32% - 5rem);
+    }
 `;
