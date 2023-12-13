@@ -133,57 +133,7 @@ export const ResumeConfig = {
                     'seamless team coordination. This internship provided me with a well-rounded understanding of ' +
                     'both technical and soft skills.\n'},
         }
-    ],
-    my_skills: {
-        column_one_domain: [
-            {
-                title: 'Backend',
-                percentage: 84
-            },
-            {
-                title: 'Frontend',
-                percentage: 90
-            },
-            {
-                title: 'Architecture',
-                percentage: 80
-            },
-        ],
-        column_two_domain: [
-            {
-                title: 'Databases',
-                percentage: 90
-            },
-            {
-                title: 'Design',
-                percentage: 78
-            },
-            {
-                title: 'UI/UX',
-                percentage: 74
-            },
-        ],
-        column_one_specific: [
-            {
-                title: 'Typescript',
-                percentage: 88
-            },
-            {
-                title: 'React/Next',
-                percentage: 87
-            },
-        ],
-        column_two_specific: [
-            {
-                title: 'Django',
-                percentage: 86
-            },
-            {
-                title: '.NET Core',
-                percentage: 78
-            },
-        ]
-    }
+    ]
 };
 
 export const KnowMeMoreConfig = {

@@ -18,7 +18,7 @@ export default function Home() {
        <>
            <Head>
                <title>Cigan Oliviu-David</title>
-               <meta name="description" content="Unveil Cigan Oliviu David's expertise and creativity in Software Engineeringa through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections." />
+               <meta name="description" content="Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections." />
            </Head>
            {!isMobile() && <ScrollTopButton />}
             <HeroCard nextSectionReference={resultRef} />
