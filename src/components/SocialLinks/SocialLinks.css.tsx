@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Image from "next/image";
 
 export const SocialLinksContainer = styled.div`
     padding: 1rem;
@@ -9,7 +8,7 @@ export const SocialLink = styled.a`
     margin: 0 1rem 0 1rem;
 `;
 
-export const SocialLinkImage = styled(Image)`
+export const SocialLinkImage = styled.img`
     width: 2rem;
     height: 2rem;
     transition: all 150ms ease;

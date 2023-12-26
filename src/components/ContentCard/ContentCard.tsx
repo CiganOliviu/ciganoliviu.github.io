@@ -24,7 +24,7 @@ export const ContentCard: FC<ContentCardContext> = ({context}) => {
                     <Separator paddingValue={0.6} />
                     <ContentCardSubTitle>{context.subtitle}</ContentCardSubTitle>
                 </div>
-                <ContentCardLogo src={context.logo} alt={context.logo} width={200} height={200} />
+                <ContentCardLogo src={context.logo} alt={context.logo} />
             </ContentCardFlexBox>
             <Separator paddingValue={0.8} />
             <ContentCardText isMobile={isMobileResolution} dangerouslySetInnerHTML={context.htmlField} />
