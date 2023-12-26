@@ -3,6 +3,9 @@ import LogoLTC from "@components/assets/LTC.png";
 import Logo3SS from "@components/assets/3SS.png";
 import LogoAdapted from "@components/assets/ADAPTED.png";
 import TechnicalUniversity from "@components/assets/education/technical-university-of-cluj-napoca.jpg";
+import Internship3SS from "@components/assets/experience/3SS_Internship.jpg";
+import Work3SS from "@components/assets/experience/3SS.jpg";
+import AlphablockAdaptedResearch from "@components/assets/experience/Alphablock_Adapted_Research.png";
 
 export const ResumeConfig = {
     education: [
@@ -88,7 +91,7 @@ export const ResumeConfig = {
             date: '2021 - Present',
             title: 'Software Engineer',
             subtitle: '3Screen Solutions',
-            thumbnail: TechnicalUniversity.src,
+            thumbnail: Work3SS.src,
             logo: Logo3SS.src,
             hasDetailPage: true,
             previewHtmlField: {
@@ -121,7 +124,7 @@ export const ResumeConfig = {
             date: '2022 - Present',
             title: 'Deep Learning Research Student',
             subtitle: 'ADAPTED Research Group',
-            thumbnail: TechnicalUniversity.src,
+            thumbnail: AlphablockAdaptedResearch.src,
             logo: LogoAdapted.src,
             hasDetailPage: true,
             previewHtmlField: {
@@ -145,7 +148,7 @@ export const ResumeConfig = {
             date: '2021 - 2021',
             title: 'Software Engineer Internship',
             subtitle: '3Screen Solutions',
-            thumbnail: TechnicalUniversity.src,
+            thumbnail: Internship3SS.src,
             logo: Logo3SS.src,
             hasDetailPage: true,
             previewHtmlField: {
