@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import { PageWallpaper } from "@components/components/PageWallpaper/PageWallpaper";
-import { fetchResumeConfigObject, getDetailPageParams } from "@components/utils/detailPageManipulations";
+import {
+    DetailPageTypes,
+    fetchResumeConfigObject,
+    getDetailPageParams
+} from "@components/utils/detailPageManipulations";
 
 const DetailPage = () => {
     const router = useRouter();
@@ -12,8 +16,8 @@ const DetailPage = () => {
     const [responseObject, setResponseObject] = useState<any>(undefined);
 
     useEffect(() => {
-
-        setResponseObject(fetchResumeConfigObject(keySearchId, identity));
+        if (pageType === DetailPageTypes.RESUME)
+            setResponseObject(fetchResumeConfigObject(keySearchId, identity));
     }, [slugDetailPage]);
 
     if (!responseObject) {

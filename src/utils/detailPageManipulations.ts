@@ -1,5 +1,9 @@
 import { ResumeConfig } from "@components/configs/resume";
 
+export enum DetailPageTypes {
+      RESUME = 'resume'
+}
+
 export const getDetailPageParams = (url: string) => {
       return {
             pageType: url?.split('-')[0],
