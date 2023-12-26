@@ -2,7 +2,7 @@ import LogoUTCN from "@components/assets/UTCN.png";
 import LogoLTC from "@components/assets/LTC.png";
 import Logo3SS from "@components/assets/3SS.png";
 import LogoAdapted from "@components/assets/ADAPTED.png";
-import BrainTumorDetection from "@components/assets/BrainTumorDetection.jpg";
+import TechnicalUniversity from "@components/assets/education/technical-university-of-cluj-napoca.jpg";
 
 export const ResumeConfig = {
     education: [
@@ -10,8 +10,9 @@ export const ResumeConfig = {
             date: '2020 - 2024',
             title: 'Automation & Informatics',
             subtitle: 'Technical University of Cluj-Napoca',
-            thumbnail: BrainTumorDetection.src,
+            thumbnail: TechnicalUniversity.src,
             logo: LogoUTCN.src,
+            hasDetailPage: true,
             previewHtmlField: {
                 __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
                     'courses across various disciplines. <div>&nbsp;</div> In the field of Mathematics, I took courses such as Linear ' +
@@ -62,8 +63,8 @@ export const ResumeConfig = {
             date: '2016 - 2020',
             title: 'Mathematics and Informatics',
             subtitle: 'Theoretical High-School Carei',
-            thumbnail: BrainTumorDetection.src,
             logo: LogoLTC.src,
+            hasDetailPage: false,
             previewHtmlField: {
                 __html: 'During high school, I began exploring coding and algorithms, applying them ' +
                     'across programming languages like C, C++, Java, Python, and C#. I also ventured into web ' +
@@ -87,8 +88,9 @@ export const ResumeConfig = {
             date: '2021 - Present',
             title: 'Software Engineer',
             subtitle: '3Screen Solutions',
-            thumbnail: BrainTumorDetection.src,
+            thumbnail: TechnicalUniversity.src,
             logo: Logo3SS.src,
+            hasDetailPage: true,
             previewHtmlField: {
                 __html: 'In my current role, I am one of the key individuals responsible for implementing new ' +
                     'features with a strong emphasis on maintaining code quality in ReactJS and TypeScript. This role ' +
@@ -119,8 +121,9 @@ export const ResumeConfig = {
             date: '2022 - Present',
             title: 'Deep Learning Research Student',
             subtitle: 'ADAPTED Research Group',
-            thumbnail: BrainTumorDetection.src,
+            thumbnail: TechnicalUniversity.src,
             logo: LogoAdapted.src,
+            hasDetailPage: true,
             previewHtmlField: {
                 __html: 'Together with a startup company from Canada, I am currently working to gain a deeper ' +
                     'understanding of Neural Networks, Recurrent Neural ' +
@@ -142,8 +145,9 @@ export const ResumeConfig = {
             date: '2021 - 2021',
             title: 'Software Engineer Internship',
             subtitle: '3Screen Solutions',
-            thumbnail: BrainTumorDetection.src,
+            thumbnail: TechnicalUniversity.src,
             logo: Logo3SS.src,
+            hasDetailPage: true,
             previewHtmlField: {
                 __html: 'During my internship, I collaborated with a team of five to build a basic VOD web ' +
                     'app using ReactJS. My responsibilities included implementing features like the Authentication ' +
