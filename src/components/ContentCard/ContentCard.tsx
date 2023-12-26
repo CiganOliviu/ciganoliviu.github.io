@@ -11,8 +11,7 @@ import { Separator } from "@components/components/Resume/Resume.css";
 import React, { FC } from "react";
 import { ContentCardContext } from "@components/utils/types";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
-import { ExternalLink, InternalLink } from "@components/components/HeroCard/HeroCard.css";
-import Link from "next/link";
+import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 
 export const ContentCard: FC<ContentCardContext> = ({context}) => {
     const { isMobile } = useGetScreenSize();
