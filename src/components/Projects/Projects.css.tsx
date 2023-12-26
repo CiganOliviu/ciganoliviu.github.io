@@ -6,12 +6,16 @@ export const ProjectsWrapper = styled.div`
     color: ${AppTheme.white};
 `;
 
-export const ProjectsFlexWrapper = styled.div<{ isMobile: boolean }>`
+export const ProjectsFlexWrapper = styled.div<{ isMobile: boolean, isTablet: boolean }>`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2rem;
+    justify-content: space-around;
     flex-direction: ${(props) => props.isMobile ? 'column' : 'row'};
+    padding: ${(props) => props.isTablet ? 0 : 2}rem;
+  
+    ${minWidthQuery(Breakpoints.medium)} {
+        padding: 0;    
+    }
 `;
 
 export const ProjectColumn = styled.div`
@@ -19,12 +23,13 @@ export const ProjectColumn = styled.div`
     border: .3rem solid ${AppTheme.openGray};
     box-sizing: border-box;
     border-radius: 1rem;
-
+    width: 100%;
+    
     ${minWidthQuery(Breakpoints.medium)} {
-        flex-basis: calc(33% - 2rem);
+        width: 40%;
     }
 
-    ${minWidthQuery(Breakpoints.medium)} {
-        flex-basis: calc(32% - 5rem);
+    ${minWidthQuery(Breakpoints.large)} {
+        width: 34%;
     }
 `;

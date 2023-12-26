@@ -199,13 +199,22 @@ export const ProjectsConfig = [
     },
     {
         thumbnail: BrainTumorDetection.src,
-        title: 'Brain Tumor Detection System',
+        title: 'MedCity - Brain Tumor Detection System',
         content: 'Brain-Tumor-Detection-System is a Proof of Concept (POC) project in the ' +
             'medical field, designed to improve the early detection of brain tumors. It analyzes brain X-ray ' +
             'images using advanced technology, providing high precision and real-time results, facilitating ' +
             'rapid and accurate diagnosis.',
         open_link: 'https://github.com/CiganOliviu/brain-tumor-detection',
         is_in_progress: false,
+    },
+    {
+        thumbnail: BrainTumorDetection.src,
+        title: 'CaRepair - Car Damage Detection System',
+        content: 'StreamSnap is a proof of concept (PoC) mobile streaming application that I\'ve developed to showcase ' +
+            'the potential of a streaming platform. This project aims to provide a glimpse into the possibilities ' +
+            'of creating an innovative, user-centric mobile app for accessing movies and TV shows on the go.\n',
+        open_link: '',
+        is_in_progress: true,
     },
 ];
 
