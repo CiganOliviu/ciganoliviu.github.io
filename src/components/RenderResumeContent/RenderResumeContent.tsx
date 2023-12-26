@@ -1,6 +1,6 @@
 import { ContentColumn, ResumeContent, Separator, SimpleText } from "@components/components/Resume/Resume.css";
-import { ResumeConfig } from "@components/configs/config";
 import { ContentCard } from "@components/components/ContentCard/ContentCard";
+import { ResumeConfig } from "@components/configs/resume";
 
 export const RenderResumeContent = () => {
     return (

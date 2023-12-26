@@ -5,6 +5,7 @@ export const ContentCardBox = styled.div<{ isMobile?: boolean }>`
     background: ${AppTheme.darkCardBackground};
     border-radius: 1rem;
     padding: ${(props) => props.isMobile ? '1.5rem' : '2rem'};
+    text-align: center;
 `;
 
 export const ContentCardFlexBox = styled.div`
