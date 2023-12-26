@@ -5,6 +5,7 @@ import MobileScreenSolid from "@components/assets/icons/mobile-screen-button-sol
 import Linkedin from "@components/assets/icons/linkedin.svg";
 import Github from "@components/assets/icons/github.svg";
 import Whatsapp from "@components/assets/icons/whatsapp.svg";
+import Medium from "@components/assets/icons/medium.svg";
 import BrainTumorDetection from '../assets/BrainTumorDetection.jpg';
 import VodBackground from '../assets/VodBackground.png';
 import SignalProcessing from '../assets/SignalProcessing.jpg';
@@ -107,6 +108,10 @@ export const ExternalSocialLinksConfig = {
         {
             url: 'https://www.whatsapp.com',
             iconSource: Whatsapp.src as string
+        },
+        {
+            url: 'https://medium.com/@ciganoliviudavid',
+            iconSource: Medium.src as string
         }
     ],
     target: '_blank',
