@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { ProjectColumn, ProjectsFlexWrapper, ProjectsWrapper } from "@components/components/Projects/Projects.css";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import { TextContainer } from "@components/components/TextContainer/TextContainer";
-import { ProjectsConfig } from "@components/utils/config";
+import { ProjectsConfig } from "@components/configs/config";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 
 export const Projects: FC = () => {

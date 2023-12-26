@@ -7,7 +7,7 @@ import {
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { GeneralLink } from "@components/components/HeroCard/HeroCard.css";
-import { ExternalSocialLinksConfig } from "@components/utils/config";
+import { ExternalSocialLinksConfig } from "@components/configs/config";
 
 type ProjectCardType = {
     thumbnail: string;

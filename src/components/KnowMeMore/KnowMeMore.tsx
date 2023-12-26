@@ -8,7 +8,7 @@ import {
 import { ContentColumn, Separator, SimpleText } from "@components/components/Resume/Resume.css";
 import { ContentCardText } from "@components/components/ContentCard/ContentCard.css";
 import { GeneralLink } from "@components/components/HeroCard/HeroCard.css";
-import { KnowMeMoreConfig } from "@components/utils/config";
+import { KnowMeMoreConfig } from "@components/configs/config";
 import { triggerDownloadCV } from "@components/utils/generalManipulations";
 import React, { ForwardedRef, forwardRef } from "react";
 import { SocialLinks } from "@components/components/SocialLinks/SocialLinks";

@@ -2,7 +2,7 @@ import { TextContainer } from "@components/components/TextContainer/TextContaine
 import { WhatIDoBox, WhatIDoCardFlexContainer } from "@components/components/WhatIDo/WhatIDo.css";
 import { DoCard } from "@components/components/DoCard/DoCard";
 import { ContentColumn, Separator } from "@components/components/Resume/Resume.css";
-import { WhatIDoConfig } from "@components/utils/config";
+import { WhatIDoConfig } from "@components/configs/config";
 import { DoCardType } from "@components/utils/types";
 import { FC } from "react";
 

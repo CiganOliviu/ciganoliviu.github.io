@@ -7,7 +7,7 @@ import {
     HeroCardWelcomeText,
 } from "@components/components/HeroCard/HeroCard.css";
 import TypeWriter from 'typewriter-effect';
-import { HeroCardConfig } from "@components/utils/config";
+import { HeroCardConfig } from "@components/configs/config";
 import { FC } from "react";
 import { HeroCardType } from "@components/utils/types";
 import { Logo } from "@components/components/Logo/Logo";
