@@ -26,7 +26,10 @@ const DetailPage = () => {
 
     return (
         <>
-            <PageWallpaper url={responseObject?.logo as string} />
+            <PageWallpaper url={responseObject?.thumbnail as string}
+                           title={responseObject?.title}
+                           subtitle={responseObject?.subtitle}
+            />
             <h1>Detail Page for {keySearchId}</h1>
         </>
     );

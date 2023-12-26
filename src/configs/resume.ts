@@ -2,6 +2,7 @@ import LogoUTCN from "@components/assets/UTCN.png";
 import LogoLTC from "@components/assets/LTC.png";
 import Logo3SS from "@components/assets/3SS.png";
 import LogoAdapted from "@components/assets/ADAPTED.png";
+import BrainTumorDetection from "@components/assets/BrainTumorDetection.jpg";
 
 export const ResumeConfig = {
     education: [
@@ -9,6 +10,7 @@ export const ResumeConfig = {
             date: '2020 - 2024',
             title: 'Automation & Informatics',
             subtitle: 'Technical University of Cluj-Napoca',
+            thumbnail: BrainTumorDetection.src,
             logo: LogoUTCN.src,
             previewHtmlField: {
                 __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
@@ -60,6 +62,7 @@ export const ResumeConfig = {
             date: '2016 - 2020',
             title: 'Mathematics and Informatics',
             subtitle: 'Theoretical High-School Carei',
+            thumbnail: BrainTumorDetection.src,
             logo: LogoLTC.src,
             previewHtmlField: {
                 __html: 'During high school, I began exploring coding and algorithms, applying them ' +
@@ -84,6 +87,7 @@ export const ResumeConfig = {
             date: '2021 - Present',
             title: 'Software Engineer',
             subtitle: '3Screen Solutions',
+            thumbnail: BrainTumorDetection.src,
             logo: Logo3SS.src,
             previewHtmlField: {
                 __html: 'In my current role, I am one of the key individuals responsible for implementing new ' +
@@ -115,6 +119,7 @@ export const ResumeConfig = {
             date: '2022 - Present',
             title: 'Deep Learning Research Student',
             subtitle: 'ADAPTED Research Group',
+            thumbnail: BrainTumorDetection.src,
             logo: LogoAdapted.src,
             previewHtmlField: {
                 __html: 'Together with a startup company from Canada, I am currently working to gain a deeper ' +
@@ -137,6 +142,7 @@ export const ResumeConfig = {
             date: '2021 - 2021',
             title: 'Software Engineer Internship',
             subtitle: '3Screen Solutions',
+            thumbnail: BrainTumorDetection.src,
             logo: Logo3SS.src,
             previewHtmlField: {
                 __html: 'During my internship, I collaborated with a team of five to build a basic VOD web ' +

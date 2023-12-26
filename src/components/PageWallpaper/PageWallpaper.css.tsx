@@ -9,3 +9,14 @@ export const PageWallpaperCss = styled.div<{ url: string }>`
     height: 40vh;
     color: ${AppTheme.white};
 `;
+
+export const PageWallpaperTitle = styled.h1`
+    font-weight: bold;
+`;
+
+export const PageWallpaperSubtitle = styled.div`
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: ${AppTheme.lightGreen};
+`;
