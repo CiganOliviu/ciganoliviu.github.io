@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
+import Image from "next/image";
 
 export const ContentCardBox = styled.div<{ isMobile?: boolean }>`
     background: ${AppTheme.darkCardBackground};
@@ -13,7 +14,7 @@ export const ContentCardFlexBox = styled.div`
     flex-direction: row;
 `;
 
-export const ContentCardLogo = styled.img`
+export const ContentCardLogo = styled(Image)`
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 50%;

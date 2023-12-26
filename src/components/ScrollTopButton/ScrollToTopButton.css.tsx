@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
+import Image from "next/image";
 
 export const ScrollToTopButton = styled.button`
     position: fixed;
@@ -24,7 +25,7 @@ export const ScrollToTopButton = styled.button`
     }
 `;
 
-export const ScrollToTopIcon = styled.img`
+export const ScrollToTopIcon = styled(Image)`
     width: 50%;
     filter: invert(53%) sepia(91%) saturate(377%) hue-rotate(111deg) brightness(102%) contrast(88%);
 `

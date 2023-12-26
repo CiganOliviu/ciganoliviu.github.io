@@ -30,7 +30,7 @@ const ScrollTopButton = () => {
         <div>
             {isVisible && (
                 <ScrollToTopButton onClick={handleScrollToTop}>
-                    <ScrollToTopIcon src={ArrowToTop.src} alt={ArrowToTop.src} />
+                    <ScrollToTopIcon src={ArrowToTop.src} alt={ArrowToTop.src} width={200} height={200} />
                 </ScrollToTopButton>
             )}
         </div>

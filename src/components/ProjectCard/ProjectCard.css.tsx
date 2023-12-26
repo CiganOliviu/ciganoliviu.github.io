@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
+import Image from "next/image";
 
 export const ProjectCardWrapper = styled.div`
     background: ${AppTheme.darkerClose};
@@ -16,7 +17,7 @@ export const ProjectMarker = styled.div`
     border-radius: 0.6rem;
 `;
 
-export const ProjectCardThumbnail = styled.img`
+export const ProjectCardThumbnail = styled(Image)`
     width: 100%;
     border-radius: 0.6rem;
     height: 15rem;

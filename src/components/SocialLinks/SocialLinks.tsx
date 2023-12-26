@@ -13,7 +13,7 @@ export const SocialLinks: FC = () => {
                                     rel={ExternalSocialLinksConfig.rel}
                                     key={item.url}
                         >
-                            <SocialLinkImage src={item.iconSource} alt={item.url} />
+                            <SocialLinkImage src={item.iconSource} alt={item.url} width={200} height={200} />
                         </SocialLink>
                     )
                 })

@@ -1,13 +1,14 @@
 import React, { FC } from "react";
 import {
     ProjectCardContent,
-    ProjectCardMetadataWrapper,
-    ProjectCardThumbnail, ProjectCardTitle,
+    ProjectCardMetadataWrapper, ProjectCardThumbnail,
+    ProjectCardTitle,
     ProjectCardWrapper, ProjectMarker
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { GeneralLink } from "@components/components/HeroCard/HeroCard.css";
 import { ExternalSocialLinksConfig } from "@components/utils/config";
+import Image from "next/image";
 
 type ProjectCardType = {
     thumbnail: string;
@@ -27,7 +28,7 @@ export const ProjectCard: FC<ProjectCardType> = ({
     return (
         <ProjectCardWrapper>
             { is_in_progress && <ProjectMarker>In progress</ProjectMarker>}
-            <ProjectCardThumbnail src={thumbnail} alt={title} />
+            <ProjectCardThumbnail src={thumbnail} alt={title} width={200} height={200} />
             <ProjectCardMetadataWrapper>
                 <Separator paddingValue={1} />
                 <ProjectCardTitle>{title}</ProjectCardTitle>

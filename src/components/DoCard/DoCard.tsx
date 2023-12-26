@@ -12,7 +12,7 @@ export const DoCard: FC<DoCardContext> = ({ context }) => {
     return (
         <DoCardFlex>
             <DoCardImageContainer>
-                <ImageContainer src={context.icon} alt={context.title} />
+                <ImageContainer src={context.icon} alt={context.title} width={200} height={200} />
             </DoCardImageContainer>
             <DoCardTextContent>
                 <DoCardTextTitle>{context.title}</DoCardTextTitle>

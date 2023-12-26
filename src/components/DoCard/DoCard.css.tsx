@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
+import Image from "next/image";
 
 export const DoCardFlex = styled.div`
     display: flex;
@@ -30,7 +31,7 @@ export const DoCardImageContainer = styled.div`
     }
 `;
 
-export const ImageContainer = styled.img`
+export const ImageContainer = styled(Image)`
     width: 3rem;
     height: 3rem;
     filter: invert(71%) sepia(16%) saturate(2855%) hue-rotate(109deg) brightness(94%) contrast(75%);
