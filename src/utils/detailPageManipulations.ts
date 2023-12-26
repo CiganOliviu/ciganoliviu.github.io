@@ -1,7 +1,10 @@
-import { ResumeConfig } from "@components/configs/resume";
+import { ResumeConfig } from "@components/configs/resumeConfig";
+
+import { ProjectsConfig } from "@components/configs/projectsConfig";
 
 export enum DetailPageTypes {
-      RESUME = 'resume'
+      RESUME = 'resume',
+      PROJECT = 'project'
 }
 
 export const getDetailPageParams = (url: string) => {
@@ -20,4 +23,8 @@ export const fetchResumeConfigObject = (keyTitle: string, resumePart: string) =>
             return ResumeConfig.experience.find((obj) => obj.title === keyTitle);
 
       return undefined;
+};
+
+export const fetchProjectConfigResponse = (keyTitle: string) => {
+      return ProjectsConfig.find((obj) => obj.title === keyTitle);
 };

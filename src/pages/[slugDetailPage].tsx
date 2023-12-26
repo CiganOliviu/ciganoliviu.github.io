@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import { PageWallpaper } from "@components/components/PageWallpaper/PageWallpaper";
 import {
-    DetailPageTypes,
+    DetailPageTypes, fetchProjectConfigResponse,
     fetchResumeConfigObject,
     getDetailPageParams
 } from "@components/utils/detailPageManipulations";
@@ -23,6 +23,8 @@ const DetailPage = () => {
     useEffect(() => {
         if (pageType === DetailPageTypes.RESUME)
             setResponseObject(fetchResumeConfigObject(keySearchId, identity));
+        else if (pageType === DetailPageTypes.PROJECT)
+            setResponseObject(fetchProjectConfigResponse(keySearchId));
     }, [slugDetailPage]);
 
     if (!responseObject) {

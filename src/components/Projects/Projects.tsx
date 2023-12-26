@@ -2,8 +2,8 @@ import React, { FC } from "react";
 import { ProjectColumn, ProjectsFlexWrapper, ProjectsWrapper } from "@components/components/Projects/Projects.css";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import { TextContainer } from "@components/components/TextContainer/TextContainer";
-import { ProjectsConfig } from "@components/configs/config";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
+import { ProjectsConfig } from "@components/configs/projectsConfig";
 
 export const Projects: FC = () => {
     const { isMobile, isTablet } = useGetScreenSize();

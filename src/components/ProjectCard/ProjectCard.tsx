@@ -1,13 +1,14 @@
 import React, { FC } from "react";
 import {
     ProjectCardContent,
-    ProjectCardMetadataWrapper, ProjectCardThumbnail,
+    ProjectCardMetadataWrapper,
+    ProjectCardThumbnail,
     ProjectCardTitle,
-    ProjectCardWrapper, ProjectMarker
+    ProjectCardWrapper,
+    ProjectMarker
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
-import { ExternalLink } from "@components/components/HeroCard/HeroCard.css";
-import { ExternalSocialLinksConfig } from "@components/configs/config";
+import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 
 type ProjectCardType = {
     thumbnail: string;
@@ -36,13 +37,11 @@ export const ProjectCard: FC<ProjectCardType> = ({
                     {content}
                 </ProjectCardContent>
                 {openLink &&
-                    <ExternalLink
-                        href={openLink}
-                        target={ExternalSocialLinksConfig.target}
-                        rel={ExternalSocialLinksConfig.rel}
+                    <InternalLink
+                        href={`/project-detail-${title}`}
                     >
                         Read more
-                    </ExternalLink>
+                    </InternalLink>
                 }
                 <Separator paddingValue={1} />
             </ProjectCardMetadataWrapper>
