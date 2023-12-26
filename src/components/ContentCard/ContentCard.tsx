@@ -13,7 +13,7 @@ import { ContentCardContext } from "@components/utils/types";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 
-export const ContentCard: FC<ContentCardContext> = ({context}) => {
+export const ContentCard: FC<ContentCardContext> = ({ context, resumePart }) => {
     const { isMobile } = useGetScreenSize();
     const isMobileResolution = isMobile();
 
@@ -33,7 +33,7 @@ export const ContentCard: FC<ContentCardContext> = ({context}) => {
             <ContentCardText isMobile={isMobileResolution} dangerouslySetInnerHTML={context.previewHtmlField} />
             <Separator paddingValue={1} />
             <InternalLink
-                href={`/${context.title}`}
+                href={`/resume-${resumePart}-${context.title}`}
             >
                 Read more
             </InternalLink>

@@ -8,7 +8,8 @@ type ContentCardType = {
 };
 
 export type ContentCardContext = {
-    context: ContentCardType
+    context: ContentCardType,
+    resumePart: string
 };
 
 export type DoCardType = {

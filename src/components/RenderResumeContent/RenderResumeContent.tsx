@@ -12,7 +12,7 @@ export const RenderResumeContent = () => {
                 {ResumeConfig.education.map((item) => {
                     return (
                         <div key={item.title}>
-                            <ContentCard context={item} />
+                            <ContentCard context={item} resumePart={'education'} />
                             <Separator paddingValue={1} />
                         </div>
                     )
@@ -25,7 +25,7 @@ export const RenderResumeContent = () => {
                 {ResumeConfig.experience.map((item) => {
                     return (
                         <div key={item.title}>
-                            <ContentCard context={item} />
+                            <ContentCard context={item} resumePart={'experience'} />
                             <Separator paddingValue={1} />
                         </div>
                     )
