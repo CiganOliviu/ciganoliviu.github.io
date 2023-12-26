@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
+import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 
 export const ContentCardBox = styled.div<{ isMobile?: boolean }>`
     background: ${AppTheme.darkCardBackground};
@@ -12,6 +13,7 @@ export const ContentCardFlexBox = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    text-align: left;
 `;
 
 export const ContentCardLogo = styled.img`

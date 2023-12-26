@@ -1,6 +1,8 @@
 import {
     ContentCardBox,
-    ContentCardDate, ContentCardFlexBox, ContentCardLogo,
+    ContentCardDate,
+    ContentCardFlexBox,
+    ContentCardLogo,
     ContentCardSubTitle,
     ContentCardText,
     ContentCardTitle
@@ -9,8 +11,7 @@ import { Separator } from "@components/components/Resume/Resume.css";
 import React, { FC } from "react";
 import { ContentCardContext } from "@components/utils/types";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
-import { GeneralLink } from "@components/components/HeroCard/HeroCard.css";
-import { ExternalSocialLinksConfig } from "@components/configs/config";
+import { ExternalLink, InternalLink } from "@components/components/HeroCard/HeroCard.css";
 import Link from "next/link";
 
 export const ContentCard: FC<ContentCardContext> = ({context}) => {
@@ -32,11 +33,11 @@ export const ContentCard: FC<ContentCardContext> = ({context}) => {
             <Separator paddingValue={0.8} />
             <ContentCardText isMobile={isMobileResolution} dangerouslySetInnerHTML={context.previewHtmlField} />
             <Separator paddingValue={1} />
-            <GeneralLink
-                href={'#'}
+            <InternalLink
+                href={`/${context.title}`}
             >
-                <Link href={`/${context.title}`}>Read more</Link>
-            </GeneralLink>
+                Read more
+            </InternalLink>
         </ContentCardBox>
     )
 }

@@ -1,5 +1,5 @@
 import {
-    GeneralLink,
+    ExternalLink,
     HeroCardBox,
     HeroCardContainer,
     HeroCardContinuityText,
@@ -37,9 +37,9 @@ export const HeroCard: FC<HeroCardType> = ({ nextSectionReference }) => {
                 <HeroCardContinuityText>
                     {HeroCardConfig.ContinuityText}
                 </HeroCardContinuityText>
-                <GeneralLink onClick={scrollToRef} rel="nofollow">
+                <ExternalLink onClick={scrollToRef} rel="nofollow">
                     {HeroCardConfig.ButtonText}
-                </GeneralLink>
+                </ExternalLink>
             </HeroCardContainer>
         </HeroCardBox>
     )

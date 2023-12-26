@@ -7,7 +7,7 @@ import {
 } from "@components/components/KnowMeMore/KnowMeMore.css";
 import { ContentColumn, Separator, SimpleText } from "@components/components/Resume/Resume.css";
 import { ContentCardText } from "@components/components/ContentCard/ContentCard.css";
-import { GeneralLink } from "@components/components/HeroCard/HeroCard.css";
+import { ExternalLink } from "@components/components/HeroCard/HeroCard.css";
 import { KnowMeMoreConfig } from "@components/configs/config";
 import { triggerDownloadCV } from "@components/utils/generalManipulations";
 import React, { ForwardedRef, forwardRef } from "react";
@@ -52,9 +52,9 @@ export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
                         <Separator paddingValue={1} />
                         <SocialLinks />
 
-                        <GeneralLink whiteText={true} onClick={triggerDownloadCV} rel="nofollow">
+                        <ExternalLink whiteText={true} onClick={triggerDownloadCV} rel="nofollow">
                             Download CV
-                        </GeneralLink>
+                        </ExternalLink>
                     </KnowMeMoreTable>
                 </ContentColumn>
             </KnowMeMoreInfoContainer>
