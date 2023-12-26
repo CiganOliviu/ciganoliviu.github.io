@@ -199,7 +199,7 @@ export const ProjectsConfig = [
     },
     {
         thumbnail: BrainTumorDetection.src,
-        title: 'Brain Tumor Detection System',
+        title: 'MedCity - Brain Tumor Detection System',
         content: 'Brain-Tumor-Detection-System is a Proof of Concept (POC) project in the ' +
             'medical field, designed to improve the early detection of brain tumors. It analyzes brain X-ray ' +
             'images using advanced technology, providing high precision and real-time results, facilitating ' +

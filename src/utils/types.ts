@@ -1,8 +1,3 @@
-export type resumeConfigItemType = {
-    title: string,
-    percentage: number,
-};
-
 type ContentCardType = {
     date: string,
     title: string,
@@ -27,16 +22,6 @@ export type DoCardContext = {
 
 export type HeroCardType = {
     nextSectionReference: any
-};
-
-export type RenderResumeSkillsType = {
-    resumeConfigColumnOne: resumeConfigItemType[],
-    resumeConfigColumnTwo: resumeConfigItemType[]
-};
-
-export type RenderSkillsInformationType = {
-    title: string,
-    percentage: number
 };
 
 export type TextContainerType = {

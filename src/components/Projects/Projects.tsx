@@ -6,12 +6,12 @@ import { ProjectsConfig } from "@components/utils/config";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 
 export const Projects: FC = () => {
-    const { isMobile } = useGetScreenSize();
+    const { isMobile, isTablet } = useGetScreenSize();
 
     return (
         <ProjectsWrapper>
             {TextContainer({backText: 'Projects', overText: 'My Extra Work and Research'})}
-            <ProjectsFlexWrapper isMobile={isMobile()}>
+            <ProjectsFlexWrapper isMobile={isMobile()} isTablet={isTablet()}>
                 {ProjectsConfig.map((project) => {
                     return (
                         <ProjectColumn key={project.title}>

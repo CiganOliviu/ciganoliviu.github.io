@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import {
     ProjectCardContent,
-    ProjectCardMetadataWrapper,
-    ProjectCardThumbnail, ProjectCardTitle,
+    ProjectCardMetadataWrapper, ProjectCardThumbnail,
+    ProjectCardTitle,
     ProjectCardWrapper, ProjectMarker
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
