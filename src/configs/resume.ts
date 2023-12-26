@@ -10,6 +10,16 @@ export const ResumeConfig = {
             title: 'Automation & Informatics',
             subtitle: 'Technical University of Cluj-Napoca',
             logo: LogoUTCN.src,
+            previewHtmlField: {
+                __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
+                    'courses across various disciplines. <div>&nbsp;</div> In the field of Mathematics, I took courses such as Linear ' +
+                    'Algebra and Analytical Geometry, Mathematical Analysis (Differential Calculus), Mathematical ' +
+                    'Analysis (Integral Calculus and Differential Equations), Special Mathematics in Engineering, and ' +
+                    'Numerical Calculus. These courses played a fundamental role in shaping my understanding of complex ' +
+                    'problems and honing my analytical skills, both of which are important in programming and systems theory.\n' +
+                    '<div>&nbsp;</div>In Systems Engineering, I gained valuable insights into the inner workings of modern systems and ' +
+                    'learned efficient methods for their analysis and control...'
+            },
             htmlField: {
                 __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
                     'courses across various disciplines. <div>&nbsp;</div> In the field of Mathematics, I took courses such as Linear ' +
@@ -51,6 +61,14 @@ export const ResumeConfig = {
             title: 'Mathematics and Informatics',
             subtitle: 'Theoretical High-School Carei',
             logo: LogoLTC.src,
+            previewHtmlField: {
+                __html: 'During high school, I began exploring coding and algorithms, applying them ' +
+                    'across programming languages like C, C++, Java, Python, and C#. I also ventured into web ' +
+                    'development contests, working with technologies such as PHP, Laravel, Python Django, JavaScript, ' +
+                    'jQuery, HTML5, and CSS3, albeit at a basic level. Additionally, I actively contributed to in-school' +
+                    ' projects involving website development. These experiences ignited my passion for technology ' +
+                    'and software engineering, setting the stage for my future pursuits in the field.'
+            },
             htmlField: {
                 __html: 'During high school, I began exploring coding and algorithms, applying them ' +
                     'across programming languages like C, C++, Java, Python, and C#. I also ventured into web ' +
@@ -67,6 +85,12 @@ export const ResumeConfig = {
             title: 'Software Engineer',
             subtitle: '3Screen Solutions',
             logo: Logo3SS.src,
+            previewHtmlField: {
+                __html: 'In my current role, I am one of the key individuals responsible for implementing new ' +
+                    'features with a strong emphasis on maintaining code quality in ReactJS and TypeScript. This role ' +
+                    'includes conducting Code Reviews and collaborating closely with the development team to optimize ' +
+                    'and refactor code for enhanced efficiency.\n'
+            },
             htmlField: {
                 __html: 'In my current role, I am one of the key individuals responsible for implementing new ' +
                     'features with a strong emphasis on maintaining code quality in ReactJS and TypeScript. This role ' +
@@ -92,6 +116,11 @@ export const ResumeConfig = {
             title: 'Deep Learning Research Student',
             subtitle: 'ADAPTED Research Group',
             logo: LogoAdapted.src,
+            previewHtmlField: {
+                __html: 'Together with a startup company from Canada, I am currently working to gain a deeper ' +
+                    'understanding of Neural Networks, Recurrent Neural ' +
+                    'Networks, Deep Learning, and Machine Learning.\n'
+            },
             htmlField: {
                 __html: 'Together with a startup company from Canada, I am currently working to gain a deeper ' +
                     'understanding of Neural Networks, Recurrent Neural ' +
@@ -109,6 +138,12 @@ export const ResumeConfig = {
             title: 'Software Engineer Internship',
             subtitle: '3Screen Solutions',
             logo: Logo3SS.src,
+            previewHtmlField: {
+                __html: 'During my internship, I collaborated with a team of five to build a basic VOD web ' +
+                    'app using ReactJS. My responsibilities included implementing features like the Authentication ' +
+                    'System, Custom Fetching mechanisms, error boundaries, various design elements, and addressing ' +
+                    'responsive design challenges. '
+            },
             htmlField: {
                 __html: 'During my internship, I collaborated with a team of five to build a basic VOD web ' +
                     'app using ReactJS. My responsibilities included implementing features like the Authentication ' +

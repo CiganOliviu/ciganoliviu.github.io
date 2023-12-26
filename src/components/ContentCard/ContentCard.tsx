@@ -11,6 +11,7 @@ import { ContentCardContext } from "@components/utils/types";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { GeneralLink } from "@components/components/HeroCard/HeroCard.css";
 import { ExternalSocialLinksConfig } from "@components/configs/config";
+import Link from "next/link";
 
 export const ContentCard: FC<ContentCardContext> = ({context}) => {
     const { isMobile } = useGetScreenSize();
@@ -29,14 +30,12 @@ export const ContentCard: FC<ContentCardContext> = ({context}) => {
                 <ContentCardLogo src={context.logo} alt={context.logo} />
             </ContentCardFlexBox>
             <Separator paddingValue={0.8} />
-            <ContentCardText isMobile={isMobileResolution} dangerouslySetInnerHTML={context.htmlField} />
+            <ContentCardText isMobile={isMobileResolution} dangerouslySetInnerHTML={context.previewHtmlField} />
             <Separator paddingValue={1} />
             <GeneralLink
                 href={'#'}
-                target={ExternalSocialLinksConfig.target}
-                rel={ExternalSocialLinksConfig.rel}
             >
-                Read more
+                <Link href={`/${context.title}`}>Read more</Link>
             </GeneralLink>
         </ContentCardBox>
     )

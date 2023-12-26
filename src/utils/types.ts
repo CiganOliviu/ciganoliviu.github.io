@@ -3,6 +3,7 @@ type ContentCardType = {
     title: string,
     logo: string,
     subtitle: string,
+    previewHtmlField: { __html: string | TrustedHTML },
     htmlField: { __html: string | TrustedHTML },
 };
 
