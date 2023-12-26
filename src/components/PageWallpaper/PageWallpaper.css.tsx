@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
 
 export const PageWallpaperCss = styled.div<{ url: string }>`
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(${(props) => props.url})
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${(props) => props.url})
     center;
     background-size: cover;
     position: relative;
