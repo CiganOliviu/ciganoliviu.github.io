@@ -207,15 +207,6 @@ export const ProjectsConfig = [
         open_link: 'https://github.com/CiganOliviu/brain-tumor-detection',
         is_in_progress: false,
     },
-    {
-        thumbnail: BrainTumorDetection.src,
-        title: 'CaRepair - Car Damage Detection System',
-        content: 'StreamSnap is a proof of concept (PoC) mobile streaming application that I\'ve developed to showcase ' +
-            'the potential of a streaming platform. This project aims to provide a glimpse into the possibilities ' +
-            'of creating an innovative, user-centric mobile app for accessing movies and TV shows on the go.\n',
-        open_link: '',
-        is_in_progress: true,
-    },
 ];
 
 export const ExternalSocialLinksConfig = {
