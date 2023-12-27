@@ -5,13 +5,18 @@ import { Logo } from "@components/components/Logo/Logo";
 import { Footer } from "@components/components/Footer/Footer";
 import { ProjectsLister } from "@components/components/ProjectsLister/ProjectsLister";
 import { AppTheme } from "@components/utils/cssMedia";
+import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
+import { useGetScreenSize } from "@components/hooks/useScreenSize";
 
 const Projects: FC = () => {
+    const { isMobile } = useGetScreenSize();
+
     return (
         <ProjectsWrapper>
             <Logo />
+            {!isMobile() && <ScrollTopButton />}
             <ProjectsLister  projectsList={ProjectsConfig} />
-            <Footer backgroundColor={AppTheme.darkerOpen}  />
+            <Footer backgroundColor={AppTheme.darkerClose}  />
         </ProjectsWrapper>
     )
 }
