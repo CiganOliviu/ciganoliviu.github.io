@@ -16,7 +16,9 @@ export const Projects: FC = () => {
                     return (
                         <ProjectColumn key={project.title}>
                             <ProjectCard title={project.title}
-                                         content={project.content}
+                                         subtitle={project.subtitle}
+                                         previewHtmlField={project.previewHtmlField}
+                                         htmlField={project.htmlField}
                                          thumbnail={project.thumbnail}
                                          openLink={project.open_link}
                                          is_in_progress={project.is_in_progress}

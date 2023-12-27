@@ -13,14 +13,17 @@ import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 type ProjectCardType = {
     thumbnail: string;
     title: string;
-    content: string;
+    subtitle: string,
+    previewHtmlField: { __html: string | TrustedHTML },
+    htmlField: { __html: string | TrustedHTML },
     openLink: string;
     is_in_progress: boolean,
 };
 
 export const ProjectCard: FC<ProjectCardType> = ({
     title,
-    content,
+    previewHtmlField,
+    htmlField,
     thumbnail,
     openLink,
     is_in_progress,
@@ -33,9 +36,7 @@ export const ProjectCard: FC<ProjectCardType> = ({
                 <Separator paddingValue={1} />
                 <ProjectCardTitle>{title}</ProjectCardTitle>
                 <Separator paddingValue={1.25} />
-                <ProjectCardContent>
-                    {content}
-                </ProjectCardContent>
+                <ProjectCardContent dangerouslySetInnerHTML={previewHtmlField} />
                 {openLink &&
                     <InternalLink
                         href={`/project-detail-${title}`}
