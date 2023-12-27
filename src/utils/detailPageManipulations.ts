@@ -30,7 +30,7 @@ export const fetchResumeConfigObject = (keyTitle: string, resumePart: string) =>
 };
 
 export const fetchProjectConfigResponse = (keyTitle: string) => {
-      return ProjectsConfig.find((obj) => obj.title === keyTitle);
+      return ProjectsConfig.find((obj) => createCanonicalLink(obj.title) === keyTitle);
 };
 
 export const createCanonicalLink = (canonicalString: string): string => {
