@@ -20,12 +20,10 @@ export const ArticleCard: FC<ArticleCardType> = ({ article }) => {
 
     return (
         <ArticleCardWrapper isMobile={isMobile()} isTablet={isTablet()}>
-            <ArticleCardThumbnail src={VodBackground.src} responsiveScreen={isMobile() || isTablet()}/>
+            <ArticleCardThumbnail src={article.thumbnail} responsiveScreen={isMobile() || isTablet()}/>
             <ArticleCardContentWrapper responsiveScreen={isMobile() || isTablet()}>
                 <ArticleCardTitle>{article.title}</ArticleCardTitle>
-                <ArticleCardContent>
-                    deLatin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden- Finibus
-                </ArticleCardContent>
+                <ArticleCardContent dangerouslySetInnerHTML={article.previewHtmlField}/>
                 <InternalLink href={`/article-detail-${createCanonicalLink(article.title)}`}>
                     Read more
                 </InternalLink>
