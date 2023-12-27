@@ -10,6 +10,10 @@ import React from "react";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 
+type ArticleCardType = {
+
+};
+
 export const ArticleCard = () => {
     const { isMobile, isTablet } = useGetScreenSize();
 
