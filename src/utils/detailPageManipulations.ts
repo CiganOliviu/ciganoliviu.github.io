@@ -8,19 +8,23 @@ export enum DetailPageTypes {
 }
 
 export const getDetailPageParams = (url: string) => {
+      const urlElements = url?.split('-');
+
+      const [pageType, identity, ...keySearchId] = urlElements;
+
       return {
-            pageType: url?.split('-')[0],
-            identity: url?.split('-')[1],
-            keySearchId: url?.split('-')[2]
-      }
+            pageType,
+            identity,
+            keySearchId: keySearchId.join('-'),
+      };
 };
 
 export const fetchResumeConfigObject = (keyTitle: string, resumePart: string) => {
       if (resumePart === 'education' && keyTitle !== 'Mathematics and Informatics')
-            return ResumeConfig.education.find((obj) => obj.title === keyTitle);
+            return ResumeConfig.education.find((obj) => createCanonicalLink(obj.title) === keyTitle);
 
       if (resumePart === 'experience')
-            return ResumeConfig.experience.find((obj) => obj.title === keyTitle);
+            return ResumeConfig.experience.find((obj) => createCanonicalLink(obj.title) === keyTitle);
 
       return undefined;
 };
@@ -28,3 +32,7 @@ export const fetchResumeConfigObject = (keyTitle: string, resumePart: string) =>
 export const fetchProjectConfigResponse = (keyTitle: string) => {
       return ProjectsConfig.find((obj) => obj.title === keyTitle);
 };
+
+export const createCanonicalLink = (canonicalString: string): string => {
+      return canonicalString.toLowerCase().replace(/\s+/g, '-');
+}

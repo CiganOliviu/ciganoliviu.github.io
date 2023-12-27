@@ -9,6 +9,7 @@ import {
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
+import { createCanonicalLink } from "@components/utils/detailPageManipulations";
 
 type ProjectCardType = {
     thumbnail: string;
@@ -39,7 +40,7 @@ export const ProjectCard: FC<ProjectCardType> = ({
                 <ProjectCardContent dangerouslySetInnerHTML={previewHtmlField} />
                 {openLink &&
                     <InternalLink
-                        href={`/project-detail-${title}`}
+                        href={`/project-detail-${createCanonicalLink(title)}`}
                     >
                         Read more
                     </InternalLink>

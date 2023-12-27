@@ -12,6 +12,7 @@ import React, { FC } from "react";
 import { ContentCardContext } from "@components/utils/types";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
+import { createCanonicalLink } from "@components/utils/detailPageManipulations";
 
 export const ContentCard: FC<ContentCardContext> = ({ context, resumePart }) => {
     const { isMobile } = useGetScreenSize();
@@ -34,7 +35,7 @@ export const ContentCard: FC<ContentCardContext> = ({ context, resumePart }) => 
             <Separator paddingValue={1} />
             {context.hasDetailPage &&
                 <InternalLink
-                    href={`/resume-${resumePart}-${context.title}`}
+                    href={`/resume-${resumePart}-${createCanonicalLink(context.title)}`}
                 >
                     Read more
                 </InternalLink>

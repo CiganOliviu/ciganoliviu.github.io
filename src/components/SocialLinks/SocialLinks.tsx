@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { SocialLink, SocialLinkImage, SocialLinksContainer } from "@components/components/SocialLinks/SocialLinks.css";
-import { ExternalSocialLinksConfig } from "@components/configs/config";
+import { ExternalSocialLinksConfig } from "@components/configs/generalConfig";
 
 export const SocialLinks: FC = () => {
     return (
