@@ -1,6 +1,7 @@
 import { ContentColumn, ResumeContent, Separator, SimpleText } from "@components/components/Resume/Resume.css";
 import { ContentCard } from "@components/components/ContentCard/ContentCard";
 import { ResumeConfig } from "@components/configs/resumeConfig";
+import { ContentCardType } from "@components/utils/types";
 
 export const RenderResumeContent = () => {
     return (
@@ -9,7 +10,7 @@ export const RenderResumeContent = () => {
                 <SimpleText>
                     My Education
                 </SimpleText>
-                {ResumeConfig.education.map((item) => {
+                {ResumeConfig.education.map((item: ContentCardType) => {
                     return (
                         <div key={item.title}>
                             <ContentCard context={item} resumePart={'education'} />
@@ -22,7 +23,7 @@ export const RenderResumeContent = () => {
                 <SimpleText>
                     My Experience
                 </SimpleText>
-                {ResumeConfig.experience.map((item) => {
+                {ResumeConfig.experience.map((item: ContentCardType) => {
                     return (
                         <div key={item.title}>
                             <ContentCard context={item} resumePart={'experience'} />

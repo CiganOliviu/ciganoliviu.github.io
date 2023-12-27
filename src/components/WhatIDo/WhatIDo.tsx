@@ -8,7 +8,7 @@ import { FC } from "react";
 
 export const WhatIDo: FC = () => {
     const renderConfigByColumn = (array: DoCardType[]) => {
-        return array.map((item) => {
+        return array.map((item: DoCardType) => {
             return (
                 <div key={item.title}>
                     {DoCard({ context: item })}

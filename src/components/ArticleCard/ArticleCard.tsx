@@ -9,12 +9,13 @@ import React, { FC } from "react";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { createCanonicalLink } from "@components/utils/detailPageManipulations";
+import { ArticlesConfigType } from "@components/utils/types";
 
-type ArticleCardType = {
-    article: any;
+type ArticleCardContextType = {
+    article: ArticlesConfigType;
 };
 
-export const ArticleCard: FC<ArticleCardType> = ({ article }) => {
+export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
     const { isMobile, isTablet } = useGetScreenSize();
 
     return (

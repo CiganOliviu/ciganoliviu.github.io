@@ -9,6 +9,7 @@ import { ArticleCard } from "@components/components/ArticleCard/ArticleCard";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { ArticlesPreviewWrapper } from "@components/components/ArticlesPreview/Articles.css";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
+import { ArticlesConfigType } from "@components/utils/types";
 
 const Articles: FC = () => {
     const { isMobile, isTablet } = useGetScreenSize();
@@ -19,7 +20,7 @@ const Articles: FC = () => {
             {!isMobile() && <ScrollTopButton />}
             {TextContainer({backText: 'Articles', overText: 'My Published Articles'})}
             <ProjectsFlexWrapper isMobile={isMobile()} isTablet={isTablet()}>
-                {ArticlesConfig.map((article) => {
+                {ArticlesConfig.map((article: ArticlesConfigType) => {
                     return <ArticleCard article={article} key={article.title}/>
                 })}
             </ProjectsFlexWrapper>

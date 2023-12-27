@@ -9,12 +9,17 @@ import {
 } from "@components/components/ContentCard/ContentCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
 import React, { FC } from "react";
-import { ContentCardContext } from "@components/utils/types";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 import { createCanonicalLink } from "@components/utils/detailPageManipulations";
+import { ContentCardType } from "@components/utils/types";
 
-export const ContentCard: FC<ContentCardContext> = ({ context, resumePart }) => {
+type ContentCardContextType = {
+    context: ContentCardType,
+    resumePart: string
+};
+
+export const ContentCard: FC<ContentCardContextType> = ({ context, resumePart }) => {
     const { isMobile } = useGetScreenSize();
     const isMobileResolution = isMobile();
 

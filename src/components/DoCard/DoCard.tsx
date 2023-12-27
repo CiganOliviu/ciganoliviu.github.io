@@ -5,10 +5,14 @@ import {
     ImageContainer
 } from "@components/components/DoCard/DoCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
-import { DoCardContext } from "@components/utils/types";
+import { DoCardType } from "@components/utils/types";
 import { FC } from "react";
 
-export const DoCard: FC<DoCardContext> = ({ context }) => {
+type DoCardContextType = {
+    context: DoCardType
+};
+
+export const DoCard: FC<DoCardContextType> = ({ context }) => {
     return (
         <DoCardFlex>
             <DoCardImageContainer>

@@ -1,7 +1,8 @@
 import AreBooksRelevantInSoftwareDesign from "@components/assets/articles/are_books_relevant_in_software_design.webp";
 import EightRulesOfSoftwareDesign from "@components/assets/articles/8_rules_of_software_design.webp";
+import { ArticlesConfigType } from "@components/utils/types";
 
-export const ArticlesConfig = [
+export const ArticlesConfig: ArticlesConfigType[] = [
     {
         thumbnail: EightRulesOfSoftwareDesign.src,
         title: 'What programming language to learn first',

@@ -9,6 +9,7 @@ import { AppTheme } from "@components/utils/cssMedia";
 import Link from "next/link";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { ArticlesConfig } from "@components/configs/articlesConfig";
+import { ArticlesConfigType } from "@components/utils/types";
 
 export const ArticlesPreview = () => {
     const { isMobile, isTablet } = useGetScreenSize();
@@ -17,7 +18,7 @@ export const ArticlesPreview = () => {
         <ArticlesPreviewWrapper>
             {TextContainer({backText: 'Articles', overText: 'My Published Articles'})}
             <ProjectsFlexWrapper isMobile={isMobile()} isTablet={isTablet()}>
-                {ArticlesConfig.map((article) => {
+                {ArticlesConfig.map((article: ArticlesConfigType) => {
                     return <ArticleCard article={article} key={article.title}/>
                 })}
             </ProjectsFlexWrapper>
