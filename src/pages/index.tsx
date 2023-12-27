@@ -7,8 +7,9 @@ import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import React, { useRef } from "react";
-import { PreviewProjects } from "@components/components/Projects/PreviewProjects";
+import { PreviewProjects } from "@components/components/ProjectsPreview/PreviewProjects";
 import Head from "next/head";
+import { ArticlesPreview } from "@components/components/ArticlesPreview/ArticlesPreview";
 
 export default function Home() {
     const { isMobile } = useGetScreenSize();
@@ -26,6 +27,7 @@ export default function Home() {
             <WhatIDo />
             <Resume />
             <PreviewProjects />
+            <ArticlesPreview />
             <Contact />
             <Footer />
        </>

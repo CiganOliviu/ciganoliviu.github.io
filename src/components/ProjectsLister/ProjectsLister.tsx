@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { TextContainer } from "@components/components/TextContainer/TextContainer";
-import { ProjectColumn, ProjectsFlexWrapper } from "@components/components/Projects/Projects.css";
+import { ProjectColumn, ProjectsFlexWrapper } from "@components/components/ProjectsPreview/Projects.css";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ProjectsWrapper } from "@components/components/Projects/Projects.css";
+import { ProjectsWrapper } from "@components/components/ProjectsPreview/Projects.css";
 import { PreviewProjectsConfig } from "@components/configs/projectsConfig";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { ContentLinkWrapper } from "@components/utils/DetailPageStyles.css";
