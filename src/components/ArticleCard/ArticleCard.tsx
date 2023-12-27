@@ -5,7 +5,6 @@ import {
     ArticleCardTitle,
     ArticleCardWrapper
 } from "@components/components/ArticleCard/ArticleCard.css";
-import VodBackground from "@components/assets/VodBackground.png";
 import React, { FC } from "react";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";

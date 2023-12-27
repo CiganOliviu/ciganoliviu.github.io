@@ -9,6 +9,7 @@ export const ArticleCardWrapper = styled.div<{ isMobile: boolean, isTablet: bool
     border: .3rem solid ${AppTheme.openGray};
     box-sizing: border-box;
     border-radius: 1rem;
+    background: ${AppTheme.darkCardBackground}
 `;
 
 export const ArticleCardContentWrapper = styled.div<{ responsiveScreen: boolean }>`
@@ -18,7 +19,7 @@ export const ArticleCardContentWrapper = styled.div<{ responsiveScreen: boolean 
 
 export const ArticleCardThumbnail = styled.img<{ responsiveScreen: boolean }>`
     width: ${(props) => props.responsiveScreen ? 100 : 40}%;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 `;
 
 export const ArticleCardTitle = styled.h2`

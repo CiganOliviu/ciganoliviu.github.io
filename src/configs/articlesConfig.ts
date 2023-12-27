@@ -138,7 +138,7 @@ export const ArticlesConfig = [
                 '<div>&nbsp;</div>' +
                 'Thank you!'
         },
-        open_link: '',
+        open_link: 'https://medium.com/@ciganoliviudavid/my-top-9-rules-of-software-development-b0b9fe232e5a',
     },
     {
         thumbnail: AreBooksRelevantInSoftwareDesign.src,
@@ -206,6 +206,6 @@ export const ArticlesConfig = [
                 '<div>&nbsp;</div>' +
                 'Thank you!'
         },
-        open_link: '',
+        open_link: 'https://medium.com/@ciganoliviudavid/are-books-relevant-in-software-design-8e22b5c61ae8',
     },
 ]
