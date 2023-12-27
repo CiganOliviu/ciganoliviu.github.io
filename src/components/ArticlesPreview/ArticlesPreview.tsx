@@ -8,6 +8,7 @@ import { ContentLinkWrapper } from "@components/utils/DetailPageStyles.css";
 import { AppTheme } from "@components/utils/cssMedia";
 import Link from "next/link";
 import { Separator } from "@components/components/Resume/Resume.css";
+import { ArticlesConfig } from "@components/configs/articlesConfig";
 
 export const ArticlesPreview = () => {
     const { isMobile, isTablet } = useGetScreenSize();
@@ -16,13 +17,13 @@ export const ArticlesPreview = () => {
         <ArticlesPreviewWrapper>
             {TextContainer({backText: 'Articles', overText: 'My Published Articles'})}
             <ProjectsFlexWrapper isMobile={isMobile()} isTablet={isTablet()}>
-                <ArticleCard />
-                <ArticleCard />
-                <ArticleCard />
+                {ArticlesConfig.map((article) => {
+                    return <ArticleCard article={article} key={article.title}/>
+                })}
             </ProjectsFlexWrapper>
             <Separator paddingValue={2} />
             <ContentLinkWrapper contentLinkBackground={AppTheme.darkerClose} style={{ textAlign: 'center' }}>
-                <Link href={'/projects'}>Check Extra Work and Research</Link>
+                <Link href={'/articles'}>Check Other Articles</Link>
             </ContentLinkWrapper>
             <Separator paddingValue={2} />
         </ArticlesPreviewWrapper>

@@ -3,7 +3,8 @@ import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import { PageWallpaper } from "@components/components/PageWallpaper/PageWallpaper";
 import {
-    DetailPageTypes, fetchProjectConfigResponse,
+    DetailPageTypes, fetchArticleConfigResponse,
+    fetchProjectConfigResponse,
     fetchResumeConfigObject,
     getDetailPageParams
 } from "@components/utils/detailPageManipulations";
@@ -18,6 +19,7 @@ import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopBut
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { AppTheme } from "@components/utils/cssMedia";
+import { ArticlesConfig } from "@components/configs/articlesConfig";
 
 const DetailPage = () => {
     const { isMobile } = useGetScreenSize();
@@ -32,10 +34,11 @@ const DetailPage = () => {
             setResponseObject(fetchResumeConfigObject(keySearchId, identity));
         else if (pageType === DetailPageTypes.PROJECT)
             setResponseObject(fetchProjectConfigResponse(keySearchId));
+        else if (pageType === DetailPageTypes.ARTICLE)
+            setResponseObject(fetchArticleConfigResponse(keySearchId));
     }, [pageType, keySearchId, identity]);
 
-    if (!slugDetailPage || !responseObject) {
-        // Render a loading state or handle the absence of slugDetailPage
+    if (!slugDetailPage) {
         return <div>Loading...</div>;
     }
 

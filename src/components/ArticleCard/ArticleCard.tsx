@@ -6,27 +6,28 @@ import {
     ArticleCardWrapper
 } from "@components/components/ArticleCard/ArticleCard.css";
 import VodBackground from "@components/assets/VodBackground.png";
-import React from "react";
+import React, { FC } from "react";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
+import { createCanonicalLink } from "@components/utils/detailPageManipulations";
 
 type ArticleCardType = {
-
+    article: any;
 };
 
-export const ArticleCard = () => {
+export const ArticleCard: FC<ArticleCardType> = ({ article }) => {
     const { isMobile, isTablet } = useGetScreenSize();
 
     return (
         <ArticleCardWrapper isMobile={isMobile()} isTablet={isTablet()}>
             <ArticleCardThumbnail src={VodBackground.src} responsiveScreen={isMobile() || isTablet()}/>
             <ArticleCardContentWrapper responsiveScreen={isMobile() || isTablet()}>
-                <ArticleCardTitle>Are books relevant in Software Design?</ArticleCardTitle>
+                <ArticleCardTitle>{article.title}</ArticleCardTitle>
                 <ArticleCardContent>
                     deLatin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden- Finibus
                 </ArticleCardContent>
-                <InternalLink href='#'>
-                    Read Article
+                <InternalLink href={`/article-detail-${createCanonicalLink(article.title)}`}>
+                    Read more
                 </InternalLink>
             </ArticleCardContentWrapper>
         </ArticleCardWrapper>

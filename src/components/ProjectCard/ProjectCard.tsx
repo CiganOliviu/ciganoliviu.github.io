@@ -24,7 +24,6 @@ type ProjectCardType = {
 export const ProjectCard: FC<ProjectCardType> = ({
     title,
     previewHtmlField,
-    htmlField,
     thumbnail,
     openLink,
     is_in_progress,

@@ -1,10 +1,12 @@
 import { ResumeConfig } from "@components/configs/resumeConfig";
 
 import { ProjectsConfig } from "@components/configs/projectsConfig";
+import { ArticlesConfig } from "@components/configs/articlesConfig";
 
 export enum DetailPageTypes {
       RESUME = 'resume',
-      PROJECT = 'project'
+      PROJECT = 'project',
+      ARTICLE = 'article'
 }
 
 export const getDetailPageParams = (url: string) => {
@@ -36,6 +38,10 @@ export const fetchProjectConfigResponse = (keyTitle: string) => {
       return ProjectsConfig.find((obj) => createCanonicalLink(obj.title) === keyTitle);
 };
 
+export const fetchArticleConfigResponse = (keyTitle: string) => {
+      return ArticlesConfig.find((obj) => createCanonicalLink(obj.title) === keyTitle);
+};
+
 export const createCanonicalLink = (canonicalString: string): string => {
       return canonicalString.toLowerCase().replace(/\s+/g, '-');
-}
+};
