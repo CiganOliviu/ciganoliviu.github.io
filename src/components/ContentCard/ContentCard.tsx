@@ -1,16 +1,25 @@
 import {
     ContentCardBox,
-    ContentCardDate, ContentCardFlexBox, ContentCardLogo,
+    ContentCardDate,
+    ContentCardFlexBox,
+    ContentCardLogo,
     ContentCardSubTitle,
     ContentCardText,
     ContentCardTitle
 } from "@components/components/ContentCard/ContentCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
 import React, { FC } from "react";
-import { ContentCardContext } from "@components/utils/types";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
+import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
+import { createCanonicalLink } from "@components/utils/detailPageManipulations";
+import { ContentCardType } from "@components/utils/types";
 
-export const ContentCard: FC<ContentCardContext> = ({context}) => {
+type ContentCardContextType = {
+    context: ContentCardType,
+    resumePart: string
+};
+
+export const ContentCard: FC<ContentCardContextType> = ({ context, resumePart }) => {
     const { isMobile } = useGetScreenSize();
     const isMobileResolution = isMobile();
 
@@ -27,7 +36,15 @@ export const ContentCard: FC<ContentCardContext> = ({context}) => {
                 <ContentCardLogo src={context.logo} alt={context.logo} />
             </ContentCardFlexBox>
             <Separator paddingValue={0.8} />
-            <ContentCardText isMobile={isMobileResolution} dangerouslySetInnerHTML={context.htmlField} />
+            <ContentCardText isMobile={isMobileResolution} dangerouslySetInnerHTML={context.previewHtmlField} />
+            <Separator paddingValue={1} />
+            {context.hasDetailPage &&
+                <InternalLink
+                    href={`/resume-${resumePart}-${createCanonicalLink(context.title)}`}
+                >
+                    Read more
+                </InternalLink>
+            }
         </ContentCardBox>
     )
 }

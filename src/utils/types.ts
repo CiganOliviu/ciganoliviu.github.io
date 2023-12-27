@@ -1,13 +1,32 @@
-type ContentCardType = {
+type innerHtmlType = { __html: string | TrustedHTML };
+
+export type ContentCardType = {
     date: string,
     title: string,
     logo: string,
     subtitle: string,
-    htmlField: { __html: string | TrustedHTML },
+    hasDetailPage: boolean,
+    previewHtmlField: innerHtmlType,
+    htmlField: innerHtmlType,
 };
 
-export type ContentCardContext = {
-    context: ContentCardType
+export type ArticlesConfigType = {
+    thumbnail: string,
+    title: string,
+    subtitle: string;
+    previewHtmlField: innerHtmlType,
+    htmlField: innerHtmlType,
+    open_link: string;
+};
+
+export type ProjectConfigType = {
+    thumbnail: string,
+    title: string,
+    subtitle: string,
+    previewHtmlField: innerHtmlType,
+    htmlField: innerHtmlType,
+    open_link: string,
+    is_in_progress: boolean
 };
 
 export type DoCardType = {
@@ -16,15 +35,12 @@ export type DoCardType = {
     content: string
 };
 
-export type DoCardContext = {
-    context: DoCardType
-};
-
-export type HeroCardType = {
-    nextSectionReference: any
-};
-
 export type TextContainerType = {
     backText: string,
     overText: string
+};
+
+export type LinkType = {
+    url: string,
+    iconSource: string
 };

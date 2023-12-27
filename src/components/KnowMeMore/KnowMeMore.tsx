@@ -7,8 +7,8 @@ import {
 } from "@components/components/KnowMeMore/KnowMeMore.css";
 import { ContentColumn, Separator, SimpleText } from "@components/components/Resume/Resume.css";
 import { ContentCardText } from "@components/components/ContentCard/ContentCard.css";
-import { GeneralLink } from "@components/components/HeroCard/HeroCard.css";
-import { KnowMeMoreConfig } from "@components/utils/config";
+import { ExternalLink } from "@components/components/HeroCard/HeroCard.css";
+import { KnowMeMoreConfig } from "@components/configs/generalConfig";
 import { triggerDownloadCV } from "@components/utils/generalManipulations";
 import React, { ForwardedRef, forwardRef } from "react";
 import { SocialLinks } from "@components/components/SocialLinks/SocialLinks";
@@ -44,7 +44,7 @@ export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
                         <Separator paddingValue={1} />
 
                         <KnowMeMoreTableHeader>
-                            <HighLightWhite>Lives in:</HighLightWhite> Cluj-Napoca
+                            <HighLightWhite>Lives in:</HighLightWhite> Cluj-Napoca, Satu-Mare
                         </KnowMeMoreTableHeader>
                         <Separator />
                         <KnowMeMoreTableHeaderBorder />
@@ -52,9 +52,9 @@ export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
                         <Separator paddingValue={1} />
                         <SocialLinks />
 
-                        <GeneralLink whiteText={true} onClick={triggerDownloadCV} rel="nofollow">
+                        <ExternalLink whiteText={true} onClick={triggerDownloadCV} rel="nofollow">
                             Download CV
-                        </GeneralLink>
+                        </ExternalLink>
                     </KnowMeMoreTable>
                 </ContentColumn>
             </KnowMeMoreInfoContainer>

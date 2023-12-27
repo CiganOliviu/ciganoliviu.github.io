@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
 
 export const ProjectCardWrapper = styled.div`
-    background: ${AppTheme.darkerClose};
+    background: ${AppTheme.darkCardBackground};
     border-radius: 0.6rem;
     height: 100%;
 `;

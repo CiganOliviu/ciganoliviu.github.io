@@ -7,8 +7,10 @@ import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import React, { useRef } from "react";
-import { Projects } from "@components/components/Projects/Projects";
+import { PreviewProjects } from "@components/components/ProjectsPreview/PreviewProjects";
 import Head from "next/head";
+import { ArticlesPreview } from "@components/components/ArticlesPreview/ArticlesPreview";
+import { AppTheme } from "@components/utils/cssMedia";
 
 export default function Home() {
     const { isMobile } = useGetScreenSize();
@@ -25,9 +27,10 @@ export default function Home() {
             <KnowMeMore ref={resultRef} />
             <WhatIDo />
             <Resume />
-            <Projects />
+            <PreviewProjects />
+            <ArticlesPreview />
             <Contact />
-            <Footer />
+            <Footer backgroundColor={AppTheme.darkerClose} />
        </>
     )
 }

@@ -3,7 +3,7 @@ import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia
 import { SimpleText } from "@components/components/Resume/Resume.css";
 
 export const ContactContainerBox = styled.div`
-    background: ${AppTheme.darkerClose};
+    background: ${AppTheme.darkerOpen};
     color: ${AppTheme.white};
     
     ${SimpleText} {
@@ -65,7 +65,7 @@ export const ContactFormInput = styled.input<{ isTextArea?: boolean }>`
     border: none;
     border-radius: 0.5rem;
     margin: 0.5rem 0 0.5rem 0;
-    background: ${AppTheme.darkerOpen};
+    background: ${AppTheme.darkerClose};
     color: ${AppTheme.white};
     font-weight: bold;
     font-size: 1rem;
@@ -88,7 +88,7 @@ export const ContactFormTextArea = styled.textarea`
     border: none;
     border-radius: 0.5rem;
     margin: 0.5rem 0 0.5rem 0;
-    background: ${AppTheme.darkerOpen};
+    background: ${AppTheme.darkerClose};
     color: ${AppTheme.white};
     font-weight: bold;
     width: 85%;

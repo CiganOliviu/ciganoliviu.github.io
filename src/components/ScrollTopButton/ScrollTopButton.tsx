@@ -3,7 +3,7 @@ import ArrowToTop from '../../assets/icons/angles-up-solid.svg';
 import { ScrollToTopButton, ScrollToTopIcon } from "@components/components/ScrollTopButton/ScrollToTopButton.css";
 
 const ScrollTopButton = () => {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState<boolean>(false);
 
     useEffect(() => {
         const toggleVisibility = () => {

@@ -12,7 +12,7 @@ import { Separator } from "@components/components/Resume/Resume.css";
 import { GeneralButton } from "@components/components/HeroCard/HeroCard.css";
 import React, { useEffect, useState } from "react";
 import { isValidEmail } from "@components/utils/generalManipulations";
-import { getFormEndpoint } from "@components/utils/config";
+import { getFormEndpoint } from "@components/configs/generalConfig";
 
 export const Contact = () => {
     const [name, setName] = useState<string>('');

@@ -1,5 +1,5 @@
 import {
-    GeneralLink,
+    ExternalLink,
     HeroCardBox,
     HeroCardContainer,
     HeroCardContinuityText,
@@ -7,10 +7,13 @@ import {
     HeroCardWelcomeText,
 } from "@components/components/HeroCard/HeroCard.css";
 import TypeWriter from 'typewriter-effect';
-import { HeroCardConfig } from "@components/utils/config";
+import { HeroCardConfig } from "@components/configs/generalConfig";
 import { FC } from "react";
-import { HeroCardType } from "@components/utils/types";
 import { Logo } from "@components/components/Logo/Logo";
+
+type HeroCardType = {
+    nextSectionReference: any
+};
 
 export const HeroCard: FC<HeroCardType> = ({ nextSectionReference }) => {
     const scrollToRef = () => {
@@ -37,9 +40,9 @@ export const HeroCard: FC<HeroCardType> = ({ nextSectionReference }) => {
                 <HeroCardContinuityText>
                     {HeroCardConfig.ContinuityText}
                 </HeroCardContinuityText>
-                <GeneralLink onClick={scrollToRef} rel="nofollow">
+                <ExternalLink onClick={scrollToRef} rel="nofollow">
                     {HeroCardConfig.ButtonText}
-                </GeneralLink>
+                </ExternalLink>
             </HeroCardContainer>
         </HeroCardBox>
     )

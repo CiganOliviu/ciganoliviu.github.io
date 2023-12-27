@@ -1,25 +1,29 @@
 import React, { FC } from "react";
 import {
     ProjectCardContent,
-    ProjectCardMetadataWrapper, ProjectCardThumbnail,
+    ProjectCardMetadataWrapper,
+    ProjectCardThumbnail,
     ProjectCardTitle,
-    ProjectCardWrapper, ProjectMarker
+    ProjectCardWrapper,
+    ProjectMarker
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
-import { GeneralLink } from "@components/components/HeroCard/HeroCard.css";
-import { ExternalSocialLinksConfig } from "@components/utils/config";
+import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
+import { createCanonicalLink } from "@components/utils/detailPageManipulations";
 
 type ProjectCardType = {
     thumbnail: string;
     title: string;
-    content: string;
+    subtitle: string,
+    previewHtmlField: { __html: string | TrustedHTML },
+    htmlField: { __html: string | TrustedHTML },
     openLink: string;
     is_in_progress: boolean,
 };
 
 export const ProjectCard: FC<ProjectCardType> = ({
     title,
-    content,
+    previewHtmlField,
     thumbnail,
     openLink,
     is_in_progress,
@@ -32,17 +36,13 @@ export const ProjectCard: FC<ProjectCardType> = ({
                 <Separator paddingValue={1} />
                 <ProjectCardTitle>{title}</ProjectCardTitle>
                 <Separator paddingValue={1.25} />
-                <ProjectCardContent>
-                    {content}
-                </ProjectCardContent>
+                <ProjectCardContent dangerouslySetInnerHTML={previewHtmlField} />
                 {openLink &&
-                    <GeneralLink
-                        href={openLink}
-                        target={ExternalSocialLinksConfig.target}
-                        rel={ExternalSocialLinksConfig.rel}
+                    <InternalLink
+                        href={`/project-detail-${createCanonicalLink(title)}`}
                     >
                         Read more
-                    </GeneralLink>
+                    </InternalLink>
                 }
                 <Separator paddingValue={1} />
             </ProjectCardMetadataWrapper>
