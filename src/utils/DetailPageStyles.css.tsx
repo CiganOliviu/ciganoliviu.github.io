@@ -24,6 +24,7 @@ export const Content = styled.div``;
 export const ContentExternalLinksWrapper = styled.div`
     background: ${AppTheme.darkerClose};
     color: ${AppTheme.lightGreen};
+    transition: all 250ms ease;
   
     :hover {
         color: ${AppTheme.white};

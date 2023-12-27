@@ -17,18 +17,31 @@ export const ResumeConfig = {
             logo: LogoUTCN.src,
             hasDetailPage: true,
             previewHtmlField: {
-                __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
-                    'courses across various disciplines. <div>&nbsp;</div> In the field of Mathematics, I took courses such as Linear ' +
-                    'Algebra and Analytical Geometry, Mathematical Analysis (Differential Calculus), Mathematical ' +
-                    'Analysis (Integral Calculus and Differential Equations), Special Mathematics in Engineering, and ' +
-                    'Numerical Calculus. These courses played a fundamental role in shaping my understanding of complex ' +
-                    'problems and honing my analytical skills, both of which are important in programming and systems theory.\n' +
-                    '<div>&nbsp;</div>In Systems Engineering, I gained valuable insights into the inner workings of modern systems and ' +
-                    'learned efficient methods for their analysis and control...'
+                __html: 'Throughout my academic journey, I explored an extensive array of courses spanning diverse ' +
+                    'disciplines. However, it was the development of soft skills that truly stood out. Among these,' +
+                    ' mastering stress management, cultivating discipline, honing a robust work ethic, and fostering ' +
+                    'valuable networking capabilities were paramount. Truthfully, I\'ve found these skills to hold ' +
+                    'far more significance than the academic knowledge acquired within the classroom setting. ' +
+                    'During my academic years, I discovered the art of accomplishing tasks even when my inclination ' +
+                    'veered towards delay or reluctance. Meeting deadlines became a skill honed through the necessity ' +
+                    'of completing tasks on time, a valuable trait nurtured both in school and later as a software ' +
+                    'engineer. While professional experience played a significant role, the foundations of this skill ' +
+                    'were laid during my educational journey.'
             },
             htmlField: {
-                __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
-                    'courses across various disciplines. <div>&nbsp;</div> In the field of Mathematics, I took courses such as Linear ' +
+                __html: 'Throughout my academic journey, I explored an extensive array of courses spanning diverse ' +
+                    'disciplines. However, it was the development of soft skills that truly stood out. Among these, ' +
+                    'mastering stress management, cultivating discipline, honing a robust work ethic, and fostering ' +
+                    'valuable networking capabilities were paramount. Truthfully, I\'ve found these skills to hold far ' +
+                    'more significance than the academic knowledge acquired within the classroom setting. During my' +
+                    ' academic years, I discovered the art of accomplishing tasks even when my inclination veered ' +
+                    'towards delay or reluctance. Meeting deadlines became a skill honed through the necessity of' +
+                    ' completing tasks on time, a valuable trait nurtured both in school and later as a software' +
+                    ' engineer. While professional experience played a significant role, the foundations of this ' +
+                    'skill were laid during my educational journey. Additionally, I aim to highlight certain ' +
+                    'classes that not only provided fresh perspectives but also directly correlated with the ' +
+                    'nuances of software design.' +
+                    '<div>&nbsp;</div> In the field of Mathematics, I took courses such as Linear ' +
                     'Algebra and Analytical Geometry, Mathematical Analysis (Differential Calculus), Mathematical ' +
                     'Analysis (Integral Calculus and Differential Equations), Special Mathematics in Engineering, and ' +
                     'Numerical Calculus. These courses played a fundamental role in shaping my understanding of complex ' +
