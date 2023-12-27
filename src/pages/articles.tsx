@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ProjectsFlexWrapper, ProjectsWrapper } from "@components/components/ProjectsPreview/Projects.css";
+import { ProjectsFlexWrapper } from "@components/components/ProjectsPreview/Projects.css";
 import { Logo } from "@components/components/Logo/Logo";
 import { Footer } from "@components/components/Footer/Footer";
 import { AppTheme } from "@components/utils/cssMedia";
