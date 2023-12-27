@@ -19,7 +19,6 @@ import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopBut
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { AppTheme } from "@components/utils/cssMedia";
-import { ArticlesConfig } from "@components/configs/articlesConfig";
 
 const DetailPage = () => {
     const { isMobile } = useGetScreenSize();
