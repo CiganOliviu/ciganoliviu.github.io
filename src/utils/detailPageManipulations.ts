@@ -8,14 +8,18 @@ export enum DetailPageTypes {
 }
 
 export const getDetailPageParams = (url: string) => {
-      const urlElements = url?.split('-');
-      const [pageType, identity, ...keySearchId] = urlElements;
+      if (url) {
+            const urlElements = url?.split('-');
+            const [pageType, identity, ...keySearchId] = urlElements;
 
-      return {
-            pageType,
-            identity,
-            keySearchId: keySearchId.join('-'),
-      };
+            return {
+                  pageType,
+                  identity,
+                  keySearchId: keySearchId.join('-'),
+            };
+      }
+
+      return {};
 };
 
 export const fetchResumeConfigObject = (keyTitle: string, resumePart: string) => {

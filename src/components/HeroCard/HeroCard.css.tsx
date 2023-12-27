@@ -19,6 +19,7 @@ export const HeroCardContainer = styled.div`
     transform: translate(-50%, -50%);
     color: ${AppTheme.white};
     text-align: center;
+    width: 100%;
 `;
 
 export const HeroCardWelcomeText = styled.div`

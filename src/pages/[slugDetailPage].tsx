@@ -22,7 +22,7 @@ import { AppTheme } from "@components/utils/cssMedia";
 const DetailPage = () => {
     const { isMobile } = useGetScreenSize();
     const router = useRouter();
-    const { slugDetailPage } = router.query;
+    const { slugDetailPage } = router.query || {};
     const { pageType, identity, keySearchId } = getDetailPageParams(slugDetailPage as string);
 
     const [responseObject, setResponseObject] = useState<any>(undefined);
@@ -32,7 +32,12 @@ const DetailPage = () => {
             setResponseObject(fetchResumeConfigObject(keySearchId, identity));
         else if (pageType === DetailPageTypes.PROJECT)
             setResponseObject(fetchProjectConfigResponse(keySearchId));
-    }, [slugDetailPage]);
+    }, [pageType, keySearchId, identity]);
+
+    if (!slugDetailPage || !responseObject) {
+        // Render a loading state or handle the absence of slugDetailPage
+        return <div>Loading...</div>;
+    }
 
     if (!responseObject) {
         return <ErrorPage statusCode={404} />;
