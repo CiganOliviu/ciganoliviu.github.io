@@ -39,7 +39,7 @@ const DetailPage = () => {
     }, [pageType, keySearchId, identity]);
 
     if (!slugDetailPage) {
-        return <div>Loading...</div>;
+        return <React.Fragment></React.Fragment>;
     }
 
     if (!responseObject) {
@@ -58,7 +58,9 @@ const DetailPage = () => {
                 <Separator paddingValue={2} />
                 {responseObject?.open_link &&
                     <ContentLinkWrapper contentLinkBackground={AppTheme.darkerClose}>
-                        <SimpleExternalLink href={responseObject?.open_link}>See the code and documentation on github</SimpleExternalLink>
+                        <SimpleExternalLink href={responseObject?.open_link}>
+                            {pageType === DetailPageTypes.PROJECT ? 'See the code and documentation on github' : 'Check the article on Medium'}
+                        </SimpleExternalLink>
                     </ContentLinkWrapper>
                 }
             </ContentOnlyWrapper>

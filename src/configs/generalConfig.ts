@@ -1,6 +1,6 @@
 import BezierCurveSolid from "@components/assets/icons/bezier-curve-solid.svg";
 import DisplaySolid from "@components/assets/icons/display-solid.svg";
-import PaletteSolid from "@components/assets/icons/palette-solid.svg";
+import RobotSolid from "@components/assets/icons/robot-solid.svg";
 import MobileScreenSolid from "@components/assets/icons/mobile-screen-button-solid.svg";
 import Linkedin from "@components/assets/icons/linkedin.svg";
 import Github from "@components/assets/icons/github.svg";
@@ -15,18 +15,17 @@ export const HeroCardConfig = {
         'I am a Software Engineer.',
         'I am an AI Researcher.'
     ],
-    ContinuityText: 'based in Cluj-Napoca, Romania.',
+    ContinuityText: 'based in Cluj-Napoca and Satu-Mare, Romania.',
     ButtonText: 'Let\'s discuss'
 };
 
 export const KnowMeMoreConfig = {
-      content: 'I am a dedicated student at one of the top four faculties in Romania, pursuing a degree in ' +
-          'Software Engineering. In my first year of studies, I was fortunate to secure an internship in the field, ' +
-          'where I gained valuable hands-on experience and made important professional connections. Following the ' +
-          'successful completion of my internship, I was offered a position and have been working in the field ever ' +
-          'since. Recently, I began my journey as a researcher in Artificial Intelligence, as I have a deep interest' +
-          ' in advancing the field. With a passion for learning and a commitment to excellence, I strive to make the' +
-          ' most of my education and contribute to the advancement of technology.'
+      content: 'Studying Software Engineering at a leading Romanian faculty, I embarked on an impactful journey ' +
+          'early on with a sought-after internship. This opportunity not only provided hands-on experience but ' +
+          'also forged crucial professional connections, leading to a continuous career in the field for over two years.\n' +
+          'Beyond my studies, I immerse myself as a researcher in Artificial Intelligence. Driven by a passion ' +
+          'for technological advancement, I strive to contribute meaningfully to this dynamic field, fueled ' +
+          'by an unwavering commitment to learning and excellence.'
 };
 
 export const WhatIDoConfig = {
@@ -47,10 +46,10 @@ export const WhatIDoConfig = {
     ],
     column_two: [
         {
-            icon: PaletteSolid.src,
-            title: 'UI/UX Design',
-            content: 'UI/UX design principles that allows me to optimize the user journey, simplify complex workflows,' +
-                ' and ensure that user interactions with the application are smooth and seamless.',
+            icon: RobotSolid.src,
+            title: 'Machine Learning',
+            content: 'I offer Machine Learning services, leveraging my expertise in this field to provide ' +
+                'tailored solutions that harness the power of data and algorithms for diverse applications',
         },
         {
             icon: MobileScreenSolid.src,

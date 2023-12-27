@@ -44,7 +44,7 @@ export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
                         <Separator paddingValue={1} />
 
                         <KnowMeMoreTableHeader>
-                            <HighLightWhite>Lives in:</HighLightWhite> Cluj-Napoca
+                            <HighLightWhite>Lives in:</HighLightWhite> Cluj-Napoca, Satu-Mare
                         </KnowMeMoreTableHeader>
                         <Separator />
                         <KnowMeMoreTableHeaderBorder />
