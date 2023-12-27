@@ -18,7 +18,7 @@ export const ArticleCard = () => {
     const { isMobile, isTablet } = useGetScreenSize();
 
     return (
-        <ArticleCardWrapper responsiveScreen={isMobile() || isTablet()}>
+        <ArticleCardWrapper isMobile={isMobile()} isTablet={isTablet()}>
             <ArticleCardThumbnail src={VodBackground.src} responsiveScreen={isMobile() || isTablet()}/>
             <ArticleCardContentWrapper responsiveScreen={isMobile() || isTablet()}>
                 <ArticleCardTitle>Are books relevant in Software Design?</ArticleCardTitle>

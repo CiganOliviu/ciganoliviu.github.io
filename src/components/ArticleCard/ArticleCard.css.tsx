@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
 
-export const ArticleCardWrapper = styled.div<{ responsiveScreen: boolean }>`
+export const ArticleCardWrapper = styled.div<{ isMobile: boolean, isTablet: boolean }>`
     display: flex;
-    flex-direction: ${(props) => props.responsiveScreen ? 'column' : 'row'};
-    width: ${(props) => props.responsiveScreen ? 100 : 80}%;
+    flex-direction: ${(props) => props.isMobile || props.isTablet ? 'column' : 'row'};
+    width: ${(props) => props.isMobile ? 100 : props.isTablet ? 40 : 80}%;
     margin: 1.7rem .1rem;
     border: .3rem solid ${AppTheme.openGray};
     box-sizing: border-box;
