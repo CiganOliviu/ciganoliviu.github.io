@@ -7,7 +7,7 @@ import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import React, { useRef } from "react";
-import { Projects } from "@components/components/Projects/Projects";
+import { PreviewProjects } from "@components/components/Projects/PreviewProjects";
 import Head from "next/head";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
             <KnowMeMore ref={resultRef} />
             <WhatIDo />
             <Resume />
-            <Projects />
+            <PreviewProjects />
             <Contact />
             <Footer />
        </>

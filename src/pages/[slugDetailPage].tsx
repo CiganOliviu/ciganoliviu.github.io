@@ -9,7 +9,7 @@ import {
 } from "@components/utils/detailPageManipulations";
 import {
     Content,
-    ContentExternalLinksWrapper,
+    ContentLinkWrapper,
     ContentOnlyWrapper,
     SimpleExternalLink
 } from "@components/utils/DetailPageStyles.css";
@@ -17,6 +17,7 @@ import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { Separator } from "@components/components/Resume/Resume.css";
+import { AppTheme } from "@components/utils/cssMedia";
 
 const DetailPage = () => {
     const { isMobile } = useGetScreenSize();
@@ -46,11 +47,11 @@ const DetailPage = () => {
             {!isMobile() && <ScrollTopButton />}
             <ContentOnlyWrapper>
                 <Content dangerouslySetInnerHTML={responseObject.htmlField} />
-                <Separator paddingValue={1} />
+                <Separator paddingValue={2} />
                 {responseObject?.open_link &&
-                    <ContentExternalLinksWrapper>
+                    <ContentLinkWrapper contentLinkBackground={AppTheme.darkerClose}>
                         <SimpleExternalLink href={responseObject?.open_link}>See the code and documentation on github</SimpleExternalLink>
-                    </ContentExternalLinksWrapper>
+                    </ContentLinkWrapper>
                 }
             </ContentOnlyWrapper>
             <Footer />

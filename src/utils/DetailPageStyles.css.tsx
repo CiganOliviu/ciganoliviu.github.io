@@ -6,25 +6,26 @@ export const ContentOnlyWrapper = styled.div`
     color: ${AppTheme.cardContentGray};
     font-weight: bold;
     min-height: 100vh;
-    padding: 2rem 2rem 5rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     line-height: 2rem;
     font-size: 1rem;
     
     ${minWidthQuery(Breakpoints.medium)} {
-        padding: 2rem 10rem 5rem 10rem;
+        padding: 2rem 10rem 3rem 10rem;
     }
   
     ${minWidthQuery(Breakpoints.large)} {
-        padding: 2rem 20rem 5rem 20rem;
+        padding: 2rem 20rem 3rem 20rem;
     }
 `;
 
 export const Content = styled.div``;
 
-export const ContentExternalLinksWrapper = styled.div`
-    background: ${AppTheme.darkerClose};
+export const ContentLinkWrapper = styled.div<{ contentLinkBackground: string }>`
+    background: ${(props) => props.contentLinkBackground};
     color: ${AppTheme.lightGreen};
     transition: all 250ms ease;
+    font-weight: bold;
   
     :hover {
         color: ${AppTheme.white};

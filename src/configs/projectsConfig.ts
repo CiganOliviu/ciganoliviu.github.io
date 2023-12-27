@@ -193,3 +193,5 @@ export const ProjectsConfig = [
         is_in_progress: false,
     },
 ];
+
+export const PreviewProjectsConfig = ProjectsConfig.slice(-4)

@@ -1,15 +1,17 @@
 import React, { FC } from "react";
 import { ProjectColumn, ProjectsFlexWrapper, ProjectsWrapper } from "@components/components/Projects/Projects.css";
-import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import { TextContainer } from "@components/components/TextContainer/TextContainer";
-import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { ProjectsConfig } from "@components/configs/projectsConfig";
+import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
+import { useGetScreenSize } from "@components/hooks/useScreenSize";
+import { Logo } from "@components/components/Logo/Logo";
 
-export const Projects: FC = () => {
+const Projects: FC = () => {
     const { isMobile, isTablet } = useGetScreenSize();
 
     return (
         <ProjectsWrapper>
+            <Logo />
             {TextContainer({backText: 'Projects', overText: 'My Extra Work and Research'})}
             <ProjectsFlexWrapper isMobile={isMobile()} isTablet={isTablet()}>
                 {ProjectsConfig.map((project) => {
@@ -29,4 +31,6 @@ export const Projects: FC = () => {
             </ProjectsFlexWrapper>
         </ProjectsWrapper>
     )
-};
+}
+
+export default Projects;
