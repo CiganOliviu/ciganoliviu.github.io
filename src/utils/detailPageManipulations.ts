@@ -9,7 +9,6 @@ export enum DetailPageTypes {
 
 export const getDetailPageParams = (url: string) => {
       const urlElements = url?.split('-');
-
       const [pageType, identity, ...keySearchId] = urlElements;
 
       return {

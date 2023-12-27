@@ -12,12 +12,12 @@ export const PageWallpaperCss = styled.div<{ url: string }>`
 
 export const PageWallpaperTitle = styled.h1`
     font-weight: bold;
-    font-size: 3rem
+    font-size: 2.5rem
 `;
 
 export const PageWallpaperSubtitle = styled.div`
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: ${AppTheme.lightGreen};
 `;

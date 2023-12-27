@@ -7,10 +7,16 @@ import {
     fetchResumeConfigObject,
     getDetailPageParams
 } from "@components/utils/detailPageManipulations";
-import { ContentOnlyWrapper } from "@components/utils/DetailPageStyles.css";
+import {
+    Content,
+    ContentExternalLinksWrapper,
+    ContentOnlyWrapper,
+    SimpleExternalLink
+} from "@components/utils/DetailPageStyles.css";
 import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
+import { Separator } from "@components/components/Resume/Resume.css";
 
 const DetailPage = () => {
     const { isMobile } = useGetScreenSize();
@@ -38,7 +44,15 @@ const DetailPage = () => {
                            subtitle={responseObject?.subtitle}
             />
             {!isMobile() && <ScrollTopButton />}
-            <ContentOnlyWrapper dangerouslySetInnerHTML={responseObject.htmlField}/>
+            <ContentOnlyWrapper>
+                <Content dangerouslySetInnerHTML={responseObject.htmlField} />
+                <Separator paddingValue={1} />
+                {responseObject?.open_link &&
+                    <ContentExternalLinksWrapper>
+                        <SimpleExternalLink href={responseObject?.open_link}>See the code and documentation on github</SimpleExternalLink>
+                    </ContentExternalLinksWrapper>
+                }
+            </ContentOnlyWrapper>
             <Footer />
         </>
     );

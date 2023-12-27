@@ -18,3 +18,16 @@ export const ContentOnlyWrapper = styled.div`
         padding: 2rem 20rem 5rem 20rem;
     }
 `;
+
+export const Content = styled.div``;
+
+export const ContentExternalLinksWrapper = styled.div`
+    background: ${AppTheme.darkerClose};
+    color: ${AppTheme.lightGreen};
+  
+    :hover {
+        color: ${AppTheme.white};
+    }
+`;
+
+export const SimpleExternalLink = styled.a``;
