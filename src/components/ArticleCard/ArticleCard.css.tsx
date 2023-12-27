@@ -1,24 +1,23 @@
 import styled from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
 
-export const ArticleCardWrapper = styled.div`
+export const ArticleCardWrapper = styled.div<{ responsiveScreen: boolean }>`
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: 20rem;
+    flex-direction: ${(props) => props.responsiveScreen ? 'column' : 'row'};
+    width: ${(props) => props.responsiveScreen ? 100 : 80}%;
     margin: 1.7rem .1rem;
     border: .3rem solid ${AppTheme.openGray};
     box-sizing: border-box;
     border-radius: 1rem;
 `;
 
-export const ArticleCardContentWrapper = styled.div`
+export const ArticleCardContentWrapper = styled.div<{ responsiveScreen: boolean }>`
     text-align: center;
-    padding: 2rem;
+    padding: ${(props) => props.responsiveScreen ? 1 : 2}rem;
 `;
 
-export const ArticleCardThumbnail = styled.img`
-    width: 40%;
+export const ArticleCardThumbnail = styled.img<{ responsiveScreen: boolean }>`
+    width: ${(props) => props.responsiveScreen ? 100 : 40}%;
     border-radius: 1rem;
 `;
 

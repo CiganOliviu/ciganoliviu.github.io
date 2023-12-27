@@ -2,7 +2,7 @@ import { ArticlesPreviewWrapper } from "@components/components/ArticlesPreview/A
 import { TextContainer } from "@components/components/TextContainer/TextContainer";
 import { ArticleCard } from "@components/components/ArticleCard/ArticleCard";
 import React from "react";
-import { ProjectColumn, ProjectsFlexWrapper } from "@components/components/ProjectsPreview/Projects.css";
+import { ProjectsFlexWrapper } from "@components/components/ProjectsPreview/Projects.css";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { ContentLinkWrapper } from "@components/utils/DetailPageStyles.css";
 import { AppTheme } from "@components/utils/cssMedia";

@@ -1,20 +1,22 @@
 import {
-    ArticleCardContent, ArticleCardContentWrapper,
-    ArticleCardThumbnail, ArticleCardTitle,
+    ArticleCardContent,
+    ArticleCardContentWrapper,
+    ArticleCardThumbnail,
+    ArticleCardTitle,
     ArticleCardWrapper
 } from "@components/components/ArticleCard/ArticleCard.css";
 import VodBackground from "@components/assets/VodBackground.png";
 import React from "react";
-import { ProjectCardContent } from "@components/components/ProjectCard/ProjectCard.css";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
-import { createCanonicalLink } from "@components/utils/detailPageManipulations";
-import { Separator } from "@components/components/Resume/Resume.css";
+import { useGetScreenSize } from "@components/hooks/useScreenSize";
 
 export const ArticleCard = () => {
+    const { isMobile, isTablet } = useGetScreenSize();
+
     return (
-        <ArticleCardWrapper>
-            <ArticleCardThumbnail src={VodBackground.src}/>
-            <ArticleCardContentWrapper>
+        <ArticleCardWrapper responsiveScreen={isMobile() || isTablet()}>
+            <ArticleCardThumbnail src={VodBackground.src} responsiveScreen={isMobile() || isTablet()}/>
+            <ArticleCardContentWrapper responsiveScreen={isMobile() || isTablet()}>
                 <ArticleCardTitle>Are books relevant in Software Design?</ArticleCardTitle>
                 <ArticleCardContent>
                     deLatin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden-Latin professor at Hampden- Finibus
