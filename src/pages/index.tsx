@@ -10,6 +10,7 @@ import React, { useRef } from "react";
 import { PreviewProjects } from "@components/components/ProjectsPreview/PreviewProjects";
 import Head from "next/head";
 import { ArticlesPreview } from "@components/components/ArticlesPreview/ArticlesPreview";
+import { AppTheme } from "@components/utils/cssMedia";
 
 export default function Home() {
     const { isMobile } = useGetScreenSize();
@@ -29,7 +30,7 @@ export default function Home() {
             <PreviewProjects />
             <ArticlesPreview />
             <Contact />
-            <Footer />
+            <Footer backgroundColor={AppTheme.darkerClose} />
        </>
     )
 }

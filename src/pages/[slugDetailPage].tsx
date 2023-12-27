@@ -54,7 +54,7 @@ const DetailPage = () => {
                     </ContentLinkWrapper>
                 }
             </ContentOnlyWrapper>
-            <Footer />
+            <Footer backgroundColor={AppTheme.darkerOpen} />
         </>
     );
 };

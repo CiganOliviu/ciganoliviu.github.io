@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
-import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 
 export const ContentCardBox = styled.div<{ isMobile?: boolean }>`
     background: ${AppTheme.darkCardBackground};
