@@ -24,8 +24,9 @@ export const ProjectsLister: FC<ProjectsListerType> = ({ projectsList }) => {
                                          previewHtmlField={project.previewHtmlField}
                                          htmlField={project.htmlField}
                                          thumbnail={project.thumbnail}
-                                         openLink={project.open_link}
+                                         open_link={project.open_link}
                                          is_in_progress={project.is_in_progress}
+                                         is_research_paper={project.is_research_paper}
                             />
                         </ProjectColumn>
                     )

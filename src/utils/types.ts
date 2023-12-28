@@ -26,7 +26,8 @@ export type ProjectConfigType = {
     previewHtmlField: innerHtmlType,
     htmlField: innerHtmlType,
     open_link: string,
-    is_in_progress: boolean
+    is_in_progress: boolean,
+    is_research_paper: boolean,
 };
 
 export type DoCardType = {

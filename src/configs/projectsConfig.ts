@@ -2,8 +2,9 @@ import VodBackground from "@components/assets/VodBackground.png";
 import SignalProcessing from "@components/assets/SignalProcessing.jpg";
 import BrainTumorDetection from "@components/assets/BrainTumorDetection.jpg";
 import CaRepair from "@components/assets/CaRepair.jpeg";
+import { ProjectConfigType } from "@components/utils/types";
 
-export const ProjectsConfig = [
+export const ProjectsConfig: ProjectConfigType[] = [
     {
         thumbnail: VodBackground.src,
         title: 'StreamSnap VOD Mobile App',
@@ -50,6 +51,7 @@ export const ProjectsConfig = [
         },
         open_link: '',
         is_in_progress: true,
+        is_research_paper: false,
     },
     {
         thumbnail: SignalProcessing.src,
@@ -81,6 +83,7 @@ export const ProjectsConfig = [
         },
         open_link: 'https://github.com/CiganOliviu/brushless-DC-electric-motor-identification',
         is_in_progress: false,
+        is_research_paper: false,
     },
     {
         thumbnail: BrainTumorDetection.src,
@@ -97,6 +100,7 @@ export const ProjectsConfig = [
         },
         open_link: '',
         is_in_progress: true,
+        is_research_paper: false
     },
     {
         thumbnail: CaRepair.src,
@@ -115,7 +119,8 @@ export const ProjectsConfig = [
         },
         open_link: '',
         is_in_progress: true,
+        is_research_paper: false,
     },
 ];
 
-export const PreviewProjectsConfig = ProjectsConfig.slice(-4)
+export const PreviewProjectsConfig: ProjectConfigType[] = ProjectsConfig.slice(-4)
