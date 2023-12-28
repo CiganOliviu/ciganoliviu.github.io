@@ -10,34 +10,27 @@ import {
 import { Separator } from "@components/components/Resume/Resume.css";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 import { createCanonicalLink } from "@components/utils/detailPageManipulations";
+import { ProjectConfigType } from "@components/utils/types";
 
-type ProjectCardType = {
-    thumbnail: string;
-    title: string;
-    subtitle: string,
-    previewHtmlField: { __html: string | TrustedHTML },
-    htmlField: { __html: string | TrustedHTML },
-    openLink: string;
-    is_in_progress: boolean,
-};
-
-export const ProjectCard: FC<ProjectCardType> = ({
+export const ProjectCard: FC<ProjectConfigType> = ({
     title,
     previewHtmlField,
     thumbnail,
-    openLink,
+    open_link,
     is_in_progress,
+    is_research_paper
 }) => {
     return (
         <ProjectCardWrapper>
             { is_in_progress && <ProjectMarker>In progress</ProjectMarker>}
+            { is_research_paper && <ProjectMarker>Research Paper</ProjectMarker>}
             <ProjectCardThumbnail src={thumbnail} alt={title} />
             <ProjectCardMetadataWrapper>
                 <Separator paddingValue={1} />
                 <ProjectCardTitle>{title}</ProjectCardTitle>
                 <Separator paddingValue={1.25} />
                 <ProjectCardContent dangerouslySetInnerHTML={previewHtmlField} />
-                {openLink &&
+                {open_link &&
                     <InternalLink
                         href={`/project-detail-${createCanonicalLink(title)}`}
                     >
