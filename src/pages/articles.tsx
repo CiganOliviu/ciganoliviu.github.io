@@ -10,22 +10,28 @@ import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { ArticlesPreviewWrapper } from "@components/components/ArticlesPreview/Articles.css";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { ArticlesConfigType } from "@components/utils/types";
+import Head from "next/head";
 
 const Articles: FC = () => {
     const { isMobile, isTablet } = useGetScreenSize();
 
     return (
-        <ArticlesPreviewWrapper>
-            <Logo />
-            {!isMobile() && <ScrollTopButton />}
-            {TextContainer({backText: 'Articles', overText: 'My Published Articles'})}
-            <ProjectsFlexWrapper isMobile={isMobile()} isTablet={isTablet()}>
-                {ArticlesConfig.map((article: ArticlesConfigType) => {
-                    return <ArticleCard article={article} key={article.title}/>
-                })}
-            </ProjectsFlexWrapper>
-            <Footer backgroundColor={AppTheme.darkerOpen}  />
-        </ArticlesPreviewWrapper>
+        <React.Fragment>
+            <Head>
+                <title>Articles</title>
+            </Head>
+            <ArticlesPreviewWrapper>
+                <Logo />
+                {!isMobile() && <ScrollTopButton />}
+                {TextContainer({backText: 'Articles', overText: 'My Published Articles'})}
+                <ProjectsFlexWrapper isMobile={isMobile()} isTablet={isTablet()}>
+                    {ArticlesConfig.map((article: ArticlesConfigType) => {
+                        return <ArticleCard article={article} key={article.title}/>
+                    })}
+                </ProjectsFlexWrapper>
+                <Footer backgroundColor={AppTheme.darkerOpen}  />
+            </ArticlesPreviewWrapper>
+        </React.Fragment>
     )
 }
 

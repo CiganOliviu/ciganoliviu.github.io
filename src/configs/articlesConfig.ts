@@ -4,9 +4,77 @@ import { ArticlesConfigType } from "@components/utils/types";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
     {
+        thumbnail: AreBooksRelevantInSoftwareDesign.src,
+        title: 'Are books relevant in Software Design',
+        subtitle: '10 December',
+        previewHtmlField: {
+            __html: 'Reading is essential for those who seek rise above the ordinary. — Jim Rohn' +
+                '<div>&nbsp;</div>' +
+                'Numerous sources offer information across various fields and aspects, notably the internet. However, books remain an invaluable reservoir of knowledge.'
+        },
+        htmlField: {
+            __html: '<span style="font-size: 1.8rem">Books</span> endure through centuries for multifaceted reasons, but at their core lies an undeniable truth: books are remarkably effective. They serve as invaluable tools for learning about diverse subjects and experiences. Typically, their creation involves extensive research, often authored by experts in their respective fields. This expertise grants books a level of credibility that sets them apart from many other sources of information.' +
+                '<div>&nbsp;</div>' +
+                'Numerous sources offer information across various fields and aspects, notably the internet. However, books remain an invaluable reservoir of knowledge. They encapsulate experiences, values, morals, ideas, and concepts, wielding immense power in their diversity. As an individual, delving into the pages of a book unveils profound insights into the world. This information stems from the expertise and extensive research of individuals who have dedicated years to their respective fields. With just a few dollars, one gains access to decades of collective experience within the covers of a book.' +
+                '<div>&nbsp;</div>' +
+                'Indeed, relevance in the software industry, known for its continual evolution and progress, is a pertinent question regarding the role of books. The succinct response: <i>yes, if they are used wisely.</i>' +
+                '<div>&nbsp;</div>' +
+                'In the software realm, a myriad of books exists, broadly falling into two categories: those focused on technology specifics and those addressing software-related concepts. Let’s take them one by one:' +
+                '<div>&nbsp;</div>' +
+                '<h1>Technology Specific Books</h1>' +
+                '<div>&nbsp;</div>' +
+                'Numerous books delve into teaching specific technologies like Python 3.4, Ruby 2.5.1, Django 3.2 LTS, and more. Undoubtedly, mastering a technology can significantly elevate your standing, especially during periods of high demand. For instance, amidst the current hype around Python, possessing a deep understanding can distinguish you from those with only moderate proficiency. However, this advantage often remains transient.' +
+                '<div>&nbsp;</div>' +
+                'Consider Ruby — a profound mastery of it once held transformative potential in job candidacy. Yet, its relevance today pales in comparison to newer tech stacks emerging in the past few years.' +
+                '<div>&nbsp;</div>' +
+                'Understanding a specific programming language or framework lays a solid foundation that surprisingly transfers seamlessly to others. For instance, mastering Python Django eases the transition to Java Spring; while nuances differ, the high-level knowledge remains largely transferable. This advantage emerges from learning a specific technology.' +
+                '<div>&nbsp;</div>' +
+                'These books expound on the underlying aspects of a tech stack, fostering problem-solving acumen and offering insights into framework-specific solutions. While they may offer some enduring insights, the long-term benefits are limited. Upon thorough analysis, they do not serve as game-changers in the late game of a Software Engineering career. Why? Because success in this field isn’t tethered to a single framework or language. It’s rooted in grasping concepts, patterns, and principles that transcend individual technologies.' +
+                '<div>&nbsp;</div>' +
+                '<h1>Software-Related Concepts Books</h1>' +
+                '<div>&nbsp;</div>' +
+                'These books dive into topics like Design Patterns, Architectural Design, programming paradigms (Object-Oriented, Functional, Imperative), code implementation patterns, and principles of writing clean code, among others.' +
+                '<div>&nbsp;</div>' +
+                'Surprisingly, many concepts presented in these books remain relevant over the long term. Design patterns from decades ago persist in various forms today, underscoring the enduring nature of certain methodologies in the youthful Software Industry. MVC, an aged concept, stands alongside other enduring architectural patterns and methodologies such as Singleton Pattern, Bridge, Observer, Builder, Factory, etc.' +
+                '<div>&nbsp;</div>' +
+                'Consider the seminal “Design Patterns” book from 1994 — an enduring pillar in Software Design. Its patterns and abstractions continue to be used, sometimes unknowingly, by engineers. However, relying solely on these without understanding their underpinnings is a disservice. To make informed architectural decisions and discuss solutions effectively, Software Engineers must grasp the mechanisms at work beneath the surface.' +
+                '<div>&nbsp;</div>' +
+                'Take, for instance, Martin Fowler’s “Refactoring,” a meticulous guide detailing code restructuring — defining the essence of refactoring, its significance, and the precise steps involved. It offers a foundational framework for honing our skills in this domain.' +
+                '<div>&nbsp;</div>' +
+                'Similarly, Bob Martin’s “Clean Code” probes the very concept of code cleanliness, then burgeons into a compendium outlining rules for achieving and understanding clean code. It dissects the motivations underpinning the pursuit of clean code and serves as a practical manual for its attainment.' +
+                '<div>&nbsp;</div>' +
+                'These books embody enduring principles that persist over the long haul, transcending fleeting changes. While some elements may evolve, they often orbit around these foundational concepts, which stand the test of time.' +
+                '<div>&nbsp;</div>' +
+                '<h1>What types of books to choose and when</h1>' +
+                '<div>&nbsp;</div>' +
+                'The path you choose hinges on your goals — a balance between meeting current needs and preparing for the future. Personally, I favor delving into fundamental concepts over solely diving into ever-changing technologies. Staying connected to market trends remains crucial, yet a well-constructed tech stack in Software Engineering tends to persist for the long haul. It’s not a sudden switch from React today to Ember.js tomorrow; these transitions usually take time and are easily identifiable.' +
+                '<div>&nbsp;</div>' +
+                'My reading regimen predominantly delves into core concepts showcased in books like “Clean Architecture,” “Clean Code,” “Design Patterns,” and “Refactoring.” These materials enable me to comprehend the underlying principles rather than being swayed by fleeting trends in solving momentary issues.' +
+                '<div>&nbsp;</div>' +
+                'Occasionally, I do devote time to perusing a tech-specific book or two. However, these readings serve more as overviews rather than versions specific to a particular technology. They aid me in exploring built-in solutions or refining my approach to problem-solving, especially when the framework streamlines certain complexities or offers optimal solutions.' +
+                '<div>&nbsp;</div>' +
+                'For instance, in my active use of Python — a language akin to others with dynamic compilers — I explored Pythonic coding nuances. This exploration, however, only occurred when the need arose.' +
+                '<div>&nbsp;</div>' +
+                'My approach designates around 80 to 85 percent of my time to fundamental concepts, dedicating a maximum of 15 to 20 percent to technological trends. This balance has proven effective, fostering a career trajectory that remains technology-agnostic, avoiding the lure of fleeting tech trends that lack substantial market value in the real-world landscape of software design (aka TechNoise).' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">In</span> conclusion, certainly, books play a crucial role, but where you invest your time matters significantly. Amidst the plethora of both exceptional and subpar books, discernment becomes key. I’ve encountered stellar tech books providing in-depth insights into frameworks, elucidating their workings and origins, aiding in making informed choices based on specific scenarios. Conversely, there are lackluster tech books that fail to deliver substantial value.' +
+                '<div>&nbsp;</div>' +
+                'However, in the realm of software-related concepts, the value gleaned from books has consistently been substantial. Rarely have I encountered a book in this category that didn’t enrich my understanding.' +
+                '<div>&nbsp;</div>' +
+                'Ultimately, it’s an individual journey — some don’t rely on books at all, and that’s acceptable; the internet holds a wealth of information. Books shouldn’t constitute the sole source of knowledge either.' +
+                '<div>&nbsp;</div>' +
+                'Through this piece, I aimed to underscore the availability of exceptional books and their potential to offer immense value. I wanted to emphasize the importance of making astute choices and dedicating ample attention to the right resources.' +
+                '<div>&nbsp;</div>' +
+                'Certainly, books won’t teach you how to code, but they’re invaluable for understanding concepts, methods, and much more. They offer insights that can be applied in practical scenarios. Similarly, in business, books don’t provide a complete business education, but they do impart valuable concepts that can be implemented in real-life situations.' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/are-books-relevant-in-software-design-8e22b5c61ae8',
+    },
+    {
         thumbnail: EightRulesOfSoftwareDesign.src,
         title: 'What programming language to learn first',
-        subtitle: 'An usecase driven approach',
+        subtitle: '7 December 2023',
         previewHtmlField: {
             __html: 'Distinguishing an amateur from a professional software engineer often comes down to adherence to industry standards and regulations.' +
                 '<div>&nbsp</div>' +
@@ -140,73 +208,5 @@ export const ArticlesConfig: ArticlesConfigType[] = [
                 'Thank you!'
         },
         open_link: 'https://medium.com/@ciganoliviudavid/my-top-9-rules-of-software-development-b0b9fe232e5a',
-    },
-    {
-        thumbnail: AreBooksRelevantInSoftwareDesign.src,
-        title: 'Are books relevant in Software Design',
-        subtitle: 'An usecase driven approach',
-        previewHtmlField: {
-            __html: 'Reading is essential for those who seek rise above the ordinary. — Jim Rohn' +
-                '<div>&nbsp;</div>' +
-                'Numerous sources offer information across various fields and aspects, notably the internet. However, books remain an invaluable reservoir of knowledge.'
-        },
-        htmlField: {
-            __html: '<span style="font-size: 1.8rem">Books</span> endure through centuries for multifaceted reasons, but at their core lies an undeniable truth: books are remarkably effective. They serve as invaluable tools for learning about diverse subjects and experiences. Typically, their creation involves extensive research, often authored by experts in their respective fields. This expertise grants books a level of credibility that sets them apart from many other sources of information.' +
-                '<div>&nbsp;</div>' +
-                'Numerous sources offer information across various fields and aspects, notably the internet. However, books remain an invaluable reservoir of knowledge. They encapsulate experiences, values, morals, ideas, and concepts, wielding immense power in their diversity. As an individual, delving into the pages of a book unveils profound insights into the world. This information stems from the expertise and extensive research of individuals who have dedicated years to their respective fields. With just a few dollars, one gains access to decades of collective experience within the covers of a book.' +
-                '<div>&nbsp;</div>' +
-                'Indeed, relevance in the software industry, known for its continual evolution and progress, is a pertinent question regarding the role of books. The succinct response: <i>yes, if they are used wisely.</i>' +
-                '<div>&nbsp;</div>' +
-                'In the software realm, a myriad of books exists, broadly falling into two categories: those focused on technology specifics and those addressing software-related concepts. Let’s take them one by one:' +
-                '<div>&nbsp;</div>' +
-                '<h1>Technology Specific Books</h1>' +
-                '<div>&nbsp;</div>' +
-                'Numerous books delve into teaching specific technologies like Python 3.4, Ruby 2.5.1, Django 3.2 LTS, and more. Undoubtedly, mastering a technology can significantly elevate your standing, especially during periods of high demand. For instance, amidst the current hype around Python, possessing a deep understanding can distinguish you from those with only moderate proficiency. However, this advantage often remains transient.' +
-                '<div>&nbsp;</div>' +
-                'Consider Ruby — a profound mastery of it once held transformative potential in job candidacy. Yet, its relevance today pales in comparison to newer tech stacks emerging in the past few years.' +
-                '<div>&nbsp;</div>' +
-                'Understanding a specific programming language or framework lays a solid foundation that surprisingly transfers seamlessly to others. For instance, mastering Python Django eases the transition to Java Spring; while nuances differ, the high-level knowledge remains largely transferable. This advantage emerges from learning a specific technology.' +
-                '<div>&nbsp;</div>' +
-                'These books expound on the underlying aspects of a tech stack, fostering problem-solving acumen and offering insights into framework-specific solutions. While they may offer some enduring insights, the long-term benefits are limited. Upon thorough analysis, they do not serve as game-changers in the late game of a Software Engineering career. Why? Because success in this field isn’t tethered to a single framework or language. It’s rooted in grasping concepts, patterns, and principles that transcend individual technologies.' +
-                '<div>&nbsp;</div>' +
-                '<h1>Software-Related Concepts Books</h1>' +
-                '<div>&nbsp;</div>' +
-                'These books dive into topics like Design Patterns, Architectural Design, programming paradigms (Object-Oriented, Functional, Imperative), code implementation patterns, and principles of writing clean code, among others.' +
-                '<div>&nbsp;</div>' +
-                'Surprisingly, many concepts presented in these books remain relevant over the long term. Design patterns from decades ago persist in various forms today, underscoring the enduring nature of certain methodologies in the youthful Software Industry. MVC, an aged concept, stands alongside other enduring architectural patterns and methodologies such as Singleton Pattern, Bridge, Observer, Builder, Factory, etc.' +
-                '<div>&nbsp;</div>' +
-                'Consider the seminal “Design Patterns” book from 1994 — an enduring pillar in Software Design. Its patterns and abstractions continue to be used, sometimes unknowingly, by engineers. However, relying solely on these without understanding their underpinnings is a disservice. To make informed architectural decisions and discuss solutions effectively, Software Engineers must grasp the mechanisms at work beneath the surface.' +
-                '<div>&nbsp;</div>' +
-                'Take, for instance, Martin Fowler’s “Refactoring,” a meticulous guide detailing code restructuring — defining the essence of refactoring, its significance, and the precise steps involved. It offers a foundational framework for honing our skills in this domain.' +
-                '<div>&nbsp;</div>' +
-                'Similarly, Bob Martin’s “Clean Code” probes the very concept of code cleanliness, then burgeons into a compendium outlining rules for achieving and understanding clean code. It dissects the motivations underpinning the pursuit of clean code and serves as a practical manual for its attainment.' +
-                '<div>&nbsp;</div>' +
-                'These books embody enduring principles that persist over the long haul, transcending fleeting changes. While some elements may evolve, they often orbit around these foundational concepts, which stand the test of time.' +
-                '<div>&nbsp;</div>' +
-                '<h1>What types of books to choose and when</h1>' +
-                '<div>&nbsp;</div>' +
-                'The path you choose hinges on your goals — a balance between meeting current needs and preparing for the future. Personally, I favor delving into fundamental concepts over solely diving into ever-changing technologies. Staying connected to market trends remains crucial, yet a well-constructed tech stack in Software Engineering tends to persist for the long haul. It’s not a sudden switch from React today to Ember.js tomorrow; these transitions usually take time and are easily identifiable.' +
-                '<div>&nbsp;</div>' +
-                'My reading regimen predominantly delves into core concepts showcased in books like “Clean Architecture,” “Clean Code,” “Design Patterns,” and “Refactoring.” These materials enable me to comprehend the underlying principles rather than being swayed by fleeting trends in solving momentary issues.' +
-                '<div>&nbsp;</div>' +
-                'Occasionally, I do devote time to perusing a tech-specific book or two. However, these readings serve more as overviews rather than versions specific to a particular technology. They aid me in exploring built-in solutions or refining my approach to problem-solving, especially when the framework streamlines certain complexities or offers optimal solutions.' +
-                '<div>&nbsp;</div>' +
-                'For instance, in my active use of Python — a language akin to others with dynamic compilers — I explored Pythonic coding nuances. This exploration, however, only occurred when the need arose.' +
-                '<div>&nbsp;</div>' +
-                'My approach designates around 80 to 85 percent of my time to fundamental concepts, dedicating a maximum of 15 to 20 percent to technological trends. This balance has proven effective, fostering a career trajectory that remains technology-agnostic, avoiding the lure of fleeting tech trends that lack substantial market value in the real-world landscape of software design (aka TechNoise).' +
-                '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">In</span> conclusion, certainly, books play a crucial role, but where you invest your time matters significantly. Amidst the plethora of both exceptional and subpar books, discernment becomes key. I’ve encountered stellar tech books providing in-depth insights into frameworks, elucidating their workings and origins, aiding in making informed choices based on specific scenarios. Conversely, there are lackluster tech books that fail to deliver substantial value.' +
-                '<div>&nbsp;</div>' +
-                'However, in the realm of software-related concepts, the value gleaned from books has consistently been substantial. Rarely have I encountered a book in this category that didn’t enrich my understanding.' +
-                '<div>&nbsp;</div>' +
-                'Ultimately, it’s an individual journey — some don’t rely on books at all, and that’s acceptable; the internet holds a wealth of information. Books shouldn’t constitute the sole source of knowledge either.' +
-                '<div>&nbsp;</div>' +
-                'Through this piece, I aimed to underscore the availability of exceptional books and their potential to offer immense value. I wanted to emphasize the importance of making astute choices and dedicating ample attention to the right resources.' +
-                '<div>&nbsp;</div>' +
-                'Certainly, books won’t teach you how to code, but they’re invaluable for understanding concepts, methods, and much more. They offer insights that can be applied in practical scenarios. Similarly, in business, books don’t provide a complete business education, but they do impart valuable concepts that can be implemented in real-life situations.' +
-                '<div>&nbsp;</div>' +
-                'Thank you!'
-        },
-        open_link: 'https://medium.com/@ciganoliviudavid/are-books-relevant-in-software-design-8e22b5c61ae8',
     },
 ]

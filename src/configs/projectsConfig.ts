@@ -8,7 +8,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
     {
         thumbnail: VodBackground.src,
         title: 'StreamSnap VOD Mobile App',
-        subtitle: 'An usecase driven approach',
+        subtitle: 'An Usecase driven approach',
         previewHtmlField: {
             __html: 'StreamSnap is a proof of concept (PoC) mobile streaming application that I\'ve developed to showcase ' +
                 'the potential of a streaming platform. This project aims to provide a glimpse into the possibilities ' +
