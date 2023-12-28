@@ -209,4 +209,6 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         },
         open_link: 'https://medium.com/@ciganoliviudavid/my-top-9-rules-of-software-development-b0b9fe232e5a',
     },
-]
+];
+
+export const ArticlesConfigPreview = ArticlesConfig.slice(-4);
