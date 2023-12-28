@@ -6,7 +6,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
     {
         thumbnail: AreBooksRelevantInSoftwareDesign.src,
         title: 'Are books relevant in Software Design',
-        subtitle: '10 December',
+        subtitle: '10 December 2023',
         previewHtmlField: {
             __html: 'Reading is essential for those who seek rise above the ordinary. — Jim Rohn' +
                 '<div>&nbsp;</div>' +
