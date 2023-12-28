@@ -10,11 +10,12 @@ export const ProjectsFlexWrapper = styled.div<{ isMobile: boolean, isTablet: boo
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    flex-direction: ${(props) => props.isMobile ? 'column' : 'row'};
+    flex-direction: column;
     padding: ${(props) => props.isTablet ? 0 : 2}rem;
   
     ${minWidthQuery(Breakpoints.medium)} {
-        padding: 0;    
+        padding: 0;
+        flex-direction: row;
     }
 `;
 

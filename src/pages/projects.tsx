@@ -7,17 +7,23 @@ import { ProjectsLister } from "@components/components/ProjectsLister/ProjectsLi
 import { AppTheme } from "@components/utils/cssMedia";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
+import Head from "next/head";
 
 const Projects: FC = () => {
     const { isMobile } = useGetScreenSize();
 
     return (
-        <ProjectsWrapper>
-            <Logo />
-            {!isMobile() && <ScrollTopButton />}
-            <ProjectsLister  projectsList={ProjectsConfig} />
-            <Footer backgroundColor={AppTheme.darkerClose}  />
-        </ProjectsWrapper>
+        <React.Fragment>
+            <Head>
+                <title>Projects</title>
+            </Head>
+            <ProjectsWrapper>
+                <Logo />
+                {!isMobile() && <ScrollTopButton />}
+                <ProjectsLister  projectsList={ProjectsConfig} />
+                <Footer backgroundColor={AppTheme.darkerClose}  />
+            </ProjectsWrapper>
+        </React.Fragment>
     )
 }
 

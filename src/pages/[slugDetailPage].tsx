@@ -19,6 +19,7 @@ import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopBut
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { AppTheme } from "@components/utils/cssMedia";
+import Head from "next/head";
 
 const DetailPage = () => {
     const { isMobile } = useGetScreenSize();
@@ -46,7 +47,10 @@ const DetailPage = () => {
     }
 
     return (
-        <>
+        <React.Fragment>
+            <Head>
+                <title>{responseObject?.title}</title>
+            </Head>
             <PageWallpaper url={responseObject?.thumbnail as string}
                            title={responseObject?.title}
                            subtitle={responseObject?.subtitle}
@@ -64,7 +68,7 @@ const DetailPage = () => {
                 }
             </ContentOnlyWrapper>
             <Footer backgroundColor={AppTheme.darkerOpen} />
-        </>
+        </React.Fragment>
     );
 };
 
