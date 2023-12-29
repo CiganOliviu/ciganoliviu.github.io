@@ -73,7 +73,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
     },
     {
         thumbnail: EightRulesOfSoftwareDesign.src,
-        title: 'What programming language to learn first',
+        title: '8 Rules of Software Engineers',
         subtitle: '7 December 2023',
         previewHtmlField: {
             __html: 'Distinguishing an amateur from a professional software engineer often comes down to adherence to industry standards and regulations.' +

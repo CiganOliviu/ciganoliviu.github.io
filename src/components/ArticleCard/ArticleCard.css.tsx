@@ -1,15 +1,19 @@
 import styled from "styled-components";
-import { AppTheme } from "@components/utils/cssMedia";
+import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const ArticleCardWrapper = styled.div<{ isMobile: boolean, isTablet: boolean }>`
     display: flex;
-    flex-direction: ${(props) => props.isMobile || props.isTablet ? 'column' : 'row'};
     width: ${(props) => props.isMobile ? 100 : props.isTablet ? 40 : 80}%;
     margin: 1.7rem .1rem;
     border: .3rem solid ${AppTheme.openGray};
     box-sizing: border-box;
     border-radius: 1rem;
-    background: ${AppTheme.darkCardBackground}
+    background: ${AppTheme.darkCardBackground};
+    flex-direction: column;
+  
+    ${minWidthQuery(Breakpoints.large)} {
+        flex-direction: row;
+    }
 `;
 
 export const ArticleCardContentWrapper = styled.div<{ responsiveScreen: boolean }>`
