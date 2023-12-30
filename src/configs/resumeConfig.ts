@@ -1,9 +1,8 @@
-import LogoUTCN from "@components/assets/UTCN.png";
-import LogoLTC from "@components/assets/LTC.png";
-import Logo3SS from "@components/assets/3SS.png";
-import LogoAdapted from "@components/assets/ADAPTED.png";
+import LogoUTCN from "@components/assets/resume/UTCN.png";
+import LogoLTC from "@components/assets/resume/LTC.png";
+import Logo3SS from "@components/assets/resume/3SS.png";
+import LogoAdapted from "@components/assets/resume/ADAPTED.png";
 import TechnicalUniversity from "@components/assets/education/technical-university-of-cluj-napoca.jpg";
-import Internship3SS from "@components/assets/experience/3SS_Internship.jpg";
 import Work3SS from "@components/assets/experience/3SS.jpg";
 import AlphablockAdaptedResearch from "@components/assets/experience/Alphablock_Adapted_Research.png";
 
@@ -26,7 +25,7 @@ export const ResumeConfig = {
                     'veered towards delay or reluctance. Meeting deadlines became a skill honed through the necessity ' +
                     'of completing tasks on time, a valuable trait nurtured both in school and later as a software ' +
                     'engineer. While professional experience played a significant role, the foundations of this skill ' +
-                    'were laid during my educational journey.'
+                    'were laid during my educational journey...'
             },
             htmlField: {
                 __html: '<span style="font-size: 1.8rem">Throughout my academic journey,</span> I explored an extensive array of courses spanning diverse ' +
@@ -82,20 +81,22 @@ export const ResumeConfig = {
             logo: LogoLTC.src,
             hasDetailPage: false,
             previewHtmlField: {
-                __html: 'During high school, I began exploring coding and algorithms, applying them ' +
-                    'across programming languages like C, C++, Java, Python, and C#. I also ventured into web ' +
-                    'development contests, working with technologies such as PHP, Laravel, Python Django, JavaScript, ' +
-                    'jQuery, HTML5, and CSS3, albeit at a basic level. Additionally, I actively contributed to in-school' +
-                    ' projects involving website development. These experiences ignited my passion for technology ' +
-                    'and software engineering, setting the stage for my future pursuits in the field.'
+                __html: 'During high school, I delved into the world of coding and algorithms, immersing myself ' +
+                    'in languages like C, C++, Java, Python, and C#. I was eager to explore every aspect of ' +
+                    'programming – from web development to mobile apps and even a bit of machine learning. ' +
+                    'Books like "Clean Code," "Clean Architecture," "Refactoring," and "Implementation Patterns" ' +
+                    'were my go-to resources, although they felt pretty advanced back then. Still, they fundamentally ' +
+                    'shaped how I approached software engineering, teaching me the mindset and behavior of a proficient ' +
+                    'software engineer.' +
+                    '<div>&nbsp;</div>' +
+                    'I spent a good chunk of time participating in web development contests, ' +
+                    'working with PHP, Laravel, Python Django, JavaScript, jQuery, HTML5, and CSS3. I was also ' +
+                    'actively involved in school projects centered around website development. These experiences ' +
+                    'sparked a deep passion for technology and software engineering within me, paving the way ' +
+                    'for my future pursuits in the field.'
             },
             htmlField: {
-                __html: 'During high school, I began exploring coding and algorithms, applying them ' +
-                    'across programming languages like C, C++, Java, Python, and C#. I also ventured into web ' +
-                    'development contests, working with technologies such as PHP, Laravel, Python Django, JavaScript, ' +
-                    'jQuery, HTML5, and CSS3, albeit at a basic level. Additionally, I actively contributed to in-school' +
-                    ' projects involving website development. These experiences ignited my passion for technology ' +
-                    'and software engineering, setting the stage for my future pursuits in the field.'
+                __html: ''
             },
         }
     ],
@@ -108,35 +109,43 @@ export const ResumeConfig = {
             logo: Logo3SS.src,
             hasDetailPage: true,
             previewHtmlField: {
-                __html: 'In my current role, I am one of the key individuals responsible for implementing new ' +
-                    'features with a strong emphasis on maintaining code quality in ReactJS and TypeScript. This role ' +
-                    'includes conducting Code Reviews and collaborating closely with the development team to optimize ' +
-                    'and refactor code for enhanced efficiency.\n'
+                __html: 'In my current position, I\'m deeply involved in enhancing, implementing, and maintaining ' +
+                    'features linked to Data Analytics and User Journey Tracking. I take designs from Figma and turn ' +
+                    'them into functional components, collaborating closely with our design crew. Managing data, ' +
+                    'integrating third-party tools for ads, image rendering, and tying everything together with ' +
+                    'backend systems is all part of the gig...'
             },
             htmlField: {
-                __html: '<span style="font-size: 1.8rem">In my current role,</span> I am one of the key individuals responsible for implementing new features' +
-                    ' with a strong emphasis on maintaining code quality in ReactJS and TypeScript. This role includes ' +
-                    'conducting Code Reviews and collaborating closely with the development team to optimize and ' +
-                    'refactor code for enhanced efficiency.' +
+                __html: '<span style="font-size: 1.8rem">In my current position,</span> I\'m deeply involved in enhancing, implementing, and maintaining ' +
+                    'features linked to Data Analytics and User Journey Tracking. I take designs from Figma and turn ' +
+                    'them into functional components, collaborating closely with our design crew. Managing data, ' +
+                    'integrating third-party tools for ads, image rendering, and tying everything together with ' +
+                    'backend systems is all part of the gig. My main focus is on elevating the ReactJS and ' +
+                    'TypeScript code quality while adding new functionalities.' +
                     '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">I take pride in</span> being one of the points of contact with our clients, addressing bug reports, ' +
-                    'resolving live app issues, and responding to inquiries about the system and potential new feature ' +
-                    'implementations. My commitment to delivering high quality extends to utilizing automation and unit ' +
-                    'testing development to ensure we provide top-notch products to our customers.' +
+                    '<span style="font-size: 1.8rem">I\'m the go-to</span> person for code ' +
+                    'reviews and working hand in hand with the team to refine and optimize code for better ' +
+                    'performance.' +
                     '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">Currently,</span> I am privileged to be part of a high-impact project—a leading VOD application ' +
-                    'boasting over 600,000 unique monthly users (typically reaching at least 1.6 million monthly users). ' +
+                    '<span style="font-size: 1.8rem">When it comes to client interactions,</span> I handle bug reports, live app issues, ' +
+                    'and queries about our system and potential new features. Guaranteeing top-notch products ' +
+                    'involves diving into automation and rigorous unit testing.' +
                     '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">Furthermore,</span> I contributed to another internal project where I review implementations on both ' +
-                    'the Backend (Node.js and TypeScript) and the Frontend (ReactJS with TypeScript), offering ' +
-                    'valuable consultation on different implementations. The main goal and attribute of mine was to' +
-                    ' help integrating two new programmers into the company, offering mentorship and sharing knowledge.n' +
+                    '<span style="font-size: 1.8rem">Currently, I\'m deeply involved</span> ' +
+                    'in a major project—a leading VOD application with a whopping 600,000+ unique monthly users, ' +
+                    'often hitting 1.6 million' +
                     '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">Additionally,</span> I play an important role within the internship development team, with my primary' +
-                    ' focus on mentoring and participating in the interview process in React Native, Web and Mobile.' +
+                    '<span style="font-size: 1.8rem">I also played</span> a pivotal role in an internal project, offering ' +
+                    'insights on Backend (using Node.js and TypeScript) and Frontend (ReactJS with TypeScript) ' +
+                    'implementations. My focus was on helping two new programmers integrate smoothly into the ' +
+                    'team by mentoring and sharing my knowledge.' +
                     '<div>&nbsp;</div>' +
-                    ' My commitment to excellence and my dedication to both technical innovation and teamwork are ' +
-                    'significant drivers of my contributions to the organization.'
+                    '<span style="font-size: 1.8rem">Furthermore,</span> I play a crucial role in our internship ' +
+                    'development team, specifically focusing on mentoring and contributing to the interview process ' +
+                    'for React Native, Web, and Mobile.' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.8rem">My drive</span> for excellence and strong teamwork ethic form the ' +
+                    'core of my contributions to the organization.'
             },
         },
         {
@@ -147,13 +156,15 @@ export const ResumeConfig = {
             logo: LogoAdapted.src,
             hasDetailPage: true,
             previewHtmlField: {
-                __html: 'Together with a startup company from Canada, I am currently working to gain a deeper ' +
-                    'understanding of Neural Networks, Recurrent Neural ' +
-                    'Networks, Deep Learning, and Machine Learning.\n'
+                __html: 'Collaborating with Alphablock, a pioneering Canadian startup, and the esteemed research ' +
+                    'group ADAPTED from Technical University of Cluj-Napoca, I\'m deeply engaged in an innovative ' +
+                    'initiative centered around automating financial instruments through the synergy of ' +
+                    'machine learning, scientific methodologies, and financial best practices.'
             },
             htmlField: {
                 __html: '<span style="font-size: 1.8rem">Collaborating with Alphablock,</span> a pioneering Canadian startup, and the esteemed research ' +
-                    'group ADAPTED, I\'m deeply engaged in an innovative initiative centered around automating ' +
+                    'group ADAPTED from Technical University of Cluj-Napoca, I\'m deeply engaged in an innovative ' +
+                    'initiative centered around automating ' +
                     'financial instruments through the synergy of machine learning, scientific methodologies, ' +
                     'and financial best practices. ' +
                     '<div>&nbsp;</div>' +
@@ -179,20 +190,25 @@ export const ResumeConfig = {
             date: '2021 - 2021',
             title: 'Software Engineer Internship',
             subtitle: '3Screen Solutions',
-            thumbnail: Internship3SS.src,
             logo: Logo3SS.src,
             hasDetailPage: false,
             previewHtmlField: {
                 __html: 'During my internship, I collaborated with a team of five to build a basic VOD web ' +
                     'app using ReactJS. My responsibilities included implementing features like the Authentication ' +
                     'System, Custom Fetching mechanisms, error boundaries, various design elements, and addressing ' +
-                    'responsive design challenges. '
+                    'responsive design challenges. I also learned about Agile methodologies, teamwork dynamics, and ' +
+                    'effective communication. Additionally, I gained experience in deployment systems and CI/CD, using ' +
+                    'Git and GitLab for version control, and participating in daily stand-up meetings to ensure ' +
+                    'seamless team coordination.' +
+                    '<div>&nbsp;</div>' +
+                    'That internship gave me a solid mix of tech skills and the softer side of things. It went so ' +
+                    'well that I landed a Software Engineer job afterward, and I\'ve been working in the industry ever since!'
             },
             htmlField: {
                 __html: '<span style="font-size: 1.8rem">During my internship,</span> I collaborated with a team of five to build a basic VOD web ' +
                     'app using ReactJS. My responsibilities included implementing features like the Authentication ' +
                     'System, Custom Fetching mechanisms, error boundaries, various design elements, and addressing ' +
-                    'responsive design challenges. ' +
+                    'responsive design challenges.' +
                     '<div>&nbsp;</div> ' +
                     '<span style="font-size: 1.8rem">I also learned</span> about Agile methodologies, teamwork dynamics, and ' +
                     'effective communication. Additionally, I gained experience in deployment systems and CI/CD, using ' +
