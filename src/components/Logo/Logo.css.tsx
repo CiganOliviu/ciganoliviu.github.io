@@ -6,5 +6,5 @@ export const ImageWrapper = styled.div`
 `;
 
 export const ImageLogo = styled.img`
-  width: 10rem;
+  width: 7rem;
 `;
