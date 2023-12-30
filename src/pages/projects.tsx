@@ -20,7 +20,7 @@ const Projects: FC = () => {
             <ProjectsWrapper>
                 <Logo />
                 {!isMobile() && <ScrollTopButton />}
-                <ProjectsLister  projectsList={ProjectsConfig} />
+                <ProjectsLister projectsList={ProjectsConfig} />
                 <Footer backgroundColor={AppTheme.darkerClose}  />
             </ProjectsWrapper>
         </React.Fragment>

@@ -27,15 +27,24 @@ export const ProjectsConfig: ProjectConfigType[] = [
         title: 'CaRepair: Car Damage Detector',
         subtitle: 'An usecase driven approach',
         previewHtmlField: {
-            __html: 'Employing state-of-the-art algorithms, this system processes vehicle images in real-time, ' +
-                'enabling high-precision analysis to swiftly categorize and evaluate damages. By leveraging ' +
-                'advanced technological capabilities, it aims to expedite the inspection process, providing' +
-                ' rapid and precise damage classification. This innovative solution seeks to streamline assessment' +
-                ' procedures, empowering automotive professionals with efficient tools for comprehensive and accurate ' +
-                'damage identification.'
+            __html: 'My colleague and I created a powerful full-stack mobile app using Machine Learning to analyze ' +
+                'car damage severity from images. The app, built with React Native and TypeScript, lets users ' +
+                'upload car photos. These images are sent to a Python Django backend, where our Machine Learning ' +
+                'model assesses the damage level. It\'s a user-friendly solution for quick and accurate damage ' +
+                'evaluations.'
         },
         htmlField: {
-            __html: '',
+            __html: 'This project represents a collaborative effort between a colleague and myself, resulting in a ' +
+                'sophisticated full-stack mobile application. This innovative tool harnesses the power of Machine Learning,' +
+                'to assess and categorize the severity of car damage through image analysis.' +
+                'Utilizing React Native and TypeScript, the mobile interface empowers users to capture or select ' +
+                'images of damaged vehicles. These images are then transmitted to a robust backend system developed ' +
+                'in Python using Django. Within this backend infrastructure lies the Machine Learning model, ' +
+                'intelligently evaluating the submitted images to determine the extent of car damage.' +
+                'The application\'s streamlined process allows users to seamlessly obtain comprehensive ' +
+                'damage severity assessments by simply uploading or capturing photos of the affected vehicles. ' +
+                'This technological advancement combines practicality with sophistication, offering an invaluable' +
+                ' solution for evaluating car damage efficiently and accurately.',
         },
         open_link: '',
         is_in_progress: true,
@@ -46,10 +55,10 @@ export const ProjectsConfig: ProjectConfigType[] = [
         title: 'Software Design Patterns',
         subtitle: 'An usecase driven approach',
         previewHtmlField: {
-            __html: 'Brain-Tumor-Detection-System is a Proof of Concept (POC) project in the medical ' +
-                'field, designed to improve the early detection of brain tumors. It analyzes brain X-ray ' +
-                'images using advanced technology, providing high precision and real-time results, facilitating ' +
-                'rapid and accurate diagnosis.'
+            __html: 'The core goal of this project is to explore and showcase the essential design patterns, ' +
+                'particularly in the context of TypeScript. Through an in-depth examination, we aim to ' +
+                'illustrate how these design patterns are applied and their significance in TypeScript-based ' +
+                'software development.'
         },
         htmlField: {
             __html: '',
