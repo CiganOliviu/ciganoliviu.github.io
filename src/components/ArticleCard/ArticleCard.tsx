@@ -7,7 +7,6 @@ import {
 } from "@components/components/ArticleCard/ArticleCard.css";
 import React, { FC } from "react";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
-import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { createCanonicalLink } from "@components/utils/detailPageManipulations";
 import { ArticlesConfigType } from "@components/utils/types";
 
@@ -16,8 +15,6 @@ type ArticleCardContextType = {
 };
 
 export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
-    const { isMobile, isTablet } = useGetScreenSize();
-
     return (
         <ArticleCardWrapper>
             <ArticleCardThumbnail src={article.thumbnail} />
