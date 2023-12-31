@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
-export const ArticleCardWrapper = styled.div<{ isMobile: boolean, isTablet: boolean }>`
+export const ArticleCardWrapper = styled.div`
     display: flex;
-    width: ${(props) => props.isMobile ? 100 : props.isTablet ? 40 : 80}%;
+    width: 100%;
     margin: 1.7rem .1rem;
     border: .3rem solid ${AppTheme.openGray};
     box-sizing: border-box;
@@ -13,17 +13,26 @@ export const ArticleCardWrapper = styled.div<{ isMobile: boolean, isTablet: bool
   
     ${minWidthQuery(Breakpoints.large)} {
         flex-direction: row;
+        width: 80%;
     }
 `;
 
-export const ArticleCardContentWrapper = styled.div<{ responsiveScreen: boolean }>`
+export const ArticleCardContentWrapper = styled.div`
     text-align: center;
-    padding: ${(props) => props.responsiveScreen ? 1 : 2}rem;
+    padding: 1rem;
+
+    ${minWidthQuery(Breakpoints.large)} {
+        padding: 2rem;
+    }
 `;
 
-export const ArticleCardThumbnail = styled.img<{ responsiveScreen: boolean }>`
-    width: ${(props) => props.responsiveScreen ? 100 : 40}%;
+export const ArticleCardThumbnail = styled.img`
+    width: 100%;
     border-radius: 0.5rem;
+
+    ${minWidthQuery(Breakpoints.large)} {
+        width: 40%;
+    }
 `;
 
 export const ArticleCardTitle = styled.h2`
