@@ -29,6 +29,7 @@ export const ProjectCardMetadataWrapper = styled.div`
 export const ProjectCardTitle = styled.h2`
     color: ${AppTheme.lightGreen};
     font-weight: bold;
+    padding: 0 1rem 0 1rem;
 `;
 
 export const ProjectCardContent = styled.p`

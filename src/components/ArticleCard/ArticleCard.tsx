@@ -19,11 +19,11 @@ export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
     const { isMobile, isTablet } = useGetScreenSize();
 
     return (
-        <ArticleCardWrapper isMobile={isMobile()} isTablet={isTablet()}>
-            <ArticleCardThumbnail src={article.thumbnail} responsiveScreen={isMobile() || isTablet()}/>
-            <ArticleCardContentWrapper responsiveScreen={isMobile() || isTablet()}>
+        <ArticleCardWrapper>
+            <ArticleCardThumbnail src={article.thumbnail} />
+            <ArticleCardContentWrapper>
                 <ArticleCardTitle>{article.title}</ArticleCardTitle>
-                <ArticleCardContent dangerouslySetInnerHTML={article.previewHtmlField}/>
+                <ArticleCardContent dangerouslySetInnerHTML={article.previewHtmlField} />
                 <InternalLink href={`/article-detail-${createCanonicalLink(article.title)}`}>
                     Read more
                 </InternalLink>
