@@ -8,7 +8,7 @@ export const ContentOnlyWrapper = styled.div`
     min-height: 100vh;
     padding: 2rem 2rem 3rem 2rem;
     line-height: 2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     
     ${minWidthQuery(Breakpoints.medium)} {
         padding: 2rem 10rem 3rem 10rem;

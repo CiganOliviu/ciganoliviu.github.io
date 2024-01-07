@@ -34,17 +34,27 @@ export const ProjectsConfig: ProjectConfigType[] = [
                 'evaluations.'
         },
         htmlField: {
-            __html: 'This project represents a collaborative effort between a colleague and myself, resulting in a ' +
-                'sophisticated full-stack mobile application. This innovative tool harnesses the power of Machine Learning,' +
-                'to assess and categorize the severity of car damage through image analysis.' +
-                'Utilizing React Native and TypeScript, the mobile interface empowers users to capture or select ' +
-                'images of damaged vehicles. These images are then transmitted to a robust backend system developed ' +
-                'in Python using Django. Within this backend infrastructure lies the Machine Learning model, ' +
-                'intelligently evaluating the submitted images to determine the extent of car damage.' +
-                'The application\'s streamlined process allows users to seamlessly obtain comprehensive ' +
-                'damage severity assessments by simply uploading or capturing photos of the affected vehicles. ' +
-                'This technological advancement combines practicality with sophistication, offering an invaluable' +
-                ' solution for evaluating car damage efficiently and accurately.',
+            __html: '<span style="font-size: 1.8rem">My colleague and I </span>collaborated on an application designed to assess the severity of car damage ' +
+                'via image analysis. This application operates as a RESTful API, housing a machine learning model ' +
+                'capable of discerning damage severity based on a comprehensive training dataset.' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">Employing</span> the SVM SVC algorithm from the Kaggle library, the model is written in Python using pandas' +
+                ' and numpy for data manipulation, and sklearn for the machine learning process. This model has been ' +
+                'trained on an extensive dataset of over 12,000 images encompassing various car models, angles, and ' +
+                'degrees of damage.' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">Integrating</span> this model into the backend RESTful API, developed in Python using Django, was a ' +
+                'strategic choice owing to the seamless compatibility between Python and the machine learning ' +
+                'model. The model is stored as a .pkl file, enabling rapid responses by caching the processing' +
+                ' in memory, thereby optimizing speed.' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">The backend system</span> features diverse filtering methods accessible through dispatchers (query strings) ' +
+                'and incorporates a robust authentication system.' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">On the frontend side,</span> React Native was employed for its adaptability to mobile applications.' +
+                ' Users can either upload images from their device\'s gallery or capture live pictures. ' +
+                'Upon submitting the image via a form, the application swiftly provides a classification ' +
+                'of the car\'s damage severity.',
         },
         open_link: '',
         is_in_progress: false,
