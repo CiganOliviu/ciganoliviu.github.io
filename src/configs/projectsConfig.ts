@@ -47,7 +47,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
                 ' solution for evaluating car damage efficiently and accurately.',
         },
         open_link: '',
-        is_in_progress: true,
+        is_in_progress: false,
         is_research_paper: false,
     },
     {

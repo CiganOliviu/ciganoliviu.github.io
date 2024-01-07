@@ -30,7 +30,7 @@ export const ProjectCard: FC<ProjectConfigType> = ({
                 <ProjectCardTitle>{title}</ProjectCardTitle>
                 <Separator paddingValue={1.25} />
                 <ProjectCardContent dangerouslySetInnerHTML={previewHtmlField} />
-                {open_link &&
+                {!is_in_progress &&
                     <InternalLink
                         href={`/project-detail-${createCanonicalLink(title)}`}
                     >
