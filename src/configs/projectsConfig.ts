@@ -2,25 +2,29 @@ import VodBackground from "@components/assets/projects/VodBackground.png";
 import BrainTumorDetection from "@components/assets/projects/BrainTumorDetection.jpg";
 import DesignPatterns from "@components/assets/projects/DesignPatterns.jpg";
 import CaRepair from "@components/assets/projects/CaRepair.jpeg";
+import RevolutionizingActiveInvestingWithMachineLearning from
+        "@components/assets/projects/RevolutionizingActiveInvestingWithMachineLearning.jpg";
+
 import { ProjectConfigType } from "@components/utils/types";
 
 export const ProjectsConfig: ProjectConfigType[] = [
     {
-        thumbnail: BrainTumorDetection.src,
-        title: 'MedCity: Brain Tumor Detection System',
+        thumbnail: RevolutionizingActiveInvestingWithMachineLearning.src,
+        title: 'Revolutionizing Active Investing with Machine Learning',
         subtitle: 'An usecase driven approach',
         previewHtmlField: {
-            __html: 'Brain-Tumor-Detection-System is a Proof of Concept (POC) project in the medical ' +
-                'field, designed to improve the early detection of brain tumors. It analyzes brain X-ray ' +
-                'images using advanced technology, providing high precision and real-time results, facilitating ' +
-                'rapid and accurate diagnosis.'
+            __html: 'This paper introduces a novel machine learning method aimed at enhancing the capabilities of ' +
+                'active asset managers in navigating the complexities of selection systems. These complexities ' +
+                'encompass idiosyncratic factors, subpar prediction methods, and competition from entrenched ' +
+                'systems like Market Capitalization (MCAP) weighted benchmarks, which have historically ' +
+                'challenged the industry.'
         },
         htmlField: {
             __html: '',
         },
-        open_link: '',
-        is_in_progress: true,
-        is_research_paper: false
+        open_link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4679206',
+        is_in_progress: false,
+        is_research_paper: true
     },
     {
         thumbnail: CaRepair.src,
@@ -61,14 +65,14 @@ export const ProjectsConfig: ProjectConfigType[] = [
         is_research_paper: false,
     },
     {
-        thumbnail: DesignPatterns.src,
-        title: 'Software Design Patterns',
+        thumbnail: BrainTumorDetection.src,
+        title: 'MedCity: Brain Tumor Detection System',
         subtitle: 'An usecase driven approach',
         previewHtmlField: {
-            __html: 'The core goal of this project is to explore and showcase the essential design patterns, ' +
-                'particularly in the context of TypeScript. Through an in-depth examination, we aim to ' +
-                'illustrate how these design patterns are applied and their significance in TypeScript-based ' +
-                'software development.'
+            __html: 'Brain-Tumor-Detection-System is a Proof of Concept (POC) project in the medical ' +
+                'field, designed to improve the early detection of brain tumors. It analyzes brain X-ray ' +
+                'images using advanced technology, providing high precision and real-time results, facilitating ' +
+                'rapid and accurate diagnosis.'
         },
         htmlField: {
             __html: '',
@@ -125,6 +129,23 @@ export const ProjectsConfig: ProjectConfigType[] = [
         is_in_progress: true,
         is_research_paper: false,
     },
+    {
+        thumbnail: DesignPatterns.src,
+        title: 'Software Design Patterns',
+        subtitle: 'An usecase driven approach',
+        previewHtmlField: {
+            __html: 'The core goal of this project is to explore and showcase the essential design patterns, ' +
+                'particularly in the context of TypeScript. Through an in-depth examination, we aim to ' +
+                'illustrate how these design patterns are applied and their significance in TypeScript-based ' +
+                'software development.'
+        },
+        htmlField: {
+            __html: '',
+        },
+        open_link: '',
+        is_in_progress: true,
+        is_research_paper: false
+    },
 ];
 
-export const PreviewProjectsConfig: ProjectConfigType[] = ProjectsConfig.slice(-4);
+export const PreviewProjectsConfig: ProjectConfigType[] = ProjectsConfig.slice(0, 4);
