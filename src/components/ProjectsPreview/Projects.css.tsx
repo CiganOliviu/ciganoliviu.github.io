@@ -6,12 +6,12 @@ export const ProjectsWrapper = styled.div`
     color: ${AppTheme.white};
 `;
 
-export const ProjectsFlexWrapper = styled.div<{ isMobile: boolean, isTablet: boolean }>`
+export const ProjectsFlexWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
-    padding: ${(props) => props.isTablet ? 0 : 2}rem;
+    padding: 2rem;
   
     ${minWidthQuery(Breakpoints.medium)} {
         padding: 0;
@@ -21,9 +21,6 @@ export const ProjectsFlexWrapper = styled.div<{ isMobile: boolean, isTablet: boo
 
 export const ProjectColumn = styled.div`
     margin: 1.7rem .1rem;
-    border: .3rem solid ${AppTheme.openGray};
-    box-sizing: border-box;
-    border-radius: 1rem;
     width: 100%;
     
     ${minWidthQuery(Breakpoints.medium)} {
@@ -32,5 +29,6 @@ export const ProjectColumn = styled.div`
 
     ${minWidthQuery(Breakpoints.large)} {
         width: 34%;
+        padding: 2rem;
     }
 `;

@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import { TextContainer } from "@components/components/TextContainer/TextContainer";
 import { ProjectColumn, ProjectsFlexWrapper } from "@components/components/ProjectsPreview/Projects.css";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
-import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { ProjectConfigType } from "@components/utils/types";
 
 type ProjectsListerType = {
@@ -10,12 +9,10 @@ type ProjectsListerType = {
 };
 
 export const ProjectsLister: FC<ProjectsListerType> = ({ projectsList }) => {
-    const { isMobile, isTablet } = useGetScreenSize();
-
     return (
         <React.Fragment>
             {TextContainer({backText: 'Projects', overText: 'My Extra Work and Research'})}
-            <ProjectsFlexWrapper isMobile={isMobile()} isTablet={isTablet()}>
+            <ProjectsFlexWrapper>
                 {projectsList.map((project: ProjectConfigType) => {
                     return (
                         <ProjectColumn key={project.title}>

@@ -15,7 +15,7 @@ export const ArticlesLister: FC<ArticlesListerType> = ({ articlesList }) => {
     return (
         <React.Fragment>
             {TextContainer({backText: 'Articles', overText: 'My Published Articles'})}
-            <ProjectsFlexWrapper isMobile={isMobile()} isTablet={isTablet()}>
+            <ProjectsFlexWrapper>
                 {articlesList.map((article: ArticlesConfigType) => {
                     return <ArticleCard article={article} key={article.title}/>
                 })}
