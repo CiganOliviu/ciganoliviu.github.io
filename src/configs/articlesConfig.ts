@@ -1,8 +1,118 @@
 import AreBooksRelevantInSoftwareDesign from "@components/assets/articles/are_books_relevant_in_software_design.webp";
 import EightRulesOfSoftwareDesign from "@components/assets/articles/8_rules_of_software_design.webp";
+import TheProblemWithTheJsEcosystem from "@components/assets/articles/the_problem_with_the_js_ecosystem.webp";
 import { ArticlesConfigType } from "@components/utils/types";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
+    {
+        thumbnail: TheProblemWithTheJsEcosystem.src,
+        title: 'The problem with the JS ecosystem',
+        subtitle: '14 December 2023',
+        previewHtmlField: {
+            __html: 'JavaScript maintained its position as the most utilized programming language globally, as ' +
+                'indicated by the 2023 GitHub survey, continuing its dominance from the previous year. Additionally, ' +
+                'TypeScript showed a noteworthy surge in popularity, as per GitHub’s insights.'
+        },
+        htmlField: {
+            __html: 'JavaScript maintained its position as the most utilized programming language globally, as ' +
+                'indicated by the 2023 GitHub survey, continuing its dominance from the previous year. Additionally, ' +
+                'TypeScript showed a noteworthy surge in popularity, as per GitHub’s insights.' +
+                '<div>&nbsp;</div>' +
+                'It\'s intriguing that TypeScript has surpassed Java for the first time, claiming a higher ' +
+                'position on the list of the most utilized programming languages worldwide. This shift signifies ' +
+                'a continued upward trajectory for both JavaScript (JS) and TypeScript (TS) in popularity. As of ' +
+                'now, there’s no indication of a decline in the usage of these programming languages.' +
+                '<div>&nbsp;</div>' +
+                'This transition seems quite natural given the structure of the programming landscape. JavaScript ' +
+                '(JS) and TypeScript (TS) dominate web frontend development, possessing no direct competitors in ' +
+                'that realm. Moreover, Node.js is increasingly recognized as a solid choice for backend development ' +
+                'in numerous projects, further amplifying the appeal and usage of these languages.' +
+                '<div>&nbsp;</div>' +
+                'Moreover, with technologies like React Native enabling entry into the mobile industry, the rising ' +
+                'allure of hybrid solutions due to their significantly reduced costs makes a compelling case for ' +
+                'businesses. Considering these trends, it’s hard to envision JavaScript (JS) and TypeScript (TS) ' +
+                'losing ground on the leaderboard chart anytime soon.' +
+                '<div>&nbsp;</div>' +
+                '<h1>The problem with JS</h1>' +
+                '<div>&nbsp;</div>' +
+                'Despite its significance, there’s a glaring issue that many developers seem reluctant to acknowledge: ' +
+                'the NPM package manager. While being the largest in the market and housing considerable value, ' +
+                'it’s also cluttered with numerous libraries that hold little to no practical use. Even the ones ' +
+                'initially offering value can become unstable over time. Frequent deprecation of versions leads to ' +
+                'emerging security concerns along the way.' +
+                '<div>&nbsp;</div>' +
+                'The central issue lies in the proliferation of dependencies created when building projects in Node, ' +
+                'Angular, or React. These dependencies, often transient in nature, fail to stand the test of time. ' +
+                'It’s unacceptable to embrace deprecated libraries and dependencies within an application. This ' +
+                'practice gives rise to security vulnerabilities and instability, leading to poor maintenance and' +
+                ' sometimes necessitating complete rewrites of substantial portions of the application solely for a ' +
+                'library update. While NPM might appear as a treasure trove for novices in programming, seasoned ' +
+                'software engineers comprehend the inherent risks. Accumulating numerous dependencies, especially ' +
+                'those frequently subject to deprecation due to rapid changes, inevitably results in an unstable ' +
+                'system that requires periodic rewrites every few years.' +
+                '<div>&nbsp;</div>' +
+                'I recall an incident with a ReactJs project in continuous development that faced dependency ' +
+                'installation issues. The installation failure stemmed from the requirement for a specific ' +
+                'Node version that had reached its end of life (EOL). Interestingly, this problem seemed ' +
+                'isolated to a particular operating system — MacOS. Interestingly, updating Node to a higher ' +
+                'version resolved the issue as long as the ‘node_modules’ folder is not deleted. This experience ' +
+                'sheds light on the stability of the JS ecosystem over the long term. Having to frequently ' +
+                'downgrade Node whenever issues arose, necessitating the deletion of ‘node_modules’ ' +
+                'underscores the high level of inconsistency and dependency challenges within the system.' +
+                '<div>&nbsp;</div>' +
+                'There have been instances where using the latest release of a library led to unexpected issues. ' +
+                'For example, integrating a library via its CDN using the latest version resulted in unforeseen ' +
+                'bugs within our system. Such occurrences add to the collection of incidents highlighting the ' +
+                'perceived instability of the JavaScript ecosystem. From an ecosystem like NPM, one would ' +
+                'anticipate dependencies stable enough to avoid causing system issues. While anticipating ' +
+                'changes and updates is reasonable, encountering erratic behavior due to library integrations' +
+                ' is unexpected and counterintuitive. This denotes lack of professionalism and poor software design.' +
+                '<div>&nbsp;</div>' +
+                '<h1>Why is that happening tough?</h1>' +
+                '<div>&nbsp;</div>' +
+                'With each new library release version, the rush to swiftly bring everything to market often results ' +
+                'in inadequately engineered packages, leading to a plethora of bugs along the way.' +
+                '<div>&nbsp;</div>' +
+                'The development process often lacks refinement, leading to poor architecture and code quality. ' +
+                'This results in inconsistencies, conflicting dependencies, and the necessity of specific Node ' +
+                'versions for successful app modules installations — the usual hurdles.' +
+                '<div>&nbsp;</div>' +
+                'However, not all libraries fall into this category. There are exceptional implementations that earn ' +
+                'my respect. These libraries function seamlessly, without introducing instability, and maintain their ' +
+                'value over time. It’s because of these reliable libraries that JavaScript remains prevalent, ' +
+                'particularly in the web frontend industry.' +
+                '<div>&nbsp;</div>' +
+                'Examining the core of JavaScript reveals significant power and potential. Amidst the challenges,' +
+                ' there are stable packages that reinforce and ensure stability within the ecosystem. The JavaScript' +
+                ' ecosystem resembles a vast city with numerous incredibly poor neighborhoods, yet it also hosts a ' +
+                'handful of stunning locales that make you yearn to reside within its bounds.' +
+                '<div>&nbsp;</div>' +
+                '<h1>Do we use JS then?</h1>' +
+                '<div>&nbsp;</div>' +
+                'Certainly, but it’s crucial to highlight the importance of careful consideration when incorporating ' +
+                'packages into your JavaScript applications. Including libraries in their early stages of development ' +
+                'should be avoided if stability is the priority. While a few well-established libraries are suitable ' +
+                'for broader use, numerous others available on NPM don’t substantially contribute to the ecosystem’s' +
+                ' value. I’d argue that these libraries actually lower the levels of security, dependencies, ' +
+                'and overall stability.' +
+                '<div>&nbsp;</div>' +
+                'JavaScript and TypeScript stand as invaluable tools, and NPM’s initial foundation was commendable. ' +
+                'However, the evolution of NPM hasn’t been ideal. For a durable, well-crafted, and stable project ' +
+                'in the long term, steer clear of unreliable, inconsistent, or unstable libraries. This practice ' +
+                'has been my approach, and I strongly recommend adopting it for your projects as well.' +
+                '<div>&nbsp;</div>' +
+                'Incorporating tools that analyze security vulnerabilities across all packages is a fundamental ' +
+                'step in troubleshooting and ensuring your project isn’t a liability. This practice ' +
+                'establishes a foundation built on stable, high-level security standards.' +
+                '<div>&nbsp;</div>' +
+                'If your aim isn’t centered around security, system stability, and easy maintenance, then ' +
+                'integrating any library found in the NPM package manager might seem acceptable because, ' +
+                'in the end, does it truly matter?' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/the-problem-with-the-js-ecosystem-4161b6aaa316',
+    },
     {
         thumbnail: AreBooksRelevantInSoftwareDesign.src,
         title: 'Are books relevant in Software Design',
