@@ -22,7 +22,7 @@ export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
                 <ArticleCardTitle>{article.title}</ArticleCardTitle>
                 <ArticleCardContent dangerouslySetInnerHTML={article.previewHtmlField} />
                 <InternalLink href={`/article-detail-${createCanonicalLink(article.title)}`}>
-                    Read more
+                    Read Article
                 </InternalLink>
             </ArticleCardContentWrapper>
         </ArticleCardWrapper>

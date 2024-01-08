@@ -58,9 +58,9 @@ const DetailPage = () => {
             {!isMobile() && <ScrollTopButton />}
             <ContentOnlyWrapper>
                 <Content dangerouslySetInnerHTML={responseObject.htmlField} />
-                <Separator paddingValue={2} />
                 {responseObject?.open_link &&
                     <ContentLinkWrapper contentLinkBackground={AppTheme.darkerClose}>
+                        <Separator paddingValue={1} />
                         <SimpleExternalLink href={responseObject?.open_link}>
                             {pageType === DetailPageTypes.PROJECT ? 'See the code and documentation on github' : 'Check the article on Medium'}
                         </SimpleExternalLink>
