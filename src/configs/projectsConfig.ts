@@ -19,9 +19,6 @@ export const ProjectsConfig: ProjectConfigType[] = [
                 'systems like Market Capitalization (MCAP) weighted benchmarks, which have historically ' +
                 'challenged the industry.'
         },
-        htmlField: {
-            __html: '',
-        },
         open_link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4679206',
         is_in_progress: false,
         is_research_paper: true
@@ -29,7 +26,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
     {
         thumbnail: CaRepair.src,
         title: 'CaRepair: Car Damage Detector',
-        subtitle: 'An usecase driven approach',
+        subtitle: 'Machine Learning Topic',
         previewHtmlField: {
             __html: 'My colleague and I created a powerful full-stack mobile app using Machine Learning to analyze ' +
                 'car damage severity from images. The app, built with React Native and TypeScript, lets users ' +

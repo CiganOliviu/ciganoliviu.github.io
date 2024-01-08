@@ -42,7 +42,7 @@ export const ProjectCard: FC<ProjectConfigType> = ({
                         href={open_link}
                         target={'_blank'}
                     >
-                        Read more
+                        Read Research Paper
                     </InternalLink>
                 }
                 <Separator paddingValue={1} />

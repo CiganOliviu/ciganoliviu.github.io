@@ -24,7 +24,7 @@ export type ProjectConfigType = {
     title: string,
     subtitle: string,
     previewHtmlField: innerHtmlType,
-    htmlField: innerHtmlType,
+    htmlField?: innerHtmlType,
     open_link: string,
     is_in_progress: boolean,
     is_research_paper: boolean,
