@@ -211,4 +211,4 @@ export const ArticlesConfig: ArticlesConfigType[] = [
     },
 ];
 
-export const ArticlesConfigPreview = ArticlesConfig.slice(-4);
+export const ArticlesConfigPreview = ArticlesConfig.slice(0, 4);

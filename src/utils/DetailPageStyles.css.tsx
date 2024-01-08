@@ -5,7 +5,6 @@ export const ContentOnlyWrapper = styled.div`
     background: ${AppTheme.darkerClose};
     color: ${AppTheme.cardContentGray};
     font-weight: bold;
-    min-height: 100vh;
     padding: 2rem 2rem 3rem 2rem;
     line-height: 2rem;
     font-size: 1.1rem;
