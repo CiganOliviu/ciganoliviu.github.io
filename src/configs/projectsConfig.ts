@@ -4,7 +4,6 @@ import DesignPatterns from "@components/assets/projects/DesignPatterns.jpg";
 import CaRepair from "@components/assets/projects/CaRepair.jpeg";
 import RevolutionizingActiveInvestingWithMachineLearning from
         "@components/assets/projects/RevolutionizingActiveInvestingWithMachineLearning.jpg";
-
 import { ProjectConfigType } from "@components/utils/types";
 
 export const ProjectsConfig: ProjectConfigType[] = [
@@ -26,7 +25,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
     {
         thumbnail: CaRepair.src,
         title: 'CaRepair: Car Damage Detector',
-        subtitle: 'Machine Learning Topic',
+        subtitle: 'Machine Learning POC Application',
         previewHtmlField: {
             __html: 'My colleague and I created a powerful full-stack mobile app using Machine Learning to analyze ' +
                 'car damage severity from images. The app, built with React Native and TypeScript, lets users ' +
@@ -41,7 +40,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
                 '<div>&nbsp;</div>' +
                 '<span style="font-size: 1.8rem">Employing</span> the SVM SVC algorithm from the Kaggle library, the model is written in Python using pandas' +
                 ' and numpy for data manipulation, and sklearn for the machine learning process. This model has been ' +
-                'trained on an extensive dataset of over 12,000 images encompassing various car models, angles, and ' +
+                'trained on an extensive dataset of over 1,200 images encompassing various car models, angles, and ' +
                 'degrees of damage.' +
                 '<div>&nbsp;</div>' +
                 '<span style="font-size: 1.8rem">Integrating</span> this model into the backend RESTful API, developed in Python using Django, was a ' +
@@ -64,7 +63,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
     {
         thumbnail: BrainTumorDetection.src,
         title: 'MedCity: Brain Tumor Detection System',
-        subtitle: 'An usecase driven approach',
+        subtitle: 'Machine Learning POC Application',
         previewHtmlField: {
             __html: 'Brain-Tumor-Detection-System is a Proof of Concept (POC) project in the medical ' +
                 'field, designed to improve the early detection of brain tumors. It analyzes brain X-ray ' +
@@ -72,10 +71,26 @@ export const ProjectsConfig: ProjectConfigType[] = [
                 'rapid and accurate diagnosis.'
         },
         htmlField: {
-            __html: '',
+            __html: '<span style="font-size: 1.8rem">My colleague and I </span> collaborated on an' +
+                'application focused on analyzing X-ray brain scans to detect and precisely categorize different types ' +
+                'of brain tumors. This innovative system operates as a RESTful API, housing a sophisticated machine ' +
+                'learning model. This model is adept at discerning the presence of a brain tumor and identifying its ' +
+                'specific type, leveraging an extensive training dataset.' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">Utilizing</span> the SVM SVC algorithm from the Kaggle ' +
+                'library, our model was crafted in Python, harnessing the power of pandas and numpy for seamless ' +
+                'data manipulation and sklearn for the intricate machine learning procedures. With a robust training ' +
+                'set of over 2,800 diverse brain X-ray images captured from various angles, our model has been ' +
+                'fine-tuned for accuracy and reliability.' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">The integration</span> of this high-performing model into' +
+                ' the backend RESTful API, developed using Django in Python, was a strategic decision. ' +
+                'Python\'s compatibility with the machine learning model facilitated a smooth integration ' +
+                'process. The model itself is stored as a .pkl file, optimizing response times by caching ' +
+                'processing in memory, ensuring rapid and efficient outcomes.'
         },
         open_link: '',
-        is_in_progress: true,
+        is_in_progress: false,
         is_research_paper: false
     },
     {
