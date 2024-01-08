@@ -3,8 +3,10 @@ import { AppTheme } from "@components/utils/cssMedia";
 
 export const ProjectCardWrapper = styled.div`
     background: ${AppTheme.darkCardBackground};
-    border-radius: 0.6rem;
     height: 100%;
+    border: .3rem solid ${AppTheme.openGray};
+    box-sizing: border-box;
+    border-radius: 1rem;
 `;
 
 export const ProjectMarker = styled.div`
