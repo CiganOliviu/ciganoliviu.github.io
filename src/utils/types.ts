@@ -10,6 +10,7 @@ export type ArticlesConfigType = {
 };
 
 export type ProjectConfigType = {
+    id: string;
     thumbnail: string,
     title: string,
     subtitle: string,

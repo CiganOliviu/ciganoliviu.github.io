@@ -13,6 +13,7 @@ import { createCanonicalLink } from "@components/utils/detailPageManipulations";
 import { ProjectConfigType } from "@components/utils/types";
 
 export const ProjectCard: FC<ProjectConfigType> = ({
+    id,
     title,
     previewHtmlField,
     thumbnail,
@@ -32,7 +33,7 @@ export const ProjectCard: FC<ProjectConfigType> = ({
                 <ProjectCardContent dangerouslySetInnerHTML={previewHtmlField} />
                 {!is_in_progress && !is_research_paper &&
                     <InternalLink
-                        href={`/project-detail-${createCanonicalLink(title)}`}
+                        href={`/project-detail-${id}`}
                     >
                         Read more
                     </InternalLink>

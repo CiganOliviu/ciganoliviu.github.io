@@ -16,7 +16,8 @@ export const ProjectsLister: FC<ProjectsListerType> = ({ projectsList }) => {
                 {projectsList.map((project: ProjectConfigType) => {
                     return (
                         <ProjectColumn key={project.title}>
-                            <ProjectCard title={project.title}
+                            <ProjectCard id={project.id}
+                                         title={project.title}
                                          subtitle={project.subtitle}
                                          previewHtmlField={project.previewHtmlField}
                                          htmlField={project.htmlField}
