@@ -45,3 +45,20 @@ export type LinkType = {
     url: string,
     iconSource: string
 };
+
+type EducationAndExperienceType = {
+    id: string;
+    date: string;
+    title: string;
+    subtitle: string;
+    thumbnail?: string;
+    logo: string;
+    hasDetailPage: boolean;
+    previewHtmlField: innerHtmlType;
+    htmlField: innerHtmlType,
+};
+
+export type ResumeConfigType = {
+    education: EducationAndExperienceType[];
+    experience: EducationAndExperienceType[];
+};
