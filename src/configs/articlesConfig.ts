@@ -8,8 +8,96 @@ import WhatIsTechNoise from "@components/assets/articles/what_is_tech_noise.webp
 import SoftSkillsForSoftwareEngineers from "@components/assets/articles/soft_skills_for_software_engineers.webp";
 import BooksOnSoftwareMyRecommendations from "@components/assets/articles/books_on_software_my_recommendations.webp";
 import HowToConductCodeReviews from "@components/assets/articles/how_to_conduct_code_reviews.webp";
+import HowToBuildASeniorDeveloperMindset from "@components/assets/articles/how_to_build_a_senior_developer_mindset.webp";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
+    {
+        id: 'how-to-build-a-senior-developer-mindset',
+        thumbnail: HowToBuildASeniorDeveloperMindset.src,
+        title: 'How to build a senior developer mindset',
+        subtitle: '28 January 2023',
+        previewHtmlField: {
+            __html: 'The software development industry, like many others, is very complex. You have to understand ' +
+                'and see beyond fancy technologies and beyond just doing the technical job. I’ve discussed this ' +
+                'in another article called Soft Skills for Software Engineers in...',
+        },
+        htmlField: {
+            __html: 'The software development industry, like many others, is very complex. You have to understand and see beyond fancy technologies and beyond just doing the technical job. I’ve discussed this in another article called Soft Skills for Software Engineers in which I pointed out the importance of soft skills for a successful career.' +
+                '<div>&nbsp;</div>' +
+                'The good thing is, seniority is not necessarily related to the years of experience you have in the field. Many so-called senior developers do not understand many of the things I am about to list below. Seniority inside a company is again a very debatable subject, which is not something that I am going to handle in this article. However, what I am going to talk about in this article is how to build a senior developer mentality.' +
+                '<div>&nbsp;</div>' +
+                'You can have a senior developer mentality even if you are a junior because there is a certain ethic that, if you possess it, your development and path to becoming a top senior software engineer would be much easier.' +
+                '<div>&nbsp;</div>' +
+                'That being said, let’s jump into the list:' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Technical Master</h1>' +
+                '<div>&nbsp;</div>' +
+                'A senior software developer or engineer is a technical master. He understands the stack he is working on very well, and besides that, he understands how other industries work, at least in theory. He has hands-on experience in a variety of technologies, many of which are imposed by working on certain projects and under specific requirements.' +
+                '<div>&nbsp;</div>' +
+                'A technical master is a person who combines working alongside the job with the enormous experience that comes from engaging in different projects with different use cases, people, and business rules. The technical master is the person you can call in any given situation, and he is able to troubleshoot everything in a short period.' +
+                '<div>&nbsp;</div>' +
+                'A true senior is a technical master because he has to worry about many different things — the client, juniors, calls, the manager — and thus has little to no time to waste on technical challenges. He solves them because he knows the root cause. He can even troubleshoot issues without looking at the code and just by going through the bug description. He can understand what parts of the system are going to be affected just by looking at the feature that is required to be implemented.' +
+                '<div>&nbsp;</div>' +
+                'The bottom line is, he knows his stack very well, but he also understands many aspects and stages of programming that are not naturally related to his direct touch. Looking at such a person feels like everything is safe. If you have such a feeling with a person, most probably that person is a technical master.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Knows how to mentor</h1>' +
+                '<div>&nbsp;</div>' +
+                'An important aspect of being a senior software developer is knowing how to mentor. Whether directly or indirectly, willingly or unwillingly, if you are good at something, people who want to shadow you will get closer to you. If a person wants to learn from the best, he will get closer to the people who are the best in the industry he wants to understand.' +
+                '<div>&nbsp;</div>' +
+                'That being said, true seniors know how to mentor, and they know how to mentor well. They know when it is too much; they know how to handle difficult questions and situations. They know how to leave a certain level of interpretation so that juniors have an open-minded perspective but are still held to strict and ruthless rules of software design.' +
+                '<div>&nbsp;</div>' +
+                'A senior software engineer knows how to control his emotions and feelings because sometimes juniors can be a pain, especially if you had a bad day with clients, managers, or maybe it is just a difficult situation at work. They ask too many questions, and maybe many of them do not make sense, so you still have to filter them, remain calm, and know how to respond and what to respond.' +
+                '<div>&nbsp;</div>' +
+                'There are not a lot of seniors who know how to mentor, and in my opinion, a software engineer who is not a good mentor cannot call himself a senior.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Great communicator</h1>' +
+                '<div>&nbsp;</div>' +
+                'A senior software engineer knows how to communicate well. He understands how to talk to different types of people because there is a certain way in which you talk to a manager, a different way in which you talk to a junior, a different way to talk with a senior, a solution architect, the client, and the list goes on. The core idea is that a senior software engineer knows how to talk and when to talk.' +
+                '<div>&nbsp;</div>' +
+                'Part of being a good communicator is being a good listener, and a senior knows how to do that as well.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Knows when to push back ideas</h1>' +
+                '<div>&nbsp;</div>' +
+                'Knowing when to push back on ideas in certain moments is important, and a senior knows when to do that.' +
+                '<div>&nbsp;</div>' +
+                'Sometimes the client will come with abnormal requirements, which is the happy case because you do not need a lot of experience to know to push back on abnormal ideas. The problem is when a client comes with certain requirements that look great in the user story but implementation-wise would be a mess. That is usually the moment when a good senior software engineer starts to ask questions and to challenge certain beliefs. That is the moment when he is trying to push back a little, to see if the requirement has an important business foundation or if it is just something that the client wants because it is fancy. You should be aware of the difference and push back on ideas every time you feel the requirement is not going to benefit the software. It is your duty.' +
+                '<div>&nbsp;</div>' +
+                'Sometimes the manager might push you to extend the work that you are doing beyond the team’s capability. That is the moment when you need to push back, and challenge the manager and the requirement that he is making. It might be a dummy example, but this can be extended to any given case that seems unreasonable or that draws the team back to an extreme level.' +
+                '<div>&nbsp;</div>' +
+                'I am not saying to push back on any ideas that the client has or any time the manager asks for something, you start arguing. What I am trying to say is that a senior developer understands when the line is crossed and thus knows when to say no.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">He is a team player</h1>' +
+                '<div>&nbsp;</div>' +
+                'A senior is a team player. He discusses problems within the team, celebrates victories with the team, and works for the team. A true senior understands that the team takes precedence. He always considers the team’s needs and engages in debates about ideas, even if other team members are not seniors. He knows how to motivate, when to motivate, and how to support each and every team member in their process of learning, working on a particular use case, doing a specific refactoring, and so on.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">He practices deep work</h1>' +
+                '<div>&nbsp;</div>' +
+                'Inspired by the popular book “Deep Work” by Cal Newport, a true senior practices deep work. You will often notice, at a certain timestamp, that there is no activity from that senior. This is not because he is not working, but because he is engaged in deep work — tackling specific problems, addressing issues, or focusing on particular features. Almost all true seniors I have met follow this practice, and it is an effective method for getting things done.' +
+                '<div>&nbsp;</div>' +
+                'Generally speaking, it is challenging to embrace deep work because you need to understand your schedule, yourself, and create the best environment to maximize your achievements. However, most true seniors have managed to grasp how to reach that state, which is why they accomplish so much by the end of the sprint.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">He is a continuous learner</h1>' +
+                '<div>&nbsp;</div>' +
+                'A true senior is a continuous learner and invests time in understanding as much as possible. Because there is so much to learn and comprehend, he acknowledge that he cannot grasp every concept out there. As a result, he remains very receptive to all developers, regardless of their experience level. It is common to observe seniors listening to and exchanging ideas with juniors, even though the natural expectation is for the junior to learn from the senior developer. While this is the primary dynamic, a true senior often listens and learns from everyone, even if it’s sometimes to discern what not to do.' +
+                '<div>&nbsp;</div>' +
+                'This approach also nurtures a team player spirit because being inclined to learn and listen from everyone, irrespective of their experience level, contributes to a collaborative and supportive team environment.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">He does his job even if it stinks</h1>' +
+                '<div>&nbsp;</div>' +
+                'Sometimes, we have to do things we do not enjoy. This holds true for software development as well. There are always parts of code or certain features that you may not want to work on, for various reasons. It could be a challenging bug in production or simply a task that doesn’t appeal to you. Regardless, it’s a job that can be unpleasant.' +
+                '<div>&nbsp;</div>' +
+                'That being said, a true senior will always tackle the job, even if it’s unpleasant. If it is required and deemed top priority, he will do it because it needs to be done, and he will perform accordingly.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Conclusion</h1>' +
+                '<div>&nbsp;</div>' +
+                'What I presented here is just a small list, and I tried to explain each and every single point a little. It’s important to have a clear definition of what a senior is because being a senior is much more than a promotion at a company. Often, companies will promote individuals because they feel it’s the right time, and the individual is performing adequately, resulting in being categorized as a senior within the company. However, when you step out and look for opportunities in another company, you may realize you are not as experienced as the title suggests, and there are gaps in your knowledge.' +
+                '<div>&nbsp;</div>' +
+                'This list aims to set a standard — my standard — on how I see a senior software engineer.' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/how-to-build-a-senior-developer-mindset-0c9f17c134ad',
+    },
     {
         id: 'how-to-conduct-code-reviews',
         thumbnail: HowToConductCodeReviews.src,
