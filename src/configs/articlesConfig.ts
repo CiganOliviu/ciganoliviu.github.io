@@ -4,10 +4,100 @@ import TheProblemWithTheJsEcosystem from "@components/assets/articles/the_proble
 import TechToolsForSoftwareEngineer from "@components/assets/articles/tech_tools_for_software_engineers.webp";
 import WhatProgrammingLanguageToLearnFirst from "@components/assets/articles/what_programming_language_to_learn_first.webp";
 import WhatIsTechNoise from "@components/assets/articles/what_is_tech_noise.webp";
+import SoftSkillsForSoftwareEngineers from "@components/assets/articles/soft_skills_for_software_engineers.webp";
 
 import { ArticlesConfigType } from "@components/utils/types";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
+    {
+        id: 'soft-skills-for-software-engineers',
+        thumbnail: SoftSkillsForSoftwareEngineers.src,
+        title: 'Soft Skills for Software Engineers',
+        subtitle: '2 January 2023',
+        previewHtmlField: {
+            __html: 'Soft skills, equally vital alongside hard skills, play a pivotal role in career growth and ' +
+                'overall success. Despite their importance, they often take a backseat in learning and understanding, ' +
+                'possibly because people acknowledge their significance but fail to dedicate...',
+        },
+        htmlField: {
+            __html: 'Soft skills, equally vital alongside hard skills, play a pivotal role in career growth and overall success. Despite their importance, they often take a backseat in learning and understanding, possibly because people acknowledge their significance but fail to dedicate focused time to develop them. This oversight might stem from a lack of emphasis or awareness regarding their tangible impact on professional and personal advancement. Why do you suppose this disparity exists between acknowledging their value and actively investing in their development?' +
+                '<div>&nbsp;</div>' +
+                'Many tend to think that mastering hard skills automatically leads to developing soft skills, but that’s a misconception. It’s not about one replacing the other. A blend of both is where the real advantage lies. Striking that balance between hard and soft skills offers far greater benefits than solely focusing on one or the other. This equilibrium ensures the best and most rewarding outcomes.' +
+                '<div>&nbsp;</div>' +
+                'Soft skills matter in various life domains — family, relationships, business, and notably in fields like software engineering. While I won’t cover every domain, let’s focus on software development. Specific scenarios in this field branch out from fundamental soft skills that hold true across various areas. It’s important to highlight that this is my perspective, not a comprehensive guide. These soft skills reflect where I invest my time and focus.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Team work and collaboration</h1>' +
+                '<div>&nbsp;</div>' +
+                'Six years ago, during a discussion led by a school psychologist about excelling in our chosen fields, I confidently asserted my ability to thrive in the software domain. I was convinced that navigating the realm of software, particularly through freelancing, was feasible as a solo endeavor. I engaged in a fervent debate with the psychologist, strongly advocating for this belief. At that time, my grasp of technical concepts was robust, yet I failed to recognize the significance of softer, interpersonal skills.' +
+                '<div>&nbsp;</div>' +
+                'However, roughly a year later, a transformative shift occurred. I began to to listen to the advice of individuals possessing greater wisdom and experience. Among the insights shared, one phrase resonated profoundly: “No one is an island.” This simple but potent statement illuminated a critical truth — I had overlooked the indispensable role of collaboration and connection in achieving success, particularly within the intricate landscape of software development. This realization prompted a fundamental reassessment of my priorities, emphasizing the pivotal importance of harmonizing technical proficiency with effective interpersonal skills for professional growth and accomplishment.' +
+                '<div>&nbsp;</div>' +
+                'After reality checks after reality checks I now understand well enough the situation. Yes you can be a freelancer and build things on your own, but you cannot have a high level impact without a team. The quicker you understand that, the quicker you will scale in mission and provided value.' +
+                '<div>&nbsp;</div>' +
+                'Moreover, as a freelancer if you are building software for a client and I assume a freelancer is doing so, you are basically having a team with your client. You are talking to him, you have to make him understood in order to sell, you have to understand his needs and so on' +
+                '<div>&nbsp;</div>' +
+                'A team is very important, and being able to keep it and collaborate effectively with each and every team member is a key factor. You have to understand them, be proficient, persuasive and make them feel understood. Team members also need to understand your next move, why you are doing it and how you are doing it.' +
+                '<div>&nbsp;</div>' +
+                'Collaborating in different manners and decisions with your team is also crucial, you have to be predictable so that they have an understanding of what you are doing. Also you do not need to take important decisions only on your own, there needs to be some kind of discussion in regards to core problems which lead to a decisions.' +
+                '<div>&nbsp;</div>' +
+                'So, it’s crucial to get along well in a team and learn all those things I mentioned earlier. They’re all skills, and remember, you can learn any skill with practice and effort.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Work Ethic</h1>' +
+                '<div>&nbsp;</div>' +
+                'Work ethic, a fundamental soft skill, encompasses a multitude of qualities and expectations. Its definition can be quite personal and subjective. Some individuals interpret it as a mere four-hour work week, and if that approach proves effective for them, that’s commendable. However, my perspective diverges from this.' +
+                '<div>&nbsp;</div>' +
+                'To me, work ethic transcends mere office hours; it hinges on the level of productivity and the impact I generate toward my set objectives. While I may achieve my goals within a span of 80 hours per week, the true goal isn’t the sheer number of hours worked. It’s about fulfilling my necessities and accomplishing the objectives I’ve set for myself. The crux lies in the efficiency and effectiveness of my efforts rather than the quantity of time devoted to them.' +
+                '<div>&nbsp;</div>' +
+                'To me, it’s not simply about choosing quality over quantity or focusing solely on how long you work. It’s about having both quality and quantity in your efforts — they’re both important. I’ve had people brag about the hours they spend at the office, but scrolling through Facebook doesn’t really count as work. Similarly, taking short breaks to check Instagram doesn’t add up to quality work; it’s more about just adding up time, not the value of what you’re doing.' +
+                '<div>&nbsp;</div>' +
+                'Defining your work ethic based on your needs, desires, and commitments is key. Once defined, it’s crucial to understand, adhere to, and consistently practice it. Essentially, work ethic boils down to this: Work — engaging in activities aimed at achieving specific outcomes, and Ethic — the principles governing moral conduct.' +
+                '<div>&nbsp;</div>' +
+                'You need a strong work ethic in order to succeed in any industry.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">The way you conduct code reviews</h1>' +
+                '<div>&nbsp;</div>' +
+                'In the realm of Software Engineering, the approach to conducting code reviews holds significant weight. It’s not just about suggesting changes; it’s about articulating the reasoning behind those suggestions. Engaging in a debate, offering explanations, and advocating for a particular line of code over another fosters a healthy discourse.' +
+                '<div>&nbsp;</div>' +
+                'Please refrain from solely stating what needs to change without providing reasoning. While some issues might be self-evident, I understand they may not need explicit articulation. However, regarding software code architecture, it’s essential to substantiate any proposed changes with strong arguments at all times.' +
+                '<div>&nbsp;</div>' +
+                'Being receptive to discussions, whether giving or receiving a review, is crucial. It’s about staying open-minded to new ideas and concepts, acknowledging that there might be better ways to solve a problem or improve code, and embracing these discussions to refine and enhance the codebase.' +
+                '<div>&nbsp;</div>' +
+                'The ultimate aim is to enhance the code and establish a robust software structure, prioritizing improvements rather than enforcing personal preferences. Embracing an open-minded approach is a valuable skill in achieving these goals.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Open to ideas and criticism</h1>' +
+                '<div>&nbsp;</div>' +
+                'Remaining open to new ideas and criticism is vital, as emphasized in the code review section. This mindset should extend beyond reviews to all discussions, encompassing design patterns, architectural considerations, and any field of discussion. It’s crucial to welcome constructive criticism and set aside one’s ego.' +
+                '<div>&nbsp;</div>' +
+                'It’s important to comprehend that the ultimate aim isn’t forcefully imposing personal agendas but rather designing superior software and enhancing existing systems. While presenting well-founded arguments for a certain approach is beneficial, avoiding the trap of assuming omniscience is essential.' +
+                '<div>&nbsp;</div>' +
+                'Set ego aside, adopt humility, and when suggesting changes, substantiate them with solid reasoning. If your arguments are compelling, consistent, and founded in truth, the changes will likely be implemented.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Stress management</h1>' +
+                '<div>&nbsp;</div>' +
+                'There will inevitably be moments of pressure, particularly when tight deadlines loom over project deliveries or when clients exert pressure. It’s crucial to manage this stress effectively, harnessing it for your advantage.' +
+                '<div>&nbsp;</div>' +
+                'Rather than allowing stress to overpower you, leverage it as a catalyst to meet all required deadlines. Stress, when handled adeptly, can be highly beneficial. It has the potential to generate significant energy if channeled wisely.' +
+                '<div>&nbsp;</div>' +
+                'Ensure that you comprehend and manage stress effectively to derive its benefits.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Communication</h1>' +
+                '<div>&nbsp;</div>' +
+                'Communication extends beyond teamwork and collaboration; it involves adapting your approach for different audiences. When engaging with clients, the communication style should be more accessible, avoiding technical jargon and focusing on terms they can comprehend. However, with developers, precision and technical depth are essential to convey intentions accurately.' +
+                '<div>&nbsp;</div>' +
+                'Furthermore, effective communication involves conveying intentions based on ongoing activities. Consistency and predictability in communication are key for the team, clients, and anyone you collaborate with.' +
+                '<div>&nbsp;</div>' +
+                'Being a meticulous manager of details is imperative. Simplifying complex concepts is vital, ensuring that simplicity retains depth and clarity for the listeners. The manner in which you communicate holds immense significance; it’s essential to grasp the art of effective communication.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Conclusion</h1>' +
+                '<div>&nbsp;</div>' +
+                'It is important to acknowledge that this list can be expanded, yet it broadly covers essentials for Software Engineers. As an extension, I would emphasize the significance of being an attentive listener and speaking purposefully. These soft skills not only enhance my value as a developer but also as a human, offering diverse perspectives. While I continue to learn and grow in these areas, I feel confident in my proficiency with the ones I’ve mentioned.' +
+                '<div>&nbsp;</div>' +
+                'Ultimately, I want to reiterate the immense importance of soft skills, equating them in significance to hard skills. I’ll conclude with a quote from one of my mentors: “I would prefer hiring someone with decent hard skills but exceptional soft skills over a genius who lacks interpersonal abilities.”' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/what-is-technoise-a966cfa1cf0b',
+    },
     {
         id: 'what-is-tech-noise',
         thumbnail: WhatIsTechNoise.src,
