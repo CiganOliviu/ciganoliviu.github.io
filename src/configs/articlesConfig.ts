@@ -64,7 +64,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
                 '<div>&nbsp;</div>' +
                 'Thank you!'
         },
-        open_link: 'https://medium.com/@ciganoliviudavid/books-on-software-my-recommendations-91b7daef36e2',
+        open_link: 'https://medium.com/@ciganoliviudavid/how-to-conduct-code-reviews-30a96d3e9948',
     },
     {
         id: 'books-on-software-my-recommendations',
