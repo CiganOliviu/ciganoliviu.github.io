@@ -6,5 +6,6 @@ export const ImageWrapper = styled.div`
 `;
 
 export const ImageLogo = styled.img`
-  width: 7rem;
+    width: 7rem;
+    cursor: pointer;
 `;
