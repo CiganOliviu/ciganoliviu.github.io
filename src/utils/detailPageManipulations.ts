@@ -25,7 +25,7 @@ export const getDetailPageParams = (url: string) => {
 };
 
 export const fetchResumeConfigObject = (keyTitle: string, resumePart: string) => {
-      if (resumePart === 'education' && keyTitle !== 'Mathematics and Informatics')
+      if (resumePart === 'education')
             return ResumeConfig.education.find((obj) => obj.id === keyTitle);
 
       if (resumePart === 'experience')
