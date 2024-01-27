@@ -10,6 +10,10 @@ export const ArticleCardWrapper = styled.div`
     border-radius: 1rem;
     background: ${AppTheme.darkCardBackground};
     flex-direction: column;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        width: 30rem;
+    }
   
     ${minWidthQuery(Breakpoints.large)} {
         flex-direction: row;
