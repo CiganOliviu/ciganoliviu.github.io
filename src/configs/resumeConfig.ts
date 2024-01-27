@@ -5,10 +5,12 @@ import LogoAdapted from "@components/assets/resume/ADAPTED.png";
 import TechnicalUniversity from "@components/assets/education/technical-university-of-cluj-napoca.jpg";
 import Work3SS from "@components/assets/experience/3SS.jpg";
 import AlphablockAdaptedResearch from "@components/assets/experience/Alphablock_Adapted_Research.png";
+import { ResumeConfigType } from "@components/utils/types";
 
-export const ResumeConfig = {
+export const ResumeConfig: ResumeConfigType = {
     education: [
         {
+            id: 'automation-informatics-utcn',
             date: '2020 - 2024',
             title: 'Automation & Informatics',
             subtitle: 'Technical University of Cluj-Napoca',
@@ -75,6 +77,7 @@ export const ResumeConfig = {
             },
         },
         {
+            id: 'math-informatics-ltc',
             date: '2016 - 2020',
             title: 'Mathematics and Informatics',
             subtitle: 'Theoretical High-School Carei',
@@ -102,6 +105,7 @@ export const ResumeConfig = {
     ],
     experience: [
         {
+            id: 'software-engineer-3ss',
             date: '2021 - Present',
             title: 'Software Engineer',
             subtitle: '3Screen Solutions',
@@ -149,6 +153,7 @@ export const ResumeConfig = {
             },
         },
         {
+            id: 'adapted-research-utcn',
             date: '2022 - Present',
             title: 'Deep Learning Research Student',
             subtitle: 'ADAPTED Research Group',
@@ -187,6 +192,7 @@ export const ResumeConfig = {
             },
         },
         {
+            id: 'software-internship-3ss',
             date: '2021 - 2021',
             title: 'Software Engineer Internship',
             subtitle: '3Screen Solutions',

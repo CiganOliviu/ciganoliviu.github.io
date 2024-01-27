@@ -10,6 +10,10 @@ export const ArticleCardWrapper = styled.div`
     border-radius: 1rem;
     background: ${AppTheme.darkCardBackground};
     flex-direction: column;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        width: 30rem;
+    }
   
     ${minWidthQuery(Breakpoints.large)} {
         flex-direction: row;
@@ -38,6 +42,12 @@ export const ArticleCardThumbnail = styled.img`
 export const ArticleCardTitle = styled.h2`
     color: ${AppTheme.lightGreen};
     font-weight: bold;
+    padding: 1rem;
+`;
+
+export const ArticleCardSubtitle = styled.h4`
+    color: ${AppTheme.lightGreen};
+    padding: 1rem;
 `;
 
 export const ArticleCardContent = styled.div`

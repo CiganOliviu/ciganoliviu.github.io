@@ -24,11 +24,11 @@ export const ProjectColumn = styled.div`
     width: 100%;
     
     ${minWidthQuery(Breakpoints.medium)} {
-        width: 40%;
+        width: 30rem;
     }
 
     ${minWidthQuery(Breakpoints.large)} {
-        width: 34%;
+        width: 35rem;
         padding: 2rem;
     }
 `;

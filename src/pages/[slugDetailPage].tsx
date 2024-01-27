@@ -25,7 +25,11 @@ const DetailPage = () => {
     const { isMobile } = useGetScreenSize();
     const router = useRouter();
     const { slugDetailPage } = router.query || {};
-    const { pageType, identity, keySearchId } = getDetailPageParams(slugDetailPage as string);
+    const {
+        pageType,
+        identity,
+        keySearchId
+    } = getDetailPageParams(slugDetailPage as string);
 
     const [responseObject, setResponseObject] = useState<any>(undefined);
 

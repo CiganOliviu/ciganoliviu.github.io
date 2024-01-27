@@ -11,11 +11,10 @@ import { Separator } from "@components/components/Resume/Resume.css";
 import React, { FC } from "react";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
-import { createCanonicalLink } from "@components/utils/detailPageManipulations";
-import { ContentCardType } from "@components/utils/types";
+import { EducationAndExperienceType } from "@components/utils/types";
 
 type ContentCardContextType = {
-    context: ContentCardType,
+    context: EducationAndExperienceType,
     resumePart: string
 };
 
@@ -40,7 +39,7 @@ export const ContentCard: FC<ContentCardContextType> = ({ context, resumePart })
             <Separator paddingValue={1} />
             {context.hasDetailPage &&
                 <InternalLink
-                    href={`/resume-${resumePart}-${createCanonicalLink(context.title)}`}
+                    href={`/resume-${resumePart}-${context.id}`}
                 >
                     Read more
                 </InternalLink>

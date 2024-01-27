@@ -8,6 +8,7 @@ import { ProjectConfigType } from "@components/utils/types";
 
 export const ProjectsConfig: ProjectConfigType[] = [
     {
+        id: 'revolutionizing-active-investing',
         thumbnail: RevolutionizingActiveInvestingWithMachineLearning.src,
         title: 'Revolutionizing Active Investing with Machine Learning',
         subtitle: 'An usecase driven approach',
@@ -23,6 +24,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
         is_research_paper: true
     },
     {
+        id: 'carepair',
         thumbnail: CaRepair.src,
         title: 'CaRepair: Car Damage Detector',
         subtitle: 'Machine Learning POC Application',
@@ -61,6 +63,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
         is_research_paper: false,
     },
     {
+        id: 'medcity',
         thumbnail: BrainTumorDetection.src,
         title: 'MedCity: Brain Tumor Detection System',
         subtitle: 'Machine Learning POC Application',
@@ -94,6 +97,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
         is_research_paper: false
     },
     {
+        id: 'streamsnap',
         thumbnail: VodBackground.src,
         title: 'StreamSnap VOD Mobile App',
         subtitle: 'An Usecase driven approach',
@@ -142,6 +146,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
         is_research_paper: false,
     },
     {
+        id: 'software-design-patterns',
         thumbnail: DesignPatterns.src,
         title: 'Software Design Patterns',
         subtitle: 'An usecase driven approach',

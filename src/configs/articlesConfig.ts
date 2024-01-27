@@ -1,15 +1,407 @@
+import { ArticlesConfigType } from "@components/utils/types";
 import AreBooksRelevantInSoftwareDesign from "@components/assets/articles/are_books_relevant_in_software_design.webp";
 import EightRulesOfSoftwareDesign from "@components/assets/articles/8_rules_of_software_design.webp";
 import TheProblemWithTheJsEcosystem from "@components/assets/articles/the_problem_with_the_js_ecosystem.webp";
 import TechToolsForSoftwareEngineer from "@components/assets/articles/tech_tools_for_software_engineers.webp";
 import WhatProgrammingLanguageToLearnFirst from "@components/assets/articles/what_programming_language_to_learn_first.webp";
-
-import { ArticlesConfigType } from "@components/utils/types";
+import WhatIsTechNoise from "@components/assets/articles/what_is_tech_noise.webp";
+import SoftSkillsForSoftwareEngineers from "@components/assets/articles/soft_skills_for_software_engineers.webp";
+import BooksOnSoftwareMyRecommendations from "@components/assets/articles/books_on_software_my_recommendations.webp";
+import HowToConductCodeReviews from "@components/assets/articles/how_to_conduct_code_reviews.webp";
+import HowToBuildASeniorDeveloperMindset from "@components/assets/articles/how_to_build_a_senior_developer_mindset.webp";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
     {
+        id: 'how-to-build-a-senior-developer-mindset',
+        thumbnail: HowToBuildASeniorDeveloperMindset.src,
+        title: 'How to build a senior developer mindset',
+        subtitle: '28 January 2023',
+        previewHtmlField: {
+            __html: 'The software development industry, like many others, is very complex. You have to understand ' +
+                'and see beyond fancy technologies and beyond just doing the technical job. I’ve discussed this ' +
+                'in another article called Soft Skills for Software Engineers in...',
+        },
+        htmlField: {
+            __html: 'The software development industry, like many others, is very complex. You have to understand and see beyond fancy technologies and beyond just doing the technical job. I’ve discussed this in another article called Soft Skills for Software Engineers in which I pointed out the importance of soft skills for a successful career.' +
+                '<div>&nbsp;</div>' +
+                'The good thing is, seniority is not necessarily related to the years of experience you have in the field. Many so-called senior developers do not understand many of the things I am about to list below. Seniority inside a company is again a very debatable subject, which is not something that I am going to handle in this article. However, what I am going to talk about in this article is how to build a senior developer mentality.' +
+                '<div>&nbsp;</div>' +
+                'You can have a senior developer mentality even if you are a junior because there is a certain ethic that, if you possess it, your development and path to becoming a top senior software engineer would be much easier.' +
+                '<div>&nbsp;</div>' +
+                'That being said, let’s jump into the list:' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Technical Master</h1>' +
+                '<div>&nbsp;</div>' +
+                'A senior software developer or engineer is a technical master. He understands the stack he is working on very well, and besides that, he understands how other industries work, at least in theory. He has hands-on experience in a variety of technologies, many of which are imposed by working on certain projects and under specific requirements.' +
+                '<div>&nbsp;</div>' +
+                'A technical master is a person who combines working alongside the job with the enormous experience that comes from engaging in different projects with different use cases, people, and business rules. The technical master is the person you can call in any given situation, and he is able to troubleshoot everything in a short period.' +
+                '<div>&nbsp;</div>' +
+                'A true senior is a technical master because he has to worry about many different things — the client, juniors, calls, the manager — and thus has little to no time to waste on technical challenges. He solves them because he knows the root cause. He can even troubleshoot issues without looking at the code and just by going through the bug description. He can understand what parts of the system are going to be affected just by looking at the feature that is required to be implemented.' +
+                '<div>&nbsp;</div>' +
+                'The bottom line is, he knows his stack very well, but he also understands many aspects and stages of programming that are not naturally related to his direct touch. Looking at such a person feels like everything is safe. If you have such a feeling with a person, most probably that person is a technical master.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Knows how to mentor</h1>' +
+                '<div>&nbsp;</div>' +
+                'An important aspect of being a senior software developer is knowing how to mentor. Whether directly or indirectly, willingly or unwillingly, if you are good at something, people who want to shadow you will get closer to you. If a person wants to learn from the best, he will get closer to the people who are the best in the industry he wants to understand.' +
+                '<div>&nbsp;</div>' +
+                'That being said, true seniors know how to mentor, and they know how to mentor well. They know when it is too much; they know how to handle difficult questions and situations. They know how to leave a certain level of interpretation so that juniors have an open-minded perspective but are still held to strict and ruthless rules of software design.' +
+                '<div>&nbsp;</div>' +
+                'A senior software engineer knows how to control his emotions and feelings because sometimes juniors can be a pain, especially if you had a bad day with clients, managers, or maybe it is just a difficult situation at work. They ask too many questions, and maybe many of them do not make sense, so you still have to filter them, remain calm, and know how to respond and what to respond.' +
+                '<div>&nbsp;</div>' +
+                'There are not a lot of seniors who know how to mentor, and in my opinion, a software engineer who is not a good mentor cannot call himself a senior.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Great communicator</h1>' +
+                '<div>&nbsp;</div>' +
+                'A senior software engineer knows how to communicate well. He understands how to talk to different types of people because there is a certain way in which you talk to a manager, a different way in which you talk to a junior, a different way to talk with a senior, a solution architect, the client, and the list goes on. The core idea is that a senior software engineer knows how to talk and when to talk.' +
+                '<div>&nbsp;</div>' +
+                'Part of being a good communicator is being a good listener, and a senior knows how to do that as well.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Knows when to push back ideas</h1>' +
+                '<div>&nbsp;</div>' +
+                'Knowing when to push back on ideas in certain moments is important, and a senior knows when to do that.' +
+                '<div>&nbsp;</div>' +
+                'Sometimes the client will come with abnormal requirements, which is the happy case because you do not need a lot of experience to know to push back on abnormal ideas. The problem is when a client comes with certain requirements that look great in the user story but implementation-wise would be a mess. That is usually the moment when a good senior software engineer starts to ask questions and to challenge certain beliefs. That is the moment when he is trying to push back a little, to see if the requirement has an important business foundation or if it is just something that the client wants because it is fancy. You should be aware of the difference and push back on ideas every time you feel the requirement is not going to benefit the software. It is your duty.' +
+                '<div>&nbsp;</div>' +
+                'Sometimes the manager might push you to extend the work that you are doing beyond the team’s capability. That is the moment when you need to push back, and challenge the manager and the requirement that he is making. It might be a dummy example, but this can be extended to any given case that seems unreasonable or that draws the team back to an extreme level.' +
+                '<div>&nbsp;</div>' +
+                'I am not saying to push back on any ideas that the client has or any time the manager asks for something, you start arguing. What I am trying to say is that a senior developer understands when the line is crossed and thus knows when to say no.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">He is a team player</h1>' +
+                '<div>&nbsp;</div>' +
+                'A senior is a team player. He discusses problems within the team, celebrates victories with the team, and works for the team. A true senior understands that the team takes precedence. He always considers the team’s needs and engages in debates about ideas, even if other team members are not seniors. He knows how to motivate, when to motivate, and how to support each and every team member in their process of learning, working on a particular use case, doing a specific refactoring, and so on.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">He practices deep work</h1>' +
+                '<div>&nbsp;</div>' +
+                'Inspired by the popular book “Deep Work” by Cal Newport, a true senior practices deep work. You will often notice, at a certain timestamp, that there is no activity from that senior. This is not because he is not working, but because he is engaged in deep work — tackling specific problems, addressing issues, or focusing on particular features. Almost all true seniors I have met follow this practice, and it is an effective method for getting things done.' +
+                '<div>&nbsp;</div>' +
+                'Generally speaking, it is challenging to embrace deep work because you need to understand your schedule, yourself, and create the best environment to maximize your achievements. However, most true seniors have managed to grasp how to reach that state, which is why they accomplish so much by the end of the sprint.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">He is a continuous learner</h1>' +
+                '<div>&nbsp;</div>' +
+                'A true senior is a continuous learner and invests time in understanding as much as possible. Because there is so much to learn and comprehend, he acknowledge that he cannot grasp every concept out there. As a result, he remains very receptive to all developers, regardless of their experience level. It is common to observe seniors listening to and exchanging ideas with juniors, even though the natural expectation is for the junior to learn from the senior developer. While this is the primary dynamic, a true senior often listens and learns from everyone, even if it’s sometimes to discern what not to do.' +
+                '<div>&nbsp;</div>' +
+                'This approach also nurtures a team player spirit because being inclined to learn and listen from everyone, irrespective of their experience level, contributes to a collaborative and supportive team environment.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">He does his job even if it stinks</h1>' +
+                '<div>&nbsp;</div>' +
+                'Sometimes, we have to do things we do not enjoy. This holds true for software development as well. There are always parts of code or certain features that you may not want to work on, for various reasons. It could be a challenging bug in production or simply a task that doesn’t appeal to you. Regardless, it’s a job that can be unpleasant.' +
+                '<div>&nbsp;</div>' +
+                'That being said, a true senior will always tackle the job, even if it’s unpleasant. If it is required and deemed top priority, he will do it because it needs to be done, and he will perform accordingly.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Conclusion</h1>' +
+                '<div>&nbsp;</div>' +
+                'What I presented here is just a small list, and I tried to explain each and every single point a little. It’s important to have a clear definition of what a senior is because being a senior is much more than a promotion at a company. Often, companies will promote individuals because they feel it’s the right time, and the individual is performing adequately, resulting in being categorized as a senior within the company. However, when you step out and look for opportunities in another company, you may realize you are not as experienced as the title suggests, and there are gaps in your knowledge.' +
+                '<div>&nbsp;</div>' +
+                'This list aims to set a standard — my standard — on how I see a senior software engineer.' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/how-to-build-a-senior-developer-mindset-0c9f17c134ad',
+    },
+    {
+        id: 'how-to-conduct-code-reviews',
+        thumbnail: HowToConductCodeReviews.src,
+        title: 'How to conduct Code Reviews',
+        subtitle: '10 January 2023',
+        previewHtmlField: {
+            __html: 'After spending a considerable time in the industry as a programmer, I’ve participated in ' +
+                'numerous code reviews across various projects. I’ve noticed that many programmers struggle ' +
+                'with code reviews which is concerning. Code reviews are a crucial step before pushing code to...',
+        },
+        htmlField: {
+            __html: 'After spending a considerable time in the industry as a programmer, I’ve participated in numerous code reviews across various projects.\n' +
+                'I’ve noticed that many programmers struggle with code reviews, which is concerning. Code reviews are a crucial step before pushing code to production, acting as a safeguard. It’s essential that we improve our approach to code reviews collectively.' +
+                '<div>&nbsp;</div>' +
+                'As a result, I’ve compiled a list of suggestions aimed at improving the code review process.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Make sure the tests pass.</h1>' +
+                '<div>&nbsp;</div>' +
+                'When dealing with software that’s equipped with tests (as it ideally should), your initial focus should be on ensuring these tests pass. It’s crucial that the tests run successfully before any further action is taken. If the tests fail, it indicates a breakdown in the software. At this point, I’d proceed with the review if only one or two tests failed, but I’d refrain from diving too deeply until the failing tests are resolved.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Manual testing.</h1>' +
+                '<div>&nbsp;</div>' +
+                'If all the tests pass and everything appears sound from that perspective, I proceed to conduct manual testing. Particularly with UI-related features, I invest time in navigating, clicking, and exploring functionalities based on the requirements. Ideally, if the tests pass, there should be no issues discovered during manual testing.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Verify edge cases, and write some unit-tests for them.</h1>' +
+                '<div>&nbsp;</div>' +
+                'Living in a less-than-ideal world means our tests might miss certain edge cases. However, as a reviewer, it’s essential to spot and address these potential gaps.' +
+                '<div>&nbsp;</div>' +
+                'Let’s say I conduct manual testing and discover issues; my next step is to determine if these edge cases are testable. Some features require careful consideration before test creation. I want to emphasize that tests represent an investment decision based on their return on investment (ROI). I’ll delve into this topic in a separate article.' +
+                '<div>&nbsp;</div>' +
+                'The point is, if you encounter bugs in testable code segments (most are testable if the code architecture is appropriately structured), it’s beneficial to create unit tests for them. You might question, “Why bother if I’m not the feature owner or the original coder?” Well, the answer lies in the next point I’d like to discuss.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Recommend code improvements based on facts and arguments.</h1>' +
+                '<div>&nbsp;</div>' +
+                'All code improvements you recommend should be backed up by facts. Recommending a change simply because “you feel it’s not right” isn’t acceptable; that’s not a valid reason. Good quality software doesn’t operate on feelings. Conversely, highlighting issues such as a function undertaking too many tasks or causing unintended side effects is a different matter. I’ve witnessed instances where programmers rush through recommendations without providing proper reasoning, and that’s inappropriate.' +
+                '<div>&nbsp;</div>' +
+                'Every change request during a code review should be supported by facts, arguments, and explanations. For instance, I am doing a code review and I recommend renaming a function for better clarity because it aligns with the fundamental principle that code is more often read than written — it needs to be crystal clear. What do you think about this principle? I can provide a link to an article, an excerpt from an interview, or perhaps a book that supports this notion. This is how you argue a code change suggestion.' +
+                '<div>&nbsp;</div>' +
+                'However, when identifying issues, the approach changes entirely. Finding an edge case requires writing a corresponding unit test, which serves as documentation — a clear indication of the necessary change. The key point I’m emphasizing here is the clarity behind change requests. Avoiding reasons like “I feel this is better” is crucial; our industry relies on facts, not feelings.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Leave room for debate.</h1>' +
+                '<div>&nbsp;</div>' +
+                'Always allow room for debate in code reviews. It’s not about asserting superiority or instructing others on how to work — it’s about suggesting changes based on facts. Using the term “suggestion” may sound gentle, but all code change suggestions should be seriously considered.' +
+                '<div>&nbsp;</div>' +
+                'When a suggestion is made, and the code author has a different perspective or conflicting facts to present, there should be space for discussion. As the reviewer, it’s essential to be open to recommended changes. Simultaneously, if you disagree, it’s crucial to challenge those suggestions based on solid reasoning. The person making recommendations should also be open to discussing facts if the evidence provided isn’t sufficient.' +
+                '<div>&nbsp;</div>' +
+                'The crucial point I’m emphasizing here is that code reviews should foster open conversations focused on what’s best for the codebase, rooted in factual analysis.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">So what is next?</h1>' +
+                '<div>&nbsp;</div>' +
+                'When you think about the last code review you conducted or received, was it an open discussion of suggestions, or did it feel more like imposing ideas? Were the reasons behind the suggestions based on facts, or were they influenced by others’ practices or personal feelings?' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/how-to-conduct-code-reviews-30a96d3e9948',
+    },
+    {
+        id: 'books-on-software-my-recommendations',
+        thumbnail: BooksOnSoftwareMyRecommendations.src,
+        title: 'Books on Software: My recommendations',
+        subtitle: '6 January 2023',
+        previewHtmlField: {
+            __html: 'One month ago, I wrote an important article titled “Are books relevant in Software Design?” in ' +
+                'which I aimed to explain and respond to this question. The short answer is yes, books are crucial ' +
+                'in Software Design for several reasons. I also touch upon which...',
+        },
+        htmlField: {
+            __html: 'One month ago, I wrote an important article titled “Are books relevant in Software Design?” in which I aimed to explain and respond to this question. The short answer is yes, books are crucial in Software Design for several reasons. I also touch upon which books are relevant, as not all provide valuable insights. I won’t delve into details here since that’s beyond the article’s scope, but I recommend reading it for a comprehensive understanding.' +
+                '<div>&nbsp;</div>' +
+                'Having educated myself in software for over 6 years, I’ve delved into numerous software books. I’d like to share my experiences, what I’ve learned, and what others can gain from them. Ultimately, I aim to recommend a set of books that can make a difference and cultivate the mindset of a Professional Senior Software Engineer.' +
+                '<div>&nbsp;</div>' +
+                'This is the initial iteration, as I have a couple more in mind, although I wouldn’t recommend too many right from the start.' +
+                '<div>&nbsp;</div>' +
+                'So here is the list:' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Implementation Patterns — Kent Beck</h1>' +
+                '<div>&nbsp;</div>' +
+                'This book offers a valuable insider’s perspective on structuring software. It delves into the architecture and implementation of software in a highly professional manner. However, the title might lead you to believe it’s about Design Patterns, which it isn’t. Instead, the book aims to familiarize you with coding patterns and ways to structure code to clearly convey intent to the reader. One of its most impactful statements that resonated with me early on was “Code is more often read than written.” This essentially sets the premise for the entire book, which focuses on creating a compendium of patterns and principles to enhance code quality..' +
+                '<div>&nbsp;</div>' +
+                'The book also emphasizes that software essentially combines communication, flexibility, and simplicity. Ideally, software possesses all three traits, but achieving this balance is challenging. Too much flexibility can diminish communication and simplicity, while excessive simplicity can limit flexibility. It’s a delicate tradeoff that demands careful consideration.' +
+                '<div>&nbsp;</div>' +
+                'I’ve noticed that Kent Beck leans toward prioritizing communicative and simple software over excessively flexible ones. Ultimately, maintaining a balance among these traits is what fortifies and sustains software longevity.' +
+                '<div>&nbsp;</div>' +
+                'While I mentioned the premise as “Code is more often read than written”, let me rephrase it slightly: in the book’s preface, Kent Beck strongly asserts that the foundation of the book rests on the delicate premise that Clean Code truly matters.' +
+                '<div>&nbsp;</div>' +
+                'The fact that he called Clean Code fragile made a guy called Bob Martin write the following book, which is also my recommendation:' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Clean Code — Bob Martin</h1>' +
+                '<div>&nbsp;</div>' +
+                'In this book, Bob Martin emphasizes the critical importance of code, not just for developers but for the entire company. He narrates the story of a company, Sword or a similar name, which faced bankruptcy due to the chaotic code at its core. Martin eloquently explains the sequence of events, including discussions with a developer from that company, effectively illustrating the case.' +
+                '<div>&nbsp;</div>' +
+                'As the narrative progresses, Martin delves into various perspectives on code, featuring insights from industry giants like Bjorn Stroustrup and James Gosling, among others. While there are several notable personalities in the book, I won’t mention them all. The key point is Martin’s adept articulation of what constitutes clean code, drawing from the viewpoints of top industry leaders.' +
+                '<div>&nbsp;</div>' +
+                'If Kent Beck introduced patterns and elucidated software behavior, architecture, and code patterns, Bob Martin establishes a code bible of sorts. From naming variables to defining functions, using comments, spacing, and more, this book defines it all. The underlying premise is clear: we need better developers and, subsequently, better software.' +
+                '<div>&nbsp;</div>' +
+                'For anyone seeking guidance on how code should be structured and written, I wholeheartedly recommend this book.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Refactoring — Martin Fowler</h1>' +
+                '<div>&nbsp;</div>' +
+                'Especially on a green field project, developers write a substantial amount of code. We aim to create the most bulletproof and future-proof code, but often, reality forces us to adapt aspects of our codebase for better scalability.' +
+                '<div>&nbsp;</div>' +
+                'However, it’s crucial not to fall into the trap of compromising on writing clean code. Regardless of the need for adaptation during the development process, adhering to clean code principles remains fundamental. Clean code significantly enhances comprehension and facilitates adaptations to new requirements. Essentially, the goal of clean code isn’t to write once and leave it forever; it’s about crafting code in a way that allows for ease of modifications. Martin Fowler’s “Refactoring” excellently outlines steps for specific refactorings, such as renaming variables within specific scopes or restructuring classes to manage certain information more effectively.' +
+                '<div>&nbsp;</div>' +
+                'I refer to this as a book, but alongside Kent Beck’s “Implementation Patterns,“ these serve as catalogs brimming with practical information. Frequently, you’ll find yourself revisiting these resources, reinforcing various refactoring methods and techniques. Covering everything from classes, functions, modules, simple statements to packages, this book provides systematic and efficient refactoring methods for all.' +
+                '<div>&nbsp;</div>' +
+                'This book instructs on how to navigate refactoring within complex systems. It’s undeniably one of the most invaluable resources available, and personally, it’s the one I often revisit and refer to the most.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Clean Architecture— Bob Martin</h1>' +
+                '<div>&nbsp;</div>' +
+                'In “Clean Architecture”, Bob Martin presents a fresh perspective on Software Architecture, distinct from his previous work on Clean Code. While Clean Code focuses on communicating intent at the code level, Clean Architecture delves into communicating intent at an architectural level.' +
+                '<div>&nbsp;</div>' +
+                'This book introduces fundamental terms like Entities and Use Cases, outlining their significance within such an architectural framework. Martin emphasizes the necessity of this architecture, drawing on insights from an older book, “Object-Oriented Software Engineering: A Use Case Driven Approach.” However, my comments are solely based on books I’ve read or have direct experience with.' +
+                '<div>&nbsp;</div>' +
+                'A core premise of the book is that tools do not define your architecture. Architecture revolves around entities, use cases, and the chosen delivery mechanisms — not specific frameworks or platforms like .NET, Django, Spring, Node.js, or the method of delivery, be it web, mobile, or CLI (Command Line Interface). It’s a concept far broader than these individual components.' +
+                '<div>&nbsp;</div>' +
+                'One particularly compelling aspect is Martin’s argument against existing architectures. He adeptly dissects the limitations of the MVC architecture for example, highlighting that while MVC serves well for micro workflows such as button interactions, it falls short as a macro-architecture for scaling apps.' +
+                '<div>&nbsp;</div>' +
+                'For anyone seeking a deeper understanding of software architecture, this book comes highly recommended. Its insights are intellectually enriching, and although I joke about it making you ‘30% smarter’ (a figurative percentage), its impact is undoubtedly significant.' +
+                '<div>&nbsp;</div>' +
+                'Reading these books propels you ahead of the majority of developers due to the valuable knowledge you gain. Whether you’re a junior or not yet a senior, diving into these resources allows you to begin cultivating a senior mindset. Learning from industry-leading seniors like Kent Beck, Bob Martin, and Martin Fowler offers unparalleled insights. Who wouldn’t want to learn from such top-tier figures in the software development industry?' +
+                '<div>&nbsp;</div>' +
+                'For me, the answer is crystal clear: I aim to learn from the best, and these individuals undeniably represent the pinnacle of expertise in software development.' +
+                '<div>&nbsp;</div>' +
+                'I’d like to emphasize that this is just the initial set of recommendations. My plan is to suggest more books gradually. From my experience, introducing a limited number of books initially proves more effective. Too many recommendations at once can be overwhelming or confusing.' +
+                '<div>&nbsp;</div>' +
+                'The short list here:' +
+                '<div>&nbsp;</div>' +
+                '1. Implementation Patterns — Kent Beck' +
+                '<div>&nbsp;</div>' +
+                '2. Clean Code — Bob Martin' +
+                '<div>&nbsp;</div>' +
+                '3. Refactoring — Martin Fowler' +
+                '<div>&nbsp;</div>' +
+                '4. Clean Architecture — Bob Martin' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/books-on-software-my-recommendations-91b7daef36e2',
+    },
+    {
+        id: 'soft-skills-for-software-engineers',
+        thumbnail: SoftSkillsForSoftwareEngineers.src,
+        title: 'Soft Skills for Software Engineers',
+        subtitle: '2 January 2023',
+        previewHtmlField: {
+            __html: 'Soft skills, equally vital alongside hard skills, play a pivotal role in career growth and ' +
+                'overall success. Despite their importance, they often take a backseat in learning and understanding, ' +
+                'possibly because people acknowledge their significance but fail to dedicate...',
+        },
+        htmlField: {
+            __html: 'Soft skills, equally vital alongside hard skills, play a pivotal role in career growth and overall success. Despite their importance, they often take a backseat in learning and understanding, possibly because people acknowledge their significance but fail to dedicate focused time to develop them. This oversight might stem from a lack of emphasis or awareness regarding their tangible impact on professional and personal advancement. Why do you suppose this disparity exists between acknowledging their value and actively investing in their development?' +
+                '<div>&nbsp;</div>' +
+                'Many tend to think that mastering hard skills automatically leads to developing soft skills, but that’s a misconception. It’s not about one replacing the other. A blend of both is where the real advantage lies. Striking that balance between hard and soft skills offers far greater benefits than solely focusing on one or the other. This equilibrium ensures the best and most rewarding outcomes.' +
+                '<div>&nbsp;</div>' +
+                'Soft skills matter in various life domains — family, relationships, business, and notably in fields like software engineering. While I won’t cover every domain, let’s focus on software development. Specific scenarios in this field branch out from fundamental soft skills that hold true across various areas. It’s important to highlight that this is my perspective, not a comprehensive guide. These soft skills reflect where I invest my time and focus.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Team work and collaboration</h1>' +
+                '<div>&nbsp;</div>' +
+                'Six years ago, during a discussion led by a school psychologist about excelling in our chosen fields, I confidently asserted my ability to thrive in the software domain. I was convinced that navigating the realm of software, particularly through freelancing, was feasible as a solo endeavor. I engaged in a fervent debate with the psychologist, strongly advocating for this belief. At that time, my grasp of technical concepts was robust, yet I failed to recognize the significance of softer, interpersonal skills.' +
+                '<div>&nbsp;</div>' +
+                'However, roughly a year later, a transformative shift occurred. I began to to listen to the advice of individuals possessing greater wisdom and experience. Among the insights shared, one phrase resonated profoundly: “No one is an island.” This simple but potent statement illuminated a critical truth — I had overlooked the indispensable role of collaboration and connection in achieving success, particularly within the intricate landscape of software development. This realization prompted a fundamental reassessment of my priorities, emphasizing the pivotal importance of harmonizing technical proficiency with effective interpersonal skills for professional growth and accomplishment.' +
+                '<div>&nbsp;</div>' +
+                'After reality checks after reality checks I now understand well enough the situation. Yes you can be a freelancer and build things on your own, but you cannot have a high level impact without a team. The quicker you understand that, the quicker you will scale in mission and provided value.' +
+                '<div>&nbsp;</div>' +
+                'Moreover, as a freelancer if you are building software for a client and I assume a freelancer is doing so, you are basically having a team with your client. You are talking to him, you have to make him understood in order to sell, you have to understand his needs and so on' +
+                '<div>&nbsp;</div>' +
+                'A team is very important, and being able to keep it and collaborate effectively with each and every team member is a key factor. You have to understand them, be proficient, persuasive and make them feel understood. Team members also need to understand your next move, why you are doing it and how you are doing it.' +
+                '<div>&nbsp;</div>' +
+                'Collaborating in different manners and decisions with your team is also crucial, you have to be predictable so that they have an understanding of what you are doing. Also you do not need to take important decisions only on your own, there needs to be some kind of discussion in regards to core problems which lead to a decisions.' +
+                '<div>&nbsp;</div>' +
+                'So, it’s crucial to get along well in a team and learn all those things I mentioned earlier. They’re all skills, and remember, you can learn any skill with practice and effort.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Work Ethic</h1>' +
+                '<div>&nbsp;</div>' +
+                'Work ethic, a fundamental soft skill, encompasses a multitude of qualities and expectations. Its definition can be quite personal and subjective. Some individuals interpret it as a mere four-hour work week, and if that approach proves effective for them, that’s commendable. However, my perspective diverges from this.' +
+                '<div>&nbsp;</div>' +
+                'To me, work ethic transcends mere office hours; it hinges on the level of productivity and the impact I generate toward my set objectives. While I may achieve my goals within a span of 80 hours per week, the true goal isn’t the sheer number of hours worked. It’s about fulfilling my necessities and accomplishing the objectives I’ve set for myself. The crux lies in the efficiency and effectiveness of my efforts rather than the quantity of time devoted to them.' +
+                '<div>&nbsp;</div>' +
+                'To me, it’s not simply about choosing quality over quantity or focusing solely on how long you work. It’s about having both quality and quantity in your efforts — they’re both important. I’ve had people brag about the hours they spend at the office, but scrolling through Facebook doesn’t really count as work. Similarly, taking short breaks to check Instagram doesn’t add up to quality work; it’s more about just adding up time, not the value of what you’re doing.' +
+                '<div>&nbsp;</div>' +
+                'Defining your work ethic based on your needs, desires, and commitments is key. Once defined, it’s crucial to understand, adhere to, and consistently practice it. Essentially, work ethic boils down to this: Work — engaging in activities aimed at achieving specific outcomes, and Ethic — the principles governing moral conduct.' +
+                '<div>&nbsp;</div>' +
+                'You need a strong work ethic in order to succeed in any industry.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">The way you conduct code reviews</h1>' +
+                '<div>&nbsp;</div>' +
+                'In the realm of Software Engineering, the approach to conducting code reviews holds significant weight. It’s not just about suggesting changes; it’s about articulating the reasoning behind those suggestions. Engaging in a debate, offering explanations, and advocating for a particular line of code over another fosters a healthy discourse.' +
+                '<div>&nbsp;</div>' +
+                'Please refrain from solely stating what needs to change without providing reasoning. While some issues might be self-evident, I understand they may not need explicit articulation. However, regarding software code architecture, it’s essential to substantiate any proposed changes with strong arguments at all times.' +
+                '<div>&nbsp;</div>' +
+                'Being receptive to discussions, whether giving or receiving a review, is crucial. It’s about staying open-minded to new ideas and concepts, acknowledging that there might be better ways to solve a problem or improve code, and embracing these discussions to refine and enhance the codebase.' +
+                '<div>&nbsp;</div>' +
+                'The ultimate aim is to enhance the code and establish a robust software structure, prioritizing improvements rather than enforcing personal preferences. Embracing an open-minded approach is a valuable skill in achieving these goals.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Open to ideas and criticism</h1>' +
+                '<div>&nbsp;</div>' +
+                'Remaining open to new ideas and criticism is vital, as emphasized in the code review section. This mindset should extend beyond reviews to all discussions, encompassing design patterns, architectural considerations, and any field of discussion. It’s crucial to welcome constructive criticism and set aside one’s ego.' +
+                '<div>&nbsp;</div>' +
+                'It’s important to comprehend that the ultimate aim isn’t forcefully imposing personal agendas but rather designing superior software and enhancing existing systems. While presenting well-founded arguments for a certain approach is beneficial, avoiding the trap of assuming omniscience is essential.' +
+                '<div>&nbsp;</div>' +
+                'Set ego aside, adopt humility, and when suggesting changes, substantiate them with solid reasoning. If your arguments are compelling, consistent, and founded in truth, the changes will likely be implemented.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Stress management</h1>' +
+                '<div>&nbsp;</div>' +
+                'There will inevitably be moments of pressure, particularly when tight deadlines loom over project deliveries or when clients exert pressure. It’s crucial to manage this stress effectively, harnessing it for your advantage.' +
+                '<div>&nbsp;</div>' +
+                'Rather than allowing stress to overpower you, leverage it as a catalyst to meet all required deadlines. Stress, when handled adeptly, can be highly beneficial. It has the potential to generate significant energy if channeled wisely.' +
+                '<div>&nbsp;</div>' +
+                'Ensure that you comprehend and manage stress effectively to derive its benefits.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Communication</h1>' +
+                '<div>&nbsp;</div>' +
+                'Communication extends beyond teamwork and collaboration; it involves adapting your approach for different audiences. When engaging with clients, the communication style should be more accessible, avoiding technical jargon and focusing on terms they can comprehend. However, with developers, precision and technical depth are essential to convey intentions accurately.' +
+                '<div>&nbsp;</div>' +
+                'Furthermore, effective communication involves conveying intentions based on ongoing activities. Consistency and predictability in communication are key for the team, clients, and anyone you collaborate with.' +
+                '<div>&nbsp;</div>' +
+                'Being a meticulous manager of details is imperative. Simplifying complex concepts is vital, ensuring that simplicity retains depth and clarity for the listeners. The manner in which you communicate holds immense significance; it’s essential to grasp the art of effective communication.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Conclusion</h1>' +
+                '<div>&nbsp;</div>' +
+                'It is important to acknowledge that this list can be expanded, yet it broadly covers essentials for Software Engineers. As an extension, I would emphasize the significance of being an attentive listener and speaking purposefully. These soft skills not only enhance my value as a developer but also as a human, offering diverse perspectives. While I continue to learn and grow in these areas, I feel confident in my proficiency with the ones I’ve mentioned.' +
+                '<div>&nbsp;</div>' +
+                'Ultimately, I want to reiterate the immense importance of soft skills, equating them in significance to hard skills. I’ll conclude with a quote from one of my mentors: “I would prefer hiring someone with decent hard skills but exceptional soft skills over a genius who lacks interpersonal abilities.”' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/soft-skills-for-software-engineers-d9a3e7409234',
+    },
+    {
+        id: 'what-is-tech-noise',
+        thumbnail: WhatIsTechNoise.src,
+        title: 'What is TechNoise?',
+        subtitle: '28 December 2023',
+        previewHtmlField: {
+            __html: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a ' +
+                'significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing ' +
+                '“technologies, whether outdated, fading, or lacking market value.”...',
+        },
+        htmlField: {
+            __html: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing “technologies, whether outdated, fading, or lacking market value.” While this encapsulation is accurate, I seek to offer a more detailed understanding.' +
+                '<div>&nbsp;</div>' +
+                'What exactly falls under the realm of TechNoise? How can we precisely classify and identify these elements? It involves recognizing a range of technological components that have lost their effectiveness or relevance in today’s rapidly evolving landscape.' +
+                '<div>&nbsp;</div>' +
+                'TechNoise encompasses outdated technologies, trends losing prominence, and solutions lacking substantial market traction. Exploring these facets can lead to a more nuanced classification of TechNoise elements.' +
+                '<div>&nbsp;</div>' +
+                'Beyond definition, how does one actively spot TechNoise within their tech stack? Are there clear indicators of obsolescence? Equally crucial, how can one avoid these elements, ensuring that their work remains aligned with current industry standards and innovation?' +
+                '<div>&nbsp;</div>' +
+                'By further exploring TechNoise’s intricacies, the goal is to equip engineers with a framework to navigate away from outdated or ineffective technologies, fostering an environment where innovation flourishes and relevance endures.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">What is TechNoise?</h1>' +
+                'In essence, noise within the technological sphere signifies elements that offer no substantive support or benefit. Often, novices, particularly juniors, might inadvertently lend attention to this “TechNoise” due to their limited field experience. Identifying these noise-laden components is more challenging in software, requiring ample industry experience.' +
+                '<div>&nbsp;</div>' +
+                'TechNoise epitomizes technology devoid of tangible value or significance in the practical realm of software development and business. Spotting noisy elements in other industries may be straightforward, but in software, distinguishing them demands a depth of experience.' +
+                '<div>&nbsp;</div>' +
+                'While some may hold latent potential, detecting this potential itself is a complex task. It’s crucial to note that a significant portion of technologies lacks the potential for practical usefulness in the real world. This realization remains a crucial aspect to consider.' +
+                '<div>&nbsp;</div>' +
+                'While not universal, many junior professionals tend to gravitate toward noisy technologies. Their inclination stems from a desire to belong and feel purposeful. However, the primary focus for juniors should lie in mastering fundamental software principles using an accessible programming language. The trajectory ideally involves broadening experience across diverse industries rather than fixating on yet another JavaScript framework (YAJF) or adopting random npm libraries that marginally ease processes by a mere 2% (I made that number up, but you get the point).' +
+                '<div>&nbsp;</div>' +
+                'When it comes to libraries, regardless of the framework, integrating numerous packages isn’t advisable. Over time, it compounds maintenance issues, increasing dependency. A heavier dependency chain exacerbates the risks, especially due to linked bugs. These bugs propagate from libraries to your application — a glitch in the library translates to a flaw in your system. This issue is typically resolved within the library, but in practice, such occurrences are exceedingly rare.' +
+                '<div>&nbsp;</div>' +
+                'If longevity and robust long-term support are priorities for your project, exercising caution in package selection is imperative. Being selective and cherry-picking components becomes crucial for ensuring a stable and sustainable application, a stark contrast to the risks associated with an indiscriminate integration approach.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">What is TechNoise?</h1>' +
+                '<div>&nbsp;</div>' +
+                'I will give you my short answer, “V1” technologies often align with TechNoise. BunJS, AureliaJS, or CorticonJs fall under the category of TechNoise, unequivocally — There’s simply no room for debate on this matter. Currently, these technologies lack practical market value. However, their future prospects remain uncertain, albeit doubtful.' +
+                '<div>&nbsp;</div>' +
+                'Consider React, which owes its present stature to Meta’s backing, or Angular and Kotlin, supported by Google. This pattern prevails for most technologies, where major organizational support is pivotal for their survival. However, exceptions exist, albeit infrequently.' +
+                '<div>&nbsp;</div>' +
+                'The market direction predominantly hinges on the majority, influencing technological adoption. Notably, a technology’s endorsement by a large-scale organization, whether through active use or mere acknowledgment, significantly impacts smaller to medium-sized companies contemplating their preferred tech stack.' +
+                '<div>&nbsp;</div>' +
+                'It’s crucial to recognize mainstream technologies or long-standing players in the market that are likely to eventually transition into TechNoise.' +
+                '<div>&nbsp;</div>' +
+                'Consider Ember.js or, more prominently, Backbone.js as prime examples of once-mainstream technologies that have dwindled following the emergence of React, Angular, and Vue.js. Their decline primarily stems from a lack of substantial support from major corporations. It’s crucial to highlight this lack of clear backing as a determining factor in their diminished relevance today.' +
+                '<div>&nbsp;</div>' +
+                'On the other hand take these “old dogs” in the technological landscape often boast extensive codebases and widespread use across various projects. However, their future can be uncertain, especially if the large organizations supporting them announce plans to withdraw long-term backing or intend to shift focus for specific reasons.' +
+                '<div>&nbsp;</div>' +
+                'Java on Android as an example, despite its long-standing dominance, Google’s declaration of Kotlin as the preferred path ahead signals a significant shift. However, the transformation of an “old dog” technology into TechNoise isn’t an abrupt process; it unfolds gradually over time. As a software engineer, you typically witness these transitions unfold gradually, affording ample time to adapt.' +
+                '<div>&nbsp;</div>' +
+                'While it’s noteworthy that technology shifts occur, especially with established frameworks, the pace of change often aligns more with a steady rhythm than the rapid turnover we might anticipate as developers. Thus, maintaining a steady and informed pace of adopting changes within well-established technologies remains a prudent approach amidst the evolving tech landscape.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Is there a battle of finding the next big tech?</h1>' +
+                '<div>&nbsp;</div>' +
+                'In short, the pursuit of discovering the next widely adopted technology offers minimal valuable returns. While grasping such technologies might enhance individual understanding and potentially streamline job opportunities, the question arises: is it truly worthwhile? Investing time in learning technologies with uncertain futures, most of which won’t likely gain prominence, might not be the wisest use of one’s time.' +
+                '<div>&nbsp;</div>' +
+                'Unless you’re employed by major players like Google or Meta, where your innovative ideas align with their substantial backing and large-scale utilization, chasing after nascent technologies might not be the most pragmatic choice. Instead, focusing on established technologies that work efficiently and being adaptable when necessary remains a more prudent and wise investment. Prioritize mastering foundational principles — a strategic move that pays long-term dividends.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Is technology truly evolving as rapidly as we perceive it to be?</h1>' +
+                '<div>&nbsp;</div>' +
+                'When we consider TechNoise, it seems like technology is evolving at an overwhelming pace, beyond our full comprehension due to its constant flux. However, if we exclude the non-essential, unused technologies, the pace of change isn’t as swift. While there are internal shifts within the technologies we commonly use — such as the shift from class to functional components in React— this change isn’t necessarily a groundbreaking transformation.' +
+                '<div>&nbsp;</div>' +
+                'If one comprehends Software Design fundamentals well, the transition between using functions and classes shouldn’t pose significant challenges. Fundamentally, a seasoned software engineer should seamlessly navigate both paradigms.' +
+                '<div>&nbsp;</div>' +
+                'While radical transformations occasionally occur at an internal level, not every alteration demands immediate adherence. Often, these internal shifts fail to offer substantial visible value, prompting the consideration of whether compliance is truly necessary.' +
+                '<div>&nbsp;</div>' +
+                'Ultimately, as software engineers, it’s vital to recognize that technology serves as a means to an end, merely a tool in our arsenal. Avoid becoming overly attached or fixated on a particular language, framework, or package. Maintain flexibility in your choices while exercising caution and precision. Avoid chasing after every new technology as if it’s the next big gold rush; instead, direct your attention towards aspects that hold genuine significance and impact, like design patterns for example.' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/what-is-technoise-a966cfa1cf0b',
+    },
+    {
+        id: 'what-programming-language-to-learn-first',
         thumbnail: WhatProgrammingLanguageToLearnFirst.src,
-        title: 'What programming language to learn first',
+        title: 'What programming language to learn first?',
         subtitle: '24 December 2023',
         previewHtmlField: {
             __html: 'Navigating the realm of coding often begins with the daunting choice of which programming ' +
@@ -72,6 +464,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         open_link: 'https://medium.com/@ciganoliviudavid/what-programming-language-to-learn-first-1f6b98eec41c',
     },
     {
+        id: 'tech-tools-and-software-engineers',
         thumbnail: TechToolsForSoftwareEngineer.src,
         title: 'Tech Tools and Software Engineers',
         subtitle: '21 December 2023',
@@ -200,6 +593,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         open_link: 'https://medium.com/@ciganoliviudavid/tech-tools-and-software-engineers-b412fe9fa37c',
     },
     {
+        id: 'the-problem-with-the-js-ecosystem',
         thumbnail: TheProblemWithTheJsEcosystem.src,
         title: 'The problem with the JS ecosystem',
         subtitle: '14 December 2023',
@@ -309,6 +703,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         open_link: 'https://medium.com/@ciganoliviudavid/the-problem-with-the-js-ecosystem-4161b6aaa316',
     },
     {
+        id: 'are-books-relevant-in-software-design',
         thumbnail: AreBooksRelevantInSoftwareDesign.src,
         title: 'Are books relevant in Software Design',
         subtitle: '10 December 2023',
@@ -377,6 +772,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         open_link: 'https://medium.com/@ciganoliviudavid/are-books-relevant-in-software-design-8e22b5c61ae8',
     },
     {
+        id: 'eight-rules-of-software-engineers',
         thumbnail: EightRulesOfSoftwareDesign.src,
         title: '8 Rules of Software Engineers',
         subtitle: '7 December 2023',

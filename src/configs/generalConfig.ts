@@ -6,8 +6,14 @@ import Linkedin from "@components/assets/icons/linkedin.svg";
 import Github from "@components/assets/icons/github.svg";
 import Whatsapp from "@components/assets/icons/whatsapp.svg";
 import Medium from "@components/assets/icons/medium.svg";
+import {
+    ExternalSocialLinksConfigType,
+    HeroCardConfigType,
+    KnowMeMoreConfigType,
+    WhatIDoConfigType
+} from "@components/utils/types";
 
-export const HeroCardConfig = {
+export const HeroCardConfig: HeroCardConfigType = {
     WelcomeText: 'Welcome',
     TypeWriterContext: [
         'I am Cigan Oliviu-David.',
@@ -19,7 +25,7 @@ export const HeroCardConfig = {
     ButtonText: 'Let\'s discuss'
 };
 
-export const KnowMeMoreConfig = {
+export const KnowMeMoreConfig: KnowMeMoreConfigType = {
       content: 'Studying Software Engineering at a leading Romanian faculty, I embarked on an impactful journey ' +
           'early on with a sought-after internship. This opportunity not only provided hands-on experience but ' +
           'also forged crucial professional connections, leading to a continuous career in the field for over two years.\n' +
@@ -28,7 +34,7 @@ export const KnowMeMoreConfig = {
           'by an unwavering commitment to learning and excellence.'
 };
 
-export const WhatIDoConfig = {
+export const WhatIDoConfig: WhatIDoConfigType = {
     column_one: [
         {
             icon: BezierCurveSolid.src,
@@ -60,7 +66,7 @@ export const WhatIDoConfig = {
     ]
 };
 
-export const ExternalSocialLinksConfig = {
+export const ExternalSocialLinksConfig: ExternalSocialLinksConfigType = {
     links: [
         {
             url: 'https://www.linkedin.com/in/oliviu-david-c-72489015b/',

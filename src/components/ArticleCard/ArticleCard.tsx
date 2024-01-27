@@ -1,13 +1,12 @@
 import {
     ArticleCardContent,
-    ArticleCardContentWrapper,
+    ArticleCardContentWrapper, ArticleCardSubtitle,
     ArticleCardThumbnail,
     ArticleCardTitle,
     ArticleCardWrapper
 } from "@components/components/ArticleCard/ArticleCard.css";
 import React, { FC } from "react";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
-import { createCanonicalLink } from "@components/utils/detailPageManipulations";
 import { ArticlesConfigType } from "@components/utils/types";
 
 type ArticleCardContextType = {
@@ -20,8 +19,9 @@ export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
             <ArticleCardThumbnail src={article.thumbnail} />
             <ArticleCardContentWrapper>
                 <ArticleCardTitle>{article.title}</ArticleCardTitle>
+                <ArticleCardSubtitle>{article.subtitle}</ArticleCardSubtitle>
                 <ArticleCardContent dangerouslySetInnerHTML={article.previewHtmlField} />
-                <InternalLink href={`/article-detail-${createCanonicalLink(article.title)}`}>
+                <InternalLink href={`/article-detail-${article.id}`}>
                     Read Article
                 </InternalLink>
             </ArticleCardContentWrapper>
