@@ -96,7 +96,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
                 '<div>&nbsp;</div>' +
                 'Thank you!'
         },
-        open_link: 'https://medium.com/@ciganoliviudavid/what-is-technoise-a966cfa1cf0b',
+        open_link: 'https://medium.com/@ciganoliviudavid/soft-skills-for-software-engineers-d9a3e7409234',
     },
     {
         id: 'what-is-tech-noise',
