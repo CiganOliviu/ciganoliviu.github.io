@@ -1,15 +1,5 @@
 type innerHtmlType = { __html: string | TrustedHTML };
 
-export type ContentCardType = {
-    date: string,
-    title: string,
-    logo: string,
-    subtitle: string,
-    hasDetailPage: boolean,
-    previewHtmlField: innerHtmlType,
-    htmlField: innerHtmlType,
-};
-
 export type ArticlesConfigType = {
     thumbnail: string,
     title: string,
@@ -46,7 +36,7 @@ export type LinkType = {
     iconSource: string
 };
 
-type EducationAndExperienceType = {
+export type EducationAndExperienceType = {
     id: string;
     date: string;
     title: string;

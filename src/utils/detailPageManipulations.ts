@@ -26,22 +26,22 @@ export const getDetailPageParams = (url: string) => {
 
 export const fetchResumeConfigObject = (keyTitle: string, resumePart: string) => {
       if (resumePart === 'education' && keyTitle !== 'Mathematics and Informatics')
-            return ResumeConfig.education.find((obj) => createCanonicalLink(obj.title) === keyTitle);
+            return ResumeConfig.education.find((obj) => obj.id === keyTitle);
 
       if (resumePart === 'experience')
-            return ResumeConfig.experience.find((obj) => createCanonicalLink(obj.title) === keyTitle);
+            return ResumeConfig.experience.find((obj) => obj.id === keyTitle);
 
       return undefined;
 };
 
 export const fetchProjectConfigResponse = (keyTitle: string) => {
-      return ProjectsConfig.find((obj) => createCanonicalLink(obj.title) === keyTitle);
+      return ProjectsConfig.find((obj) => obj.title === keyTitle);
 };
 
 export const fetchArticleConfigResponse = (keyTitle: string) => {
-      return ArticlesConfig.find((obj) => createCanonicalLink(obj.title) === keyTitle);
+      return ArticlesConfig.find((obj) => obj.title === keyTitle);
 };
 
-export const createCanonicalLink = (canonicalString: string): string => {
-      return canonicalString.toLowerCase().replace(/\s+/g, '-');
-};
+export const createCanonicalLink = (str: string): string => {
+      return str;
+}
