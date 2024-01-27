@@ -5,10 +5,93 @@ import TechToolsForSoftwareEngineer from "@components/assets/articles/tech_tools
 import WhatProgrammingLanguageToLearnFirst from "@components/assets/articles/what_programming_language_to_learn_first.webp";
 import WhatIsTechNoise from "@components/assets/articles/what_is_tech_noise.webp";
 import SoftSkillsForSoftwareEngineers from "@components/assets/articles/soft_skills_for_software_engineers.webp";
-
+import books_on_software_my_recommendations from "@components/assets/articles/books_on_software_my_recommendations.webp";
 import { ArticlesConfigType } from "@components/utils/types";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
+    {
+        id: 'books-on-software-my-recommendations',
+        thumbnail: books_on_software_my_recommendations.src,
+        title: 'Books on Software: My recommendations',
+        subtitle: '6 January 2023',
+        previewHtmlField: {
+            __html: 'One month ago, I wrote an important article titled “Are books relevant in Software Design?” in ' +
+                'which I aimed to explain and respond to this question. The short answer is yes, books are crucial ' +
+                'in Software Design for several reasons. I also touch upon which...',
+        },
+        htmlField: {
+            __html: 'One month ago, I wrote an important article titled “Are books relevant in Software Design?” in which I aimed to explain and respond to this question. The short answer is yes, books are crucial in Software Design for several reasons. I also touch upon which books are relevant, as not all provide valuable insights. I won’t delve into details here since that’s beyond the article’s scope, but I recommend reading it for a comprehensive understanding.' +
+                '<div>&nbsp;</div>' +
+                'Having educated myself in software for over 6 years, I’ve delved into numerous software books. I’d like to share my experiences, what I’ve learned, and what others can gain from them. Ultimately, I aim to recommend a set of books that can make a difference and cultivate the mindset of a Professional Senior Software Engineer.' +
+                '<div>&nbsp;</div>' +
+                'This is the initial iteration, as I have a couple more in mind, although I wouldn’t recommend too many right from the start.' +
+                '<div>&nbsp;</div>' +
+                'So here is the list:' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Implementation Patterns — Kent Beck</h1>' +
+                '<div>&nbsp;</div>' +
+                'This book offers a valuable insider’s perspective on structuring software. It delves into the architecture and implementation of software in a highly professional manner. However, the title might lead you to believe it’s about Design Patterns, which it isn’t. Instead, the book aims to familiarize you with coding patterns and ways to structure code to clearly convey intent to the reader. One of its most impactful statements that resonated with me early on was “Code is more often read than written.” This essentially sets the premise for the entire book, which focuses on creating a compendium of patterns and principles to enhance code quality..' +
+                '<div>&nbsp;</div>' +
+                'The book also emphasizes that software essentially combines communication, flexibility, and simplicity. Ideally, software possesses all three traits, but achieving this balance is challenging. Too much flexibility can diminish communication and simplicity, while excessive simplicity can limit flexibility. It’s a delicate tradeoff that demands careful consideration.' +
+                '<div>&nbsp;</div>' +
+                'I’ve noticed that Kent Beck leans toward prioritizing communicative and simple software over excessively flexible ones. Ultimately, maintaining a balance among these traits is what fortifies and sustains software longevity.' +
+                '<div>&nbsp;</div>' +
+                'While I mentioned the premise as “Code is more often read than written”, let me rephrase it slightly: in the book’s preface, Kent Beck strongly asserts that the foundation of the book rests on the delicate premise that Clean Code truly matters.' +
+                '<div>&nbsp;</div>' +
+                'The fact that he called Clean Code fragile made a guy called Bob Martin write the following book, which is also my recommendation:' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Clean Code — Bob Martin</h1>' +
+                '<div>&nbsp;</div>' +
+                'In this book, Bob Martin emphasizes the critical importance of code, not just for developers but for the entire company. He narrates the story of a company, Sword or a similar name, which faced bankruptcy due to the chaotic code at its core. Martin eloquently explains the sequence of events, including discussions with a developer from that company, effectively illustrating the case.' +
+                '<div>&nbsp;</div>' +
+                'As the narrative progresses, Martin delves into various perspectives on code, featuring insights from industry giants like Bjorn Stroustrup and James Gosling, among others. While there are several notable personalities in the book, I won’t mention them all. The key point is Martin’s adept articulation of what constitutes clean code, drawing from the viewpoints of top industry leaders.' +
+                '<div>&nbsp;</div>' +
+                'If Kent Beck introduced patterns and elucidated software behavior, architecture, and code patterns, Bob Martin establishes a code bible of sorts. From naming variables to defining functions, using comments, spacing, and more, this book defines it all. The underlying premise is clear: we need better developers and, subsequently, better software.' +
+                '<div>&nbsp;</div>' +
+                'For anyone seeking guidance on how code should be structured and written, I wholeheartedly recommend this book.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Refactoring — Martin Fowler</h1>' +
+                '<div>&nbsp;</div>' +
+                'Especially on a green field project, developers write a substantial amount of code. We aim to create the most bulletproof and future-proof code, but often, reality forces us to adapt aspects of our codebase for better scalability.' +
+                '<div>&nbsp;</div>' +
+                'However, it’s crucial not to fall into the trap of compromising on writing clean code. Regardless of the need for adaptation during the development process, adhering to clean code principles remains fundamental. Clean code significantly enhances comprehension and facilitates adaptations to new requirements. Essentially, the goal of clean code isn’t to write once and leave it forever; it’s about crafting code in a way that allows for ease of modifications. Martin Fowler’s “Refactoring” excellently outlines steps for specific refactorings, such as renaming variables within specific scopes or restructuring classes to manage certain information more effectively.' +
+                '<div>&nbsp;</div>' +
+                'I refer to this as a book, but alongside Kent Beck’s “Implementation Patterns,“ these serve as catalogs brimming with practical information. Frequently, you’ll find yourself revisiting these resources, reinforcing various refactoring methods and techniques. Covering everything from classes, functions, modules, simple statements to packages, this book provides systematic and efficient refactoring methods for all.' +
+                '<div>&nbsp;</div>' +
+                'This book instructs on how to navigate refactoring within complex systems. It’s undeniably one of the most invaluable resources available, and personally, it’s the one I often revisit and refer to the most.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Clean Architecture— Bob Martin</h1>' +
+                '<div>&nbsp;</div>' +
+                'In “Clean Architecture”, Bob Martin presents a fresh perspective on Software Architecture, distinct from his previous work on Clean Code. While Clean Code focuses on communicating intent at the code level, Clean Architecture delves into communicating intent at an architectural level.' +
+                '<div>&nbsp;</div>' +
+                'This book introduces fundamental terms like Entities and Use Cases, outlining their significance within such an architectural framework. Martin emphasizes the necessity of this architecture, drawing on insights from an older book, “Object-Oriented Software Engineering: A Use Case Driven Approach.” However, my comments are solely based on books I’ve read or have direct experience with.' +
+                '<div>&nbsp;</div>' +
+                'A core premise of the book is that tools do not define your architecture. Architecture revolves around entities, use cases, and the chosen delivery mechanisms — not specific frameworks or platforms like .NET, Django, Spring, Node.js, or the method of delivery, be it web, mobile, or CLI (Command Line Interface). It’s a concept far broader than these individual components.' +
+                '<div>&nbsp;</div>' +
+                'One particularly compelling aspect is Martin’s argument against existing architectures. He adeptly dissects the limitations of the MVC architecture for example, highlighting that while MVC serves well for micro workflows such as button interactions, it falls short as a macro-architecture for scaling apps.' +
+                '<div>&nbsp;</div>' +
+                'For anyone seeking a deeper understanding of software architecture, this book comes highly recommended. Its insights are intellectually enriching, and although I joke about it making you ‘30% smarter’ (a figurative percentage), its impact is undoubtedly significant.' +
+                '<div>&nbsp;</div>' +
+                'Reading these books propels you ahead of the majority of developers due to the valuable knowledge you gain. Whether you’re a junior or not yet a senior, diving into these resources allows you to begin cultivating a senior mindset. Learning from industry-leading seniors like Kent Beck, Bob Martin, and Martin Fowler offers unparalleled insights. Who wouldn’t want to learn from such top-tier figures in the software development industry?' +
+                '<div>&nbsp;</div>' +
+                'For me, the answer is crystal clear: I aim to learn from the best, and these individuals undeniably represent the pinnacle of expertise in software development.' +
+                '<div>&nbsp;</div>' +
+                'I’d like to emphasize that this is just the initial set of recommendations. My plan is to suggest more books gradually. From my experience, introducing a limited number of books initially proves more effective. Too many recommendations at once can be overwhelming or confusing.' +
+                '<div>&nbsp;</div>' +
+                'The short list here:' +
+                '<div>&nbsp;</div>' +
+                '1. Implementation Patterns — Kent Beck' +
+                '<div>&nbsp;</div>' +
+                '2. Clean Code — Bob Martin' +
+                '<div>&nbsp;</div>' +
+                '3. Refactoring — Martin Fowler' +
+                '<div>&nbsp;</div>' +
+                '4. Clean Architecture — Bob Martin' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/books-on-software-my-recommendations-91b7daef36e2',
+    },
     {
         id: 'soft-skills-for-software-engineers',
         thumbnail: SoftSkillsForSoftwareEngineers.src,
