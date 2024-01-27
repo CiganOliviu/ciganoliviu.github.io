@@ -1,3 +1,4 @@
+import { ArticlesConfigType } from "@components/utils/types";
 import AreBooksRelevantInSoftwareDesign from "@components/assets/articles/are_books_relevant_in_software_design.webp";
 import EightRulesOfSoftwareDesign from "@components/assets/articles/8_rules_of_software_design.webp";
 import TheProblemWithTheJsEcosystem from "@components/assets/articles/the_problem_with_the_js_ecosystem.webp";
@@ -5,13 +6,69 @@ import TechToolsForSoftwareEngineer from "@components/assets/articles/tech_tools
 import WhatProgrammingLanguageToLearnFirst from "@components/assets/articles/what_programming_language_to_learn_first.webp";
 import WhatIsTechNoise from "@components/assets/articles/what_is_tech_noise.webp";
 import SoftSkillsForSoftwareEngineers from "@components/assets/articles/soft_skills_for_software_engineers.webp";
-import books_on_software_my_recommendations from "@components/assets/articles/books_on_software_my_recommendations.webp";
-import { ArticlesConfigType } from "@components/utils/types";
+import BooksOnSoftwareMyRecommendations from "@components/assets/articles/books_on_software_my_recommendations.webp";
+import HowToConductCodeReviews from "@components/assets/articles/how_to_conduct_code_reviews.webp";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
     {
+        id: 'how-to-conduct-code-reviews',
+        thumbnail: HowToConductCodeReviews.src,
+        title: 'How to conduct Code Reviews',
+        subtitle: '10 January 2023',
+        previewHtmlField: {
+            __html: 'After spending a considerable time in the industry as a programmer, I’ve participated in ' +
+                'numerous code reviews across various projects. I’ve noticed that many programmers struggle ' +
+                'with code reviews which is concerning. Code reviews are a crucial step before pushing code to...',
+        },
+        htmlField: {
+            __html: 'After spending a considerable time in the industry as a programmer, I’ve participated in numerous code reviews across various projects.\n' +
+                'I’ve noticed that many programmers struggle with code reviews, which is concerning. Code reviews are a crucial step before pushing code to production, acting as a safeguard. It’s essential that we improve our approach to code reviews collectively.' +
+                '<div>&nbsp;</div>' +
+                'As a result, I’ve compiled a list of suggestions aimed at improving the code review process.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Make sure the tests pass.</h1>' +
+                '<div>&nbsp;</div>' +
+                'When dealing with software that’s equipped with tests (as it ideally should), your initial focus should be on ensuring these tests pass. It’s crucial that the tests run successfully before any further action is taken. If the tests fail, it indicates a breakdown in the software. At this point, I’d proceed with the review if only one or two tests failed, but I’d refrain from diving too deeply until the failing tests are resolved.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Manual testing.</h1>' +
+                '<div>&nbsp;</div>' +
+                'If all the tests pass and everything appears sound from that perspective, I proceed to conduct manual testing. Particularly with UI-related features, I invest time in navigating, clicking, and exploring functionalities based on the requirements. Ideally, if the tests pass, there should be no issues discovered during manual testing.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Verify edge cases, and write some unit-tests for them.</h1>' +
+                '<div>&nbsp;</div>' +
+                'Living in a less-than-ideal world means our tests might miss certain edge cases. However, as a reviewer, it’s essential to spot and address these potential gaps.' +
+                '<div>&nbsp;</div>' +
+                'Let’s say I conduct manual testing and discover issues; my next step is to determine if these edge cases are testable. Some features require careful consideration before test creation. I want to emphasize that tests represent an investment decision based on their return on investment (ROI). I’ll delve into this topic in a separate article.' +
+                '<div>&nbsp;</div>' +
+                'The point is, if you encounter bugs in testable code segments (most are testable if the code architecture is appropriately structured), it’s beneficial to create unit tests for them. You might question, “Why bother if I’m not the feature owner or the original coder?” Well, the answer lies in the next point I’d like to discuss.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Recommend code improvements based on facts and arguments.</h1>' +
+                '<div>&nbsp;</div>' +
+                'All code improvements you recommend should be backed up by facts. Recommending a change simply because “you feel it’s not right” isn’t acceptable; that’s not a valid reason. Good quality software doesn’t operate on feelings. Conversely, highlighting issues such as a function undertaking too many tasks or causing unintended side effects is a different matter. I’ve witnessed instances where programmers rush through recommendations without providing proper reasoning, and that’s inappropriate.' +
+                '<div>&nbsp;</div>' +
+                'Every change request during a code review should be supported by facts, arguments, and explanations. For instance, I am doing a code review and I recommend renaming a function for better clarity because it aligns with the fundamental principle that code is more often read than written — it needs to be crystal clear. What do you think about this principle? I can provide a link to an article, an excerpt from an interview, or perhaps a book that supports this notion. This is how you argue a code change suggestion.' +
+                '<div>&nbsp;</div>' +
+                'However, when identifying issues, the approach changes entirely. Finding an edge case requires writing a corresponding unit test, which serves as documentation — a clear indication of the necessary change. The key point I’m emphasizing here is the clarity behind change requests. Avoiding reasons like “I feel this is better” is crucial; our industry relies on facts, not feelings.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Leave room for debate.</h1>' +
+                '<div>&nbsp;</div>' +
+                'Always allow room for debate in code reviews. It’s not about asserting superiority or instructing others on how to work — it’s about suggesting changes based on facts. Using the term “suggestion” may sound gentle, but all code change suggestions should be seriously considered.' +
+                '<div>&nbsp;</div>' +
+                'When a suggestion is made, and the code author has a different perspective or conflicting facts to present, there should be space for discussion. As the reviewer, it’s essential to be open to recommended changes. Simultaneously, if you disagree, it’s crucial to challenge those suggestions based on solid reasoning. The person making recommendations should also be open to discussing facts if the evidence provided isn’t sufficient.' +
+                '<div>&nbsp;</div>' +
+                'The crucial point I’m emphasizing here is that code reviews should foster open conversations focused on what’s best for the codebase, rooted in factual analysis.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">So what is next?</h1>' +
+                '<div>&nbsp;</div>' +
+                'When you think about the last code review you conducted or received, was it an open discussion of suggestions, or did it feel more like imposing ideas? Were the reasons behind the suggestions based on facts, or were they influenced by others’ practices or personal feelings?' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/books-on-software-my-recommendations-91b7daef36e2',
+    },
+    {
         id: 'books-on-software-my-recommendations',
-        thumbnail: books_on_software_my_recommendations.src,
+        thumbnail: BooksOnSoftwareMyRecommendations.src,
         title: 'Books on Software: My recommendations',
         subtitle: '6 January 2023',
         previewHtmlField: {
