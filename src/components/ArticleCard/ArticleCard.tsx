@@ -1,6 +1,6 @@
 import {
     ArticleCardContent,
-    ArticleCardContentWrapper,
+    ArticleCardContentWrapper, ArticleCardSubtitle,
     ArticleCardThumbnail,
     ArticleCardTitle,
     ArticleCardWrapper
@@ -19,6 +19,7 @@ export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
             <ArticleCardThumbnail src={article.thumbnail} />
             <ArticleCardContentWrapper>
                 <ArticleCardTitle>{article.title}</ArticleCardTitle>
+                <ArticleCardSubtitle>{article.subtitle}</ArticleCardSubtitle>
                 <ArticleCardContent dangerouslySetInnerHTML={article.previewHtmlField} />
                 <InternalLink href={`/article-detail-${article.id}`}>
                     Read Article

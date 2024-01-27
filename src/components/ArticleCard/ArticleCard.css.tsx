@@ -38,6 +38,12 @@ export const ArticleCardThumbnail = styled.img`
 export const ArticleCardTitle = styled.h2`
     color: ${AppTheme.lightGreen};
     font-weight: bold;
+    padding: 1rem;
+`;
+
+export const ArticleCardSubtitle = styled.h4`
+    color: ${AppTheme.lightGreen};
+    padding: 1rem;
 `;
 
 export const ArticleCardContent = styled.div`

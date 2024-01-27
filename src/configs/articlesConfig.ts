@@ -3,14 +3,87 @@ import EightRulesOfSoftwareDesign from "@components/assets/articles/8_rules_of_s
 import TheProblemWithTheJsEcosystem from "@components/assets/articles/the_problem_with_the_js_ecosystem.webp";
 import TechToolsForSoftwareEngineer from "@components/assets/articles/tech_tools_for_software_engineers.webp";
 import WhatProgrammingLanguageToLearnFirst from "@components/assets/articles/what_programming_language_to_learn_first.webp";
+import WhatIsTechNoise from "@components/assets/articles/what_is_tech_noise.webp";
 
 import { ArticlesConfigType } from "@components/utils/types";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
     {
+        id: 'what-is-tech-noise',
+        thumbnail: WhatIsTechNoise.src,
+        title: 'What is TechNoise?',
+        subtitle: '28 December 2023',
+        previewHtmlField: {
+            __html: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a ' +
+                'significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing ' +
+                '“technologies, whether outdated, fading, or lacking market value.”...',
+        },
+        htmlField: {
+            __html: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing “technologies, whether outdated, fading, or lacking market value.” While this encapsulation is accurate, I seek to offer a more detailed understanding.' +
+                '<div>&nbsp;</div>' +
+                'What exactly falls under the realm of TechNoise? How can we precisely classify and identify these elements? It involves recognizing a range of technological components that have lost their effectiveness or relevance in today’s rapidly evolving landscape.' +
+                '<div>&nbsp;</div>' +
+                'TechNoise encompasses outdated technologies, trends losing prominence, and solutions lacking substantial market traction. Exploring these facets can lead to a more nuanced classification of TechNoise elements.' +
+                '<div>&nbsp;</div>' +
+                'Beyond definition, how does one actively spot TechNoise within their tech stack? Are there clear indicators of obsolescence? Equally crucial, how can one avoid these elements, ensuring that their work remains aligned with current industry standards and innovation?' +
+                '<div>&nbsp;</div>' +
+                'By further exploring TechNoise’s intricacies, the goal is to equip engineers with a framework to navigate away from outdated or ineffective technologies, fostering an environment where innovation flourishes and relevance endures.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">What is TechNoise?</h1>' +
+                'In essence, noise within the technological sphere signifies elements that offer no substantive support or benefit. Often, novices, particularly juniors, might inadvertently lend attention to this “TechNoise” due to their limited field experience. Identifying these noise-laden components is more challenging in software, requiring ample industry experience.' +
+                '<div>&nbsp;</div>' +
+                'TechNoise epitomizes technology devoid of tangible value or significance in the practical realm of software development and business. Spotting noisy elements in other industries may be straightforward, but in software, distinguishing them demands a depth of experience.' +
+                '<div>&nbsp;</div>' +
+                'While some may hold latent potential, detecting this potential itself is a complex task. It’s crucial to note that a significant portion of technologies lacks the potential for practical usefulness in the real world. This realization remains a crucial aspect to consider.' +
+                '<div>&nbsp;</div>' +
+                'While not universal, many junior professionals tend to gravitate toward noisy technologies. Their inclination stems from a desire to belong and feel purposeful. However, the primary focus for juniors should lie in mastering fundamental software principles using an accessible programming language. The trajectory ideally involves broadening experience across diverse industries rather than fixating on yet another JavaScript framework (YAJF) or adopting random npm libraries that marginally ease processes by a mere 2% (I made that number up, but you get the point).' +
+                '<div>&nbsp;</div>' +
+                'When it comes to libraries, regardless of the framework, integrating numerous packages isn’t advisable. Over time, it compounds maintenance issues, increasing dependency. A heavier dependency chain exacerbates the risks, especially due to linked bugs. These bugs propagate from libraries to your application — a glitch in the library translates to a flaw in your system. This issue is typically resolved within the library, but in practice, such occurrences are exceedingly rare.' +
+                '<div>&nbsp;</div>' +
+                'If longevity and robust long-term support are priorities for your project, exercising caution in package selection is imperative. Being selective and cherry-picking components becomes crucial for ensuring a stable and sustainable application, a stark contrast to the risks associated with an indiscriminate integration approach.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">What is TechNoise?</h1>' +
+                '<div>&nbsp;</div>' +
+                'I will give you my short answer, “V1” technologies often align with TechNoise. BunJS, AureliaJS, or CorticonJs fall under the category of TechNoise, unequivocally — There’s simply no room for debate on this matter. Currently, these technologies lack practical market value. However, their future prospects remain uncertain, albeit doubtful.' +
+                '<div>&nbsp;</div>' +
+                'Consider React, which owes its present stature to Meta’s backing, or Angular and Kotlin, supported by Google. This pattern prevails for most technologies, where major organizational support is pivotal for their survival. However, exceptions exist, albeit infrequently.' +
+                '<div>&nbsp;</div>' +
+                'The market direction predominantly hinges on the majority, influencing technological adoption. Notably, a technology’s endorsement by a large-scale organization, whether through active use or mere acknowledgment, significantly impacts smaller to medium-sized companies contemplating their preferred tech stack.' +
+                '<div>&nbsp;</div>' +
+                'It’s crucial to recognize mainstream technologies or long-standing players in the market that are likely to eventually transition into TechNoise.' +
+                '<div>&nbsp;</div>' +
+                'Consider Ember.js or, more prominently, Backbone.js as prime examples of once-mainstream technologies that have dwindled following the emergence of React, Angular, and Vue.js. Their decline primarily stems from a lack of substantial support from major corporations. It’s crucial to highlight this lack of clear backing as a determining factor in their diminished relevance today.' +
+                '<div>&nbsp;</div>' +
+                'On the other hand take these “old dogs” in the technological landscape often boast extensive codebases and widespread use across various projects. However, their future can be uncertain, especially if the large organizations supporting them announce plans to withdraw long-term backing or intend to shift focus for specific reasons.' +
+                '<div>&nbsp;</div>' +
+                'Java on Android as an example, despite its long-standing dominance, Google’s declaration of Kotlin as the preferred path ahead signals a significant shift. However, the transformation of an “old dog” technology into TechNoise isn’t an abrupt process; it unfolds gradually over time. As a software engineer, you typically witness these transitions unfold gradually, affording ample time to adapt.' +
+                '<div>&nbsp;</div>' +
+                'While it’s noteworthy that technology shifts occur, especially with established frameworks, the pace of change often aligns more with a steady rhythm than the rapid turnover we might anticipate as developers. Thus, maintaining a steady and informed pace of adopting changes within well-established technologies remains a prudent approach amidst the evolving tech landscape.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Is there a battle of finding the next big tech?</h1>' +
+                '<div>&nbsp;</div>' +
+                'In short, the pursuit of discovering the next widely adopted technology offers minimal valuable returns. While grasping such technologies might enhance individual understanding and potentially streamline job opportunities, the question arises: is it truly worthwhile? Investing time in learning technologies with uncertain futures, most of which won’t likely gain prominence, might not be the wisest use of one’s time.' +
+                '<div>&nbsp;</div>' +
+                'Unless you’re employed by major players like Google or Meta, where your innovative ideas align with their substantial backing and large-scale utilization, chasing after nascent technologies might not be the most pragmatic choice. Instead, focusing on established technologies that work efficiently and being adaptable when necessary remains a more prudent and wise investment. Prioritize mastering foundational principles — a strategic move that pays long-term dividends.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Is technology truly evolving as rapidly as we perceive it to be?</h1>' +
+                '<div>&nbsp;</div>' +
+                'When we consider TechNoise, it seems like technology is evolving at an overwhelming pace, beyond our full comprehension due to its constant flux. However, if we exclude the non-essential, unused technologies, the pace of change isn’t as swift. While there are internal shifts within the technologies we commonly use — such as the shift from class to functional components in React— this change isn’t necessarily a groundbreaking transformation.' +
+                '<div>&nbsp;</div>' +
+                'If one comprehends Software Design fundamentals well, the transition between using functions and classes shouldn’t pose significant challenges. Fundamentally, a seasoned software engineer should seamlessly navigate both paradigms.' +
+                '<div>&nbsp;</div>' +
+                'While radical transformations occasionally occur at an internal level, not every alteration demands immediate adherence. Often, these internal shifts fail to offer substantial visible value, prompting the consideration of whether compliance is truly necessary.' +
+                '<div>&nbsp;</div>' +
+                'Ultimately, as software engineers, it’s vital to recognize that technology serves as a means to an end, merely a tool in our arsenal. Avoid becoming overly attached or fixated on a particular language, framework, or package. Maintain flexibility in your choices while exercising caution and precision. Avoid chasing after every new technology as if it’s the next big gold rush; instead, direct your attention towards aspects that hold genuine significance and impact, like design patterns for example.' +
+                '<div>&nbsp;</div>' +
+                'Thank you!'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/what-is-technoise-a966cfa1cf0b',
+    },
+    {
         id: 'what-programming-language-to-learn-first',
         thumbnail: WhatProgrammingLanguageToLearnFirst.src,
-        title: 'What programming language to learn first',
+        title: 'What programming language to learn first?',
         subtitle: '24 December 2023',
         previewHtmlField: {
             __html: 'Navigating the realm of coding often begins with the daunting choice of which programming ' +
