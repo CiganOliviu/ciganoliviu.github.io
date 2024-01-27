@@ -8,6 +8,7 @@ import { ArticlesConfigType } from "@components/utils/types";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
     {
+        id: 'what-programming-language-to-learn-first',
         thumbnail: WhatProgrammingLanguageToLearnFirst.src,
         title: 'What programming language to learn first',
         subtitle: '24 December 2023',
@@ -72,6 +73,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         open_link: 'https://medium.com/@ciganoliviudavid/what-programming-language-to-learn-first-1f6b98eec41c',
     },
     {
+        id: 'tech-tools-and-software-engineers',
         thumbnail: TechToolsForSoftwareEngineer.src,
         title: 'Tech Tools and Software Engineers',
         subtitle: '21 December 2023',
@@ -200,6 +202,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         open_link: 'https://medium.com/@ciganoliviudavid/tech-tools-and-software-engineers-b412fe9fa37c',
     },
     {
+        id: 'the-problem-with-the-js-ecosystem',
         thumbnail: TheProblemWithTheJsEcosystem.src,
         title: 'The problem with the JS ecosystem',
         subtitle: '14 December 2023',
@@ -309,6 +312,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         open_link: 'https://medium.com/@ciganoliviudavid/the-problem-with-the-js-ecosystem-4161b6aaa316',
     },
     {
+        id: 'are-books-relevant-in-software-design',
         thumbnail: AreBooksRelevantInSoftwareDesign.src,
         title: 'Are books relevant in Software Design',
         subtitle: '10 December 2023',
@@ -377,6 +381,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         open_link: 'https://medium.com/@ciganoliviudavid/are-books-relevant-in-software-design-8e22b5c61ae8',
     },
     {
+        id: 'eight-rules-of-software-engineers',
         thumbnail: EightRulesOfSoftwareDesign.src,
         title: '8 Rules of Software Engineers',
         subtitle: '7 December 2023',

@@ -39,9 +39,5 @@ export const fetchProjectConfigResponse = (keyTitle: string) => {
 };
 
 export const fetchArticleConfigResponse = (keyTitle: string) => {
-      return ArticlesConfig.find((obj) => obj.title === keyTitle);
+      return ArticlesConfig.find((obj) => obj.id === keyTitle);
 };
-
-export const createCanonicalLink = (str: string): string => {
-      return str;
-}

@@ -1,6 +1,7 @@
 type innerHtmlType = { __html: string | TrustedHTML };
 
 export type ArticlesConfigType = {
+    id: string;
     thumbnail: string,
     title: string,
     subtitle: string;
