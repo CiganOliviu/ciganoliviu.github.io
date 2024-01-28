@@ -16,7 +16,7 @@ type ArticleCardContextType = {
 export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
     return (
         <ArticleCardWrapper>
-            <ArticleCardThumbnail src={article.thumbnail} />
+            <ArticleCardThumbnail src={article.thumbnail} alt={article.thumbnail} />
             <ArticleCardContentWrapper>
                 <ArticleCardTitle>{article.title}</ArticleCardTitle>
                 <ArticleCardSubtitle>{article.subtitle}</ArticleCardSubtitle>

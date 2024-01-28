@@ -6,9 +6,9 @@ import TechToolsForSoftwareEngineer from "@components/assets/articles/tech_tools
 import WhatProgrammingLanguageToLearnFirst from "@components/assets/articles/what_programming_language_to_learn_first.webp";
 import WhatIsTechNoise from "@components/assets/articles/what_is_tech_noise.webp";
 import SoftSkillsForSoftwareEngineers from "@components/assets/articles/soft_skills_for_software_engineers.webp";
-import BooksOnSoftwareMyRecommendations from "@components/assets/articles/books_on_software_my_recommendations.webp";
-import HowToConductCodeReviews from "@components/assets/articles/how_to_conduct_code_reviews.webp";
-import HowToBuildASeniorDeveloperMindset from "@components/assets/articles/how_to_build_a_senior_developer_mindset.webp";
+import BooksOnSoftwareMyRecommendations from "@components/assets/articles/books_on_software_my_recommendations.jpg";
+import HowToConductCodeReviews from "@components/assets/articles/how_to_conduct_code_reviews.jpg";
+import HowToBuildASeniorDeveloperMindset from "@components/assets/articles/how_to_build_a_senior_developer_mindset.jpg";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
     {
