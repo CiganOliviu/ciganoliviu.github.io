@@ -19,7 +19,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
                 'systems like Market Capitalization (MCAP) weighted benchmarks, which have historically ' +
                 'challenged the industry.'
         },
-        open_link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4679206',
+        open_link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4675439',
         is_in_progress: false,
         is_research_paper: true
     },
