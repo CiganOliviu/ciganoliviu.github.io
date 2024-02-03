@@ -16,11 +16,11 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         id: 'choosing-the-right-estimator-in-machine-learning',
         thumbnail: ChoosingTheRightEstimatorInMachineLearning.src,
         title: 'Choosing the right estimator in Machine Learning — An Use Case Driven Approach',
-        subtitle: '28 January 2023',
+        subtitle: '3 February 2023',
         previewHtmlField: {
-            __html: 'The software development industry, like many others, is very complex. You have to understand ' +
-                'and see beyond fancy technologies and beyond just doing the technical job. I’ve discussed this ' +
-                'in another article called Soft Skills for Software Engineers in...',
+            __html: 'It has been over a year since I joined a machine learning research program in collaboration ' +
+                'with the Canadian startup company Alphablock. Our focus lies in fintech research models,' +
+                'and our primary task involves comprehending and implementing a machine learning...',
         },
         htmlField: {
             __html: 'It has been over a year since I joined a machine learning research program in collaboration with the Canadian startup company Alphablock. Our focus lies in fintech research models, and our primary task involves comprehending and implementing a machine learning model for the prediction process. The methodology behind the prediction process, particularly in financial models, is detailed in the “Machine Beta, Statistical Factors, Non-Linear Mechanisms, And The [3N] Methodology” research paper. This paper delves into the reasons behind the biases in the current indexing process and provides insights on how to overcome them.' +
