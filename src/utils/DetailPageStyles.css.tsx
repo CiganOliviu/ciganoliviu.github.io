@@ -10,11 +10,11 @@ export const ContentOnlyWrapper = styled.div`
     font-size: 1.1rem;
     
     ${minWidthQuery(Breakpoints.medium)} {
-        padding: 2rem 10rem 3rem 10rem;
+        padding: 2rem 20rem 3rem 20rem;
     }
   
     ${minWidthQuery(Breakpoints.large)} {
-        padding: 2rem 20rem 3rem 20rem;
+        padding: 2rem 30rem 3rem 30rem;
     }
 `;
 

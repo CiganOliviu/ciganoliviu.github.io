@@ -9,8 +9,58 @@ import SoftSkillsForSoftwareEngineers from "@components/assets/articles/soft_ski
 import BooksOnSoftwareMyRecommendations from "@components/assets/articles/books_on_software_my_recommendations.jpg";
 import HowToConductCodeReviews from "@components/assets/articles/how_to_conduct_code_reviews.jpg";
 import HowToBuildASeniorDeveloperMindset from "@components/assets/articles/how_to_build_a_senior_developer_mindset.jpg";
+import ChoosingTheRightEstimatorInMachineLearning from "@components/assets/articles/choosing_the_right_estimator_in_machine_learning.jpg"
 
 export const ArticlesConfig: ArticlesConfigType[] = [
+    {
+        id: 'choosing-the-right-estimator-in-machine-learning',
+        thumbnail: ChoosingTheRightEstimatorInMachineLearning.src,
+        title: 'Choosing the right estimator in Machine Learning — An Use Case Driven Approach',
+        subtitle: '28 January 2023',
+        previewHtmlField: {
+            __html: 'The software development industry, like many others, is very complex. You have to understand ' +
+                'and see beyond fancy technologies and beyond just doing the technical job. I’ve discussed this ' +
+                'in another article called Soft Skills for Software Engineers in...',
+        },
+        htmlField: {
+            __html: 'It has been over a year since I joined a machine learning research program in collaboration with the Canadian startup company Alphablock. Our focus lies in fintech research models, and our primary task involves comprehending and implementing a machine learning model for the prediction process. The methodology behind the prediction process, particularly in financial models, is detailed in the “Machine Beta, Statistical Factors, Non-Linear Mechanisms, And The [3N] Methodology” research paper. This paper delves into the reasons behind the biases in the current indexing process and provides insights on how to overcome them.' +
+                '<div>&nbsp;</div>' +
+                'The integration of the machine learning process based on the 3N methodology is thoroughly explained in the “Revolutionizing Active Investing with Machine Learning” research paper. Now, I will delve into the details of how and why we proceeded with the current machine learning model in the process.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Introduction and understanding the data</h1>' +
+                '<div>&nbsp;</div>' +
+                'The initial step in constructing a particular machine learning model involves analyzing the available data and attempting to comprehend and identify patterns. One of my technology mentors used to say regarding AI that “before you task the model with understanding the data, you should understand the data yourself.”' +
+                '<div>&nbsp;</div>' +
+                'The positive aspect of the data processing in our procedure was that we dealt with supervised learning data. The data was labeled, of good quality, and as a result, the actual machine learning process had the potential to be fed with meaningful data without requiring extensive preprocessing (That being said, a significant amount of processing was implemented in the data generation).' +
+                '<div>&nbsp;</div>' +
+                'In our case, it is important to note that we were not dealing with linear data, and thus, any linear model could easily lead to low accuracy levels. This was demonstrated by employing a Linear Regression algorithm, which yielded poor accuracy results.' +
+                '<div>&nbsp;</div>' +
+                'The financial system is highly complex, with numerous potential pathways in its development processes. Through the 3N methodology, these patterns can be comprehended and understood.' +
+                '<div>&nbsp;</div>' +
+                'One of the approaches Alphablock adopted in the data generation process was to create company-agnostic data. In the prediction process, our concern is not specific to buying Google, Meta, or Netflix. Instead, we focus on the general evolution of the portfolio(s) we hold and aim to predict it based on states. This approach proved successful, as evidenced by our results (Further details can be found in the research papers).' +
+                '<div>&nbsp;</div>' +
+                'The dataset structure was simple: Stock Id; State Value;' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Testing Classification Algorithms and Results</h1>' +
+                '<div>&nbsp;</div>' +
+                'With minimal data processing, the next step involved exploring more robust, non-linear classification models. We experimented with several, and some of the most significant ones are listed below:' +
+                '<li>AdaBoost Classifier: 15.85% MAPE; 1.31 RMSE; 57.51 R2 Score;</li>' +
+                '<li>Random Forrest Classifier: 21.85% MAPE; 1.48 RMSE; 59% R2 Score;</li>' +
+                '<li>XGBoost Classifier: 15.43% MAPE; 1.059 RMSE; 75.20% R2 Score;</li>' +
+                '<li>Random Forest Regressor: 11.93% MAPE; 1.02 RMSE; 78% R2 Score;</li>' +
+                '<div>&nbsp;</div>' +
+                'Often, the most effective approach to selecting the right estimator is through trial and error. While considering factors such as data size, data structure, and data preprocessing, these elements guide the process up to a certain point. Beyond that, it becomes essential to experiment with models that best suit the data. In our case, the Random Forest Regressor proved to be the most fitting choice.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Testing Classification Algorithms and Results</h1>' +
+                '<div>&nbsp;</div>' +
+                'The initial testing was conducted on individual stock data, leading us to the decision to take the next step and generate portfolios from these stocks to observe the general results. We created diverse portfolios with varying sizes of stocks (e.g., 50, 100, 250, 500) and initiated the model training on them. The underlying assumption was that better results could be achieved by predicting the collective behavior of stocks within a portfolio, as they exhibit a more predictable behavior compared to attempting to predict the movement of individual stocks.' +
+                '<div>&nbsp;</div>' +
+                'Initially, the results were not as promising, plateauing around 50–55%. While not necessarily bad, these outcomes fell short of our expectations. We conducted numerous trials and researched the data until we realized that incorporating a reference to the previous prediction iteration had a significant impact on the current iteration. Certainly, after incorporating this enhancement, the results skyrocketed. Also, the model is now capable of foreseeing tomorrow’s events, enabling it to predict data movements with an accuracy of up to 95%.' +
+                '<div>&nbsp;</div>' +
+                'Sure enough, the results manifested and validated the initial hypothesis.'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/choosing-the-right-estimator-in-machine-learning-an-use-case-driven-approach-1841ee22878a',
+    },
     {
         id: 'how-to-build-a-senior-developer-mindset',
         thumbnail: HowToBuildASeniorDeveloperMindset.src,
