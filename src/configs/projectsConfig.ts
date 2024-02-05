@@ -165,4 +165,4 @@ export const ProjectsConfig: ProjectConfigType[] = [
     },
 ];
 
-export const PreviewProjectsConfig: ProjectConfigType[] = ProjectsConfig.slice(0, 4);
+export const PreviewProjectsConfig: ProjectConfigType[] = ProjectsConfig.slice(0, 3);
