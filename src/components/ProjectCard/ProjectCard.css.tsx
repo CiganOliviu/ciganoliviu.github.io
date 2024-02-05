@@ -11,11 +11,12 @@ export const ProjectCardWrapper = styled.div`
 
 export const ProjectMarker = styled.div`
     background: ${AppTheme.lightGreen};
-    color: ${AppTheme.white};
+    color: ${AppTheme.darkCardBackground};
     position: absolute;
     padding: 0.3rem;
     font-weight: bold;
-    border-radius: 0.6rem;
+    border-top-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
 `;
 
 export const ProjectCardThumbnail = styled.img`

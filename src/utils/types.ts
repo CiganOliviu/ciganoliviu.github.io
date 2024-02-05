@@ -14,7 +14,7 @@ export type ProjectConfigType = {
     id: string;
     thumbnail: string,
     title: string,
-    subtitle: string,
+    subtitle?: string,
     previewHtmlField: innerHtmlType,
     htmlField?: innerHtmlType,
     open_link: string,

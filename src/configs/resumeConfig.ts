@@ -4,7 +4,7 @@ import Logo3SS from "@components/assets/resume/3SS.png";
 import LogoAdapted from "@components/assets/resume/ADAPTED.png";
 import TechnicalUniversity from "@components/assets/education/technical-university-of-cluj-napoca.jpg";
 import Work3SS from "@components/assets/experience/3SS.jpg";
-import AlphablockAdaptedResearch from "@components/assets/experience/Alphablock_Adapted_Research.png";
+import AlphablockAdaptedResearch from "@components/assets/experience/Alphablock_Adapted_Research.jpg";
 import { ResumeConfigType } from "@components/utils/types";
 
 export const ResumeConfig: ResumeConfigType = {
@@ -155,7 +155,7 @@ export const ResumeConfig: ResumeConfigType = {
         {
             id: 'adapted-research-utcn',
             date: '2022 - Present',
-            title: 'Deep Learning Research Student',
+            title: 'Machine Learning Research Student',
             subtitle: 'ADAPTED Research Group',
             thumbnail: AlphablockAdaptedResearch.src,
             logo: LogoAdapted.src,
