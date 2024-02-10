@@ -25,6 +25,6 @@ export const isValidEmail = (email: string): boolean => {
     return emailRegex.test(email);
 };
 
-export const getProperTextSize = (text: string, isBigScreen: boolean): string => {
+export const getTextSizeBasedOnBigBreakpoint = (text: string, isBigScreen: boolean): string => {
     return isBigScreen ? text : text.slice(0, 150);
 }
