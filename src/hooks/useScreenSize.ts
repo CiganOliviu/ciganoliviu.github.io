@@ -31,6 +31,7 @@ export const useGetScreenSize = () => {
         resolution,
         isMobile: (): boolean => resolution === 'mobile',
         isTablet: (): boolean => resolution === 'tablet',
-        isDesktop: (): boolean => resolution === 'desktop'
+        isDesktop: (): boolean => resolution === 'desktop',
+        isBigScreen: (): boolean => resolution === 'bigScreen'
     };
 };

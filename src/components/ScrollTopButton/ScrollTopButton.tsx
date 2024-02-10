@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 import ArrowToTop from '../../assets/icons/angles-up-solid.svg';
 import { ScrollToTopButton, ScrollToTopIcon } from "@components/components/ScrollTopButton/ScrollToTopButton.css";
 
-const ScrollTopButton = () => {
+const STANDARD_SCROLL_BUTTON_APPEARANCE_HEIGHT = 300;
+
+const ScrollTopButton: FC = () => {
     const [isVisible, setIsVisible] = useState<boolean>(false);
 
     useEffect(() => {
         const toggleVisibility = () => {
-            if (window.pageYOffset > 300) {
-                setIsVisible(true);
-            } else {
-                setIsVisible(false);
-            }
+            setIsVisible(window.scrollY > STANDARD_SCROLL_BUTTON_APPEARANCE_HEIGHT);
         };
 
         window.addEventListener('scroll', toggleVisibility);
@@ -27,14 +25,14 @@ const ScrollTopButton = () => {
     };
 
     return (
-        <div>
-            {isVisible && (
-                <ScrollToTopButton onClick={handleScrollToTop}>
-                    <ScrollToTopIcon src={ArrowToTop.src} alt={ArrowToTop.src} />
-                </ScrollToTopButton>
-            )}
-        </div>
+        <React.Fragment>
+            <ScrollToTopButton onClick={handleScrollToTop} isVisible={isVisible}>
+                <ScrollToTopIcon src={ArrowToTop.src} alt={ArrowToTop.src} />
+            </ScrollToTopButton>
+        </React.Fragment>
     );
 };
 
 export default ScrollTopButton;
+
+<ScrollToTopIcon src={ArrowToTop.src} alt={ArrowToTop.src} />

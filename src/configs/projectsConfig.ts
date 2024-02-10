@@ -153,5 +153,3 @@ export const ProjectsConfig: ProjectConfigType[] = [
         is_research_paper: false
     },
 ];
-
-export const PreviewProjectsConfig: ProjectConfigType[] = ProjectsConfig.slice(0, 3);

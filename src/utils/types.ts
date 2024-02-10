@@ -5,7 +5,7 @@ export type ArticlesConfigType = {
     thumbnail: string,
     title: string,
     subtitle: string;
-    previewHtmlField: innerHtmlType,
+    previewField: string,
     htmlField: innerHtmlType,
     open_link: string;
 };

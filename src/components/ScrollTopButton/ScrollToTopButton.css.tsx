@@ -1,7 +1,25 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { AppTheme } from "@components/utils/cssMedia";
 
-export const ScrollToTopButton = styled.button`
+const fadeIn = keyframes`
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+`;
+
+const fadeOut = keyframes`
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+`;
+
+export const ScrollToTopButton = styled.button<{ isVisible: boolean }>`
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -18,8 +36,11 @@ export const ScrollToTopButton = styled.button`
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     z-index: 3;
-  
-    :hover {
+    animation: ${(props) => (props.isVisible ? fadeIn : fadeOut)} 0.4s;
+    visibility: ${(props) => (props.isVisible ? 'visible' : 'hidden')};
+
+
+  :hover {
         background-color: ${AppTheme.darkerOpen};
     }
 `;

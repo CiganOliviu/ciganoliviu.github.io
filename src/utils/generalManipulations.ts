@@ -24,3 +24,7 @@ export const isValidEmail = (email: string): boolean => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 };
+
+export const getTextSizeBasedOnBigBreakpoint = (text: string, isBigScreen: boolean): string => {
+    return isBigScreen ? text : text.slice(0, 150);
+}
