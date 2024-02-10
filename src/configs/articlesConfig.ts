@@ -17,11 +17,9 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: ChoosingTheRightEstimatorInMachineLearning.src,
         title: 'Choosing the right estimator in Machine Learning — An Use Case Driven Approach',
         subtitle: '3 February 2023',
-        previewHtmlField: {
-            __html: 'It has been over a year since I joined a machine learning research program in collaboration ' +
+        previewField: 'It has been over a year since I joined a machine learning research program in collaboration ' +
                 'with the Canadian startup company Alphablock. Our focus lies in fintech research models,' +
-                'and our primary task involves comprehending and implementing a machine learning...',
-        },
+                'and our primary task involves comprehending and implementing a machine learning',
         htmlField: {
             __html: 'It has been over a year since I joined a machine learning research program in collaboration with the Canadian startup company Alphablock. Our focus lies in fintech research models, and our primary task involves comprehending and implementing a machine learning model for the prediction process. The methodology behind the prediction process, particularly in financial models, is detailed in the “Machine Beta, Statistical Factors, Non-Linear Mechanisms, And The [3N] Methodology” research paper. This paper delves into the reasons behind the biases in the current indexing process and provides insights on how to overcome them.' +
                 '<div>&nbsp;</div>' +
@@ -66,11 +64,9 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: HowToBuildASeniorDeveloperMindset.src,
         title: 'How to build a senior developer mindset',
         subtitle: '28 January 2023',
-        previewHtmlField: {
-            __html: 'The software development industry, like many others, is very complex. You have to understand ' +
+        previewField: 'The software development industry, like many others, is very complex. You have to understand ' +
                 'and see beyond fancy technologies and beyond just doing the technical job. I’ve discussed this ' +
-                'in another article called Soft Skills for Software Engineers in...',
-        },
+                'in another article called Soft Skills for Software Engineers in',
         htmlField: {
             __html: 'The software development industry, like many others, is very complex. You have to understand and see beyond fancy technologies and beyond just doing the technical job. I’ve discussed this in another article called Soft Skills for Software Engineers in which I pointed out the importance of soft skills for a successful career.' +
                 '<div>&nbsp;</div>' +
@@ -153,11 +149,9 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: HowToConductCodeReviews.src,
         title: 'How to conduct Code Reviews',
         subtitle: '10 January 2023',
-        previewHtmlField: {
-            __html: 'After spending a considerable time in the industry as a programmer, I’ve participated in ' +
+        previewField: 'After spending a considerable time in the industry as a programmer, I’ve participated in ' +
                 'numerous code reviews across various projects. I’ve noticed that many programmers struggle ' +
-                'with code reviews which is concerning. Code reviews are a crucial step before pushing code to...',
-        },
+                'with code reviews which is concerning. Code reviews are a crucial step before pushing code to',
         htmlField: {
             __html: 'After spending a considerable time in the industry as a programmer, I’ve participated in numerous code reviews across various projects.\n' +
                 'I’ve noticed that many programmers struggle with code reviews, which is concerning. Code reviews are a crucial step before pushing code to production, acting as a safeguard. It’s essential that we improve our approach to code reviews collectively.' +
@@ -209,11 +203,9 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: BooksOnSoftwareMyRecommendations.src,
         title: 'Books on Software: My recommendations',
         subtitle: '6 January 2023',
-        previewHtmlField: {
-            __html: 'One month ago, I wrote an important article titled “Are books relevant in Software Design?” in ' +
+        previewField: 'One month ago, I wrote an important article titled “Are books relevant in Software Design?” in ' +
                 'which I aimed to explain and respond to this question. The short answer is yes, books are crucial ' +
-                'in Software Design for several reasons. I also touch upon which...',
-        },
+                'in Software Design for several reasons. I also touch upon which',
         htmlField: {
             __html: 'One month ago, I wrote an important article titled “Are books relevant in Software Design?” in which I aimed to explain and respond to this question. The short answer is yes, books are crucial in Software Design for several reasons. I also touch upon which books are relevant, as not all provide valuable insights. I won’t delve into details here since that’s beyond the article’s scope, but I recommend reading it for a comprehensive understanding.' +
                 '<div>&nbsp;</div>' +
@@ -292,11 +284,9 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: SoftSkillsForSoftwareEngineers.src,
         title: 'Soft Skills for Software Engineers',
         subtitle: '2 January 2023',
-        previewHtmlField: {
-            __html: 'Soft skills, equally vital alongside hard skills, play a pivotal role in career growth and ' +
+        previewField: 'Soft skills, equally vital alongside hard skills, play a pivotal role in career growth and ' +
                 'overall success. Despite their importance, they often take a backseat in learning and understanding, ' +
-                'possibly because people acknowledge their significance but fail to dedicate...',
-        },
+                'possibly because people acknowledge their significance but fail to dedicate',
         htmlField: {
             __html: 'Soft skills, equally vital alongside hard skills, play a pivotal role in career growth and overall success. Despite their importance, they often take a backseat in learning and understanding, possibly because people acknowledge their significance but fail to dedicate focused time to develop them. This oversight might stem from a lack of emphasis or awareness regarding their tangible impact on professional and personal advancement. Why do you suppose this disparity exists between acknowledging their value and actively investing in their development?' +
                 '<div>&nbsp;</div>' +
@@ -381,11 +371,9 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: WhatIsTechNoise.src,
         title: 'What is TechNoise?',
         subtitle: '28 December 2023',
-        previewHtmlField: {
-            __html: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a ' +
+        previewField: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a ' +
                 'significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing ' +
-                '“technologies, whether outdated, fading, or lacking market value.”...',
-        },
+                '“technologies, whether outdated, fading, or lacking market value.”',
         htmlField: {
             __html: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing “technologies, whether outdated, fading, or lacking market value.” While this encapsulation is accurate, I seek to offer a more detailed understanding.' +
                 '<div>&nbsp;</div>' +
@@ -453,11 +441,9 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: WhatProgrammingLanguageToLearnFirst.src,
         title: 'What programming language to learn first?',
         subtitle: '24 December 2023',
-        previewHtmlField: {
-            __html: 'Navigating the realm of coding often begins with the daunting choice of which programming ' +
+        previewField: 'Navigating the realm of coding often begins with the daunting choice of which programming ' +
                 'language to learn. It’s a pivotal decision — one that demands an understanding of available ' +
-                'options and careful consideration of what aligns best with your goals...',
-        },
+                'options and careful consideration of what aligns best with your goals',
         htmlField: {
             __html: 'Navigating the realm of coding often begins with the daunting choice of which programming ' +
                 'language to learn. It’s a pivotal decision — one that demands an understanding of available ' +
@@ -518,11 +504,9 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: TechToolsForSoftwareEngineer.src,
         title: 'Tech Tools and Software Engineers',
         subtitle: '21 December 2023',
-        previewHtmlField: {
-            __html: 'In the realm of software engineering, a rich array of tools, from IDEs and frameworks ' +
+        previewField: 'In the realm of software engineering, a rich array of tools, from IDEs and frameworks ' +
                 'streamlining workflows to various database types like SQL and NoSQL, empowers professionals in ' +
-                'multifaceted ways. While the necessity and relevance of tech tools have been emphasized...',
-        },
+                'multifaceted ways. While the necessity and relevance of tech tools have been emphasized',
         htmlField: {
             __html: 'In the realm of software engineering, a rich array of tools, from IDEs and frameworks ' +
                 'streamlining workflows to various database types like SQL and NoSQL, empowers ' +
@@ -647,11 +631,9 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: TheProblemWithTheJsEcosystem.src,
         title: 'The problem with the JS ecosystem',
         subtitle: '14 December 2023',
-        previewHtmlField: {
-            __html: 'JavaScript maintained its position as the most utilized programming language globally, as ' +
+        previewField: 'JavaScript maintained its position as the most utilized programming language globally, as ' +
                 'indicated by the 2023 GitHub survey, continuing its dominance from the previous year. Additionally, ' +
-                'TypeScript showed a noteworthy surge in popularity, as per GitHub’s insights.'
-        },
+                'TypeScript showed a noteworthy surge in popularity, as per GitHub’s insights.',
         htmlField: {
             __html: 'JavaScript maintained its position as the most utilized programming language globally, as ' +
                 'indicated by the 2023 GitHub survey, continuing its dominance from the previous year. Additionally, ' +
@@ -757,11 +739,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: AreBooksRelevantInSoftwareDesign.src,
         title: 'Are books relevant in Software Design',
         subtitle: '10 December 2023',
-        previewHtmlField: {
-            __html: 'Reading is essential for those who seek rise above the ordinary. — Jim Rohn' +
-                '<div>&nbsp;</div>' +
-                'Numerous sources offer information across various fields and aspects, notably the internet. However, books remain an invaluable reservoir of knowledge.'
-        },
+        previewField: 'Numerous sources offer information across various fields and aspects, notably the internet. However, books remain an invaluable reservoir of knowledge. They encapsulate experiences, values, morals, ideas, and concepts, wielding immense power in their diversity. As an individual, delving into the pages of a book unveils profound insights into the world. This information stems from the expertise',
         htmlField: {
             __html: '<span style="font-size: 1.8rem">Books</span> endure through centuries for multifaceted reasons, but at their core lies an undeniable truth: books are remarkably effective. They serve as invaluable tools for learning about diverse subjects and experiences. Typically, their creation involves extensive research, often authored by experts in their respective fields. This expertise grants books a level of credibility that sets them apart from many other sources of information.' +
                 '<div>&nbsp;</div>' +
@@ -826,11 +804,8 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         thumbnail: EightRulesOfSoftwareDesign.src,
         title: '8 Rules of Software Engineers',
         subtitle: '7 December 2023',
-        previewHtmlField: {
-            __html: 'Distinguishing an amateur from a professional software engineer often comes down to adherence to industry standards and regulations.' +
-                '<div>&nbsp</div>' +
-                'As I transitioned into a Software Engineer role after receiving and accepting a job offer, the realization dawned that my learning had only just begun.'
-        },
+        previewField: 'Distinguishing an amateur from a professional software engineer often comes down to adherence to industry standards and regulations.' +
+                'As I transitioned into a Software Engineer role after receiving and accepting a job offer, the realization dawned that my learning had only just begun.',
         htmlField: {
             __html: '<span style="font-size: 1.8rem">Enbarking</span> on my journey in the Software Development industry began in high school, where I delved into various technologies and coding practices. By the time I entered university, I had a solid foundation in good coding practices, understood RESTful API architecture, comprehended MVC principles, and was acquainted with diverse programming paradigms. This laid a strong groundwork, marking me as a well-defined junior in the field.' +
                 '<div>&nbsp;</div>' +

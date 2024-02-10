@@ -11,7 +11,6 @@ import { useGetScreenSize } from "@components/hooks/useScreenSize";
 
 export const PreviewProjects: FC = () => {
     const { isBigScreen } = useGetScreenSize();
-
     const PreviewProjectsConfig: ProjectConfigType[] = ProjectsConfig.slice(0, isBigScreen() ? 3 : 2);
 
     return (

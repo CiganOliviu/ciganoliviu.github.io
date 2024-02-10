@@ -8,19 +8,25 @@ import {
 import React, { FC } from "react";
 import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
 import { ArticlesConfigType } from "@components/utils/types";
+import { getProperTextSize } from "@components/utils/generalManipulations";
+import { useGetScreenSize } from "@components/hooks/useScreenSize";
 
 type ArticleCardContextType = {
     article: ArticlesConfigType;
 };
 
 export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
+    const { isBigScreen } = useGetScreenSize();
+
     return (
         <ArticleCardWrapper>
             <ArticleCardThumbnail src={article.thumbnail} alt={article.thumbnail} />
             <ArticleCardContentWrapper>
                 <ArticleCardTitle>{article.title}</ArticleCardTitle>
                 <ArticleCardSubtitle>{article.subtitle}</ArticleCardSubtitle>
-                <ArticleCardContent dangerouslySetInnerHTML={article.previewHtmlField} />
+                <ArticleCardContent>
+                    {getProperTextSize(article.previewField, isBigScreen())}...
+                </ArticleCardContent>
                 <InternalLink href={`/article-detail-${article.id}`}>
                     Read Article
                 </InternalLink>
