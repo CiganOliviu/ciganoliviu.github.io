@@ -28,11 +28,10 @@ export const ProjectsConfig: ProjectConfigType[] = [
         title: 'Machine Learning in Automotive Insurance Industry',
         subtitle: 'Machine Learning | Backend | Mobile iOS & Android',
         previewHtmlField: {
-            __html: 'My colleague and I created a powerful full-stack mobile app using Machine Learning to analyze ' +
-                'car damage severity from images. The app, built with React Native and TypeScript, lets users ' +
-                'upload car photos. These images are sent to a Python Django backend, where our Machine Learning ' +
-                'model assesses the damage level. It\'s a user-friendly solution for quick and accurate damage ' +
-                'evaluations.'
+            __html: 'Our mobile application is specifically designed for the Automotive Insurance Industry ' +
+                'to simplify the assessment of car damages. By allowing users to take photos or upload existing ' +
+                'images of damaged cars, the Car Damage Classifier provides quick and accurate classifications of ' +
+                'damage severity levels, streamlining the claim processing workflow for insurance agents and claim adjusters.'
         },
         htmlField: {
             __html: '<span style="font-size: 1.8rem">Our mobile application</span> is specifically designed for the Automotive Insurance Industry to simplify the assessment of car damages. By allowing users to take photos or upload existing images of damaged cars, the Car Damage Classifier provides quick and accurate classifications of damage severity levels, streamlining the claim processing workflow for insurance agents and claim adjusters.' +
@@ -62,33 +61,34 @@ export const ProjectsConfig: ProjectConfigType[] = [
     {
         id: 'medcity',
         thumbnail: BrainTumorDetection.src,
-        title: 'Brain Tumor Analysis in the Medical Industry',
+        title: 'Brain Tumor Analysis in Medical Industry',
         subtitle: 'Machine Learning | Backend | Web',
         previewHtmlField: {
-            __html: 'My colleague and I collaborated on an' +
-                'application focused on analyzing X-ray brain scans to detect and precisely categorize different types ' +
-                'of brain tumors. This innovative system operates as a RESTful API, housing a sophisticated machine ' +
-                'learning model. This model is adept at discerning the presence of a brain tumor and identifying its ' +
-                'specific type, leveraging an extensive training dataset.'
+            __html: 'Our web-based application is a breakthrough in the medical field, designed to aid doctors in the ' +
+                'detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images ' +
+                'and receive rapid results, our system streamlines the diagnostic process, facilitating early detection' +
+                ' and treatment of brain tumors.'
         },
         htmlField: {
-            __html: '<span style="font-size: 1.8rem">My colleague and I </span> collaborated on an' +
-                'application focused on analyzing X-ray brain scans to detect and precisely categorize different types ' +
-                'of brain tumors. This innovative system operates as a RESTful API, housing a sophisticated machine ' +
-                'learning model. This model is adept at discerning the presence of a brain tumor and identifying its ' +
-                'specific type, leveraging an extensive training dataset.' +
+            __html: '<span style="font-size: 1.8rem">Our web-based application</span> is a breakthrough in the medical field, designed to aid doctors in the detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images and receive rapid results, our system streamlines the diagnostic process, facilitating early detection and treatment of brain tumors.' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">Utilizing</span> the SVM SVC algorithm from the Kaggle ' +
-                'library, our model was crafted in Python, harnessing the power of pandas and numpy for seamless ' +
-                'data manipulation and sklearn for the intricate machine learning procedures. With a robust training ' +
-                'set of over 2,800 diverse brain X-ray images captured from various angles, our model has been ' +
-                'fine-tuned for accuracy and reliability.' +
+                '<span style="font-size: 1.8rem">Key Features:</span>' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">The integration</span> of this high-performing model into' +
-                ' the backend RESTful API, developed using Django in Python, was a strategic decision. ' +
-                'Python\'s compatibility with the machine learning model facilitated a smooth integration ' +
-                'process. The model itself is stored as a .pkl file, optimizing response times by caching ' +
-                'processing in memory, ensuring rapid and efficient outcomes.'
+                '<li>Web-Based Accessibility: The Brain Tumor Detection System is accessible via a web browser, providing doctors with the flexibility to upload X-ray images from any internet-connected device.</li>' +
+                '<li>Advanced Image Analysis: Leveraging state-of-the-art image processing algorithms, our system analyzes uploaded X-ray images to identify and classify different types of brain tumors, including glioma, meningioma, and pituitary tumors.</li>' +
+                '<li>User-Friendly Interface: With an intuitive and easy-to-navigate interface, doctors can quickly upload X-ray images and receive instant results, enhancing the efficiency of the diagnostic process.</li>' +
+                '<li>Multi-Tumor Detection: Our system is capable of detecting multiple types of brain tumors, allowing doctors to identify and differentiate between glioma, meningioma, and pituitary tumors with high accuracy.</li>' +
+                '<li>Quick Results: By automating the tumor detection process, our system provides rapid results, enabling doctors to make timely decisions regarding patient care and treatment plans.</li>' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">Benefits:</span>' +
+                '<div>&nbsp;</div>' +
+                '<li>Early Detection: The Brain Tumor Detection System facilitates early detection of brain tumors, enabling doctors to initiate treatment promptly and improve patient outcomes.</li>' +
+                '<li>Accurate Diagnosis: With advanced image analysis algorithms, our system delivers accurate and reliable tumor classifications, reducing the risk of misdiagnosis and ensuring appropriate treatment strategies.</li>' +
+                '<li>Time Savings: By streamlining the diagnostic process, our system saves valuable time for doctors, allowing them to focus on patient care and treatment.</li>' +
+                '<li>Improved Patient Care: Timely and accurate tumor detection enhances patient care by enabling doctors to provide targeted treatments and interventions tailored to individual patient needs.</li>' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">The Brain Tumor Detection System</span> is a game-changer in the medical field, revolutionizing the way brain tumors are diagnosed and treated. With its web-based accessibility, advanced image analysis capabilities, and user-friendly interface, our system empowers doctors to detect and classify glioma, meningioma, and pituitary tumors with speed and accuracy. Thank you for considering the Brain Tumor Detection System for your medical diagnostic needs.' +
+                '<div>&nbsp;</div>'
         },
         open_link: '',
         is_in_progress: false,
