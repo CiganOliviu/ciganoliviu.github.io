@@ -25,8 +25,8 @@ export const ProjectsConfig: ProjectConfigType[] = [
     {
         id: 'carepair',
         thumbnail: CaRepair.src,
-        title: 'CaRepair: Car Damage Detector',
-        subtitle: 'Machine Learning | Backend | Mobile',
+        title: 'Machine Learning in Automotive Insurance Industry',
+        subtitle: 'Machine Learning | Backend | Mobile iOS & Android',
         previewHtmlField: {
             __html: 'My colleague and I created a powerful full-stack mobile app using Machine Learning to analyze ' +
                 'car damage severity from images. The app, built with React Native and TypeScript, lets users ' +
@@ -35,27 +35,25 @@ export const ProjectsConfig: ProjectConfigType[] = [
                 'evaluations.'
         },
         htmlField: {
-            __html: '<span style="font-size: 1.8rem">My colleague and I </span>collaborated on an application designed to assess the severity of car damage ' +
-                'via image analysis. This application operates as a RESTful API, housing a machine learning model ' +
-                'capable of discerning damage severity based on a comprehensive training dataset.' +
+            __html: '<span style="font-size: 1.8rem">Our mobile application</span> is specifically designed for the Automotive Insurance Industry to simplify the assessment of car damages. By allowing users to take photos or upload existing images of damaged cars, the Car Damage Classifier provides quick and accurate classifications of damage severity levels, streamlining the claim processing workflow for insurance agents and claim adjusters.' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">Employing</span> the SVM SVC algorithm from the Kaggle library, the model is written in Python using pandas' +
-                ' and numpy for data manipulation, and sklearn for the machine learning process. This model has been ' +
-                'trained on an extensive dataset of over 1,200 images encompassing various car models, angles, and ' +
-                'degrees of damage.' +
+                '<span style="font-size: 1.8rem">Key Features:</span>' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">Integrating</span> this model into the backend RESTful API, developed in Python using Django, was a ' +
-                'strategic choice owing to the seamless compatibility between Python and the machine learning ' +
-                'model. The model is stored as a .pkl file, enabling rapid responses by caching the processing' +
-                ' in memory, thereby optimizing speed.' +
+                '<li>Advanced Image Recognition: The Car Damage Classifier utilizes advanced image recognition technology to analyze images of damaged cars and classify the severity of the damages.</li>' +
+                '<li>Simple Interface: Our user-friendly interface makes it easy for insurance agents and claim adjusters to upload images and receive detailed damage classifications.</li>' +
+                '<li>Three Severity Levels: Damages are categorized into three main severity levels: Minor Damage, Moderate Damage, and Severe Damage, providing clear and understandable classifications.</li>' +
+                '<li>Objective Assessments: By automating the assessment process, the Car Damage Classifier ensures consistent and objective evaluations, reducing errors and discrepancies in claim settlements.</li>' +
+                '<li>Efficiency and Cost-Effectiveness: With streamlined claim processing and accurate damage assessments, insurance companies can save time and resources, leading to cost savings and improved efficiency.</li>' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">The backend system</span> features diverse filtering methods accessible through dispatchers (query strings) ' +
-                'and incorporates a robust authentication system.' +
+                '<span style="font-size: 1.8rem">Benefits:</span>' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">On the frontend side,</span> React Native was employed for its adaptability to mobile applications.' +
-                ' Users can either upload images from their device\'s gallery or capture live pictures. ' +
-                'Upon submitting the image via a form, the application swiftly provides a classification ' +
-                'of the car\'s damage severity.',
+                '<li>Time Savings: Eliminate the need for manual assessment processes, allowing insurance agents to process claims more quickly.</li>' +
+                '<li>Accuracy: Reduce errors and inconsistencies in claim settlements with objective damage assessments.</li>' +
+                '<li>Transparency: Provide transparent classifications of damages, fostering trust between insurance companies and policyholders.</li>' +
+                '<li>Cost-Effectiveness: Optimize repair and replacement decisions, minimizing unnecessary costs for insurance companies and policyholders alike.</li>' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">The Car Damage Classifier</span> is a valuable tool for the Automotive Insurance Industry, offering a streamlined and efficient way to assess car damages. With its advanced technology and user-friendly interface, our application simplifies the claim processing workflow, improves accuracy, and ultimately benefits insurance companies, agents, and policyholders..' +
+                '<div>&nbsp;</div>'
         },
         open_link: '',
         is_in_progress: false,
@@ -64,7 +62,7 @@ export const ProjectsConfig: ProjectConfigType[] = [
     {
         id: 'medcity',
         thumbnail: BrainTumorDetection.src,
-        title: 'MedCity: Brain Tumor Detection System',
+        title: 'Brain Tumor Analysis in the Medical Industry',
         subtitle: 'Machine Learning | Backend | Web',
         previewHtmlField: {
             __html: 'My colleague and I collaborated on an' +
