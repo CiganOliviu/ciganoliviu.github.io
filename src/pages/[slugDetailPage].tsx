@@ -47,7 +47,6 @@ const DetailPage = () => {
     }
 
     if (!responseObject) {
-        console.log(responseObject);
         return <ErrorPage statusCode={404} />;
     }
 
