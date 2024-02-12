@@ -112,23 +112,20 @@ export const ProjectsConfig: ProjectConfigType[] = [
                 'a sneak peek into the creation of an innovative, on-the-go mobile app for watching movies and TV ' +
                 'shows.' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">The app connects</span> to two distinct backend systems: an external ' +
-                'service provider and an analytics platform with integrated machine learning. Additionally, ' +
-                'there\'s a Stream Service Provider developed in React.' +
+                '<span style="font-size: 1.8rem">Key Features:</span>' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">Let\'s break it down</span> The external service provider hosts ' +
-                'images, movies, assets, and videos through a simple Django-based REST API. This API supplies' +
-                ' core information for the React Native-based hybrid mobile app.' +
+                '<li>Seamless Integration: StreamSnap seamlessly connects to two distinct backend systems, ensuring a smooth and uninterrupted streaming experience. The app taps into an external service provider, powered by a Django-based REST API, to host images, movies, assets, and videos. Additionally, it interfaces with a robust analytics platform, equipped with integrated machine learning, to track user activity and offer personalized recommendations.</li>' +
+                '<li>Personalized Recommendations: Delve into a world of tailored entertainment with StreamSnap\'s advanced recommendation system. By analyzing user interactions and preferences, the platform delivers both general suggestions and genre-specific recommendations, enhancing the discovery of new content.</li>' +
+                '<li>Customizable Configuration: Empowering content managers with flexibility, StreamSnap allows for the customization of app configurations through the external service provider. From publishing and unpublishing collections of movies to automatically filtering content based on predefined conditions, the platform offers granular control and efficiency. It\'s vital for content managers to understand specific rules in the configuration process to optimize content delivery.</li>' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">Moving on to the analytics platform,</span>  it tracks user activity ' +
-                'within the app, noting interactions like button clicks, logins, logouts, and asset clicks.' +
-                ' The platform also houses a recommendation system offering both general suggestions and ' +
-                'genre-specific recommendations.' +
+                '<span style="font-size: 1.8rem">Benefits:</span>' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">Through the external service provider</span> the app\'s configuration ' +
-                'can be customized based on logic. It allows actions like publishing or unpublishing collections of \n' +
-                'movies and automatically filtering content based on conditions chosen by the content manager. There \n' +
-                'are specific rules in the configuration process, which are important for the content manager to understand.'
+                '<li>Enhanced User Experience: StreamSnap prioritizes user experience above all else, offering a seamless interface and intuitive navigation. With personalized recommendations and customizable configurations, users can discover and enjoy content tailored to their preferences effortlessly.</li>' +
+                '<li>Efficient Content Management: Content managers benefit from StreamSnap\'s streamlined processes, enabling them to curate and deliver content with precision. The platform\'s configurable options empower managers to make data-driven decisions and optimize content distribution effectively.</li>' +
+                '<li>Future-Proof Technology: With a foundation built on cutting-edge technology and innovative solutions, StreamSnap sets the stage for the future of mobile streaming. By embracing machine learning and adaptable configurations, the platform remains agile and ready to evolve alongside shifting industry trends.</li>' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">StreamSnap</span> offers a hassle-free solution to your streaming needs. Whether you\'re a casual viewer or a content curator, our user-friendly platform ensures that entertainment is always just a tap away.' +
+                '<div>&nbsp;</div>'
         },
         open_link: '',
         is_in_progress: false,
