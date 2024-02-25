@@ -1,3 +1,3 @@
-![Logo White](https://github.com/CiganOliviu/ciganoliviu.github.io/assets/43005157/0651e265-d55f-4447-9e60-ac6206aa330d)
+![Logo White](https://github.com/CiganOliviu/ciganoliviu.github.io/assets/43005157/03f4e9c3-a877-420a-a6f5-d59087ed50dc)
 
 ciganoliviudavid.com
