@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const ProjectsWrapper = styled.div`
-    background: ${AppTheme.darkerOpen};
+    background: ${AppTheme.darkerClose};
     color: ${AppTheme.white};
 `;
 

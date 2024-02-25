@@ -15,7 +15,7 @@ export const ArticlesPreview = () => {
         <ArticlesPreviewWrapper>
             <ArticlesLister articlesList={ArticlesConfigPreview} />
             <Separator paddingValue={2} />
-            <ContentLinkWrapper contentLinkBackground={AppTheme.darkerClose} style={{ textAlign: 'center' }}>
+            <ContentLinkWrapper contentLinkBackground={AppTheme.darkerOpen} style={{ textAlign: 'center' }}>
                 <Link href={'/articles'}>Check Other Articles</Link>
             </ContentLinkWrapper>
             <Separator paddingValue={2} />

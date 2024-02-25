@@ -10,13 +10,59 @@ import BooksOnSoftwareMyRecommendations from "@components/assets/articles/books_
 import HowToConductCodeReviews from "@components/assets/articles/how_to_conduct_code_reviews.jpg";
 import HowToBuildASeniorDeveloperMindset from "@components/assets/articles/how_to_build_a_senior_developer_mindset.jpg";
 import ChoosingTheRightEstimatorInMachineLearning from "@components/assets/articles/choosing_the_right_estimator_in_machine_learning.jpg"
+import HowBusinessKnowledgeCanIncreaseYourValueAsProgrammer from "@components/assets/articles/how_business_knowledge_can_increase_your_value_as_programmer.webp";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
+    {
+        id: 'how-business-knowledge-can-increase-your-value-as-programmer',
+        thumbnail: HowBusinessKnowledgeCanIncreaseYourValueAsProgrammer.src,
+        title: 'How business knowledge can increase your value as programmer',
+        subtitle: '26 February 2024',
+        previewField: 'A big part of being a senior is the mentality, and what makes a difference is not always the ' +
+            'technical side. I’ve discussed about this in one of my articles “How to build a senior developer mindset”,' +
+            ' where I stated that while having great technical skills is a must, being a tech...',
+        htmlField: {
+            __html: 'A big part of being a senior is the mentality, and what makes a difference is not always the technical side. I’ve discussed about this in one of my articles “How to build a senior developer mindset”, where I stated that while having great technical skills is a must, being a tech guru does not always imply you being part of that select group of seniors.' +
+                '<div>&nbsp;</div>' +
+                'In our work environment, it’s crucial to grasp basic business principles. Simply put, the main aim in any business is to make a profit. If a business isn’t making money, there’s a problem that needs fixing. It’s important to keep this in mind because every action we take, whether it’s writing code or designing software, should ultimately contribute to making a profit. This mindset should guide our daily decisions as seniors developers. Let’s list some of the principles that seniors need to understand:' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">The quicker into the market, the better</h1>' +
+                '<div>&nbsp;</div>' +
+                'It’s a common concept, but many folks don’t grasp it well. Here’s the deal: you got to test your idea in the real world to see if it works. That’s where an MVP (Minimum Viable Product) comes in. Even if you’ve researched the market and think your product or software will be useful, you still need real-world validation. But rushing into the market doesn’t mean putting out sloppy code and messy designs. It means having a system with the basics, just enough to prove the concept, and then building on it. That might mean not testing every single part of the system, but having enough tests to feel confident moving forward and ensuring the system works smoothly. Nowadays, many companies just push stuff out without caring much about the quality of what they’re releasing. This can lead to big problems, even bankruptcy, but I won’t get into all that. The point is, a good senior understands the balance needed. They know when to say no if the system isn’t ready and when to say no to excessive testing when the goal is just to get that MVP out there. Understanding the idea behind “the quicker into the market, the better” can really change the game.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Using a technology over another for almost no reason</h1>' +
+                '<div>&nbsp;</div>' +
+                'This is a common issue for software developers. Sometimes, they get caught up chasing the latest trends in technology, even if it’s just TechNoise. Here’s a basic idea to understand: if a company has already put a lot of time, money, and effort into a certain technology, they’re unlikely to switch to something new just because it’s shiny or slightly faster. I had a tech mentor who always emphasized this point to me: “For a new technology to replace an old one, it has to be way better, like ten times better.” He was comparing it to business decisions because unless there’s a huge advantage or lots of small benefits to switching to a new technology that’s promising and worth investing more money in, there’s no point in making the change. It’s a simple business principle: don’t invest in things that don’t make sense. And as a senior developer, it’s important to know what’s worth investing in and what’s not.' +
+                '<div>&nbsp;</div>' +
+                'Now, when it comes to selecting the technology for a new project or idea, things take a different turn. Here, your aim is to choose the best available option on the market that meets your specific needs. It’s important to weigh the technical advantages and evaluate your existing knowledge. For example, if you’re proficient in PHP Laravel but require AI integration and data analytics capabilities for the upcoming project, opting for Python Django, even with limited experience, might be the smarter choice. Why? Because as a senior, you’re expected to understand core software development concepts, allowing you to adapt to Django quickly, perhaps in just a matter of days.' +
+                '<div>&nbsp;</div>' +
+                'The key lies in making informed decisions based on the situation at hand, and having a solid understanding of business principles can naturally guide you in the right direction.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Adding complexity for no use</h1>' +
+                '<div>&nbsp;</div>' +
+                'Junior developers often fall into this trap, and many don’t even realize it. I used to be in that place too. However, when you’re in a senior role, it’s important to recognize these moments and take a step back to ask some questions. Adding unnecessary complexity goes against one of the core business concepts: keeping things simple.' +
+                '<div>&nbsp;</div>' +
+                'If there aren’t clear requirements for a task or a software solution, it’s best not to overcomplicate it with every possible scenario, most of which might have a low chance of happening, perhaps around 3%. Instead of complicating the feature, which inevitably leads to bugs, confusion, wasted resources in understanding the idea, and of course, wasted money, it might be a better idea to invest time in figuring out how to automatically check or test it. This way, there’s a certain level of trust each time the production deployment pipeline starts.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Building for the future</h1>' +
+                '<div>&nbsp;</div>' +
+                'Companies need to generate revenue not only in the short term but also sustainably over the long term. Achieving this requires ensuring long-term stability in the products the company builds. Long-term stability is impossible without implementing a sufficient level of testing to cover various aspects of the software. Depending on the product or requirements, a certain level of testing should be mandated. This concept is known as Thread Modeling, where you test different systems based on the tolerance for bugs. Incorporating such a concept is crucial not only when developing products but also when creating software for other companies and clients.' +
+                '<div>&nbsp;</div>' +
+                'I’ve encountered developers who advocate for fragile systems, arguing that it ensures job security because they’ll always have work fixing problems. However, this mindset is flawed and reflects a wrong mentality of “it works on my machine.” Such arguments are not only lazy but also indicate a lack of seriousness and maturity in those individuals. Building fragile systems intentionally is short-sighted and can lead to significant issues down the line, including reputational damage and lost business opportunities. Instead, the focus should be on creating robust and reliable systems that provide long-term value to the company and its customers.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Collaboration and common sense</h1>' +
+                '<div>&nbsp;</div>' +
+                'Effective communication and collaboration with all stakeholders involved in company processes are paramount, and I cannot underline their importance enough. Developers who struggle in this aspect not only waste time and money but also affect the progress of projects. Senior developers, on the other hand, comprehend the significance of communication and possess the experience and knowledge to collaborate effectively with others. This highlights the importance of soft skills, which are just as crucial as technical expertise in ensuring project success and fostering a positive work environment.' +
+                '<div>&nbsp;</div>' +
+                'Thank you.'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/how-business-knowledge-can-increase-your-value-as-programmer-74a055b232d3',
+    },
     {
         id: 'choosing-the-right-estimator-in-machine-learning',
         thumbnail: ChoosingTheRightEstimatorInMachineLearning.src,
         title: 'Choosing the right estimator in Machine Learning — An Use Case Driven Approach',
-        subtitle: '3 February 2023',
+        subtitle: '3 February 2024',
         previewField: 'It has been over a year since I joined a machine learning research program in collaboration ' +
                 'with the Canadian startup company Alphablock. Our focus lies in fintech research models,' +
                 'and our primary task involves comprehending and implementing a machine learning',
@@ -63,7 +109,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         id: 'how-to-build-a-senior-developer-mindset',
         thumbnail: HowToBuildASeniorDeveloperMindset.src,
         title: 'How to build a senior developer mindset',
-        subtitle: '28 January 2023',
+        subtitle: '28 January 2024',
         previewField: 'The software development industry, like many others, is very complex. You have to understand ' +
                 'and see beyond fancy technologies and beyond just doing the technical job. I’ve discussed this ' +
                 'in another article called Soft Skills for Software Engineers in',
@@ -148,7 +194,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         id: 'how-to-conduct-code-reviews',
         thumbnail: HowToConductCodeReviews.src,
         title: 'How to conduct Code Reviews',
-        subtitle: '10 January 2023',
+        subtitle: '10 January 2024',
         previewField: 'After spending a considerable time in the industry as a programmer, I’ve participated in ' +
                 'numerous code reviews across various projects. I’ve noticed that many programmers struggle ' +
                 'with code reviews which is concerning. Code reviews are a crucial step before pushing code to',
@@ -202,7 +248,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         id: 'books-on-software-my-recommendations',
         thumbnail: BooksOnSoftwareMyRecommendations.src,
         title: 'Books on Software: My recommendations',
-        subtitle: '6 January 2023',
+        subtitle: '6 January 2024',
         previewField: 'One month ago, I wrote an important article titled “Are books relevant in Software Design?” in ' +
                 'which I aimed to explain and respond to this question. The short answer is yes, books are crucial ' +
                 'in Software Design for several reasons. I also touch upon which',
@@ -283,7 +329,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
         id: 'soft-skills-for-software-engineers',
         thumbnail: SoftSkillsForSoftwareEngineers.src,
         title: 'Soft Skills for Software Engineers',
-        subtitle: '2 January 2023',
+        subtitle: '2 January 2024',
         previewField: 'Soft skills, equally vital alongside hard skills, play a pivotal role in career growth and ' +
                 'overall success. Despite their importance, they often take a backseat in learning and understanding, ' +
                 'possibly because people acknowledge their significance but fail to dedicate',

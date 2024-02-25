@@ -27,8 +27,8 @@ export default function Home() {
             <KnowMeMore ref={resultRef} />
             <WhatIDo />
             <Resume />
-            <PreviewProjects />
             <ArticlesPreview />
+            <PreviewProjects />
             <Contact />
             <Footer backgroundColor={AppTheme.darkerClose} />
        </>

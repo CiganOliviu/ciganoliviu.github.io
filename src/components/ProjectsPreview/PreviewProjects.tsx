@@ -17,7 +17,7 @@ export const PreviewProjects: FC = () => {
         <ProjectsWrapper>
             <ProjectsLister projectsList={PreviewProjectsConfig} />
             <Separator paddingValue={2} />
-            <ContentLinkWrapper contentLinkBackground={AppTheme.darkerOpen} style={{ textAlign: 'center' }}>
+            <ContentLinkWrapper contentLinkBackground={AppTheme.darkerClose} style={{ textAlign: 'center' }}>
                 <Link href={'/projects'}>Check Extra Work and Research</Link>
             </ContentLinkWrapper>
             <Separator paddingValue={2} />
