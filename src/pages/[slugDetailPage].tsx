@@ -3,10 +3,8 @@ import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import { PageWallpaper } from "@components/components/PageWallpaper/PageWallpaper";
 import {
-    DetailPageTypes, fetchArticleConfigResponse,
-    fetchProjectConfigResponse,
-    fetchResumeConfigObject,
-    getDetailPageParams
+    DetailPageTypes,
+    getDetailPageParams, getFetchWrapper
 } from "@components/utils/detailPageManipulations";
 import {
     Content,
@@ -31,19 +29,27 @@ const DetailPage = () => {
         keySearchId
     } = getDetailPageParams(slugDetailPage as string);
 
+    const [isLoading, setIsLoading] = useState<boolean>(true);
     const [responseObject, setResponseObject] = useState<any>(undefined);
 
     useEffect(() => {
-        if (pageType === DetailPageTypes.RESUME)
-            setResponseObject(fetchResumeConfigObject(keySearchId, identity));
-        else if (pageType === DetailPageTypes.PROJECT)
-            setResponseObject(fetchProjectConfigResponse(keySearchId));
-        else if (pageType === DetailPageTypes.ARTICLE)
-            setResponseObject(fetchArticleConfigResponse(keySearchId));
-    }, [pageType, keySearchId, identity]);
+        if (slugDetailPage && keySearchId) {
+            setIsLoading(true);
 
-    if (!slugDetailPage) {
-        return <React.Fragment></React.Fragment>;
+            const fetchProject = async (): Promise<void> => {
+                const fetchWrapper = getFetchWrapper(pageType);
+                const detailPageData = await fetchWrapper(keySearchId, identity);
+
+                setResponseObject(detailPageData);
+                setIsLoading(false);
+            };
+
+            fetchProject().then(null);
+        }
+    }, [slugDetailPage]);
+
+    if (isLoading) {
+        return <></>;
     }
 
     if (!responseObject) {
