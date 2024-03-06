@@ -95,7 +95,7 @@ export const ArticlesConfig: ArticlesConfigType[] = [
                 '<div>&nbsp;</div>' +
                 'Often, the most effective approach to selecting the right estimator is through trial and error. While considering factors such as data size, data structure, and data preprocessing, these elements guide the process up to a certain point. Beyond that, it becomes essential to experiment with models that best suit the data. In our case, the Random Forest Regressor proved to be the most fitting choice.' +
                 '<div>&nbsp;</div>' +
-                '<h1 style="line-height: 3rem">Testing Classification Algorithms and Results</h1>' +
+                '<h1 style="line-height: 3rem">Generating new data sets and increasing the accuracy level</h1>' +
                 '<div>&nbsp;</div>' +
                 'The initial testing was conducted on individual stock data, leading us to the decision to take the next step and generate portfolios from these stocks to observe the general results. We created diverse portfolios with varying sizes of stocks (e.g., 50, 100, 250, 500) and initiated the model training on them. The underlying assumption was that better results could be achieved by predicting the collective behavior of stocks within a portfolio, as they exhibit a more predictable behavior compared to attempting to predict the movement of individual stocks.' +
                 '<div>&nbsp;</div>' +
