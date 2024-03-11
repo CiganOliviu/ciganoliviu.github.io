@@ -18,6 +18,7 @@ import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { AppTheme } from "@components/utils/cssMedia";
 import Head from "next/head";
+import { getStandardHeaderForPages } from "@components/pages/index";
 
 const DetailPage = () => {
     const { isMobile } = useGetScreenSize();
@@ -49,7 +50,7 @@ const DetailPage = () => {
     }, [slugDetailPage]);
 
     if (isLoading) {
-        return <></>;
+        return null;
     }
 
     if (!responseObject) {
@@ -58,9 +59,7 @@ const DetailPage = () => {
 
     return (
         <React.Fragment>
-            <Head>
-                <title>{responseObject?.title}</title>
-            </Head>
+            {getStandardHeaderForPages("Cigan Oliviu David", "Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections.")}
             <PageWallpaper url={responseObject?.thumbnail as string}
                            title={responseObject?.title}
                            subtitle={responseObject?.subtitle}

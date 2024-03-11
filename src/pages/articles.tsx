@@ -8,15 +8,14 @@ import { ArticlesPreviewWrapper } from "@components/components/ArticlesPreview/A
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import Head from "next/head";
 import { ArticlesLister } from "@components/components/ArticlesLister/ArticlesLister";
+import { getStandardHeaderForPages } from "@components/pages/index";
 
 const Articles: FC = () => {
     const { isMobile } = useGetScreenSize();
 
     return (
         <React.Fragment>
-            <Head>
-                <title>Articles</title>
-            </Head>
+            {getStandardHeaderForPages("Cigan Oliviu David", "Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections.")}
             <ArticlesPreviewWrapper>
                 <Logo />
                 {!isMobile() && <ScrollTopButton />}

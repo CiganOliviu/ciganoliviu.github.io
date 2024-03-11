@@ -7,16 +7,14 @@ import { ProjectsLister } from "@components/components/ProjectsLister/ProjectsLi
 import { AppTheme } from "@components/utils/cssMedia";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
-import Head from "next/head";
+import { getStandardHeaderForPages } from "@components/pages/index";
 
 const Projects: FC = () => {
     const { isMobile } = useGetScreenSize();
 
     return (
         <React.Fragment>
-            <Head>
-                <title>Projects</title>
-            </Head>
+            {getStandardHeaderForPages("Cigan Oliviu David", "Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections.")}
             <ProjectsWrapper>
                 <Logo />
                 {!isMobile() && <ScrollTopButton />}

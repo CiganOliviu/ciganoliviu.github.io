@@ -2,6 +2,7 @@ import { ResumeConfig } from "@components/configs/resumeConfig";
 
 import { ProjectsConfig } from "@components/configs/projectsConfig";
 import { ArticlesConfig } from "@components/configs/articlesConfig";
+import { ArticlesConfigType, EducationAndExperienceType, ProjectConfigType } from "@components/utils/types";
 
 export enum DetailPageTypes {
     RESUME = 'resume',
@@ -33,7 +34,7 @@ export const getFetchWrapper = (pageType: string) => {
     return fetchArticleConfigResponse;
 }
 
-export const fetchResumeConfigObject = (keyTitle: string, resumePart: string) => {
+export const fetchResumeConfigObject = (keyTitle: string, resumePart: string): EducationAndExperienceType | undefined => {
     if (resumePart === 'education')
         return ResumeConfig.education.find((obj) => obj.id === keyTitle);
 
@@ -43,10 +44,10 @@ export const fetchResumeConfigObject = (keyTitle: string, resumePart: string) =>
     return undefined;
 };
 
-export const fetchProjectConfigResponse = (keyTitle: string) => {
+export const fetchProjectConfigResponse = (keyTitle: string): ProjectConfigType | undefined => {
     return ProjectsConfig.find((obj) => obj.id === keyTitle);
 };
 
-export const fetchArticleConfigResponse = (keyTitle: string) => {
+export const fetchArticleConfigResponse = (keyTitle: string): ArticlesConfigType | undefined  => {
     return ArticlesConfig.find((obj) => obj.id === keyTitle);
 };
