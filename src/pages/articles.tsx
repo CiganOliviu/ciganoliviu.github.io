@@ -6,7 +6,6 @@ import { ArticlesConfig } from "@components/configs/articlesConfig";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { ArticlesPreviewWrapper } from "@components/components/ArticlesPreview/Articles.css";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
-import Head from "next/head";
 import { ArticlesLister } from "@components/components/ArticlesLister/ArticlesLister";
 import { getStandardHeaderForPages } from "@components/pages/index";
 

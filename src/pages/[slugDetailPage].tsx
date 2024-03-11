@@ -17,7 +17,6 @@ import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopBut
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { Separator } from "@components/components/Resume/Resume.css";
 import { AppTheme } from "@components/utils/cssMedia";
-import Head from "next/head";
 import { getStandardHeaderForPages } from "@components/pages/index";
 
 const DetailPage = () => {
