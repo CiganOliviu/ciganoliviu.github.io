@@ -12,8 +12,68 @@ import HowToBuildASeniorDeveloperMindset from "@components/assets/articles/how_t
 import ChoosingTheRightEstimatorInMachineLearning from "@components/assets/articles/choosing_the_right_estimator_in_machine_learning.jpg"
 import HowBusinessKnowledgeCanIncreaseYourValueAsProgrammer from "@components/assets/articles/how_business_knowledge_can_increase_your_value_as_programmer.webp";
 import WhatIsWorkEthic from "@components/assets/articles/what_is_work_ethic.jpg";
+import PerformanceInModernSoftware from "@components/assets/articles/performance_in_modern_software.jpg";
 
 export const ArticlesConfig: ArticlesConfigType[] = [
+    {
+        id: 'performance-in-modern-software',
+        thumbnail: PerformanceInModernSoftware.src,
+        title: 'Performance in modern Software',
+        subtitle: '14 March 2024',
+        previewField: 'Back in the late 90s and even before, computers were pretty basic compared to today’s beasts. ' +
+            'They had simple processors and not much computing power, but they did the job back then. That’s when we saw' +
+            ' the birth of some quirky new programming languages like Python, Java, and Javascript.....',
+        htmlField: {
+            __html: 'Back in the late 90s and even before, computers were pretty basic compared to today’s beasts. They had simple processors and not much computing power, but they did the job back then. That’s when we saw the birth of some quirky new programming languages like Python, Java, and Javascript.' +
+                '<div>&nbsp;</div>' +
+                'Now, languages like C and C++ were the real champs back then. They were all about squeezing every last bit of performance out of the limited hardware available. You had to manage memory manually in these languages, which meant keeping track of what memory you were using and when to get rid of it. It was a bit of a hassle, but it resulted in some seriously fast software.' +
+                '<div>&nbsp;</div>' +
+                'But then along came Java, Javascript, and Python with something called a garbage collector. This handy tool takes care of memory stuff for you automatically. Sounds great, right? Well, it is, but it comes with a cost. Garbage collection isn’t as efficient as manual memory management, especially if you’re really careful about it.' +
+                '<div>&nbsp;</div>' +
+                'So why did these languages become so popular despite the performance hit? Well, partly because computers got way more powerful. Plus, writing code in languages like Python was just way easier and more comfortable than wrestling with C or C++. So, more and more programmers ditched the manual stuff for the convenience of garbage collection.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">What is super efficient code?</h1>' +
+                '<div>&nbsp;</div>' +
+                '<i>Back in the day, you had to write super eficient code for an OK performance.</i>' +
+                '<div>&nbsp;</div>' +
+                'Back in the old days, writing super efficient code meant being stingy with functions and classes because each one gobbled up precious memory. Same deal with variables — the fewer, the better. People would rather pull off crazy tricks with arrays than use fancier stuff like hashmaps because they were lighter on resources.' +
+                '<div>&nbsp;</div>' +
+                'And naming? Short and sweet was the name of the game. Back then, in older programming languages, you were limited to how long your variable names could be, so folks kept ’em as brief as possible. Basically, it was all about squeezing every ounce of performance out of your code by keeping things lean and mean.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">The problem</h1>' +
+                '<div>&nbsp;</div>' +
+                'These days, there’s still this lingering idea that writing code the old-school way is the key to top-notch performance. And in some cases, yeah, it can make a difference. But here’s the thing: clinging too tightly to those old methods can make your code a mess.' +
+                '<div>&nbsp;</div>' +
+                'With so many new folks jumping into programming, projects are like revolving doors. You’ve got developers coming and going all the time. Writing code like it’s the ’90s just isn’t practical anymore. Plus, today’s hardware is a powerhouse compared to back then. You can write halfway decent code and still end up with a slick, fast program.' +
+                '<div>&nbsp;</div>' +
+                'Luckily, most of the time, we don’t need to sweat every tiny performance detail. Nowadays, we can focus on writing clean, well-organized code. We’re talking about abstractions, functions that do one thing and do it well, classes that follow the Single Responsibility Principle, and all that good stuff. Basically, we can concentrate on making our code easy to understand and maintain, without sacrificing too much performance. It’s a win-win situation.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">The system often takes care of itself from a performance standpoint</h1>' +
+                '<div>&nbsp;</div>' +
+                '<i>Today, you can write OK code and have performant software.</i>' +
+                '<div>&nbsp;</div>' +
+                'These days, modern compilers are like wizards behind the scenes. Remember all that manual inlining we used to do? Well, guess what? A lot of that is handled automatically now.' +
+                '<div>&nbsp;</div>' +
+                'Here’s the deal: the compiler is smart enough to figure out which functions can be inlined for optimal performance, and it does it all on its own. So, while we’re still writing code with nice, neat little functions that each do one thing, at runtime, the compiler swoops in and works its magic. It’s like having a coding buddy who knows all the shortcuts.' +
+                '<div>&nbsp;</div>' +
+                'And that’s just the tip of the iceberg. There are loads of other tricks up the compiler’s sleeve that help squeeze every last drop of efficiency out of your code. So even though it might seem like we’re still doing things the old-fashioned way, there’s a whole lot of modern wizardry happening under the hood.' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">The system often takes care of itself from a performance standpoint</h1>' +
+                '<div>&nbsp;</div>' +
+                '<h1 style="line-height: 3rem">Is performance still relevant then?</h1>' +
+                '<div>&nbsp;</div>' +
+                'For most of the software we work on these days, performance isn’t our main concern. We’ve got beefy hardware and smart compilers that handle a lot of the heavy lifting for us. But that doesn’t mean we can just kick back and relax.' +
+                '<div>&nbsp;</div>' +
+                'Sure, most of the time, we don’t have to worry too much about squeezing every last drop of performance out of our code. But there are still those rare cases where we need to roll up our sleeves and dive into the nitty-gritty to make things run faster.' +
+                '<div>&nbsp;</div>' +
+                'Now, when it comes to firmware, it’s a whole different ball game. Performance is crucial in those tiny systems, which is why C is still king in that world. Its lightweight compiler and low-level capabilities make it perfect for squeezing out every last bit of performance from those little devices. And then there’s Rust and C++, tagging along for the ride, offering even more power altought they are a little heavier.' +
+                '<div>&nbsp;</div>' +
+                'But even in the firmware world, we’re starting to see a shift towards higher-level languages like Python and Node.js. They might not be as performance-oriented as C, but they offer other benefits like ease of development and flexibility. So, while performance is still crucial in the firmware world, we’re also seeing a move towards more accessible and versatile tools even in firmware.' +
+                '<div>&nbsp;</div>' +
+                'Thank you.'
+        },
+        open_link: 'https://medium.com/@ciganoliviudavid/performance-in-modern-software-9e600dc92972'
+    },
     {
         id: 'what-is-work-ethic',
         thumbnail: WhatIsWorkEthic.src,
