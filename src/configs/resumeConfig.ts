@@ -2,9 +2,12 @@ import LogoUTCN from "@components/assets/resume/UTCN.png";
 import LogoLTC from "@components/assets/resume/LTC.png";
 import Logo3SS from "@components/assets/resume/3SS.png";
 import LogoAdapted from "@components/assets/resume/ADAPTED.png";
+import LogoAlphablock from "@components/assets/resume/Alphablock.png";
 import TechnicalUniversity from "@components/assets/education/technical-university-of-cluj-napoca.jpg";
 import Work3SS from "@components/assets/experience/3SS.jpg";
-import AlphablockAdaptedResearch from "@components/assets/experience/Alphablock_Adapted_Research.jpg";
+import AdaptedFintechResearch from "@components/assets/experience/Adapted_Fintech_Research.jpg";
+import WorkAlphablock from "@components/assets/experience/Alphablock.jpg";
+
 import { ResumeConfigType } from "@components/utils/types";
 
 export const ResumeConfig: ResumeConfigType = {
@@ -105,6 +108,83 @@ export const ResumeConfig: ResumeConfigType = {
     ],
     experience: [
         {
+            id: 'data-scientist-alphablock',
+            date: '2024 - Present',
+            title: 'Data Scientist',
+            subtitle: 'Alphablock Technologies',
+            thumbnail: WorkAlphablock.src,
+            logo: LogoAlphablock.src,
+            hasDetailPage: true,
+            previewHtmlField: {
+                __html: 'In my current position at Alphablock, a pioneering Canadian startup, I\'m deeply engaged in an innovative ' +
+                    'initiative centered around automating financial instruments through the synergy of ' +
+                    'machine learning, scientific methodologies, and financial best practices.'
+            },
+            htmlField: {
+                __html: '<span style="font-size: 1.8rem">Collaborating with Alphablock,</span> a pioneering Canadian startup, and the esteemed research ' +
+                    'group ADAPTED from Technical University of Cluj-Napoca, I\'m deeply engaged in an innovative ' +
+                    'initiative centered around automating ' +
+                    'financial instruments through the synergy of machine learning, scientific methodologies, ' +
+                    'and financial best practices. ' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.8rem">My primary research focus</span> revolves around automating global ' +
+                    'investment management strategies. My approach involves harnessing the power of deep ' +
+                    'learning to unearth intricate data patterns that surpass human cognitive capabilities ' +
+                    'for strategic control.' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.8rem">Simultaneously,</span> I\'m actively engaged in sourcing the most pertinent ' +
+                    'data, aiming for optimal precision in the deep learning algorithm. This involves a meticulous ' +
+                    'process of data pattern comprehension, rigorous analysis, and the strategic selection of machine ' +
+                    'learning algorithms and data processing methods, all aimed at achieving paramount accuracy and ' +
+                    'developmental prospects. ' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.8rem">As part of the development cycle,</span> I adeptly generate statistical' +
+                    ' plots, catering precisely to project requirements. My proficiency lies in a robust ' +
+                    'development stack encompassing Python, Keras, Sklearn, matplotlib, pandas, numpy, and ' +
+                    'other essential tools. This collective arsenal empowers me to navigate and innovate ' +
+                    'within this intricate landscape of financial automation and machine learning.'
+            },
+        },
+        {
+            id: 'adapted-research-utcn',
+            date: '2022 - 2024',
+            title: 'Machine Learning Research',
+            subtitle: 'ADAPTED Research Group',
+            thumbnail: AdaptedFintechResearch.src,
+            logo: LogoAdapted.src,
+            hasDetailPage: true,
+            previewHtmlField: {
+                __html: 'Collaborating with Alphablock, a pioneering Canadian startup, and the esteemed research ' +
+                    'group ADAPTED from Technical University of Cluj-Napoca, I\'m deeply engaged in an innovative ' +
+                    'initiative centered around automating financial instruments through the synergy of ' +
+                    'machine learning, scientific methodologies, and financial best practices.'
+            },
+            htmlField: {
+                __html: '<span style="font-size: 1.8rem">Collaborating with Alphablock,</span> a pioneering Canadian startup, and the esteemed research ' +
+                    'group ADAPTED from Technical University of Cluj-Napoca, I\'m deeply engaged in an innovative ' +
+                    'initiative centered around automating ' +
+                    'financial instruments through the synergy of machine learning, scientific methodologies, ' +
+                    'and financial best practices. ' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.8rem">My primary research focus</span> revolves around automating global ' +
+                    'investment management strategies. My approach involves harnessing the power of deep ' +
+                    'learning to unearth intricate data patterns that surpass human cognitive capabilities ' +
+                    'for strategic control.' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.8rem">Simultaneously,</span> I\'m actively engaged in sourcing the most pertinent ' +
+                    'data, aiming for optimal precision in the deep learning algorithm. This involves a meticulous ' +
+                    'process of data pattern comprehension, rigorous analysis, and the strategic selection of machine ' +
+                    'learning algorithms and data processing methods, all aimed at achieving paramount accuracy and ' +
+                    'developmental prospects. ' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.8rem">As part of the development cycle,</span> I adeptly generate statistical' +
+                    ' plots, catering precisely to project requirements. My proficiency lies in a robust ' +
+                    'development stack encompassing Python, Keras, Sklearn, matplotlib, pandas, numpy, and ' +
+                    'other essential tools. This collective arsenal empowers me to navigate and innovate ' +
+                    'within this intricate landscape of financial automation and machine learning.'
+            },
+        },
+        {
             id: 'software-engineer-3ss',
             date: '2021 - Present',
             title: 'Software Engineer',
@@ -150,45 +230,6 @@ export const ResumeConfig: ResumeConfigType = {
                     '<div>&nbsp;</div>' +
                     '<span style="font-size: 1.8rem">My drive</span> for excellence and strong teamwork ethic form the ' +
                     'core of my contributions to the organization.'
-            },
-        },
-        {
-            id: 'adapted-research-utcn',
-            date: '2022 - Present',
-            title: 'Machine Learning Research Student',
-            subtitle: 'ADAPTED Research Group',
-            thumbnail: AlphablockAdaptedResearch.src,
-            logo: LogoAdapted.src,
-            hasDetailPage: true,
-            previewHtmlField: {
-                __html: 'Collaborating with Alphablock, a pioneering Canadian startup, and the esteemed research ' +
-                    'group ADAPTED from Technical University of Cluj-Napoca, I\'m deeply engaged in an innovative ' +
-                    'initiative centered around automating financial instruments through the synergy of ' +
-                    'machine learning, scientific methodologies, and financial best practices.'
-            },
-            htmlField: {
-                __html: '<span style="font-size: 1.8rem">Collaborating with Alphablock,</span> a pioneering Canadian startup, and the esteemed research ' +
-                    'group ADAPTED from Technical University of Cluj-Napoca, I\'m deeply engaged in an innovative ' +
-                    'initiative centered around automating ' +
-                    'financial instruments through the synergy of machine learning, scientific methodologies, ' +
-                    'and financial best practices. ' +
-                    '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">My primary research focus</span> revolves around automating global ' +
-                    'investment management strategies. My approach involves harnessing the power of deep ' +
-                    'learning to unearth intricate data patterns that surpass human cognitive capabilities ' +
-                    'for strategic control.' +
-                    '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">Simultaneously,</span> I\'m actively engaged in sourcing the most pertinent ' +
-                    'data, aiming for optimal precision in the deep learning algorithm. This involves a meticulous ' +
-                    'process of data pattern comprehension, rigorous analysis, and the strategic selection of machine ' +
-                    'learning algorithms and data processing methods, all aimed at achieving paramount accuracy and ' +
-                    'developmental prospects. ' +
-                    '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">As part of the development cycle,</span> I adeptly generate statistical' +
-                    ' plots, catering precisely to project requirements. My proficiency lies in a robust ' +
-                    'development stack encompassing Python, Keras, Sklearn, matplotlib, pandas, numpy, and ' +
-                    'other essential tools. This collective arsenal empowers me to navigate and innovate ' +
-                    'within this intricate landscape of financial automation and machine learning.'
             },
         },
         {

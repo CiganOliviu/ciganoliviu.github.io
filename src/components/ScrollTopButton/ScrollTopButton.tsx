@@ -34,5 +34,3 @@ const ScrollTopButton: FC = () => {
 };
 
 export default ScrollTopButton;
-
-<ScrollToTopIcon src={ArrowToTop.src} alt={ArrowToTop.src} />
