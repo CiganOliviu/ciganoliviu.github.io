@@ -10,7 +10,7 @@ import {
 import { Separator } from "@components/components/Resume/Resume.css";
 import React, { FC } from "react";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
-import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
+import { InternalLink } from "@components/components/LandingArea/LandingArea.css";
 import { EducationAndExperienceType } from "@components/utils/types";
 
 type ContentCardContextType = {

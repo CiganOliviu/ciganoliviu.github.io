@@ -7,7 +7,7 @@ import {
 } from "@components/components/KnowMeMore/KnowMeMore.css";
 import { ContentColumn, Separator, SimpleText } from "@components/components/Resume/Resume.css";
 import { ContentCardText } from "@components/components/ContentCard/ContentCard.css";
-import { ExternalLink } from "@components/components/HeroCard/HeroCard.css";
+import { ExternalLink } from "@components/components/LandingArea/LandingArea.css";
 import { KnowMeMoreConfig } from "@components/configs/generalConfig";
 import { triggerDownloadCV } from "@components/utils/generalManipulations";
 import React, { ForwardedRef, forwardRef } from "react";
@@ -21,7 +21,7 @@ export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
             <KnowMeMoreInfoContainer>
                 <ContentColumn>
                     <SimpleText>
-                        Hi, My name is <HighLight>Cigan Oliviu David</HighLight>, a Software Engineer
+                        More about <HighLight>what I did</HighLight> and <HighLight>who I am</HighLight>
                     </SimpleText>
                     <ContentCardText>
                         {KnowMeMoreConfig.content}

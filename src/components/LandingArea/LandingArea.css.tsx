@@ -3,7 +3,7 @@ import { AppTheme, Breakpoints, getGeneralButtonStyle, minWidthQuery } from "@co
 import HeroCardWallpaper from '../../assets/HeroCard.jpg';
 import Link from "next/link";
 
-export const HeroCardBox = styled.div`
+export const LandingAreaBox = styled.div`
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${HeroCardWallpaper.src}) 
     center;
     background-size: cover;
@@ -12,7 +12,7 @@ export const HeroCardBox = styled.div`
     color: ${AppTheme.white};
 `;
 
-export const HeroCardContainer = styled.div`
+export const LandingAreaContainer = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,25 +22,32 @@ export const HeroCardContainer = styled.div`
     width: 100%;
 `;
 
-export const HeroCardWelcomeText = styled.div`
+export const LandingAreaWelcomeText = styled.div`
     font-size: 1.8rem;
     font-weight: bold;
 `;
 
-export const HeroCardTypeAnimationText = styled.div`
+export const LandingAreaTypeAnimationText = styled.div`
     margin-top: 2rem;
     font-size: 3rem;
     font-weight: bold;
+    display: inline;
 
     ${minWidthQuery(Breakpoints.medium)} {
         font-size: 4rem;
     }
 `
 
-export const HeroCardContinuityText = styled.div`
+export const LandingAreaContinuityText = styled.div`
     margin-top: 2rem;  
     font-size: 1.3rem;
     font-weight: bold;
+`;
+
+export const LandingAreaTextWrapper = styled.span``;
+export const LandingAreaInlineTextWrapper = styled.span`
+    white-space: nowrap;
+    display: inline-block;
 `;
 
 export const GeneralButton = styled.button<{ whiteText?: boolean }>`

@@ -6,7 +6,7 @@ import {
     ArticleCardWrapper
 } from "@components/components/ArticleCard/ArticleCard.css";
 import React, { FC } from "react";
-import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
+import { InternalLink } from "@components/components/LandingArea/LandingArea.css";
 import { ArticlesConfigType } from "@components/utils/types";
 import { getTextSizeBasedOnBigBreakpoint } from "@components/utils/generalManipulations";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";

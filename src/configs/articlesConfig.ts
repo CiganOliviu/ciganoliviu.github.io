@@ -58,8 +58,6 @@ export const ArticlesConfig: ArticlesConfigType[] = [
                 '<div>&nbsp;</div>' +
                 'And that’s just the tip of the iceberg. There are loads of other tricks up the compiler’s sleeve that help squeeze every last drop of efficiency out of your code. So even though it might seem like we’re still doing things the old-fashioned way, there’s a whole lot of modern wizardry happening under the hood.' +
                 '<div>&nbsp;</div>' +
-                '<h1 style="line-height: 3rem">The system often takes care of itself from a performance standpoint</h1>' +
-                '<div>&nbsp;</div>' +
                 '<h1 style="line-height: 3rem">Is performance still relevant then?</h1>' +
                 '<div>&nbsp;</div>' +
                 'For most of the software we work on these days, performance isn’t our main concern. We’ve got beefy hardware and smart compilers that handle a lot of the heavy lifting for us. But that doesn’t mean we can just kick back and relax.' +

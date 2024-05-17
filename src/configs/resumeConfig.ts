@@ -15,7 +15,7 @@ export const ResumeConfig: ResumeConfigType = {
         {
             id: 'automation-informatics-utcn',
             date: '2020 - 2024',
-            title: 'Automation & Informatics',
+            title: 'Automation & Applied Informatics',
             subtitle: 'Technical University of Cluj-Napoca',
             thumbnail: TechnicalUniversity.src,
             logo: LogoUTCN.src,

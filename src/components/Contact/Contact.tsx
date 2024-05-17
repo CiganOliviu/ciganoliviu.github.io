@@ -9,7 +9,7 @@ import {
     ContactFormTextArea
 } from "@components/components/Contact/Contact.css";
 import { Separator } from "@components/components/Resume/Resume.css";
-import { GeneralButton } from "@components/components/HeroCard/HeroCard.css";
+import { GeneralButton } from "@components/components/LandingArea/LandingArea.css";
 import React, { useEffect, useState } from "react";
 import { isValidEmail } from "@components/utils/generalManipulations";
 import { getFormEndpoint } from "@components/configs/generalConfig";

@@ -1,4 +1,4 @@
-import { HeroCard } from "@components/components/HeroCard/HeroCard";
+import { LandingArea } from "@components/components/LandingArea/LandingArea";
 import { Resume } from "@components/components/Resume/Resume";
 import { KnowMeMore } from "@components/components/KnowMeMore/KnowMeMore";
 import { WhatIDo } from "@components/components/WhatIDo/WhatIDo";
@@ -32,7 +32,7 @@ export default function Home() {
        <React.Fragment>
            {getStandardHeaderForPages("Cigan Oliviu David | Software Engineer", "Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections.")}
            {!isMobile() && <ScrollTopButton />}
-            <HeroCard nextSectionReference={resultRef} />
+            <LandingArea nextSectionReference={resultRef} />
             <KnowMeMore ref={resultRef} />
             <WhatIDo />
             <Resume />

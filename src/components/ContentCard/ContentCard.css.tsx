@@ -25,7 +25,7 @@ export const ContentCardDate = styled.div`
     background: ${AppTheme.lightGreen};
     padding: 0.2rem;
     font-weight: bold;
-    width: 80%;
+    width: 10rem;
     text-align: center;
     border-radius: 1rem;
 `

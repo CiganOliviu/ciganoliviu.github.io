@@ -93,6 +93,7 @@ export const ContactFormTextArea = styled.textarea`
     font-weight: bold;
     width: 85%;
     font-family: 'Ubuntu', sans-serif;
+    resize: none;
   
     ${minWidthQuery(Breakpoints.medium)} {
         width: 81%;

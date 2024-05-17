@@ -16,22 +16,17 @@ import {
 export const HeroCardConfig: HeroCardConfigType = {
     WelcomeText: 'Welcome',
     TypeWriterContext: [
-        'I am Cigan Oliviu-David.',
-        'I am a Student.',
-        'I am a Software Engineer.',
-        'I am an AI Researcher.'
+        'Cigan Oliviu-David.',
+        'a Data Scientist.',
+        'a Software Engineer.',
+        'a Researcher.'
     ],
     ContinuityText: 'based in Cluj-Napoca and Satu-Mare, Romania.',
     ButtonText: 'Let\'s discuss'
 };
 
 export const KnowMeMoreConfig: KnowMeMoreConfigType = {
-      content: 'Studying Software Engineering at a leading Romanian faculty, I embarked on an impactful journey ' +
-          'early on with a sought-after internship. This opportunity not only provided hands-on experience but ' +
-          'also forged crucial professional connections, leading to a continuous career in the field for over two years.\n' +
-          'Beyond my studies, I immerse myself as a researcher in Artificial Intelligence. Driven by a passion ' +
-          'for technological advancement, I strive to contribute meaningfully to this dynamic field, fueled ' +
-          'by an unwavering commitment to learning and excellence.'
+      content: 'Studying Engineering at a leading Romanian faculty, I embarked on an impactful journey early on with a sought-after internship. This opportunity not only provided hands-on experience but also forged important professional connections, leading to a continuous career in the software engineering field for over two years. Beyond my studies and software, I immerse myself as a researcher in Artificial Intelligence and Data Science, working together with a deep tech Canadian startup. Driven by a passion for technological advancement, I strive to contribute meaningfully to this dynamic field, fueled by an unwavering commitment to learning and excellence.'
 };
 
 export const WhatIDoConfig: WhatIDoConfigType = {

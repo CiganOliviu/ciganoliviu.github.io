@@ -8,7 +8,7 @@ import {
     ProjectMarker
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { Separator } from "@components/components/Resume/Resume.css";
-import { InternalLink } from "@components/components/HeroCard/HeroCard.css";
+import { InternalLink } from "@components/components/LandingArea/LandingArea.css";
 import { ProjectConfigType } from "@components/utils/types";
 
 export const ProjectCard: FC<ProjectConfigType> = ({
