@@ -148,7 +148,7 @@ export const ResumeConfig: ResumeConfigType = {
         {
             id: 'adapted-research-utcn',
             date: '2022 - 2024',
-            title: 'Machine Learning Research',
+            title: 'Machine Learning Researcher',
             subtitle: 'ADAPTED Research Group',
             thumbnail: AdaptedFintechResearch.src,
             logo: LogoAdapted.src,

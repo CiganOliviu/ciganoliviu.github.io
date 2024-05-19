@@ -19,7 +19,7 @@ const Articles: FC = () => {
                 <Logo />
                 {!isMobile() && <ScrollTopButton />}
                 <ArticlesLister articlesList={ArticlesConfig} />
-                <Footer backgroundColor={AppTheme.darkerOpen}  />
+                <Footer backgroundColor={AppTheme.darkerClose}  />
             </ArticlesPreviewWrapper>
         </React.Fragment>
     )
