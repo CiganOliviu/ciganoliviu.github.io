@@ -9,13 +9,13 @@ export const TextContainerBox = styled.div`
 export const BackTextBox = styled.h1`
     color: ${AppTheme.openGray};
     text-align: center;
-    font-size: 5rem;
+    font-size: 3.5rem;
     opacity: 0.2;
     z-index: 1;
     line-height: 15rem;
     
     ${minWidthQuery(Breakpoints.medium)} {
-        font-size: 10rem;
+        font-size: 7rem;
         line-height: 20rem;
     }
 `;

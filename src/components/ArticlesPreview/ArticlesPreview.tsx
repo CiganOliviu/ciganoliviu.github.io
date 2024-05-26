@@ -1,20 +1,29 @@
 import { ArticlesPreviewWrapper } from "@components/components/ArticlesPreview/Articles.css";
-import React from "react";
+import React, { FC } from "react";
 import { ContentLinkWrapper } from "@components/utils/DetailPageStyles.css";
-import { AppTheme } from "@components/utils/cssMedia";
 import Link from "next/link";
 import { Separator } from "@components/components/Resume/Resume.css";
-import { ArticlesConfigPreview } from "@components/configs/articlesConfig";
 import { ArticlesLister } from "@components/components/ArticlesLister/ArticlesLister";
+import { ArticlesConfigType } from "@components/utils/types";
 
-export const ArticlesPreview = () => {
+type ArticlesPreviewType = {
+    backText: string;
+    overText: string;
+    backgroundColor: string;
+    config: ArticlesConfigType[];
+
+};
+
+export const ArticlesPreview: FC<ArticlesPreviewType> = ({ backText, overText, backgroundColor, config }) => {
     return (
-        <ArticlesPreviewWrapper>
-            <ArticlesLister articlesList={ArticlesConfigPreview} />
+        <ArticlesPreviewWrapper backgroundColor={backgroundColor}>
+            <ArticlesLister backText={backText} overText={overText} articlesList={config} />
             <Separator paddingValue={2} />
-            <ContentLinkWrapper contentLinkBackground={AppTheme.darkerOpen} style={{ textAlign: 'center' }}>
-                <Link href={'/articles'}>Check Other Articles</Link>
-            </ContentLinkWrapper>
+            {config.length > 0 &&
+                <ContentLinkWrapper contentLinkBackground={backgroundColor} style={{ textAlign: 'center' }}>
+                    <Link href={'/articles'}>Check Other Articles</Link>
+                </ContentLinkWrapper>
+            }
             <Separator paddingValue={2} />
         </ArticlesPreviewWrapper>
     )

@@ -7,10 +7,10 @@ import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import React, { useRef } from "react";
-import { PreviewProjects } from "@components/components/ProjectsPreview/PreviewProjects";
 import Head from "next/head";
 import { ArticlesPreview } from "@components/components/ArticlesPreview/ArticlesPreview";
 import { AppTheme } from "@components/utils/cssMedia";
+import { ArticlesConfigPreview } from "@components/configs/articlesConfig";
 
 export const getStandardHeaderForPages = (title: string, metaDescription?: string) => {
     return (
@@ -36,8 +36,8 @@ export default function Home() {
             <KnowMeMore ref={resultRef} />
             <WhatIDo />
             <Resume />
-            <ArticlesPreview />
-            <PreviewProjects />
+            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Software'} overText={'Articles'} config={ArticlesConfigPreview} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Discrete Jumps'} overText={'Articles'} config={[]}/>
             <Contact />
             <Footer backgroundColor={AppTheme.darkerClose} />
        </React.Fragment>

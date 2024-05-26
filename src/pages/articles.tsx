@@ -15,10 +15,10 @@ const Articles: FC = () => {
     return (
         <React.Fragment>
             {getStandardHeaderForPages("Cigan Oliviu David", "Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections.")}
-            <ArticlesPreviewWrapper>
+            <ArticlesPreviewWrapper backgroundColor={AppTheme.darkerClose}>
                 <Logo />
                 {!isMobile() && <ScrollTopButton />}
-                <ArticlesLister articlesList={ArticlesConfig} />
+                <ArticlesLister articlesList={ArticlesConfig} backText={'Software'} overText={'Articles'}/>
                 <Footer backgroundColor={AppTheme.darkerClose}  />
             </ArticlesPreviewWrapper>
         </React.Fragment>
