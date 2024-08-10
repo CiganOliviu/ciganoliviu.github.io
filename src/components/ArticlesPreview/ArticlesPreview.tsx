@@ -11,17 +11,17 @@ type ArticlesPreviewType = {
     overText: string;
     backgroundColor: string;
     config: ArticlesConfigType[];
-
+    isSoftwareArticles?: boolean;
 };
 
-export const ArticlesPreview: FC<ArticlesPreviewType> = ({ backText, overText, backgroundColor, config }) => {
+export const ArticlesPreview: FC<ArticlesPreviewType> = ({ backText, overText, backgroundColor, config, isSoftwareArticles }) => {
     return (
         <ArticlesPreviewWrapper backgroundColor={backgroundColor}>
             <ArticlesLister backText={backText} overText={overText} articlesList={config} />
             <Separator paddingValue={2} />
             {config.length > 0 &&
                 <ContentLinkWrapper contentLinkBackground={backgroundColor} style={{ textAlign: 'center' }}>
-                    <Link href={'/articles'}>Check Other Articles</Link>
+                    <Link href={isSoftwareArticles ? '/software_articles' : '/discrete_jumps_articles'}>Check Other Articles</Link>
                 </ContentLinkWrapper>
             }
             <Separator paddingValue={2} />

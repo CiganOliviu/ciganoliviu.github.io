@@ -1,16 +1,22 @@
-import React, { FC } from "react";
-import { Logo } from "@components/components/Logo/Logo";
-import { Footer } from "@components/components/Footer/Footer";
-import { AppTheme } from "@components/utils/cssMedia";
-import { SoftwareArticlesConfig } from "@components/configs/softwareArticlesConfig";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
+import React, { FC } from "react";
+import { getStandardHeaderForPages } from "@components/pages";
 import { ArticlesPreviewWrapper } from "@components/components/ArticlesPreview/Articles.css";
+import { AppTheme } from "@components/utils/cssMedia";
+import { Logo } from "@components/components/Logo/Logo";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { ArticlesLister } from "@components/components/ArticlesLister/ArticlesLister";
-import { getStandardHeaderForPages } from "@components/pages/index";
+import { Footer } from "@components/components/Footer/Footer";
+import { ArticlesConfigType } from "@components/utils/types";
 
-const Articles: FC = () => {
+type RenderArticlesListerPageType = {
+    config: ArticlesConfigType[];
+    isSoftwareArticles?: boolean;
+};
+
+export const RenderArticlesListerPage: FC<RenderArticlesListerPageType> = ({ config, isSoftwareArticles }) => {
     const { isMobile } = useGetScreenSize();
+    const backText = isSoftwareArticles ? 'Software' : 'Discrete Jumps';
 
     return (
         <React.Fragment>
@@ -18,11 +24,9 @@ const Articles: FC = () => {
             <ArticlesPreviewWrapper backgroundColor={AppTheme.darkerClose}>
                 <Logo />
                 {!isMobile() && <ScrollTopButton />}
-                <ArticlesLister articlesList={SoftwareArticlesConfig} backText={'Software'} overText={'Articles'}/>
-                <Footer backgroundColor={AppTheme.darkerClose}  />
+                <ArticlesLister articlesList={config} backText={backText} overText={'Articles'}/>
+                <Footer backgroundColor={isSoftwareArticles ? AppTheme.darkerClose : AppTheme.darkerOpen} />
             </ArticlesPreviewWrapper>
         </React.Fragment>
     )
 }
-
-export default Articles;

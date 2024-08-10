@@ -34,7 +34,7 @@ export default function Home() {
             <LandingArea nextSectionReference={resultRef} />
             <KnowMeMore ref={resultRef} />
             <Resume />
-            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Software'} overText={'Articles'} config={SoftwareArticlesConfigPreview} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Software'} overText={'Articles'} config={SoftwareArticlesConfigPreview} isSoftwareArticles={true} />
             <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Discrete Jumps'} overText={'Articles'} config={DiscreteJumpsArticlesConfigPreview} />
             <Footer backgroundColor={AppTheme.darkerClose} />
        </React.Fragment>
