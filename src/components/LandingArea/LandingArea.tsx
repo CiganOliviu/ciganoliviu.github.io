@@ -7,7 +7,7 @@ import {
     LandingAreaWelcomeText,
 } from "@components/components/LandingArea/LandingArea.css";
 import TypeWriter from 'typewriter-effect';
-import { HeroCardConfig } from "@components/configs/generalConfig";
+import { LandingAreaConfig } from "@components/configs/generalConfig";
 import { FC } from "react";
 import { Logo } from "@components/components/Logo/Logo";
 
@@ -25,7 +25,7 @@ export const LandingArea: FC<HeroCardType> = ({ nextSectionReference }) => {
             <Logo />
             <LandingAreaContainer>
                 <LandingAreaWelcomeText>
-                    {HeroCardConfig.WelcomeText}
+                    {LandingAreaConfig.WelcomeText}
                 </LandingAreaWelcomeText>
                 <LandingAreaTypeAnimationText>
                     <LandingAreaTextWrapper>
@@ -33,7 +33,7 @@ export const LandingArea: FC<HeroCardType> = ({ nextSectionReference }) => {
                         <LandingAreaInlineTextWrapper>
                             <TypeWriter
                                 options={{
-                                    strings: HeroCardConfig.TypeWriterContext,
+                                    strings: LandingAreaConfig.TypeWriterContext,
                                     autoStart: true,
                                     loop: true,
                                     delay: 90
@@ -43,10 +43,10 @@ export const LandingArea: FC<HeroCardType> = ({ nextSectionReference }) => {
                     </LandingAreaTextWrapper>
                 </LandingAreaTypeAnimationText>
                 <LandingAreaContinuityText>
-                    {HeroCardConfig.ContinuityText}
+                    {LandingAreaConfig.ContinuityText}
                 </LandingAreaContinuityText>
                 <ExternalLink onClick={scrollToRef} rel="nofollow">
-                    {HeroCardConfig.ButtonText}
+                    {LandingAreaConfig.ButtonText}
                 </ExternalLink>
             </LandingAreaContainer>
         </LandingAreaBox>

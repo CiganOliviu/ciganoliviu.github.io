@@ -34,11 +34,9 @@ export default function Home() {
            {!isMobile() && <ScrollTopButton />}
             <LandingArea nextSectionReference={resultRef} />
             <KnowMeMore ref={resultRef} />
-            <WhatIDo />
             <Resume />
-            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Software'} overText={'Articles'} config={ArticlesConfigPreview} />
-            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Discrete Jumps'} overText={'Articles'} config={[]}/>
-            <Contact />
+            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Software'} overText={'Articles'} config={ArticlesConfigPreview} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Discrete Jumps'} overText={'Articles'} config={[]}/>
             <Footer backgroundColor={AppTheme.darkerClose} />
        </React.Fragment>
     )

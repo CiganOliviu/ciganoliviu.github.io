@@ -114,35 +114,12 @@ export const ResumeConfig: ResumeConfigType = {
             subtitle: 'Alphablock Technologies',
             thumbnail: WorkAlphablock.src,
             logo: LogoAlphablock.src,
-            hasDetailPage: true,
+            hasDetailPage: false,
             previewHtmlField: {
-                __html: 'In my current position at Alphablock, a pioneering Canadian startup, I\'m deeply engaged in an innovative ' +
-                    'initiative centered around automating financial instruments through the synergy of ' +
-                    'machine learning, scientific methodologies, and financial best practices.'
+                __html: 'I am part of the development of next-generation investment models and conduct in-depth financial research. Utilizing tools like Python, Scikit-Learn, Matplotlib, and Pandas, I process large datasets to identify valuable insights. My work centers on creating robust, data-driven models that inform investment strategies, while simplifying complex data for easy interpretation.'
             },
             htmlField: {
-                __html: '<span style="font-size: 1.8rem">Collaborating with Alphablock,</span> a pioneering Canadian startup, and the esteemed research ' +
-                    'group ADAPTED from Technical University of Cluj-Napoca, I\'m deeply engaged in an innovative ' +
-                    'initiative centered around automating ' +
-                    'financial instruments through the synergy of machine learning, scientific methodologies, ' +
-                    'and financial best practices. ' +
-                    '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">My primary research focus</span> revolves around automating global ' +
-                    'investment management strategies. My approach involves harnessing the power of deep ' +
-                    'learning to unearth intricate data patterns that surpass human cognitive capabilities ' +
-                    'for strategic control.' +
-                    '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">Simultaneously,</span> I\'m actively engaged in sourcing the most pertinent ' +
-                    'data, aiming for optimal precision in the deep learning algorithm. This involves a meticulous ' +
-                    'process of data pattern comprehension, rigorous analysis, and the strategic selection of machine ' +
-                    'learning algorithms and data processing methods, all aimed at achieving paramount accuracy and ' +
-                    'developmental prospects. ' +
-                    '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">As part of the development cycle,</span> I adeptly generate statistical' +
-                    ' plots, catering precisely to project requirements. My proficiency lies in a robust ' +
-                    'development stack encompassing Python, Keras, Sklearn, matplotlib, pandas, numpy, and ' +
-                    'other essential tools. This collective arsenal empowers me to navigate and innovate ' +
-                    'within this intricate landscape of financial automation and machine learning.'
+                __html: ''
             },
         },
         {
@@ -152,36 +129,12 @@ export const ResumeConfig: ResumeConfigType = {
             subtitle: 'ADAPTED Research Group',
             thumbnail: AdaptedFintechResearch.src,
             logo: LogoAdapted.src,
-            hasDetailPage: true,
+            hasDetailPage: false,
             previewHtmlField: {
-                __html: 'Collaborating with Alphablock, a pioneering Canadian startup, and the esteemed research ' +
-                    'group ADAPTED from Technical University of Cluj-Napoca, I\'m deeply engaged in an innovative ' +
-                    'initiative centered around automating financial instruments through the synergy of ' +
-                    'machine learning, scientific methodologies, and financial best practices.'
+                __html: 'I collaborated with the ADAPTED team and Canadian startup Alphablock on a year-long research project focused on finance, titled \'Revolutionizing Active Investing with Machine Learning.\' Throughout this project, I strengthened my skills in machine learning, data processing, and data analysis, while also delving into fundamental financial concepts for our analysis. The research process was iterative and flexible, starting from data acquisition and preprocessing, through pattern analysis, to drawing conclusions and implementing the 3N method for predictive purposes using machine learning. Our goal was to identify the most effective machine learning algorithm for maximizing returns based on the available data.'
             },
             htmlField: {
-                __html: '<span style="font-size: 1.8rem">Collaborating with Alphablock,</span> a pioneering Canadian startup, and the esteemed research ' +
-                    'group ADAPTED from Technical University of Cluj-Napoca, I\'m deeply engaged in an innovative ' +
-                    'initiative centered around automating ' +
-                    'financial instruments through the synergy of machine learning, scientific methodologies, ' +
-                    'and financial best practices. ' +
-                    '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">My primary research focus</span> revolves around automating global ' +
-                    'investment management strategies. My approach involves harnessing the power of deep ' +
-                    'learning to unearth intricate data patterns that surpass human cognitive capabilities ' +
-                    'for strategic control.' +
-                    '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">Simultaneously,</span> I\'m actively engaged in sourcing the most pertinent ' +
-                    'data, aiming for optimal precision in the deep learning algorithm. This involves a meticulous ' +
-                    'process of data pattern comprehension, rigorous analysis, and the strategic selection of machine ' +
-                    'learning algorithms and data processing methods, all aimed at achieving paramount accuracy and ' +
-                    'developmental prospects. ' +
-                    '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">As part of the development cycle,</span> I adeptly generate statistical' +
-                    ' plots, catering precisely to project requirements. My proficiency lies in a robust ' +
-                    'development stack encompassing Python, Keras, Sklearn, matplotlib, pandas, numpy, and ' +
-                    'other essential tools. This collective arsenal empowers me to navigate and innovate ' +
-                    'within this intricate landscape of financial automation and machine learning.'
+                __html: ''
             },
         },
         {
@@ -252,16 +205,7 @@ export const ResumeConfig: ResumeConfigType = {
                     'well that I landed a Software Engineer job afterward, and I\'ve been working in the industry ever since!'
             },
             htmlField: {
-                __html: '<span style="font-size: 1.8rem">During my internship,</span> I collaborated with a team of five to build a basic VOD web ' +
-                    'app using ReactJS. My responsibilities included implementing features like the Authentication ' +
-                    'System, Custom Fetching mechanisms, error boundaries, various design elements, and addressing ' +
-                    'responsive design challenges.' +
-                    '<div>&nbsp;</div> ' +
-                    '<span style="font-size: 1.8rem">I also learned</span> about Agile methodologies, teamwork dynamics, and ' +
-                    'effective communication. Additionally, I gained experience in deployment systems and CI/CD, using ' +
-                    'Git and GitLab for version control, and participating in daily stand-up meetings to ensure ' +
-                    'seamless team coordination. This internship provided me with a well-rounded understanding of ' +
-                    'both technical and soft skills.\n'
+                __html: ''
             },
         }
     ]

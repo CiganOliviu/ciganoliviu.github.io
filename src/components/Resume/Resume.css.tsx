@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const ResumeBox = styled.div`
-    background: ${AppTheme.darkerClose};
+    background: ${AppTheme.darkerOpen};
     color: ${AppTheme.white};
 `;
 

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { AppTheme, Breakpoints, getGeneralButtonStyle, minWidthQuery } from "@components/utils/cssMedia";
-import HeroCardWallpaper from '../../assets/HeroCard.jpg';
+import LandingAreaWallpaper from '../../assets/LandingAreaWallpaper.jpg';
 import Link from "next/link";
 
 export const LandingAreaBox = styled.div`
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${HeroCardWallpaper.src}) 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${LandingAreaWallpaper.src}) 
     center;
     background-size: cover;
     position: relative;

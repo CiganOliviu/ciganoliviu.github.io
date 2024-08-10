@@ -13,7 +13,7 @@ import {
     WhatIDoConfigType
 } from "@components/utils/types";
 
-export const HeroCardConfig: HeroCardConfigType = {
+export const LandingAreaConfig: HeroCardConfigType = {
     WelcomeText: 'Welcome',
     TypeWriterContext: [
         'Cigan Oliviu-David.',
