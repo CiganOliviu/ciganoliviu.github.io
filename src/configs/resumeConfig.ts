@@ -187,7 +187,7 @@ export const ResumeConfig: ResumeConfigType = {
         },
         {
             id: 'software-internship-3ss',
-            date: '2021 - 2021',
+            date: 'August - September',
             title: 'Software Engineer Internship',
             subtitle: '3Screen Solutions',
             logo: Logo3SS.src,

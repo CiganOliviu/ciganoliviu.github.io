@@ -1,8 +1,9 @@
 import { ResumeConfig } from "@components/configs/resumeConfig";
 
 import { ProjectsConfig } from "@components/configs/projectsConfig";
-import { ArticlesConfig } from "@components/configs/articlesConfig";
+import { SoftwareArticlesConfig } from "@components/configs/softwareArticlesConfig";
 import { ArticlesConfigType, EducationAndExperienceType, ProjectConfigType } from "@components/utils/types";
+import { DiscreteJumpsArticlesConfig } from "@components/configs/discreteJumpsArticlesConfig";
 
 export enum DetailPageTypes {
     RESUME = 'resume',
@@ -49,5 +50,6 @@ export const fetchProjectConfigResponse = (keyTitle: string): ProjectConfigType 
 };
 
 export const fetchArticleConfigResponse = (keyTitle: string): ArticlesConfigType | undefined  => {
-    return ArticlesConfig.find((obj) => obj.id === keyTitle);
+    const allArticles = SoftwareArticlesConfig.concat(DiscreteJumpsArticlesConfig)
+    return allArticles.find((obj) => obj.id === keyTitle);
 };

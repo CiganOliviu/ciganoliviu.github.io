@@ -14,7 +14,7 @@ import HowBusinessKnowledgeCanIncreaseYourValueAsProgrammer from "@components/as
 import WhatIsWorkEthic from "@components/assets/articles/what_is_work_ethic.jpg";
 import PerformanceInModernSoftware from "@components/assets/articles/performance_in_modern_software.jpg";
 
-export const ArticlesConfig: ArticlesConfigType[] = [
+export const SoftwareArticlesConfig: ArticlesConfigType[] = [
     {
         id: 'performance-in-modern-software',
         thumbnail: PerformanceInModernSoftware.src,
@@ -1099,4 +1099,4 @@ export const ArticlesConfig: ArticlesConfigType[] = [
     },
 ];
 
-export const ArticlesConfigPreview = ArticlesConfig.slice(0, 3);
+export const SoftwareArticlesConfigPreview = SoftwareArticlesConfig.slice(0, 3);

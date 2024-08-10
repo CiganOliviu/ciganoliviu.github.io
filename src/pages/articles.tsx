@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { Logo } from "@components/components/Logo/Logo";
 import { Footer } from "@components/components/Footer/Footer";
 import { AppTheme } from "@components/utils/cssMedia";
-import { ArticlesConfig } from "@components/configs/articlesConfig";
+import { SoftwareArticlesConfig } from "@components/configs/softwareArticlesConfig";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import { ArticlesPreviewWrapper } from "@components/components/ArticlesPreview/Articles.css";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
@@ -18,7 +18,7 @@ const Articles: FC = () => {
             <ArticlesPreviewWrapper backgroundColor={AppTheme.darkerClose}>
                 <Logo />
                 {!isMobile() && <ScrollTopButton />}
-                <ArticlesLister articlesList={ArticlesConfig} backText={'Software'} overText={'Articles'}/>
+                <ArticlesLister articlesList={SoftwareArticlesConfig} backText={'Software'} overText={'Articles'}/>
                 <Footer backgroundColor={AppTheme.darkerClose}  />
             </ArticlesPreviewWrapper>
         </React.Fragment>

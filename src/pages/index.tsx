@@ -1,8 +1,6 @@
 import { LandingArea } from "@components/components/LandingArea/LandingArea";
 import { Resume } from "@components/components/Resume/Resume";
 import { KnowMeMore } from "@components/components/KnowMeMore/KnowMeMore";
-import { WhatIDo } from "@components/components/WhatIDo/WhatIDo";
-import { Contact } from "@components/components/Contact/Contact";
 import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
@@ -10,7 +8,8 @@ import React, { useRef } from "react";
 import Head from "next/head";
 import { ArticlesPreview } from "@components/components/ArticlesPreview/ArticlesPreview";
 import { AppTheme } from "@components/utils/cssMedia";
-import { ArticlesConfigPreview } from "@components/configs/articlesConfig";
+import { SoftwareArticlesConfigPreview } from "@components/configs/softwareArticlesConfig";
+import { DiscreteJumpsArticlesConfigPreview } from "@components/configs/discreteJumpsArticlesConfig";
 
 export const getStandardHeaderForPages = (title: string, metaDescription?: string) => {
     return (
@@ -35,8 +34,8 @@ export default function Home() {
             <LandingArea nextSectionReference={resultRef} />
             <KnowMeMore ref={resultRef} />
             <Resume />
-            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Software'} overText={'Articles'} config={ArticlesConfigPreview} />
-            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Discrete Jumps'} overText={'Articles'} config={[]}/>
+            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Software'} overText={'Articles'} config={SoftwareArticlesConfigPreview} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Discrete Jumps'} overText={'Articles'} config={DiscreteJumpsArticlesConfigPreview} />
             <Footer backgroundColor={AppTheme.darkerClose} />
        </React.Fragment>
     )
