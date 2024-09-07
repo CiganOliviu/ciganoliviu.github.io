@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import { PageWallpaper } from "@components/components/PageWallpaper/PageWallpaper";
 import {
-    DetailPageTypes,
-    getDetailPageParams, getFetchWrapper
+    getDetailPageParams,
+    getFetchWrapper
 } from "@components/utils/detailPageManipulations";
 import {
     Content,
@@ -72,7 +72,7 @@ const DetailPage = () => {
                     <ContentLinkWrapper contentLinkBackground={AppTheme.darkerClose}>
                         <Separator paddingValue={1} />
                         <SimpleExternalLink href={responseObject?.open_link}>
-                            {pageType === DetailPageTypes.PROJECT ? 'See the code and documentation on github' : 'Check the article on Medium'}
+                            Check the article on Medium
                         </SimpleExternalLink>
                     </ContentLinkWrapper>
                 }
