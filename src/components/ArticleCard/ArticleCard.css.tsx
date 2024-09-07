@@ -35,8 +35,11 @@ export const ArticleCardThumbnail = styled.img`
     border-radius: 0.5rem;
 
     ${minWidthQuery(Breakpoints.large)} {
-        width: 80%;
-        height: 26rem;
+        width: 50%;
+    }
+
+    ${minWidthQuery(Breakpoints.xxLarge)} {
+        width: 40%;
     }
 `;
 

@@ -35,7 +35,7 @@ export default function Home() {
             <KnowMeMore ref={resultRef} />
             <Resume />
             <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Software'} overText={'Articles'} config={SoftwareArticlesConfigPreview} isSoftwareArticles={true} />
-            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Discrete Jumps'} overText={'Articles'} config={DiscreteJumpsArticlesConfigPreview} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Data Science'} overText={'Articles'} config={DiscreteJumpsArticlesConfigPreview} />
             <Footer backgroundColor={AppTheme.darkerClose} />
        </React.Fragment>
     )

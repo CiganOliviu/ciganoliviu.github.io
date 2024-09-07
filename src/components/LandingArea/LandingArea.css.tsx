@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const LandingAreaBox = styled.div`
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${LandingAreaWallpaper.src}) 
-    center;
+    left;
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -45,6 +45,7 @@ export const LandingAreaContinuityText = styled.div`
 `;
 
 export const LandingAreaTextWrapper = styled.span``;
+
 export const LandingAreaInlineTextWrapper = styled.span`
     white-space: nowrap;
     display: inline-block;

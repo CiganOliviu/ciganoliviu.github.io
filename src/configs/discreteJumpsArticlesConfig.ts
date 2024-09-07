@@ -1,5 +1,5 @@
 import { ArticlesConfigType } from "@components/utils/types";
-import SystemicCluster from "@components/assets/articles/the_systemic_cluster.jpg";
+import SystemicCluster from "@components/assets/articles/the_systemic_cluster.png";
 
 export const DiscreteJumpsArticlesConfig: ArticlesConfigType[] = [
     {

@@ -46,6 +46,8 @@ const DetailPage = () => {
 
             fetchProject().then(null);
         }
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [slugDetailPage]);
 
     if (isLoading) {
