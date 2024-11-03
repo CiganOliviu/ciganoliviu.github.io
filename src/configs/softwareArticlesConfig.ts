@@ -22,7 +22,7 @@ export const SoftwareArticlesConfig: ArticlesConfigType[] = [
         subtitle: '14 March 2024',
         previewField: 'Back in the late 90s and even before, computers were pretty basic compared to today’s beasts. ' +
             'They had simple processors and not much computing power, but they did the job back then. That’s when we saw' +
-            ' the birth of some quirky new programming languages like Python, Java, and Javascript.....',
+            ' the birth of some quirky new programming languages like Python, Java, and Javascript',
         htmlField: {
             __html: 'Back in the late 90s and even before, computers were pretty basic compared to today’s beasts. They had simple processors and not much computing power, but they did the job back then. That’s when we saw the birth of some quirky new programming languages like Python, Java, and Javascript.' +
                 '<div>&nbsp;</div>' +
@@ -79,7 +79,8 @@ export const SoftwareArticlesConfig: ArticlesConfigType[] = [
         subtitle: '12 March 2024',
         previewField: 'Work ethic, like many other parts of life, is highly subjective and differs from person to ' +
             'person. With that said, I’d like to share my understanding of what work ethic entails. But first, ' +
-            'let’s define what work ethic means....',
+            'let’s define what work ethic means according to chatGPT => “Work ethic refers to a set of values, ' +
+            'principles, and beliefs that influence how an individual',
         htmlField: {
             __html: 'Work ethic, like many other parts of life, is highly subjective and differs from person to person. With that said, I’d like to share my understanding of what work ethic entails. But first, let’s define what work ethic means.' +
                 '<div>&nbsp;</div>' +
@@ -136,7 +137,7 @@ export const SoftwareArticlesConfig: ArticlesConfigType[] = [
         subtitle: '26 February 2024',
         previewField: 'A big part of being a senior is the mentality, and what makes a difference is not always the ' +
             'technical side. I’ve discussed about this in one of my articles “How to build a senior developer mindset”,' +
-            ' where I stated that while having great technical skills is a must, being a tech...',
+            ' where I stated that while having great technical skills is a must, being a tech',
         htmlField: {
             __html: 'A big part of being a senior is the mentality, and what makes a difference is not always the technical side. I’ve discussed about this in one of my articles “How to build a senior developer mindset”, where I stated that while having great technical skills is a must, being a tech guru does not always imply you being part of that select group of seniors.' +
                 '<div>&nbsp;</div>' +
@@ -535,7 +536,7 @@ export const SoftwareArticlesConfig: ArticlesConfigType[] = [
         subtitle: '28 December 2023',
         previewField: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a ' +
                 'significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing ' +
-                '“technologies, whether outdated, fading, or lacking market value.”',
+                '“technologies, whether outdated, fading, or lacking market value”',
         htmlField: {
             __html: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing “technologies, whether outdated, fading, or lacking market value.” While this encapsulation is accurate, I seek to offer a more detailed understanding.' +
                 '<div>&nbsp;</div>' +

@@ -153,36 +153,38 @@ export const ResumeConfig: ResumeConfigType = {
                     'backend systems is all part of the gig...'
             },
             htmlField: {
-                __html: '<span style="font-size: 1.8rem">In my current position,</span> I\'m deeply involved in enhancing, implementing, and maintaining ' +
-                    'features linked to Data Analytics and User Journey Tracking. I take designs from Figma and turn ' +
-                    'them into functional components, collaborating closely with our design crew. Managing data, ' +
-                    'integrating third-party tools for ads, image rendering, and tying everything together with ' +
-                    'backend systems is all part of the gig. My main focus is on elevating the ReactJS and ' +
-                    'TypeScript code quality while adding new functionalities.' +
+                __html: 'I’m an experienced ReactJS and TypeScript developer with a passion for delivering high-quality, efficient, and user-centric solutions. My focus has always been on ensuring code quality and client satisfaction, driving each project forward with a commitment to excellence.' +
                     '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">I\'m the go-to</span> person for code ' +
-                    'reviews and working hand in hand with the team to refine and optimize code for better ' +
-                    'performance.' +
+                    '<span style="font-size: 1.8rem">What I do</span>' +
                     '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">When it comes to client interactions,</span> I handle bug reports, live app issues, ' +
-                    'and queries about our system and potential new features. Guaranteeing top-notch products ' +
-                    'involves diving into automation and rigorous unit testing.' +
+                    '<span style="font-size: 1.3rem">Feature Development & Code Quality</span>' +
                     '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">Currently, I\'m deeply involved</span> ' +
-                    'in a major project—a leading VOD application with a whopping 600,000+ unique monthly users, ' +
-                    'often hitting 1.6 million' +
+                    'I lead the development of new features, conduct rigorous code reviews, and collaborate closely with the team to continuously optimize and refactor our codebase. My goal is to ensure every line of code aligns with best practices, resulting in maintainable and scalable solutions.' +
                     '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">I also played</span> a pivotal role in an internal project, offering ' +
-                    'insights on Backend (using Node.js and TypeScript) and Frontend (ReactJS with TypeScript) ' +
-                    'implementations. My focus was on helping two new programmers integrate smoothly into the ' +
-                    'team by mentoring and sharing my knowledge.' +
+                    '<span style="font-size: 1.3rem">Client Engagement & Issue Resolution</span>' +
                     '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">Furthermore,</span> I play a crucial role in our internship ' +
-                    'development team, specifically focusing on mentoring and contributing to the interview process ' +
-                    'for React Native, Web, and Mobile.' +
+                    'As the primary point of contact for client inquiries, I handle bug reports, address live app issues, and discuss potential feature enhancements. My focus is on prompt issue resolution and clear communication to keep projects running smoothly.' +
                     '<div>&nbsp;</div>' +
-                    '<span style="font-size: 1.8rem">My drive</span> for excellence and strong teamwork ethic form the ' +
-                    'core of my contributions to the organization.'
+                    '<span style="font-size: 1.3rem">Automation & Testing</span>' +
+                    '<div>&nbsp;</div>' +
+                    'To ensure a reliable, high-standard product, I drive quality assurance through automation and comprehensive unit testing. This approach minimizes bugs and enhances overall efficiency, enabling faster development cycles without sacrificing quality.' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.3rem">Managing High-Impact Projects</span>' +
+                    '<div>&nbsp;</div>' +
+                    'I’m currently overseeing a major VOD platform serving 1.6 million monthly users, where I manage release schedules, PI planning, and core issue resolution. My role involves making strategic estimations and leading planning efforts to keep the project on track.' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.3rem">Full-Stack Consultation</span>' +
+                    '<div>&nbsp;</div>' +
+                    'With experience across both frontend and backend, I consult on and review implementations in both ReactJS and Node.js. I provide insights that help ensure quality and alignment across the stack for internal projects.' +
+                    'I’m currently overseeing a major VOD platform serving 1.6 million monthly users, where I manage release schedules, PI planning, and core issue resolution. My role involves making strategic estimations and leading planning efforts to keep the project on track.' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.3rem">Mentorship & Hiring</span>' +
+                    '<div>&nbsp;</div>' +
+                    'I actively mentor our development interns, guiding them in best practices and technical skills. I’m also involved in the hiring process, helping to build a talented team that aligns with our goals and culture.' +
+                    '<div>&nbsp;</div>' +
+                    '<span style="font-size: 1.8rem">Recent Career Growth</span>' +
+                    '<div>&nbsp;</div>' +
+                    'After starting as a part-time developer (4-6 hours/day), I transitioned to a full-time role in July 2024. Since August 2024, I’ve taken on the added responsibility of being the primary developer for our live web app, directly impacting the user experience and leading core initiatives.'
             },
         },
         {

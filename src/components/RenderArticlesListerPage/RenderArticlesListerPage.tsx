@@ -16,7 +16,7 @@ type RenderArticlesListerPageType = {
 
 export const RenderArticlesListerPage: FC<RenderArticlesListerPageType> = ({ config, isSoftwareArticles }) => {
     const { isMobile } = useGetScreenSize();
-    const backText = isSoftwareArticles ? 'Software' : 'Discrete Jumps';
+    const backText = isSoftwareArticles ? 'Software' : 'Data Science';
 
     return (
         <React.Fragment>
