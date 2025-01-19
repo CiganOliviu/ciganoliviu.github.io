@@ -21,7 +21,7 @@ export const ArticlesPreview: FC<ArticlesPreviewType> = ({ backText, overText, b
             <Separator paddingValue={2} />
             {config.length > 0 &&
                 <ContentLinkWrapper contentLinkBackground={backgroundColor} style={{ textAlign: 'center' }}>
-                    <Link href={isSoftwareArticles ? '/software_articles' : '/discrete_jumps_articles'}>Check Other Articles</Link>
+                    <Link href={isSoftwareArticles ? 'posts/software' : 'posts/discrete'}>Check Other Articles</Link>
                 </ContentLinkWrapper>
             }
             <Separator paddingValue={2} />

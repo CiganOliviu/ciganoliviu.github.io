@@ -136,10 +136,10 @@ export const SoftwareArticlesConfig: ArticlesConfigType[] = [
         title: 'How business knowledge can increase your value as programmer',
         subtitle: '26 February 2024',
         previewField: 'A big part of being a senior is the mentality, and what makes a difference is not always the ' +
-            'technical side. I’ve discussed about this in one of my articles “How to build a senior developer mindset”,' +
+            'technical side. I’ve discussed about this in one of my posts “How to build a senior developer mindset”,' +
             ' where I stated that while having great technical skills is a must, being a tech',
         htmlField: {
-            __html: 'A big part of being a senior is the mentality, and what makes a difference is not always the technical side. I’ve discussed about this in one of my articles “How to build a senior developer mindset”, where I stated that while having great technical skills is a must, being a tech guru does not always imply you being part of that select group of seniors.' +
+            __html: 'A big part of being a senior is the mentality, and what makes a difference is not always the technical side. I’ve discussed about this in one of my posts “How to build a senior developer mindset”, where I stated that while having great technical skills is a must, being a tech guru does not always imply you being part of that select group of seniors.' +
                 '<div>&nbsp;</div>' +
                 'In our work environment, it’s crucial to grasp basic business principles. Simply put, the main aim in any business is to make a profit. If a business isn’t making money, there’s a problem that needs fixing. It’s important to keep this in mind because every action we take, whether it’s writing code or designing software, should ultimately contribute to making a profit. This mindset should guide our daily decisions as seniors developers. Let’s list some of the principles that seniors need to understand:' +
                 '<div>&nbsp;</div>' +
@@ -534,11 +534,11 @@ export const SoftwareArticlesConfig: ArticlesConfigType[] = [
         thumbnail: WhatIsTechNoise.src,
         title: 'What is TechNoise?',
         subtitle: '28 December 2023',
-        previewField: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a ' +
+        previewField: 'In one of my previous posts titled “8 Rules of Software Engineers,” I highlighted a ' +
                 'significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing ' +
                 '“technologies, whether outdated, fading, or lacking market value”',
         htmlField: {
-            __html: 'In one of my previous articles titled “8 Rules of Software Engineers,” I highlighted a significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing “technologies, whether outdated, fading, or lacking market value.” While this encapsulation is accurate, I seek to offer a more detailed understanding.' +
+            __html: 'In one of my previous posts titled “8 Rules of Software Engineers,” I highlighted a significant guideline: “Avoid the TechNoise.” I briefly defined TechNoise as encompassing “technologies, whether outdated, fading, or lacking market value.” While this encapsulation is accurate, I seek to offer a more detailed understanding.' +
                 '<div>&nbsp;</div>' +
                 'What exactly falls under the realm of TechNoise? How can we precisely classify and identify these elements? It involves recognizing a range of technological components that have lost their effectiveness or relevance in today’s rapidly evolving landscape.' +
                 '<div>&nbsp;</div>' +
@@ -698,7 +698,7 @@ export const SoftwareArticlesConfig: ArticlesConfigType[] = [
                 'In my encounters with various developers, I’ve noticed a prevalent mentality that goes something ' +
                 'like, “I do not know X because I work solely with Y.” While I recognize the nuanced differences ' +
                 'between programming languages and frameworks, it’s essential to highlight that these distinctions ' +
-                'aren’t insurmountable barriers. In previous articles, I’ve emphasized the theoretical ease with ' +
+                'aren’t insurmountable barriers. In previous posts, I’ve emphasized the theoretical ease with ' +
                 'which a proficient software engineer should be able to transition between technologies, ' +
                 'achieving productivity within a reasonable timeframe.' +
                 '<div>&nbsp;</div>' +

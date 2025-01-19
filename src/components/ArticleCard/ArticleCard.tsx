@@ -27,7 +27,7 @@ export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
                 <ArticleCardContent>
                     {getTextSizeBasedOnBigBreakpoint(article.previewField, isBigScreen())}...
                 </ArticleCardContent>
-                <InternalLink href={`/article-detail-${article.id}`}>
+                <InternalLink href={`/posts/article-detail-${article.id}`}>
                     Read Article
                 </InternalLink>
             </ArticleCardContentWrapper>

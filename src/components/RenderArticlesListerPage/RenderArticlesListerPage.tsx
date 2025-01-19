@@ -21,11 +21,11 @@ export const RenderArticlesListerPage: FC<RenderArticlesListerPageType> = ({ con
     return (
         <React.Fragment>
             {getStandardHeaderForPages("Cigan Oliviu David", "Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections.")}
-            <ArticlesPreviewWrapper backgroundColor={AppTheme.darkerClose}>
+            <ArticlesPreviewWrapper backgroundColor={isSoftwareArticles ? AppTheme.darkerClose : AppTheme.darkerOpen}>
                 <Logo />
                 {!isMobile() && <ScrollTopButton />}
                 <ArticlesLister articlesList={config} backText={backText} overText={'Articles'}/>
-                <Footer backgroundColor={isSoftwareArticles ? AppTheme.darkerClose : AppTheme.darkerOpen} />
+                <Footer backgroundColor={isSoftwareArticles ? AppTheme.darkerOpen : AppTheme.darkerClose} />
             </ArticlesPreviewWrapper>
         </React.Fragment>
     )

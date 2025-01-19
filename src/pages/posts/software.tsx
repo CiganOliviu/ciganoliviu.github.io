@@ -2,10 +2,10 @@ import React, { FC } from "react";
 import { SoftwareArticlesConfig } from "@components/configs/softwareArticlesConfig";
 import { RenderArticlesListerPage } from "@components/components/RenderArticlesListerPage/RenderArticlesListerPage";
 
-const software_articles: FC = () => {
+const software: FC = () => {
     return (
-        <RenderArticlesListerPage config={SoftwareArticlesConfig}/>
+        <RenderArticlesListerPage config={SoftwareArticlesConfig} isSoftwareArticles={true} />
     )
 }
 
-export default software_articles;
+export default software;
