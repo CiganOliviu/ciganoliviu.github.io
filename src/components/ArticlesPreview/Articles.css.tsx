@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { AppTheme, Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
-export const ArticlesPreviewWrapper = styled.div<{ backgroundColor: string }>`
+export const PreviewWrapper = styled.div<{ backgroundColor: string }>`
     background: ${(props) => props.backgroundColor};
     color: ${AppTheme.white};
 `;

@@ -1,7 +1,7 @@
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 import React, { FC } from "react";
 import { getStandardHeaderForPages } from "@components/pages";
-import { ArticlesPreviewWrapper } from "@components/components/ArticlesPreview/Articles.css";
+import { PreviewWrapper } from "@components/components/ArticlesPreview/Articles.css";
 import { AppTheme } from "@components/utils/cssMedia";
 import { Logo } from "@components/components/Logo/Logo";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
@@ -21,12 +21,12 @@ export const RenderArticlesListerPage: FC<RenderArticlesListerPageType> = ({ con
     return (
         <React.Fragment>
             {getStandardHeaderForPages("Cigan Oliviu David", "Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections.")}
-            <ArticlesPreviewWrapper backgroundColor={isSoftwareArticles ? AppTheme.darkerClose : AppTheme.darkerOpen}>
+            <PreviewWrapper backgroundColor={isSoftwareArticles ? AppTheme.darkerClose : AppTheme.darkerOpen}>
                 <Logo />
                 {!isMobile() && <ScrollTopButton />}
                 <ArticlesLister articlesList={config} backText={backText} overText={'Articles'}/>
                 <Footer backgroundColor={isSoftwareArticles ? AppTheme.darkerOpen : AppTheme.darkerClose} />
-            </ArticlesPreviewWrapper>
+            </PreviewWrapper>
         </React.Fragment>
     )
 }
