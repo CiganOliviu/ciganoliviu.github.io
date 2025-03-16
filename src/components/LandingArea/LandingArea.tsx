@@ -45,9 +45,6 @@ export const LandingArea: FC<HeroCardType> = ({ nextSectionReference }) => {
                 <LandingAreaContinuityText>
                     {LandingAreaConfig.ContinuityText}
                 </LandingAreaContinuityText>
-                <ExternalLink onClick={scrollToRef} rel="nofollow">
-                    {LandingAreaConfig.ButtonText}
-                </ExternalLink>
             </LandingAreaContainer>
         </LandingAreaBox>
     )

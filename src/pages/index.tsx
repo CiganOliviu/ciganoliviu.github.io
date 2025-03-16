@@ -32,8 +32,6 @@ export default function Home() {
            {getStandardHeaderForPages("Cigan Oliviu David | Software Engineer", "Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections.")}
            {!isMobile() && <ScrollTopButton />}
             <LandingArea nextSectionReference={resultRef} />
-            <KnowMeMore ref={resultRef} />
-            <Resume />
             <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Software'} overText={'Articles'} config={SoftwareArticlesConfigPreview} isSoftwareArticles={true} />
             <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Data Science'} overText={'Articles'} config={DiscreteJumpsArticlesConfigPreview} />
             <Footer backgroundColor={AppTheme.darkerClose} />

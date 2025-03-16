@@ -38,7 +38,7 @@ const DetailPage = () => {
 
             const fetchProject = async (): Promise<void> => {
                 const fetchWrapper = getFetchWrapper(pageType);
-                const detailPageData = await fetchWrapper(keySearchId, identity);
+                const detailPageData = fetchWrapper(keySearchId, identity);
 
                 setResponseObject(detailPageData);
                 setIsLoading(false);
