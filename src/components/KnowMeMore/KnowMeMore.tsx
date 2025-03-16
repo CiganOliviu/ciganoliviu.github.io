@@ -10,13 +10,12 @@ import { ContentCardText } from "@components/components/ContentCard/ContentCard.
 import { ExternalLink } from "@components/components/LandingArea/LandingArea.css";
 import { KnowMeMoreConfig } from "@components/configs/generalConfig";
 import { triggerDownloadCV } from "@components/utils/generalManipulations";
-import React, { ForwardedRef, forwardRef } from "react";
+import React from "react";
 import { SocialLinks } from "@components/components/SocialLinks/SocialLinks";
 
-// eslint-disable-next-line react/display-name
-export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
+export const KnowMeMore = () => {
     return (
-        <KnowMeMoreBox ref={ref}>
+        <KnowMeMoreBox>
             {TextContainer({backText: 'AboutMe', overText: 'Know Me More'})}
             <KnowMeMoreInfoContainer>
                 <ContentColumn>
@@ -60,4 +59,4 @@ export const KnowMeMore = forwardRef((props, ref: ForwardedRef<any>) => {
             </KnowMeMoreInfoContainer>
         </KnowMeMoreBox>
     )
-});
+};

@@ -35,15 +35,8 @@ export const ContentCard: FC<ContentCardContextType> = ({ context, resumePart })
                 <ContentCardLogo src={context.logo} alt={context.logo} />
             </ContentCardFlexBox>
             <Separator paddingValue={0.8} />
-            <ContentCardText isMobile={isMobileResolution} dangerouslySetInnerHTML={context.previewHtmlField} />
+            <ContentCardText isMobile={isMobileResolution} dangerouslySetInnerHTML={context.htmlField} />
             <Separator paddingValue={1} />
-            {context.hasDetailPage &&
-                <InternalLink
-                    href={`/resume-${resumePart}-${context.id}`}
-                >
-                    Read more
-                </InternalLink>
-            }
         </ContentCardBox>
     )
 }

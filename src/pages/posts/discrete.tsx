@@ -3,9 +3,7 @@ import { RenderArticlesListerPage } from "@components/components/RenderArticlesL
 import { DiscreteJumpsArticlesConfig } from "@components/configs/discreteJumpsArticlesConfig";
 
 const discrete: FC = () => {
-    return (
-        <RenderArticlesListerPage config={DiscreteJumpsArticlesConfig}/>
-    )
+    return <RenderArticlesListerPage config={DiscreteJumpsArticlesConfig} />;
 }
 
 export default discrete;

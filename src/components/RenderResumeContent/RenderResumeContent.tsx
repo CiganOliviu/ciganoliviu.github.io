@@ -2,6 +2,7 @@ import { ContentColumn, ResumeContent, Separator, SimpleText } from "@components
 import { ContentCard } from "@components/components/ContentCard/ContentCard";
 import { ResumeConfig } from "@components/configs/resumeConfig";
 import { EducationAndExperienceType } from "@components/utils/types";
+import React from "react";
 
 export const RenderResumeContent = () => {
     return (
@@ -12,10 +13,10 @@ export const RenderResumeContent = () => {
                 </SimpleText>
                 {ResumeConfig.education.map((item: EducationAndExperienceType) => {
                     return (
-                        <div key={item.title}>
+                        <React.Fragment key={item.title}>
                             <ContentCard context={item} resumePart={'education'} />
                             <Separator paddingValue={1} />
-                        </div>
+                        </React.Fragment>
                     )
                 })}
             </ContentColumn>
@@ -25,10 +26,10 @@ export const RenderResumeContent = () => {
                 </SimpleText>
                 {ResumeConfig.experience.map((item: EducationAndExperienceType) => {
                     return (
-                        <div key={item.title}>
+                        <React.Fragment key={item.title}>
                             <ContentCard context={item} resumePart={'experience'} />
                             <Separator paddingValue={1} />
-                        </div>
+                        </React.Fragment>
                     )
                 })}
             </ContentColumn>

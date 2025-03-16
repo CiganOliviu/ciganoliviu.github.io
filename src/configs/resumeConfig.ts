@@ -19,19 +19,6 @@ export const ResumeConfig: ResumeConfigType = {
             subtitle: 'Technical University of Cluj-Napoca',
             thumbnail: TechnicalUniversity.src,
             logo: LogoUTCN.src,
-            hasDetailPage: true,
-            previewHtmlField: {
-                __html: 'Throughout my academic journey, I explored an extensive array of courses spanning diverse ' +
-                    'disciplines. However, it was the development of soft skills that truly stood out. Among these,' +
-                    ' mastering stress management, cultivating discipline, honing a robust work ethic, and fostering ' +
-                    'valuable networking capabilities were paramount. Truthfully, I\'ve found these skills to hold ' +
-                    'far more significance than the academic knowledge acquired within the classroom setting. ' +
-                    'During my academic years, I discovered the art of accomplishing tasks even when my inclination ' +
-                    'veered towards delay or reluctance. Meeting deadlines became a skill honed through the necessity ' +
-                    'of completing tasks on time, a valuable trait nurtured both in school and later as a software ' +
-                    'engineer. While professional experience played a significant role, the foundations of this skill ' +
-                    'were laid during my educational journey...'
-            },
             htmlField: {
                 __html: '<span style="font-size: 1.8rem">Throughout my academic journey,</span> I explored an extensive array of courses spanning diverse ' +
                     'disciplines. However, it was the development of soft skills that truly stood out. Among these, ' +
@@ -85,8 +72,7 @@ export const ResumeConfig: ResumeConfigType = {
             title: 'Mathematics and Informatics',
             subtitle: 'Theoretical High-School Carei',
             logo: LogoLTC.src,
-            hasDetailPage: false,
-            previewHtmlField: {
+            htmlField: {
                 __html: 'During high school, I delved into the world of coding and algorithms, immersing myself ' +
                     'in languages like C, C++, Java, Python, and C#. I was eager to explore every aspect of ' +
                     'programming – from web development to mobile apps and even a bit of machine learning. ' +
@@ -101,9 +87,6 @@ export const ResumeConfig: ResumeConfigType = {
                     'sparked a deep passion for technology and software engineering within me, paving the way ' +
                     'for my future pursuits in the field.'
             },
-            htmlField: {
-                __html: ''
-            },
         }
     ],
     experience: [
@@ -114,12 +97,8 @@ export const ResumeConfig: ResumeConfigType = {
             subtitle: 'Alphablock Technologies',
             thumbnail: WorkAlphablock.src,
             logo: LogoAlphablock.src,
-            hasDetailPage: false,
-            previewHtmlField: {
-                __html: 'I am part of the development of next-generation investment models and conduct in-depth financial research. Utilizing tools like Python, Scikit-Learn, Matplotlib, and Pandas, I process large datasets to identify valuable insights. My work centers on creating robust, data-driven models that inform investment strategies, while simplifying complex data for easy interpretation.'
-            },
             htmlField: {
-                __html: ''
+                __html: 'I am part of the development of next-generation investment models and conduct in-depth financial research. Utilizing tools like Python, Scikit-Learn, Matplotlib, and Pandas, I process large datasets to identify valuable insights. My work centers on creating robust, data-driven models that inform investment strategies, while simplifying complex data for easy interpretation.'
             },
         },
         {
@@ -129,12 +108,8 @@ export const ResumeConfig: ResumeConfigType = {
             subtitle: 'ADAPTED Research Group',
             thumbnail: AdaptedFintechResearch.src,
             logo: LogoAdapted.src,
-            hasDetailPage: false,
-            previewHtmlField: {
-                __html: 'I collaborated with the ADAPTED team and Canadian startup Alphablock on a year-long research project focused on finance, titled \'Revolutionizing Active Investing with Machine Learning.\' Throughout this project, I strengthened my skills in machine learning, data processing, and data analysis, while also delving into fundamental financial concepts for our analysis. The research process was iterative and flexible, starting from data acquisition and preprocessing, through pattern analysis, to drawing conclusions and implementing the 3N method for predictive purposes using machine learning. Our goal was to identify the most effective machine learning algorithm for maximizing returns based on the available data.'
-            },
             htmlField: {
-                __html: ''
+                __html: 'I collaborated with the ADAPTED team and Canadian startup Alphablock on a year-long research project focused on finance, titled \'Revolutionizing Active Investing with Machine Learning.\' Throughout this project, I strengthened my skills in machine learning, data processing, and data analysis, while also delving into fundamental financial concepts for our analysis. The research process was iterative and flexible, starting from data acquisition and preprocessing, through pattern analysis, to drawing conclusions and implementing the 3N method for predictive purposes using machine learning. Our goal was to identify the most effective machine learning algorithm for maximizing returns based on the available data.'
             },
         },
         {
@@ -144,14 +119,6 @@ export const ResumeConfig: ResumeConfigType = {
             subtitle: '3Screen Solutions',
             thumbnail: Work3SS.src,
             logo: Logo3SS.src,
-            hasDetailPage: true,
-            previewHtmlField: {
-                __html: 'In my current position, I\'m deeply involved in enhancing, implementing, and maintaining ' +
-                    'features linked to Data Analytics and User Journey Tracking. I take designs from Figma and turn ' +
-                    'them into functional components, collaborating closely with our design crew. Managing data, ' +
-                    'integrating third-party tools for ads, image rendering, and tying everything together with ' +
-                    'backend systems is all part of the gig...'
-            },
             htmlField: {
                 __html: 'I’m an experienced ReactJS and TypeScript developer with a passion for delivering high-quality, efficient, and user-centric solutions. My focus has always been on ensuring code quality and client satisfaction, driving each project forward with a commitment to excellence.' +
                     '<div>&nbsp;</div>' +
@@ -193,8 +160,7 @@ export const ResumeConfig: ResumeConfigType = {
             title: 'Software Engineer Internship',
             subtitle: '3Screen Solutions',
             logo: Logo3SS.src,
-            hasDetailPage: false,
-            previewHtmlField: {
+            htmlField: {
                 __html: 'During my internship, I collaborated with a team of five to build a basic VOD web ' +
                     'app using ReactJS. My responsibilities included implementing features like the Authentication ' +
                     'System, Custom Fetching mechanisms, error boundaries, various design elements, and addressing ' +
@@ -205,9 +171,6 @@ export const ResumeConfig: ResumeConfigType = {
                     '<div>&nbsp;</div>' +
                     'That internship gave me a solid mix of tech skills and the softer side of things. It went so ' +
                     'well that I landed a Software Engineer job afterward, and I\'ve been working in the industry ever since!'
-            },
-            htmlField: {
-                __html: ''
             },
         }
     ]
