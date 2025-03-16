@@ -13,7 +13,7 @@ export const LandingAreaConfig: HeroCardConfigType = {
         'a Researcher.'
     ],
     ContinuityText: 'based in Cluj-Napoca and Satu-Mare, Romania.',
-    ButtonText: 'Let\'s discuss'
+    ButtonText: 'See experience'
 };
 
 export const KnowMeMoreConfig: KnowMeMoreConfigType = {

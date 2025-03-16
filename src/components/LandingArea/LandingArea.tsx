@@ -10,15 +10,14 @@ import TypeWriter from 'typewriter-effect';
 import { LandingAreaConfig } from "@components/configs/generalConfig";
 import { FC } from "react";
 import { Logo } from "@components/components/Logo/Logo";
+import { useRouter } from "next/router";
 
-type HeroCardType = {
-    nextSectionReference: any
-};
+export const LandingArea: FC = () => {
+    const router = useRouter();
 
-export const LandingArea: FC<HeroCardType> = ({ nextSectionReference }) => {
-    const scrollToRef = () => {
-        nextSectionReference?.current?.scrollIntoView({ behavior: "smooth" });
-    }
+    const onExperienceClick = () => {
+        router.push('/experience').then();
+    };
 
     return (
         <LandingAreaBox>
@@ -45,6 +44,9 @@ export const LandingArea: FC<HeroCardType> = ({ nextSectionReference }) => {
                 <LandingAreaContinuityText>
                     {LandingAreaConfig.ContinuityText}
                 </LandingAreaContinuityText>
+                <ExternalLink onClick={onExperienceClick} rel="nofollow">
+                    {LandingAreaConfig.ButtonText}
+                </ExternalLink>
             </LandingAreaContainer>
         </LandingAreaBox>
     )

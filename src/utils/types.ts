@@ -45,8 +45,6 @@ export type EducationAndExperienceType = {
     subtitle: string;
     thumbnail?: string;
     logo: string;
-    hasDetailPage: boolean;
-    previewHtmlField: innerHtmlType;
     htmlField: innerHtmlType,
 };
 

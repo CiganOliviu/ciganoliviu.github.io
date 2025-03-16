@@ -3,9 +3,7 @@ import { SoftwareArticlesConfig } from "@components/configs/softwareArticlesConf
 import { RenderArticlesListerPage } from "@components/components/RenderArticlesListerPage/RenderArticlesListerPage";
 
 const software: FC = () => {
-    return (
-        <RenderArticlesListerPage config={SoftwareArticlesConfig} isSoftwareArticles={true} />
-    )
+    return <RenderArticlesListerPage config={SoftwareArticlesConfig} isSoftwareArticles={true} />;
 }
 
 export default software;
