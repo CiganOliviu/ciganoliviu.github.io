@@ -6,7 +6,7 @@ export const DiscreteJumpsArticlesConfig: ArticlesConfigType[] = [
         id: 'the-systemic-cluster',
         thumbnail: SystemicCluster.src,
         title: 'The Systemic Cluster: An Analysis of S&P 500 Performance Over 24 Years Using K-means Clustering',
-        subtitle: '11 April 2024',
+        postDate: '11 April 2024',
         previewField: 'This paper presents an empirical study of the S&P 500\'s performance over a period of 24 years, utilizing a novel approach termed "The Systemic Cluster." It diverges from traditional market analysis methods by employing annualized returns and percentile scoring in conjunction with K-means clustering to elucidate systemic patterns in stock market performance.',
         htmlField: {
             __html: 'This paper presents an empirical study of the S&P 500\'s performance over a period of 24 years, utilizing a novel approach termed "The Systemic Cluster." It diverges from traditional market analysis methods by employing annualized returns and percentile scoring in conjunction with K-means clustering to elucidate systemic patterns in stock market performance. The study\'s findings reveal a consistent positive drift for stocks with higher relative percentile scores, suggesting an inherent market tendency to reward winners. Additionally, the occurrence of occasional spurts in the highest decile indicates the presence of market extremities. The implications of these findings are discussed in relation to their predictive capacity for macro market trends and investment strategies.' +

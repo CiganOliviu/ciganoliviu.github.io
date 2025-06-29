@@ -1,16 +1,25 @@
 import {
-    ExternalLink,
     LandingAreaBox,
     LandingAreaContainer,
-    LandingAreaContinuityText, LandingAreaInlineTextWrapper, LandingAreaTextWrapper,
+    LandingAreaInlineTextWrapper,
+    LandingAreaTextWrapper,
     LandingAreaTypeAnimationText,
     LandingAreaWelcomeText,
 } from "@components/components/LandingArea/LandingArea.css";
 import TypeWriter from 'typewriter-effect';
-import { LandingAreaConfig } from "@components/configs/generalConfig";
 import { FC } from "react";
-import { Logo } from "@components/components/Logo/Logo";
 import { useRouter } from "next/router";
+import { HeroCardConfigType } from "@components/utils/types";
+
+export const LandingAreaConfig: HeroCardConfigType = {
+    WelcomeText: 'Welcome',
+    TypeWriterContext: [
+        'Cigan Oliviu-David.',
+        'a Data Scientist.',
+        'a Software Engineer.',
+        'a Researcher.'
+    ],
+};
 
 export const LandingArea: FC = () => {
     const router = useRouter();
@@ -21,7 +30,6 @@ export const LandingArea: FC = () => {
 
     return (
         <LandingAreaBox>
-            <Logo />
             <LandingAreaContainer>
                 <LandingAreaWelcomeText>
                     {LandingAreaConfig.WelcomeText}
@@ -41,12 +49,6 @@ export const LandingArea: FC = () => {
                         </LandingAreaInlineTextWrapper>
                     </LandingAreaTextWrapper>
                 </LandingAreaTypeAnimationText>
-                <LandingAreaContinuityText>
-                    {LandingAreaConfig.ContinuityText}
-                </LandingAreaContinuityText>
-                <ExternalLink onClick={onExperienceClick} rel="nofollow">
-                    {LandingAreaConfig.ButtonText}
-                </ExternalLink>
             </LandingAreaContainer>
         </LandingAreaBox>
     )

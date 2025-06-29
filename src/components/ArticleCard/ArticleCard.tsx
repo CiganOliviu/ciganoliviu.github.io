@@ -1,20 +1,23 @@
 import {
     ArticleCardContent,
-    ArticleCardContentWrapper, ArticleCardSubtitle,
+    ArticleCardContentWrapper,
+    ArticleCardSubtitle,
     ArticleCardThumbnail,
     ArticleCardTitle,
-    ArticleCardWrapper
+    ArticleCardWrapper, TwoColumnFlex
 } from "@components/components/ArticleCard/ArticleCard.css";
 import React, { FC } from "react";
 import { InternalLink } from "@components/components/LandingArea/LandingArea.css";
 import { ArticlesConfigType } from "@components/utils/types";
-import { getTextSizeBasedOnBigBreakpoint } from "@components/utils/generalManipulations";
 import { useGetScreenSize } from "@components/hooks/useScreenSize";
 
 type ArticleCardContextType = {
     article: ArticlesConfigType;
 };
 
+export const getTextSizeBasedOnBigBreakpoint = (text: string, isBigScreen: boolean): string => {
+    return isBigScreen ? text : text.slice(0, 150);
+}
 export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
     const { isBigScreen } = useGetScreenSize();
 
@@ -23,7 +26,10 @@ export const ArticleCard: FC<ArticleCardContextType> = ({ article }) => {
             <ArticleCardThumbnail src={article.thumbnail} alt={article.thumbnail} />
             <ArticleCardContentWrapper>
                 <ArticleCardTitle>{article.title}</ArticleCardTitle>
-                <ArticleCardSubtitle>{article.subtitle}</ArticleCardSubtitle>
+                <TwoColumnFlex>
+                    <ArticleCardSubtitle>{article.postDate}</ArticleCardSubtitle>
+                    <ArticleCardSubtitle>{article.readDuration}</ArticleCardSubtitle>
+                </TwoColumnFlex>
                 <ArticleCardContent>
                     {getTextSizeBasedOnBigBreakpoint(article.previewField, isBigScreen())}...
                 </ArticleCardContent>

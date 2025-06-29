@@ -12,3 +12,11 @@ export const FooterContainerBox = styled.div<{ backgroundColor: string }>`
         padding: 4rem 2rem 2rem 4rem;
     }
 `;
+
+export const Separator = styled.div<{ paddingValue?: number }>`
+    padding: ${(props) => props.paddingValue || 0.3}rem;
+`;
+
+export const HighLight = styled.span`
+    color: ${AppTheme.lightGreen};
+`;

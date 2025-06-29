@@ -1,12 +1,7 @@
-import { ResumeConfig } from "@components/configs/resumeConfig";
 import { SoftwareArticlesConfig } from "@components/configs/softwareArticlesConfig";
-import { ArticlesConfigType, EducationAndExperienceType } from "@components/utils/types";
+import { ArticlesConfigType } from "@components/utils/types";
 import { DiscreteJumpsArticlesConfig } from "@components/configs/discreteJumpsArticlesConfig";
-
-export enum DetailPageTypes {
-    RESUME = 'resume',
-    ARTICLE = 'article'
-}
+import { ValuesArticlesConfig } from "@components/configs/valuesArticlesConfig";
 
 export const getDetailPageParams = (url: string) => {
     if (url) {
@@ -23,24 +18,8 @@ export const getDetailPageParams = (url: string) => {
     return {};
 };
 
-export const getFetchWrapper = (pageType: string) => {
-    if (pageType === DetailPageTypes.RESUME)
-        return fetchResumeConfigObject;
-
-    return fetchArticleConfigResponse;
-}
-
-export const fetchResumeConfigObject = (keyTitle: string, resumePart: string): EducationAndExperienceType | undefined => {
-    if (resumePart === 'education')
-        return ResumeConfig.education.find((obj) => obj.id === keyTitle);
-
-    if (resumePart === 'experience')
-        return ResumeConfig.experience.find((obj) => obj.id === keyTitle);
-
-    return undefined;
-};
 
 export const fetchArticleConfigResponse = (keyTitle: string): ArticlesConfigType | undefined  => {
-    const allArticles = SoftwareArticlesConfig.concat(DiscreteJumpsArticlesConfig)
+    const allArticles = SoftwareArticlesConfig.concat(DiscreteJumpsArticlesConfig).concat(ValuesArticlesConfig);
     return allArticles.find((obj) => obj.id === keyTitle);
 };

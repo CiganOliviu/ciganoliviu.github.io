@@ -1,15 +1,13 @@
 import { LandingArea } from "@components/components/LandingArea/LandingArea";
-import { Resume } from "@components/components/Resume/Resume";
-import { KnowMeMore } from "@components/components/KnowMeMore/KnowMeMore";
 import { Footer } from "@components/components/Footer/Footer";
-import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
-import { useGetScreenSize } from "@components/hooks/useScreenSize";
-import React, { useRef } from "react";
+import React from "react";
 import Head from "next/head";
 import { ArticlesPreview } from "@components/components/ArticlesPreview/ArticlesPreview";
 import { AppTheme } from "@components/utils/cssMedia";
 import { SoftwareArticlesConfigPreview } from "@components/configs/softwareArticlesConfig";
 import { DiscreteJumpsArticlesConfigPreview } from "@components/configs/discreteJumpsArticlesConfig";
+import { ValuesArticlesConfig } from "@components/configs/valuesArticlesConfig";
+import { ArticleType } from "@components/utils/types";
 
 export const getStandardHeaderForPages = (title: string, metaDescription?: string) => {
     return (
@@ -24,16 +22,14 @@ export const getStandardHeaderForPages = (title: string, metaDescription?: strin
 };
 
 export default function Home() {
-    const { isMobile } = useGetScreenSize();
-
     return (
        <React.Fragment>
            {getStandardHeaderForPages("Cigan Oliviu David | Software Engineer", "Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections.")}
-           {!isMobile() && <ScrollTopButton />}
             <LandingArea />
-            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Software'} overText={'Articles'} config={SoftwareArticlesConfigPreview} isSoftwareArticles={true} />
-            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Data Science'} overText={'Articles'} config={DiscreteJumpsArticlesConfigPreview} />
-            <Footer backgroundColor={AppTheme.darkerClose} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Science'} overText={'Alpha Software'} config={SoftwareArticlesConfigPreview} articlesType={ArticleType.Software} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Science'} overText={'Discrete Jumps'} config={DiscreteJumpsArticlesConfigPreview} articlesType={ArticleType.DataScience} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Science'} overText={'Values'} config={ValuesArticlesConfig} articlesType={ArticleType.Values} />
+            <Footer backgroundColor={AppTheme.darkerOpen} />
        </React.Fragment>
     );
 }

@@ -49,9 +49,20 @@ export const ArticleCardTitle = styled.h2`
     padding: 1rem;
 `;
 
+export const TwoColumnFlex = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+
+    & > div {
+        flex: 1;
+    }
+`;
+
 export const ArticleCardSubtitle = styled.h4`
     color: ${AppTheme.lightGreen};
-    padding: 1rem;
+    padding: 1rem 0 1rem 0;
 `;
 
 export const ArticleCardContent = styled.div`

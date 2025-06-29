@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import { PageWallpaper } from "@components/components/PageWallpaper/PageWallpaper";
-import {
-    getDetailPageParams,
-    getFetchWrapper
-} from "@components/utils/detailPageManipulations";
+import { fetchArticleConfigResponse, getDetailPageParams } from "@components/utils/detailPageManipulations";
 import {
     Content,
     ContentLinkWrapper,
@@ -13,19 +10,13 @@ import {
     SimpleExternalLink
 } from "@components/utils/DetailPageStyles.css";
 import { Footer } from "@components/components/Footer/Footer";
-import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
-import { useGetScreenSize } from "@components/hooks/useScreenSize";
-import { Separator } from "@components/components/Resume/Resume.css";
 import { AppTheme } from "@components/utils/cssMedia";
 import { getStandardHeaderForPages } from "@components/pages";
 
 const DetailPage = () => {
-    const { isMobile } = useGetScreenSize();
     const router = useRouter();
     const { slugDetailPage } = router.query || {};
     const {
-        pageType,
-        identity,
         keySearchId
     } = getDetailPageParams(slugDetailPage as string);
 
@@ -37,8 +28,7 @@ const DetailPage = () => {
             setIsLoading(true);
 
             const fetchProject = async (): Promise<void> => {
-                const fetchWrapper = getFetchWrapper(pageType);
-                const detailPageData = fetchWrapper(keySearchId, identity);
+                const detailPageData = fetchArticleConfigResponse(keySearchId);
 
                 setResponseObject(detailPageData);
                 setIsLoading(false);
@@ -65,12 +55,10 @@ const DetailPage = () => {
                            title={responseObject?.title}
                            subtitle={responseObject?.subtitle}
             />
-            {!isMobile() && <ScrollTopButton />}
             <ContentOnlyWrapper>
                 <Content dangerouslySetInnerHTML={responseObject.htmlField} />
                 {responseObject?.open_link &&
                     <ContentLinkWrapper contentLinkBackground={AppTheme.darkerClose}>
-                        <Separator paddingValue={1} />
                         <SimpleExternalLink href={responseObject?.open_link}>
                             Check the article on Medium
                         </SimpleExternalLink>
