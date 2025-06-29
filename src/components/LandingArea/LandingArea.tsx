@@ -14,10 +14,12 @@ import { HeroCardConfigType } from "@components/utils/types";
 export const LandingAreaConfig: HeroCardConfigType = {
     WelcomeText: 'Welcome',
     TypeWriterContext: [
-        'Cigan Oliviu-David.',
-        'a Data Scientist.',
-        'a Software Engineer.',
-        'a Researcher.'
+        '',
+        'Data Science.',
+        'Software Engineering.',
+        'Research.',
+        'Finance.',
+        'Values.'
     ],
 };
 
@@ -36,7 +38,7 @@ export const LandingArea: FC = () => {
                 </LandingAreaWelcomeText>
                 <LandingAreaTypeAnimationText>
                     <LandingAreaTextWrapper>
-                        I am{' '}
+                        read about{' '}
                         <LandingAreaInlineTextWrapper>
                             <TypeWriter
                                 options={{
