@@ -26,9 +26,9 @@ export default function Home() {
        <React.Fragment>
            {getStandardHeaderForPages("Cigan Oliviu David | Software Engineer", "Unveil Cigan Oliviu David's expertise and creativity in Software Engineering through a portfolio of innovative projects. Reach out for collaborations or inquiries. Your destination for skillful projects and seamless connections.")}
             <LandingArea />
-            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Science'} overText={'Alpha Software'} config={SoftwareArticlesConfigPreview} articlesType={ArticleType.Software} />
-            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} backText={'Science'} overText={'Discrete Jumps'} config={DiscreteJumpsArticlesConfigPreview} articlesType={ArticleType.DataScience} />
-            <ArticlesPreview backgroundColor={AppTheme.darkerClose} backText={'Science'} overText={'Values'} config={ValuesArticlesConfig} articlesType={ArticleType.Values} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerClose} config={SoftwareArticlesConfigPreview} articlesType={ArticleType.Software} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerOpen} config={DiscreteJumpsArticlesConfigPreview} articlesType={ArticleType.DataScience} />
+            <ArticlesPreview backgroundColor={AppTheme.darkerClose} config={ValuesArticlesConfig} articlesType={ArticleType.Values} />
             <Footer backgroundColor={AppTheme.darkerOpen} />
        </React.Fragment>
     );

@@ -7,14 +7,20 @@ import { ArticlesConfigType, ArticleType } from "@components/utils/types";
 import { Separator } from "@components/components/Footer/Footer.css";
 
 type ArticlesPreviewType = {
-    backText: string;
-    overText: string;
     backgroundColor: string;
     config: ArticlesConfigType[];
     articlesType: ArticleType;
 };
 
-export const ArticlesPreview: FC<ArticlesPreviewType> = ({ backText, overText, backgroundColor, config, articlesType }) => {
+export const getTextsBasedOnArticlesType = (articlesType: ArticleType) => {
+    if (articlesType != null) {
+        if (articlesType === ArticleType.Software) return { backText: 'Science', overText: 'Alpha Software' };
+        if (articlesType === ArticleType.DataScience) return { backText: 'Science', overText: 'Discrete Jumps' };
+    }
+    return { backText: 'Science', overText: 'Values' };
+};
+
+export const ArticlesPreview: FC<ArticlesPreviewType> = ({ backgroundColor, config, articlesType }) => {
     const getLinkBasedOnArticlesType = () => {
         if (articlesType != null) {
             if (articlesType === ArticleType.Software) return 'posts/software';
@@ -23,9 +29,10 @@ export const ArticlesPreview: FC<ArticlesPreviewType> = ({ backText, overText, b
         return 'posts/values';
     };
 
+    const texts = getTextsBasedOnArticlesType(articlesType);
     return (
         <PreviewWrapper backgroundColor={backgroundColor}>
-            <ArticlesLister backText={backText} overText={overText} articlesList={config} />
+            <ArticlesLister backText={texts.backText} overText={texts.overText} articlesList={config} />
             <Separator paddingValue={2} />
             {config.length > 0 &&
                 <ContentLinkWrapper contentLinkBackground={backgroundColor} style={{ textAlign: 'center' }}>

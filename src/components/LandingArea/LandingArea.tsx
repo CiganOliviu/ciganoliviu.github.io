@@ -26,10 +26,6 @@ export const LandingAreaConfig: HeroCardConfigType = {
 export const LandingArea: FC = () => {
     const router = useRouter();
 
-    const onExperienceClick = () => {
-        router.push('/experience').then();
-    };
-
     return (
         <LandingAreaBox>
             <LandingAreaContainer>
