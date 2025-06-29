@@ -9,7 +9,7 @@ import { getTextsBasedOnArticlesType } from "@components/components/ArticlesPrev
 
 type RenderArticlesListerPageType = {
     config: ArticlesConfigType[];
-    articlesType?: ArticleType;
+    articlesType: ArticleType;
 };
 
 export const RenderArticlesListerPage: FC<RenderArticlesListerPageType> = ({ config, articlesType }) => {
